@@ -252,6 +252,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/confirm-initial-password"
+        },
+        "name": "Confirm Password",
+        "description": "Confirm Password",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ihris-assign-role"
         },
         "name": "iHRIS Assign Role",
@@ -575,10 +583,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/initial-password"
+        },
+        "name": "Password",
+        "description": "Password",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/location-boundary-geojson"
         },
         "name": "Location Boundary (GeoJSON)",
         "description": "A boundary shape that represents the outside edge of the location (in GeoJSON format) This shape may have holes, and disconnected shapes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/old-password"
+        },
+        "name": "Old Password",
+        "description": "Old Password",
         "exampleBoolean": false
       },
       {
