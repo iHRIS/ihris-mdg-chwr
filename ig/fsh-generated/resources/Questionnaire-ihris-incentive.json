@@ -1,0 +1,38 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ihris-incentive",
+  "url": "http://ihris.org/fhir/Questionnaire/ihris-incentive",
+  "title": "iHRIS Incentive Workflow",
+  "description": "iHRIS workflow to record a Incentive",
+  "name": "ihris-incentive",
+  "status": "active",
+  "date": "2020-08-27",
+  "purpose": "Workflow page for recording a Incentive information.",
+  "item": [
+    {
+      "linkId": "Basic",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.id",
+      "text": "Incentive",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Basic.extension[0].extension[0]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:incentive.value[x]:valueCoding",
+          "text": "Activity Packs",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-incentive-valueset",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[0].extension[2]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivation.value[x]:valueCoding",
+          "text": "Monthly motivation status",
+          "type": "choice",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ihris-distance",
+  "url": "http://ihris.org/fhir/Questionnaire/ihris-distance",
+  "title": "iHRIS Education History Workflow",
+  "description": "iHRIS workflow to record a Education History",
+  "name": "ihris-distance",
+  "status": "active",
+  "date": "2023-08-27",
+  "purpose": "Workflow page for recording a Education History information.",
+  "item": [
+    {
+      "linkId": "Basic",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.id",
+      "text": "Distance From the Centers",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Basic.extension[0].extension[0]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:fokontany.value[x]:valueDecimal",
+          "text": "Distance from Fokontany",
+          "type": "decimal",
+          "required": true
+        },
+        {
+          "linkId": "Basic.extension[0].extension[1]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:csb.value[x]:valueDecimal",
+          "text": "Distance from CSB",
+          "type": "decimal",
+          "required": true
+        },
+        {
+          "linkId": "Basic.extension[0].extension[2]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:commsite.value[x]:valueDecimal",
+          "text": "Distance from Community Site",
+          "type": "decimal",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

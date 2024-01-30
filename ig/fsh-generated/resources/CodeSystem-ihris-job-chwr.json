@@ -1,0 +1,23 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisJobCodeSystem",
+  "id": "ihris-job-chwr",
+  "title": "Job Titles/CHW Types",
+  "description": "iHRIS Code System for Job Titles/CHW Types.",
+  "version": "0.1.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-job-chwr",
+  "concept": [
+    {
+      "code": "CR",
+      "display": "Community Relay"
+    },
+    {
+      "code": "ACC",
+      "display": "AC Commcare"
+    }
+  ],
+  "date": "2024-01-10T08:41:04.362Z",
+  "count": 2
+}

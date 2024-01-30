@@ -1,0 +1,24 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisYesNo",
+  "id": "ihris-yesno",
+  "title": "Yes/No",
+  "version": "0.1.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-yesno",
+  "concept": [
+    {
+      "code": "yes",
+      "display": "Yes",
+      "definition": "Yes"
+    },
+    {
+      "code": "no",
+      "display": "No",
+      "definition": "No"
+    }
+  ],
+  "date": "2020-09-29T08:41:04.362Z",
+  "count": 2
+}

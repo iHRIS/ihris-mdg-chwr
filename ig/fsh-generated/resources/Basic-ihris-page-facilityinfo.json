@@ -1,0 +1,149 @@
+{
+  "resourceType": "Basic",
+  "id": "ihris-page-facilityinfo",
+  "meta": {
+    "profile": [
+      "http://ihris.org/fhir/StructureDefinition/ihris-page"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "page",
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-display",
+      "extension": [
+        {
+          "url": "resource",
+          "valueReference": {
+            "reference": "StructureDefinition/ihris-basic-facility-info"
+          }
+        },
+        {
+          "url": "search",
+          "valueString": "Facility|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-location-reference').valueReference.reference"
+        },
+        {
+          "extension": [
+            {
+              "url": "field",
+              "valueString": "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-location-reference').valueReference.reference"
+            },
+            {
+              "url": "url",
+              "valueUrl": "/resource/view/facility/FIELD"
+            },
+            {
+              "url": "text",
+              "valueString": "View Facility"
+            },
+            {
+              "url": "button",
+              "valueBoolean": true
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-account-arrow-right"
+            }
+          ],
+          "url": "link"
+        },
+        {
+          "url": "search",
+          "valueString": "Electricity|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-facility-info').extension.where(url='electricity').valueCoding.display"
+        },
+        {
+          "url": "search",
+          "valueString": "Internet|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-facility-info').extension.where(url='internet').valueCoding.display"
+        },
+        {
+          "url": "search",
+          "valueString": "Fokontany|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-facility-info').extension.where(url='fokontany').valueInteger"
+        },
+        {
+          "url": "search",
+          "valueString": "AC|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-facility-info').extension.where(url='ac').valueInteger"
+        },
+        {
+          "url": "search",
+          "valueString": "Input Tools|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-facility-info').extension.where(url='inputtools').valueCoding.display"
+        },
+        {
+          "url": "search",
+          "valueString": "Tablets|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-facility-info').extension.where(url='tablets').valueInteger"
+        },
+        {
+          "url": "search",
+          "valueString": "COSAN|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-facility-info').extension.where(url='cosan').valueString"
+        },
+        {
+          "extension": [
+            {
+              "url": "path",
+              "valueString": "Basic.extension:location.value[x]:valueReference"
+            },
+            {
+              "url": "readOnlyIfSet",
+              "valueBoolean": true
+            }
+          ],
+          "url": "field"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "title",
+          "valueString": "Facility Information"
+        },
+        {
+          "url": "description",
+          "valueString": "Facility details"
+        },
+        {
+          "url": "name",
+          "valueString": "Basic"
+        },
+        {
+          "url": "field",
+          "valueString": "Basic.extension:location"
+        },
+        {
+          "url": "field",
+          "valueString": "Basic.extension:facilityInfo.extension:electricity.value[x]:valueCoding.display"
+        },
+        {
+          "url": "field",
+          "valueString": "Basic.extension:facilityInfo.extension:internet.value[x]:valueCoding.display"
+        },
+        {
+          "url": "field",
+          "valueString": "Basic.extension:facilityInfo.extension:fokontany.value[x]:valueInteger"
+        },
+        {
+          "url": "field",
+          "valueString": "Basic.extension:facilityInfo.extension:ac.value[x]:valueInteger"
+        },
+        {
+          "url": "field",
+          "valueString": "Basic.extension:facilityInfo.extension:inputtools.value[x]:valueCoding.display"
+        },
+        {
+          "url": "field",
+          "valueString": "Basic.extension:facilityInfo.extension:tablets.value[x]:valueInteger"
+        },
+        {
+          "url": "field",
+          "valueString": "Basic.extension:facilityInfo.extension:cosan.value[x]:valueString"
+        }
+      ],
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"
+    }
+  ]
+}
