@@ -1,0 +1,19 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisMdgIdentifierCodesystem",
+  "id": "ihris-mdg-identifier-codesystem",
+  "title": "Identifier Types",
+  "version": "0.2.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-mdg-identifier-codesystem",
+  "concept": [
+    {
+      "code": "CIN",
+      "display": "National Identintification Number",
+      "definition": "National Identintification Number"
+    }
+  ],
+  "date": "2023-10-29T08:41:04.362Z",
+  "count": 1
+}

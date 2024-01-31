@@ -66,7 +66,7 @@ Parent:         Location
 Id:             ihris-facility
 Title:          "Facility"
 Description:    "iHRIS Profile of Locations to manage facilities."
-* type 1..* MS
+* type 1..1 MS
 * type ^label = "Health Facility Type"
 * type.coding 1..1 MS
 * type.coding from IhrisFacilityTypeValueSet
@@ -77,20 +77,15 @@ Description:    "iHRIS Profile of Locations to manage facilities."
 // * physicalType.coding ^label = "Facility Physical Type"
 * identifier MS
 * identifier ^label = "Identifier"
-* identifier.use 1..1
-* identifier.value MS
+* identifier.use 0..1
+* identifier.value 0..1 MS
 * identifier.value ^label = "Value"
-* identifier.type MS
+* identifier.type 0..1 MS
 * identifier.type ^label = "Type"
-* identifier.type.coding MS
+* identifier.type.coding 0..1 MS
 * identifier.type.coding ^label = "Type"
 * identifier.type.coding from IhrisFacilityIdentifierValueSet
 * identifier.type from IhrisFacilityIdentifierValueSet
-* extension contains
-        IhrisFacilityOwnership named ownership 0..1 MS  and
-        IhrisFacilityOpeningYear named openingYear 0..1 MS and 
-        IhrisFacilityClosureYear named closureYear 0..1 MS and
-        IhrisFacilityDistanceDistrict named districtDistance 0..1 MS 
 * name 1..1 MS
 * name ^label = "Name of CSB"
 * status 1..1 MS
@@ -104,6 +99,20 @@ Description:    "iHRIS Profile of Locations to manage facilities."
 * partOf 1..1 MS 
 * partOf only Reference(IhrisJurisdiction)
 * partOf ^label = "Part Of(Country/Region/District/Municipality)"
+* extension contains
+        IhrisFacilityOwnership named ownership 0..1 MS  and
+        IhrisFacilityOpeningYear named openingYear 0..1 MS and 
+        IhrisFacilityClosureYear named closureYear 0..1 MS and
+        IhrisFacilityDistanceDistrict named districtDistance 0..1 MS 
+* extension[ownership] ^label = "Facility Ownership"
+* extension[ownership].valueCoding 1..1 MS
+* extension[openingYear] ^label = "Facility Opening Year"
+* extension[openingYear].valueDate 1..1 MS
+* extension[closureYear] ^label = "Facility Closure Year"
+* extension[closureYear].valueDate 1..1 MS
+* extension[districtDistance] ^label = "Distance from District"
+* extension[districtDistance].valueDecimal 1..1 MS
+
 
 Extension:      IhrisFacilityOpeningYear
 Id:             ihris-facility-opening-year
@@ -137,17 +146,17 @@ Description:    "iHRIS extension for facility distance from district."
 
 
 ValueSet:         IhrisFacilityIdentifierValueSet
-Id:               ihris-Facility-identifier-valueset
+Id:               ihris-facility-identifier-valueset
 Title:            "iHRIS facility Identifier ValueSet"
-* ^date = "2022-02-13T08:41:04.362Z"
-* ^version = "0.4.0"
+* ^date = "2023-02-13T08:41:04.362Z"
+* ^version = "0.5.0"
 * codes from system IhrisFacilityIdentifierCodeSystem
 
 CodeSystem:       IhrisFacilityIdentifierCodeSystem
-Id:               ihris-Facility-identifier
+Id:               ihris-facility-identifier
 Title:            "Identifier Type"
-* ^date = "2022-02-13T08:41:04.362Z"
-* ^version = "0.4.0"
+* ^date = "2023-02-13T08:41:04.362Z"
+* ^version = "0.5.0"
 * #dhis2Id "DHIS2 ID"
 * #mfrId "MFR ID"
 
@@ -172,14 +181,14 @@ Description: "Defines the primary resource of the facility information "
 * extension[signature].valueAttachment ^label = "Facility Authority Signature"*/
 
 ValueSet:         IhrisFacilityOwnershipValueSet
-Id:               Ihris-facility-ownership
+Id:               ihris-facility-ownership
 Title:            "iHRIS Facility Ownership ValueSet"
 * ^date = "2022-02-23T08:41:04.362Z"
 * ^version = "0.4.0"
 * codes from system IhrisFacilityOwnershipTypeCodeSystem
 
 CodeSystem:      IhrisFacilityOwnershipTypeCodeSystem
-Id:             Ihris-facility-ownership-type
+Id:             ihris-facility-ownership-type
 Title:           "Facility Ownership Type"
 * ^date = "2022-02-23T08:41:04.362Z"
 * ^version = "0.4.0"
@@ -314,3 +323,71 @@ Usage:          #example
 * extension[section][0].extension[field][4].valueString = "Location.status"
 * extension[section][0].extension[field][5].valueString = "Location.position"
 * extension[section][0].extension[field][6].valueString = "Location.extension:boundary"
+
+Instance:       ihris-page-facility-type
+InstanceOf:     IhrisPage
+Title:          "iHRIS Facility Type Page"
+Usage:          #example
+* code = IhrisResourceCodeSystem#page
+* extension[display].extension[resource].valueReference = Reference(CodeSystem/ihris-facility-type)
+* extension[display].extension[search][0].valueString = "Code|code"
+* extension[display].extension[search][1].valueString = "Display|display"
+* extension[display].extension[field][0].extension[path].valueString = "CodeSystem.code"
+* extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
+* extension[section][0].extension[title].valueString = "Facility Type"
+* extension[section][0].extension[description].valueString = "Facility Type"
+* extension[section][0].extension[name].valueString = "CodeSystem"
+* extension[section][0].extension[field][0].valueString = "CodeSystem.display"
+* extension[section][0].extension[field][1].valueString = "CodeSystem.code"
+* extension[section][0].extension[field][2].valueString = "CodeSystem.definition"
+
+Instance:       ihris-page-jurisdiction-type
+InstanceOf:     IhrisPage
+Title:          "iHRIS Jurisdiction Type Page"
+Usage:          #example
+* code = IhrisResourceCodeSystem#page
+* extension[display].extension[resource].valueReference = Reference(CodeSystem/ihris-jurisdiction-type)
+* extension[display].extension[search][0].valueString = "Code|code"
+* extension[display].extension[search][1].valueString = "Display|display"
+* extension[display].extension[field][0].extension[path].valueString = "CodeSystem.code"
+* extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
+* extension[section][0].extension[title].valueString = "Jurisdiction Type"
+* extension[section][0].extension[description].valueString = "Jurisdiction Type"
+* extension[section][0].extension[name].valueString = "CodeSystem"
+* extension[section][0].extension[field][0].valueString = "CodeSystem.display"
+* extension[section][0].extension[field][1].valueString = "CodeSystem.code"
+* extension[section][0].extension[field][2].valueString = "CodeSystem.definition"
+
+Instance:      ihris-page-facilityownership
+InstanceOf:    IhrisPage
+Title:         "iHRIS Facility Ownership Page"
+Usage:         #example
+* code = IhrisResourceCodeSystem#page
+* extension[display].extension[resource].valueReference = Reference(CodeSystem/ihris-facility-ownership-type)
+* extension[display].extension[search][0].valueString = "Code|code"
+* extension[display].extension[search][1].valueString = "Display|display"
+* extension[display].extension[field][0].extension[path].valueString = "CodeSystem.code"
+* extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
+* extension[section][0].extension[title].valueString = "Facility Ownership Type"
+* extension[section][0].extension[description].valueString = "Facility Ownership Type"
+* extension[section][0].extension[name].valueString = "CodeSystem"
+* extension[section][0].extension[field][0].valueString = "CodeSystem.display"
+* extension[section][0].extension[field][1].valueString = "CodeSystem.code"
+* extension[section][0].extension[field][2].valueString = "CodeSystem.definition"
+
+Instance:       ihris-page-facility-identifier
+InstanceOf:     IhrisPage
+Title:          "iHRIS Facility Identifier Page"
+Usage:          #example
+* code = IhrisResourceCodeSystem#page
+* extension[display].extension[resource].valueReference = Reference(CodeSystem/ihris-facility-identifier)
+* extension[display].extension[search][0].valueString = "Code|code"
+* extension[display].extension[search][1].valueString = "Display|display"
+* extension[display].extension[field][0].extension[path].valueString = "CodeSystem.code"
+* extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
+* extension[section][0].extension[title].valueString = "Facility Identifier Type"
+* extension[section][0].extension[description].valueString = "Facility Identifier Type"
+* extension[section][0].extension[name].valueString = "CodeSystem"
+* extension[section][0].extension[field][0].valueString = "CodeSystem.display"
+* extension[section][0].extension[field][1].valueString = "CodeSystem.code"
+* extension[section][0].extension[field][2].valueString = "CodeSystem.definition"

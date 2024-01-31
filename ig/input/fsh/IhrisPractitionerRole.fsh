@@ -1,7 +1,7 @@
 Profile:        IhrisPractitionerRole
 Parent:         PractitionerRole
 Id:             ihris-practitioner-role
-Title:          "iHRIS Practitioner Role"
+Title:          "Position"
 Description:    "iHRIS profile of Practitioner Role."
 
 * identifier 0..0 MS

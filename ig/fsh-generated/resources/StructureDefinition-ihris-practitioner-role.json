@@ -14,7 +14,7 @@
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role",
   "version": "0.1.0",
   "name": "IhrisPractitionerRole",
-  "title": "iHRIS Practitioner Role",
+  "title": "Position",
   "status": "active",
   "description": "iHRIS profile of Practitioner Role.",
   "fhirVersion": "4.0.1",

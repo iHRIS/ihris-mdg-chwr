@@ -12,15 +12,15 @@
       "valueSignature": {
         "type": [
           {
-            "system": "urn:iso-astm:E1762-95:2013",
-            "code": "1.2.840.10065.1.12.1.14"
+            "code": "1.2.840.10065.1.12.1.14",
+            "system": "urn:iso-astm:E1762-95:2013"
           }
         ],
-        "when": "2024-01-30T14:09:46.258Z",
+        "when": "2022-06-21T09:31:16.469Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "rQF5VkkEPIqWVPJXkMxTaa34g8vdQ5Uo6rzn7eOV6GeS0oCU4McvV0741ljV4LR4FDQrzBiK6L4qC+g1btYOi6F7zVP+ax7VdiWXQ3eQJsmbwPymArQupweUZLlEUoC+cn/uvK/SpLYtJK5nLS8etUNxR2S6kd+wQicw8i/DRdA="
+        "data": "V870cwmayGw0tOXXdiUn7/MNEaPt/KzRCk7H2t6IvqxmhshwxLxAYve8yNEdkhj/WhybFokLXR5rhtqU4VKE9EiN/dL1fHVbdu0rk/WrcFy2vPqYPUxepFAAAWQXIQV7gsVSMFEbUOTiYaQ42dt7gddrmJYq8p+6RFLAMDkxpzU="
       }
     },
     {
@@ -231,16 +231,80 @@
           "valueString": "true"
         },
         {
+          "name": "site:nav:menu:database:menu:facilityLists:text",
+          "valueString": "Facility/Location Lists"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:color",
+          "valueString": "#78496A"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:order",
+          "valueString": "0"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:icon",
+          "valueString": "mdi-database"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:menu:type:text",
+          "valueString": "Facility Types"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:menu:type:url",
+          "valueString": "/resource/search/facility-type"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:menu:type:order",
+          "valueString": "0"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:menu:juriType:text",
+          "valueString": "Jurisdiction Types"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:menu:juriType:url",
+          "valueString": "/resource/search/jurisdiction-type"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:menu:juriType:order",
+          "valueString": "1"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:menu:ownership:text",
+          "valueString": "Ownership Types"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:menu:ownership:url",
+          "valueString": "/resource/search/facilityownership"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:menu:ownership:order",
+          "valueString": "2"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:menu:identifier:text",
+          "valueString": "Facility Identifier Types"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:menu:identifier:url",
+          "valueString": "/resource/search/facility-identifier"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:menu:identifier:order",
+          "valueString": "3"
+        },
+        {
           "name": "site:nav:menu:database:menu:jobLists:text",
           "valueString": "Job Lists"
         },
         {
           "name": "site:nav:menu:database:menu:jobLists:color",
-          "valueString": "#78496A"
+          "valueString": "#D06F1A"
         },
         {
           "name": "site:nav:menu:database:menu:jobLists:order",
-          "valueString": "0"
+          "valueString": "1"
         },
         {
           "name": "site:nav:menu:database:menu:jobLists:icon",
@@ -268,7 +332,7 @@
         },
         {
           "name": "site:nav:menu:database:menu:eduLists:order",
-          "valueString": "1"
+          "valueString": "2"
         },
         {
           "name": "site:nav:menu:database:menu:eduLists:icon",
@@ -308,7 +372,7 @@
         },
         {
           "name": "site:nav:menu:database:menu:otherLists:order",
-          "valueString": "2"
+          "valueString": "3"
         },
         {
           "name": "site:nav:menu:database:menu:otherLists:icon",
@@ -337,6 +401,18 @@
         {
           "name": "site:nav:menu:database:menu:otherLists:menu:incentive:order",
           "valueString": "2"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:maritalStatus:text",
+          "valueString": "Marital Status"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:maritalStatus:url",
+          "valueString": "/resource/search/marital-status"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:maritalStatus:order",
+          "valueString": "3"
         },
         {
           "name": "site:nav:menu:reports:text",
@@ -609,6 +685,22 @@
         {
           "name": "app:site:routes:upload:authenticate",
           "valueString": "true"
+        },
+        {
+          "name": "defaults:fields:Person.extension:practitioner.value[x]:valueReference:type",
+          "valueString": "reportSelect"
+        },
+        {
+          "name": "defaults:fields:Person.extension:practitioner.value[x]:valueReference:report",
+          "valueString": "ihris-es-report-staff-directorate"
+        },
+        {
+          "name": "defaults:fields:Person.extension:practitioner.value[x]:valueReference:reportReturnValue",
+          "valueString": "ihris-es-report-staff-directorate.id"
+        },
+        {
+          "name": "defaults:fields:Person.extension:practitioner.value[x]:valueReference:referenceDisplayPath",
+          "valueString": "name.where(use='official').given.first() + ' ' + name.where(use='official').family"
         }
       ]
     }

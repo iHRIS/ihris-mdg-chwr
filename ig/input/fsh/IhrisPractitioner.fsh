@@ -7,7 +7,7 @@ Severity:       #error
 Profile:        IhrisPractitioner
 Parent:         Practitioner
 Id:             ihris-practitioner
-Title:          "iHRIS Practitioner"
+Title:          "Health Worker"
 Description:    "iHRIS profile of Practitioner."
 * identifier 0..* MS
 * identifier ^label = "Identifier"
@@ -15,19 +15,20 @@ Description:    "iHRIS profile of Practitioner."
 * identifier ^constraint[0].severity = #error
 * identifier ^constraint[0].expression = "'Practitioner' | 'identifier' | iif(system.exists(), system & '|' & value, value)"
 * identifier ^constraint[0].human = "The identifier must be unique and another record has this identifier"
-* identifier.use MS
+* identifier.use 0..0 MS
 * identifier.use ^label = "Use"
 * identifier.type MS
 * identifier.type ^label = "Type"
 * identifier.type.coding 1..1 MS
 * identifier.type.coding ^label = "Type"
+* identifier.type.coding from IhrisMdgIdentifierType
 * identifier.system MS
 * identifier.system ^label = "System"
 * identifier.value MS
 * identifier.value ^label = "Value"
 * name 1..* MS
 * name ^label = "Name"
-* name.use MS
+* name.use 1..1 MS
 * name.use ^label = "Use"
 * name.family 1..1 MS
 * name.family ^label = "Last Name"
@@ -37,7 +38,7 @@ Description:    "iHRIS profile of Practitioner."
 * name.family ^constraint[0].human = "Name must be only text."
 * name.given 1..* MS
 * name.given ^label = "First Name"
-* name.prefix MS
+* name.prefix 0..1 MS
 * name.prefix ^label = "Prefix"
 * name.suffix 0..0
 //* name.suffix ^label = "Suffix"
@@ -73,7 +74,7 @@ Description:    "iHRIS profile of Practitioner."
 // * address.country ^label = "Country"*
 * gender 1..1 MS
 * gender ^label = "Gender"
-* birthDate MS
+* birthDate 1..1 MS
 * birthDate ^label = "Birth Date"
 * birthDate obeys ihris-age-18
 * birthDate ^minValueQuantity.system = "http://unitsofmeasure.org/"
@@ -198,7 +199,26 @@ Description:    "iHRIS extension for Practitioner marital status."
 * value[x] only Coding
 * valueCoding 1..1 MS
 * valueCoding ^label = "Marital Status"
-* valueCoding from http://hl7.org/fhir/ValueSet/marital-status (required)
+* valueCoding from IhrisMaritalStatusValueSet (required)
+
+ValueSet:       IhrisMaritalStatusValueSet
+Id:             ihris-marital-status-valueset
+Title:          "iHRIS Marital Status ValueSet"
+* ^date = "2023-10-29T08:41:04.362Z"
+* ^version = "0.2.0"
+* codes from system IhrisMaritalStatusCodeSystem
+
+CodeSystem:      IhrisMaritalStatusCodeSystem
+Id:             ihris-marital-status-codesystem
+Title:          "Marital Status"
+* ^date = "2023-10-29T08:41:04.362Z"
+* ^version = "0.2.0"
+* #single "Single" "Single"
+* #married "Married" "Married"
+* #divorced "Divorced" "Divorced"
+* #widowed "Widowed" "Widowed"
+* #separated "Separated" "Separated"
+* #other "Other" "Other"
 
 // Extension:      IhrisPractitionerDependents
 // Id:             ihris-practitioner-dependents
@@ -229,6 +249,21 @@ Title:            "iHRIS Relationship ValueSet"
 * ^version = "0.2.0"
 * codes from system IhrisRelationCodesystem
 
+ValueSet:         IhrisMdgIdentifierType
+Id:               ihris-mdg-identifier-type
+Title: "iHRIS Identifier Type ValueSet"
+* ^date = "2023-10-29T08:41:04.362Z"
+* ^version = "0.2.0"
+* codes from system IhrisMdgIdentifierCodesystem
+
+CodeSystem:      IhrisMdgIdentifierCodesystem
+Id:              ihris-mdg-identifier-codesystem
+Title:           "Identifier Types"
+* ^date = "2023-10-29T08:41:04.362Z"
+* ^version = "0.2.0"
+* #CIN "National Identintification Number" "National Identintification Number"
+
+
 Instance:       ihris-page-relation
 InstanceOf:     IhrisPage
 Title:          "iHRIS relationship type CodeSystem Page"
@@ -241,6 +276,40 @@ Usage:          #example
 * extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
 * extension[section][0].extension[title].valueString = "Relationship Type"
 * extension[section][0].extension[description].valueString = "Relationship Type"
+* extension[section][0].extension[name].valueString = "CodeSystem"
+* extension[section][0].extension[field][0].valueString = "CodeSystem.display"
+* extension[section][0].extension[field][1].valueString = "CodeSystem.code"
+* extension[section][0].extension[field][2].valueString = "CodeSystem.definition"
+
+Instance:      ihris-page-identifier
+InstanceOf:    IhrisPage
+Title:         "iHRIS identifier type CodeSystem Page"
+Usage:         #example
+* code = IhrisResourceCodeSystem#page
+* extension[display].extension[resource].valueReference = Reference(CodeSystem/ihris-mdg-identifier-codesystem)
+* extension[display].extension[search][0].valueString = "Code|code"
+* extension[display].extension[search][1].valueString = "Display|display"
+* extension[display].extension[field][0].extension[path].valueString = "CodeSystem.code"
+* extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
+* extension[section][0].extension[title].valueString = "Identifier Type"
+* extension[section][0].extension[description].valueString = "Identifier Type"
+* extension[section][0].extension[name].valueString = "CodeSystem"
+* extension[section][0].extension[field][0].valueString = "CodeSystem.display"
+* extension[section][0].extension[field][1].valueString = "CodeSystem.code"
+* extension[section][0].extension[field][2].valueString = "CodeSystem.definition"
+
+Instance:     ihris-page-marital-status
+InstanceOf:   IhrisPage
+Title:        "iHRIS marital status CodeSystem Page"
+Usage:        #example
+* code = IhrisResourceCodeSystem#page
+* extension[display].extension[resource].valueReference = Reference(CodeSystem/ihris-marital-status-codesystem)
+* extension[display].extension[search][0].valueString = "Code|code"
+* extension[display].extension[search][1].valueString = "Display|display"
+* extension[display].extension[field][0].extension[path].valueString = "CodeSystem.code"
+* extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
+* extension[section][0].extension[title].valueString = "Marital Status"
+* extension[section][0].extension[description].valueString = "Marital Status"
 * extension[section][0].extension[name].valueString = "CodeSystem"
 * extension[section][0].extension[field][0].valueString = "CodeSystem.display"
 * extension[section][0].extension[field][1].valueString = "CodeSystem.code"

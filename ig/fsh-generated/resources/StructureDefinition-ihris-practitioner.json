@@ -14,7 +14,7 @@
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner",
   "version": "0.1.0",
   "name": "IhrisPractitioner",
-  "title": "iHRIS Practitioner",
+  "title": "Health Worker",
   "status": "active",
   "description": "iHRIS profile of Practitioner.",
   "fhirVersion": "4.0.1",
@@ -1482,7 +1482,7 @@
         "isSummary": false,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/marital-status"
+          "valueSet": "http://ihris.org/fhir/ValueSet/ihris-marital-status-valueset"
         },
         "mapping": [
           {
@@ -1967,7 +1967,7 @@
         "comment": "Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.",
         "requirements": "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.use",
           "min": 0,
@@ -2200,6 +2200,10 @@
         "mustSupport": true,
         "isModifier": false,
         "isSummary": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://ihris.org/fhir/ValueSet/ihris-mdg-identifier-type"
+        },
         "mapping": [
           {
             "identity": "v2",
@@ -2661,7 +2665,7 @@
         "definition": "Identifies the purpose for this name.",
         "comment": "Applications can assume that a name is current unless it explicitly says that it is temporary or old.",
         "requirements": "Allows the appropriate name for a particular context of use to be selected from among a set of names.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "HumanName.use",
@@ -2864,7 +2868,7 @@
         "short": "Parts that come before the name",
         "definition": "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "base": {
           "path": "HumanName.prefix",
           "min": 0,
@@ -3152,7 +3156,7 @@
         "short": "The date  on which the practitioner was born",
         "definition": "The date of birth for the practitioner.",
         "requirements": "Needed for identification.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "base": {
           "path": "Practitioner.birthDate",
@@ -4877,6 +4881,7 @@
         "id": "Practitioner.identifier.use",
         "path": "Practitioner.identifier.use",
         "label": "Use",
+        "max": "0",
         "mustSupport": true
       },
       {
@@ -4891,7 +4896,11 @@
         "label": "Type",
         "min": 1,
         "max": "1",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://ihris.org/fhir/ValueSet/ihris-mdg-identifier-type"
+        }
       },
       {
         "id": "Practitioner.identifier.system",
@@ -4923,6 +4932,7 @@
         "id": "Practitioner.name.use",
         "path": "Practitioner.name.use",
         "label": "Use",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -4953,6 +4963,7 @@
         "id": "Practitioner.name.prefix",
         "path": "Practitioner.name.prefix",
         "label": "Prefix",
+        "max": "1",
         "mustSupport": true
       },
       {
@@ -4982,6 +4993,7 @@
         "id": "Practitioner.birthDate",
         "path": "Practitioner.birthDate",
         "label": "Birth Date",
+        "min": 1,
         "minValueQuantity": {
           "system": "http://unitsofmeasure.org/",
           "code": "a",

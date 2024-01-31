@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisMaritalStatusCodeSystem",
+  "id": "ihris-marital-status-codesystem",
+  "title": "Marital Status",
+  "version": "0.2.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-marital-status-codesystem",
+  "concept": [
+    {
+      "code": "single",
+      "display": "Single",
+      "definition": "Single"
+    },
+    {
+      "code": "married",
+      "display": "Married",
+      "definition": "Married"
+    },
+    {
+      "code": "divorced",
+      "display": "Divorced",
+      "definition": "Divorced"
+    },
+    {
+      "code": "widowed",
+      "display": "Widowed",
+      "definition": "Widowed"
+    },
+    {
+      "code": "separated",
+      "display": "Separated",
+      "definition": "Separated"
+    },
+    {
+      "code": "other",
+      "display": "Other",
+      "definition": "Other"
+    }
+  ],
+  "date": "2023-10-29T08:41:04.362Z",
+  "count": 6
+}

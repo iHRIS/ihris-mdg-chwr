@@ -12,7 +12,7 @@ Usage:          #definition
 
 * item[0].linkId = "Practitioner"
 * item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner"
-* item[0].text = "Health Worker|Primary demographic details"
+* item[0].text = "Community Health Worker|Primary demographic details"
 * item[0].type = #group
 
 * item[0].item[0].linkId = "Practitioner.name[0]"
@@ -44,12 +44,12 @@ Usage:          #definition
 * item[0].item[0].item[2].required = true
 * item[0].item[0].item[2].repeats = true
 
-* item[0].item[0].item[3].linkId = "Practitioner.name[0].prefix[0]"
+* item[0].item[0].item[3].linkId = "Practitioner.name[0].prefix"
 * item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.prefix"
 * item[0].item[0].item[3].text = "Prefix"
 * item[0].item[0].item[3].type = #string
 * item[0].item[0].item[3].required = false
-* item[0].item[0].item[3].repeats = true
+* item[0].item[0].item[3].repeats = false
 
 * item[0].item[1].linkId = "Practitioner.birthDate"
 * item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.birthDate"
@@ -70,14 +70,15 @@ Usage:          #definition
 * item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:maritalStatus.value[x]:valueCoding"
 * item[0].item[3].text = "Marital Status"
 * item[0].item[3].type = #choice
-* item[0].item[3].answerValueSet = "http://hl7.org/fhir/ValueSet/marital-status"
+* item[0].item[3].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-marital-status-valueset"
 * item[0].item[3].required = false
 * item[0].item[3].repeats = false
 
 * item[0].item[4].linkId = "Practitioner.extension[1]"
-* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:nationality.value[x]:valueReference"
+* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:nationality.value[x]:valueCoding"
 * item[0].item[4].text = "Nationality"
-* item[0].item[4].type = #reference
+* item[0].item[4].type = #choice
+* item[0].item[4].answerValueSet = "http://hl7.org/fhir/ValueSet/iso3166-1-2"
 * item[0].item[4].required = false
 * item[0].item[4].repeats = false
 
@@ -99,8 +100,8 @@ Usage:          #definition
 * item[1].text = "Contact Details| phone numbers"
 * item[1].type = #group
 
-* item[1].item[0].linkId = "Practitioner.telecom[0].value"
-* item[1].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.value"
+* item[1].item[0].linkId = "Practitioner.extension[3]"
+* item[1].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]:valueString"
 * item[1].item[0].text = "Mobile Phone"
 * item[1].item[0].type = #string
 * item[1].item[0].required = false
@@ -147,7 +148,7 @@ Usage:          #definition
 * item[2].item[3].required = false
 * item[2].item[3].repeats = false
 
-* item[2].item[4].linkId = "PractitionerRole.location[0]"
+* item[2].item[4].linkId = "PractitionerRole.location"
 * item[2].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.location"
 * item[2].item[4].text = "Facility/Community Site Linked to"
 * item[2].item[4].type = #reference
@@ -162,7 +163,7 @@ Usage:          #definition
 * item[2].item[5].repeats = false
 
 * item[2].item[6].linkId = "PractitionerRole.active"
-* item[2].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitione-roler#PractitionerRole.active"
+* item[2].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.active"
 * item[2].item[6].text = "Active"
 * item[2].item[6].type = #boolean
 * item[2].item[6].required = true
@@ -176,7 +177,7 @@ Usage:          #definition
 * item[3].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier"
 * item[3].item[0].text = "CIN (National ID Number)"
 * item[3].item[0].type = #group
-* item[3].item[0].repeats = true
+* item[3].item[0].repeats = false
 * item[3].item[0].required = false
 
 * item[3].item[0].item[0].linkId = "Practitioner.identifier[0].system"
@@ -197,6 +198,9 @@ Usage:          #definition
 * item[3].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.type"
 * item[3].item[0].item[2].text = "ID Type"
 * item[3].item[0].item[2].type = #choice
-* item[3].item[0].item[2].answerValueSet = "http://hl7.org/fhir/ValueSet/identifier-type"
+* item[3].item[0].item[2].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-mdg-identifier-type"
 * item[3].item[0].item[2].repeats = false
-* item[3].item[0].item[2].required = false
+* item[3].item[0].item[2].required = true
+* item[3].item[0].item[2].readOnly = true
+* item[3].item[0].item[2].answerOption.valueCoding = http://ihris.org/fhir/CodeSystem/ihris-mdg-identifier-codesystem#CIN
+* item[3].item[0].item[2].answerOption.initialSelected = true

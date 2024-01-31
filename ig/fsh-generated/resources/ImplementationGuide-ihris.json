@@ -166,7 +166,7 @@
         "reference": {
           "reference": "StructureDefinition/ihris-practitioner"
         },
-        "name": "iHRIS Practitioner",
+        "name": "Health Worker",
         "description": "iHRIS profile of Practitioner.",
         "exampleBoolean": false
       },
@@ -182,7 +182,7 @@
         "reference": {
           "reference": "StructureDefinition/ihris-practitioner-role"
         },
-        "name": "iHRIS Practitioner Role",
+        "name": "Position",
         "description": "iHRIS profile of Practitioner Role.",
         "exampleBoolean": false
       },
@@ -527,14 +527,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ihris-user-practitioner"
-        },
-        "name": "iHRIS User Practitioner",
-        "description": "iHRIS user Practitioner extension for local users.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ihris-visualization-categories"
         },
         "name": "iHRIS Visualization Categories",
@@ -733,14 +725,14 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ihris-Facility-identifier-valueset"
+          "reference": "ValueSet/ihris-facility-identifier-valueset"
         },
         "name": "iHRIS facility Identifier ValueSet",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "ValueSet/Ihris-facility-ownership"
+          "reference": "ValueSet/ihris-facility-ownership"
         },
         "name": "iHRIS Facility Ownership ValueSet",
         "exampleBoolean": false
@@ -780,6 +772,20 @@
           "reference": "ValueSet/ihris-jurisdiction-type"
         },
         "name": "iHRIS Jurisdiction Type ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ihris-marital-status-valueset"
+        },
+        "name": "iHRIS Marital Status ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ihris-mdg-identifier-type"
+        },
+        "name": "iHRIS Identifier Type ValueSet",
         "exampleBoolean": false
       },
       {
@@ -1047,14 +1053,14 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/ihris-Facility-identifier"
+          "reference": "CodeSystem/ihris-facility-identifier"
         },
         "name": "Identifier Type",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CodeSystem/Ihris-facility-ownership-type"
+          "reference": "CodeSystem/ihris-facility-ownership-type"
         },
         "name": "Facility Ownership Type",
         "exampleBoolean": false
@@ -1094,6 +1100,20 @@
           "reference": "CodeSystem/ihris-jurisdiction-type"
         },
         "name": "Jurisdiction Type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ihris-marital-status-codesystem"
+        },
+        "name": "Marital Status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ihris-mdg-identifier-codesystem"
+        },
+        "name": "Identifier Types",
         "exampleBoolean": false
       },
       {
@@ -1368,6 +1388,13 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-es-report-staff-directorate"
+        },
+        "name": "ihris-es-report-staff-directorate",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-es-report-staff-test"
         },
         "name": "Staff Relationship Test",
@@ -1445,9 +1472,37 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-page-facility-identifier"
+        },
+        "name": "iHRIS Facility Identifier Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-facility-type"
+        },
+        "name": "iHRIS Facility Type Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-page-facilityinfo"
         },
         "name": "iHRIS Basic FacilityInfo Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-facilityownership"
+        },
+        "name": "iHRIS Facility Ownership Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-identifier"
+        },
+        "name": "iHRIS identifier type CodeSystem Page",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
       },
       {
@@ -1466,9 +1521,23 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-page-jurisdiction-type"
+        },
+        "name": "iHRIS Jurisdiction Type Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-page-location"
         },
         "name": "iHRIS Location Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-marital-status"
+        },
+        "name": "iHRIS marital status CodeSystem Page",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
       },
       {

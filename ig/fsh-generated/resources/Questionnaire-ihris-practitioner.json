@@ -11,7 +11,7 @@
     {
       "linkId": "Practitioner",
       "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner",
-      "text": "Health Worker|Primary demographic details",
+      "text": "Community Health Worker|Primary demographic details",
       "type": "group",
       "item": [
         {
@@ -55,12 +55,12 @@
               "repeats": true
             },
             {
-              "linkId": "Practitioner.name[0].prefix[0]",
+              "linkId": "Practitioner.name[0].prefix",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.prefix",
               "text": "Prefix",
               "type": "string",
               "required": false,
-              "repeats": true
+              "repeats": false
             }
           ]
         },
@@ -86,15 +86,16 @@
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:maritalStatus.value[x]:valueCoding",
           "text": "Marital Status",
           "type": "choice",
-          "answerValueSet": "http://hl7.org/fhir/ValueSet/marital-status",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-marital-status-valueset",
           "required": false,
           "repeats": false
         },
         {
           "linkId": "Practitioner.extension[1]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:nationality.value[x]:valueReference",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:nationality.value[x]:valueCoding",
           "text": "Nationality",
-          "type": "reference",
+          "type": "choice",
+          "answerValueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2",
           "required": false,
           "repeats": false
         },
@@ -122,8 +123,8 @@
       "type": "group",
       "item": [
         {
-          "linkId": "Practitioner.telecom[0].value",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.value",
+          "linkId": "Practitioner.extension[3]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]:valueString",
           "text": "Mobile Phone",
           "type": "string",
           "required": false,
@@ -201,7 +202,7 @@
           "repeats": false
         },
         {
-          "linkId": "PractitionerRole.location[0]",
+          "linkId": "PractitionerRole.location",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.location",
           "text": "Facility/Community Site Linked to",
           "type": "reference",
@@ -218,7 +219,7 @@
         },
         {
           "linkId": "PractitionerRole.active",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitione-roler#PractitionerRole.active",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.active",
           "text": "Active",
           "type": "boolean",
           "required": true
@@ -236,7 +237,7 @@
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier",
           "text": "CIN (National ID Number)",
           "type": "group",
-          "repeats": true,
+          "repeats": false,
           "required": false,
           "item": [
             {
@@ -260,9 +261,19 @@
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.type",
               "text": "ID Type",
               "type": "choice",
-              "answerValueSet": "http://hl7.org/fhir/ValueSet/identifier-type",
+              "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-mdg-identifier-type",
               "repeats": false,
-              "required": false
+              "required": true,
+              "readOnly": true,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "code": "CIN",
+                    "system": "http://ihris.org/fhir/CodeSystem/ihris-mdg-identifier-codesystem"
+                  },
+                  "initialSelected": true
+                }
+              ]
             }
           ]
         }
