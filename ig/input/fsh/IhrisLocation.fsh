@@ -23,13 +23,27 @@ Description:    "iHRIS Profile of Locations to manage jurisdictions."
 * position.latitude ^label = "Latitude"
 * position.longitude MS
 * position.longitude ^label = "Longitude"
-* extension contains http://ihris.org/fhir/StructureDefinition/location-boundary-geojson named boundary 0..1 MS
+* extension contains http://ihris.org/fhir/StructureDefinition/location-boundary-geojson named boundary 0..1 MS and
+          IhrisLocationPopulation named population 0..1 MS
+* extension[population] ^label = "Population"
+* extension[population].valueInteger 1..1 MS
+* extension[population].valueInteger ^label = "Population"
 * extension[boundary] 0..1 MS
 * extension[boundary] ^label = "Location Boundary (GeoJSON)"
 * extension[boundary].valueAttachment 0..1 MS
 * extension[boundary].valueAttachment ^label = "Location Boundary (GeoJSON)"
 * extension[boundary].valueAttachment.contentType = #application/geo+json
 * extension[boundary].valueAttachment.data MS
+
+Extension:      IhrisLocationPopulation
+Id:             ihris-location-population
+Title:          "iHRIS Location Population"
+Description:    "iHRIS extension for location population."
+* ^context.type = #element
+* ^context.expression = "Location"
+* value[x] only integer
+* valueInteger 1..1 MS
+* valueInteger ^label = "Population"
 
 Alias: $m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
 
@@ -85,7 +99,6 @@ Description:    "iHRIS Profile of Locations to manage facilities."
 * identifier.type.coding 0..1 MS
 * identifier.type.coding ^label = "Type"
 * identifier.type.coding from IhrisFacilityIdentifierValueSet
-* identifier.type from IhrisFacilityIdentifierValueSet
 * name 1..1 MS
 * name ^label = "Name of CSB"
 * status 1..1 MS

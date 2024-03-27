@@ -360,6 +360,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ihris-location-population"
+        },
+        "name": "iHRIS Location Population",
+        "description": "iHRIS extension for location population.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ihris-location-reference"
         },
         "name": "iHRIS Location Reference",
@@ -1272,6 +1280,13 @@
           "reference": "SearchParameter/active-user"
         },
         "name": "active-user",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/basic-location"
+        },
+        "name": "basic-location",
         "exampleBoolean": false
       },
       {

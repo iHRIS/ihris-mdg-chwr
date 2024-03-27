@@ -20,7 +20,7 @@ Title:          "Incentive details"
       incentive 1..1 MS and
       motivation 0..1 MS
 * extension[incentive].value[x] only Coding
-* extension[incentive].valueCoding ^label = "Incentive"
+* extension[incentive].valueCoding ^label = "Activity Packs"
 * extension[incentive].valueCoding from IhrisIncentiveValueSet (required)
 * extension[motivation].value[x] only Coding
 * extension[motivation].valueCoding ^label =  "Monthly Motivation status"

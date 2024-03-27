@@ -16,3 +16,18 @@ Description:    "iHRIS Location Reference to link Basic resource to a Location."
 * value[x] only Reference 
 * valueReference only Reference(IhrisFacility)
 * valueReference ^label = "Location"
+
+Instance: basic-location
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "http://ihris.org/fhir/SearchParameter/basic-location"
+* name = "Search Parameter on an location extension on Basic resources"
+* status = #active
+* description = "Search by location for a Basic resource."
+* code = #location
+* base = #Basic
+* type = #reference
+* expression = "Basic.extension('http://ihris.org/fhir/StructureDefinition/ihris-location-reference')"
+* xpath = "f:Basic/f:extension[@url='http://ihris.org/fhir/StructureDefinition/ihris-location-reference']"
+* xpathUsage = #normal
+* target = #Location

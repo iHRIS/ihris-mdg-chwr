@@ -53,7 +53,7 @@
                 },
                 {
                   "url": "paths:given:fhirpath",
-                  "valueString": "name.where(use='official').given"
+                  "valueString": "name.where(use='official').first().given"
                 },
                 {
                   "url": "paths:given:join",

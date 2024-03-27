@@ -46,11 +46,11 @@
             },
             {
               "url": "fhirpath",
-              "valueString": "identifier.where(type.coding.where(code='NationalID' or code='Passport' or code='employeeId')).value"
+              "valueString": "identifier.where(type.coding.where(code='CIN')).value"
             },
             {
               "url": "display",
-              "valueString": "Identifier(NID/PP/EmpID)"
+              "valueString": "CIN"
             },
             {
               "url": "filter",
@@ -411,31 +411,6 @@
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "name",
-              "valueString": "speciality"
-            },
-            {
-              "url": "fhirpath",
-              "valueString": "speciality.coding.display"
-            },
-            {
-              "url": "display",
-              "valueString": "`speciality"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportLink"
@@ -474,7 +449,7 @@
             },
             {
               "url": "display",
-              "valueString": "Facility/Place of work"
+              "valueString": "Facility/Community Site"
             },
             {
               "url": "filter",

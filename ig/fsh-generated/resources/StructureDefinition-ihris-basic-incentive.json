@@ -1921,7 +1921,6 @@
       {
         "id": "Basic.extension:incentive.extension:incentive.valueCoding",
         "path": "Basic.extension.extension.valueCoding",
-        "label": "Activity Packs",
         "min": 1,
         "mustSupport": true
       },

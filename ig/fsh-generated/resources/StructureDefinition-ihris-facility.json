@@ -1751,8 +1751,19 @@
         "isModifier": false,
         "isSummary": true,
         "binding": {
-          "strength": "required",
-          "valueSet": "http://ihris.org/fhir/ValueSet/ihris-facility-identifier-valueset"
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "IdentifierType"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "extensible",
+          "description": "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/identifier-type"
         },
         "mapping": [
           {
@@ -3686,11 +3697,7 @@
         "id": "Location.identifier.type",
         "path": "Location.identifier.type",
         "label": "Type",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://ihris.org/fhir/ValueSet/ihris-facility-identifier-valueset"
-        }
+        "mustSupport": true
       },
       {
         "id": "Location.identifier.type.coding",

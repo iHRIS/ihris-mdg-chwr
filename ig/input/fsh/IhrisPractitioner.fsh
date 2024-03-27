@@ -75,7 +75,7 @@ Description:    "iHRIS profile of Practitioner."
 * gender 1..1 MS
 * gender ^label = "Gender"
 * birthDate 1..1 MS
-* birthDate ^label = "Birth Date"
+* birthDate ^label = "Date Of Birth"
 * birthDate obeys ihris-age-18
 * birthDate ^minValueQuantity.system = "http://unitsofmeasure.org/"
 * birthDate ^minValueQuantity.code = #a
@@ -96,12 +96,9 @@ Description:    "iHRIS profile of Practitioner."
 * communication.extension[proficiency].extension[level].valueCoding MS
 * communication.extension[proficiency].extension[type].valueCoding MS
 * extension contains
-    IhrisPractitionerResidence named residence 0..1 MS and
     IhrisPractitionerNationality named nationality 0..1 and
     IhrisPractitionerMaritalStatus named maritalStatus 0..1 and
     IhrisPractitionerPhone named phone 0..1 MS
-* extension[residence] ^label = "Residence"
-* extension[residence].valueReference.reference MS
 * extension[nationality]  ^label = "Nationality"
 * extension[nationality].valueCoding MS
 * extension[maritalStatus]  ^label = "Marital Status"

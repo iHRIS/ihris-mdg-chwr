@@ -15,8 +15,8 @@ Usage:          #example
 * extension[reportdetails].extension[locationBasedConstraint].valueBoolean = true
 
 * extension[reportdetails].extension[reportelement][0].extension[name].valueString = "Id"
-* extension[reportdetails].extension[reportelement][0].extension[fhirpath].valueString = "identifier.where(type.coding.where(code='NationalID' or code='Passport' or code='employeeId')).value"
-* extension[reportdetails].extension[reportelement][0].extension[display].valueString = "Identifier(NID/PP/EmpID)"
+* extension[reportdetails].extension[reportelement][0].extension[fhirpath].valueString = "identifier.where(type.coding.where(code='CIN')).value"
+* extension[reportdetails].extension[reportelement][0].extension[display].valueString = "CIN"
 * extension[reportdetails].extension[reportelement][0].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][0].extension[dropDownFilter].valueBoolean = false
 
@@ -104,12 +104,6 @@ Usage:          #example
 * extension[reportlink][0].extension[reportelement][2].extension[filter].valueBoolean = true
 * extension[reportlink][0].extension[reportelement][2].extension[dropDownFilter].valueBoolean = false
 
-* extension[reportlink][0].extension[reportelement][3].extension[name].valueString = "speciality"
-* extension[reportlink][0].extension[reportelement][3].extension[fhirpath].valueString = "speciality.coding.display"
-* extension[reportlink][0].extension[reportelement][3].extension[display].valueString = "`speciality"
-* extension[reportlink][0].extension[reportelement][3].extension[filter].valueBoolean = true
-* extension[reportlink][0].extension[reportelement][3].extension[dropDownFilter].valueBoolean = true
-
 * extension[reportlink][1].extension[name].valueString = "facility"
 * extension[reportlink][1].extension[resource].valueString = "Location"
 * extension[reportlink][1].extension[linkElement].valueString = "Location.id"
@@ -117,6 +111,6 @@ Usage:          #example
 * extension[reportlink][1].extension[multiple].valueBoolean = false
 * extension[reportlink][1].extension[reportelement][0].extension[name].valueString = "dutyPost"
 * extension[reportlink][1].extension[reportelement][0].extension[fhirpath].valueString = "name"
-* extension[reportlink][1].extension[reportelement][0].extension[display].valueString = "Facility/Place of work"
+* extension[reportlink][1].extension[reportelement][0].extension[display].valueString = "Facility/Community Site"
 * extension[reportlink][1].extension[reportelement][0].extension[filter].valueBoolean = true
 * extension[reportlink][1].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true

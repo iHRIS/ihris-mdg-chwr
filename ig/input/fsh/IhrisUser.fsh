@@ -130,7 +130,7 @@ Title:          "iHRIS User Location"
 Description:    "iHRIS user Location extension for local users."
 * ^context.type = #element
 * ^context.expression = "Person"
-* value[x] only Reference(Location)
+* value[x] only Reference(IhrisJurisdiction or IhrisFacility)
 * valueReference 1..1 MS
 * valueReference ^label = "Location"
 * valueReference.reference 1..1 MS
