@@ -24,11 +24,16 @@
       "definition": "District"
     },
     {
-      "code": "municipality",
-      "display": "Municipality",
-      "definition": "Municipality"
+      "code": "commune",
+      "display": "Commune",
+      "definition": "Commune"
+    },
+    {
+      "code": "fokontany",
+      "display": "Fokontany",
+      "definition": "Fokontany"
     }
   ],
   "date": "2023-06-12T08:41:04.362Z",
-  "count": 4
+  "count": 5
 }

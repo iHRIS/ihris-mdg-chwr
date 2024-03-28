@@ -1,0 +1,949 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-01",
+        "name": "Androy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-01"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-02",
+        "name": "Atsimo Atsinanana",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-02"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-03",
+        "name": "Melaky",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-03"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-04",
+        "name": "Anosy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-04"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-05",
+        "name": "Sava",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-05"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-06",
+        "name": "Haute Matsiatra",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-06"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-07",
+        "name": "Amoron-I Mania",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-07"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-08",
+        "name": "Analamanga",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-08"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-09",
+        "name": "Vakinankaratra",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-09"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-10",
+        "name": "Betsiboka",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-10"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-11",
+        "name": "Menabe",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-11"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-12",
+        "name": "Atsinanana",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-12"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-13",
+        "name": "Fitovinany",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-13"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-14",
+        "name": "Vatovavy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-14"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-15",
+        "name": "Alaotra Mangoro",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-15"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-16",
+        "name": "Itasy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-16"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-17",
+        "name": "Diana",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-17"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18",
+        "name": "Atsimo Andrefana",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-19",
+        "name": "Boeny",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-19"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-20",
+        "name": "Bongolava",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-20"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-21",
+        "name": "Ihorombe",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-21"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-22",
+        "name": "Analanjirofo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-22"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-23",
+        "name": "Sofia",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MG"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "region"
+              }
+            ],
+            "text": "Region"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-23"
+      }
+    }
+  ]
+}

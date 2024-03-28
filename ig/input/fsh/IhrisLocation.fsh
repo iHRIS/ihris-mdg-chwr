@@ -224,7 +224,8 @@ Title:           "Jurisdiction Type"
 * #country "Country" "Country"
 * #region "region" "region"
 * #district "District" "District"
-* #municipality "Municipality" "Municipality"
+* #commune "Commune" "Commune"
+* #fokontany "Fokontany" "Fokontany"
 
 ValueSet:         IhrisFacilityTypeValueSet
 Id:               ihris-facility-type
