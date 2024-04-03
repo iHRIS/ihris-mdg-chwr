@@ -52,32 +52,10 @@ const userDataValidation = (userData) => {
 
         let reference = [
             {Gender: "genderCoding"},
-            {Marital_Status: "maritalCoding"},
-            {Own_Phone: "ownPhoneCoding"},
-            {Phone_Reporting: "phoneReportingCoding"},
-            {English: "englishCoding"},
-            {Other: "languageCoding"},
             {Location: "locationId"},
             {Job: "jobCoding"},
-            {Health_Worker_Type: "jobTypeCoding"},
             {Facility: "facilityId"},
-            //{Parish: "parishId"},
-            // {Village_Served1: "villageId1"},
-            // {Village_Served2: "villageId2"},
-            {Recruitment_Mechanism: "recruitmentCoding"},
-            {Operational_Level: "operationalCoding"},
-            {Highest_Education: "educationCoding"},
-            {Last_Training: "trainingCoding"},
-            {Last_Training_Ip: "trainingIpCoding"},
-            {Frequency: "frequencyCoding"},
-            {Financial: "financialCoding"},
-            {Last_Mentorship: "mentorshipCoding"},
-            {Last_Mentorship_IP: "mentorshipIPCoding"},
-            {Incentive1: "incentive1Coding"},
-            {Incentive2: "incentive2Coding"},
-            {Incentive3: "incentive3Coding"},
-            {Service1: "service1Coding"},
-            {Service1: "service2Coding"}
+            {Category: "categoryCoding"}
         ];
 
         let dateType = [
@@ -114,11 +92,10 @@ const userDataValidation = (userData) => {
 
         let requiredFieldKeys = [
             // "PMIS",
-            // "FileNumber",
             "Surname",
             "Firstname",
             "Location",
-            "Gender",
+            //"Gender",
             "Job",
             "Facility",
         ];
