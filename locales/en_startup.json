@@ -53,8 +53,11 @@
       "Search Users": "Search Users",
       "Audit Logs": "Audit Logs",
       "Change Password": "Change Password",
-      "Apps": "Apps"
+      "Apps": "Apps",
+      "Staff Directorate": "Staff Directorate",
+      "User Role Tasks": "User Role Tasks"
     },
+    "intro": {},
     "ihris-codesystem": {},
     "ihris-search": {},
     "ihris-search-term": {},
@@ -427,6 +430,17 @@
       "User Status": "User Status"
     },
     "hardcoded-texts": {
+      "must be an integer": "must be an integer",
+      "must be an unsigned integer": "must be an unsigned integer",
+      "must be a positive integer": "must be a positive integer",
+      "must be a number": "must be a number",
+      "must be a Decimal": "must be a Decimal",
+      "is more than": "is more than",
+      "is required": "is required",
+      "true": "true",
+      "false": "false",
+      "print": "Print",
+      "Added successfully": "Added successfully.",
       "Installed Apps": "Installed Apps",
       "Install": "Install",
       "Install New iHRIS App": "Install New iHRIS App",
@@ -502,7 +516,22 @@
       "Export": "Export",
       "Customize Report": "Customize Report",
       "Please fill in all fields": "Please fill in all fields",
-      "what_is_ihris": "iHRIS is IntraHealth International's free, open source software that helps countries around the world track and manage their health workforce data to improve access to services. Countries use it to capture and maintain high-quality information for health workforce planning, management, regulation, and training."
+      "what_is_ihris": "iHRIS is IntraHealth International's free, open source software that helps countries around the world track and manage their health workforce data to improve access to services. Countries use it to capture and maintain high-quality information for health workforce planning, management, regulation, and training.",
+      "Filters": "Filters",
+      "Report": "Report",
+      "Configure": "Configure",
+      "Last Ended Indexing Time": "Last Ended Indexing Time",
+      "Last Began Indexing Time": "Last Began Indexing Time",
+      "Meta Data":"Meta Data",
+      "Index Name": "Index Name",
+      "FHIR Report Version": "FHIR Report Version",
+      "FHIR Report Name": "FHIR Report Name",
+      "FHIR Report Last Updated": "FHIR Report Last Updated",
+      "Reload": "Reload",
+      "This will cache the report from the last time it was cached.": "This will cache the report from the last time it was cached.",
+      "Fresh Load": "Fresh Load",
+      "This will cache the report afresh": "This will cache the report afresh",
+      "Print": "Print"
     }
   }
 }
