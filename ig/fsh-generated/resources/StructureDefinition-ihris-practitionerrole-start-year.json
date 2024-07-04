@@ -237,7 +237,7 @@
         },
         "type": [
           {
-            "code": "integer"
+            "code": "date"
           }
         ],
         "constraint": [
@@ -260,9 +260,9 @@
         ]
       },
       {
-        "id": "Extension.value[x]:valueInteger",
+        "id": "Extension.value[x]:valueDate",
         "path": "Extension.value[x]",
-        "sliceName": "valueInteger",
+        "sliceName": "valueDate",
         "label": "Start Year",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -275,7 +275,7 @@
         },
         "type": [
           {
-            "code": "integer"
+            "code": "date"
           }
         ],
         "constraint": [
@@ -333,13 +333,13 @@
         },
         "type": [
           {
-            "code": "integer"
+            "code": "date"
           }
         ]
       },
       {
-        "id": "Extension.valueInteger",
-        "path": "Extension.valueInteger",
+        "id": "Extension.valueDate",
+        "path": "Extension.valueDate",
         "label": "Start Year",
         "min": 0,
         "max": "1",

@@ -30,26 +30,26 @@ Usage:          #definition
 * item[0].item[0].item[0].answerOption.valueCoding = http://hl7.org/fhir/name-use#official
 * item[0].item[0].item[0].answerOption.initialSelected = true
 
-* item[0].item[0].item[1].linkId = "Practitioner.name[0].family"
-* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.family"
-* item[0].item[0].item[1].text = "Last Name"
+* item[0].item[0].item[1].linkId = "Practitioner.name[0].prefix"
+* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.prefix"
+* item[0].item[0].item[1].text = "Prefix"
 * item[0].item[0].item[1].type = #string
-* item[0].item[0].item[1].required = true
+* item[0].item[0].item[1].required = false
 * item[0].item[0].item[1].repeats = false
 
-* item[0].item[0].item[2].linkId = "Practitioner.name[0].given[0]"
-* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.given"
-* item[0].item[0].item[2].text = "First Names"
+* item[0].item[0].item[2].linkId = "Practitioner.name[0].family"
+* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.family"
+* item[0].item[0].item[2].text = "Last Name"
 * item[0].item[0].item[2].type = #string
 * item[0].item[0].item[2].required = true
-* item[0].item[0].item[2].repeats = true
+* item[0].item[0].item[2].repeats = false
 
-* item[0].item[0].item[3].linkId = "Practitioner.name[0].prefix"
-* item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.prefix"
-* item[0].item[0].item[3].text = "Prefix"
+* item[0].item[0].item[3].linkId = "Practitioner.name[0].given[0]"
+* item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.given"
+* item[0].item[0].item[3].text = "First Names"
 * item[0].item[0].item[3].type = #string
-* item[0].item[0].item[3].required = false
-* item[0].item[0].item[3].repeats = false
+* item[0].item[0].item[3].required = true
+* item[0].item[0].item[3].repeats = true
 
 * item[0].item[1].linkId = "Practitioner.birthDate"
 * item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.birthDate"
@@ -81,13 +81,6 @@ Usage:          #definition
 * item[0].item[4].answerValueSet = "http://hl7.org/fhir/ValueSet/iso3166-1-2"
 * item[0].item[4].required = false
 * item[0].item[4].repeats = false
-
-* item[0].item[5].linkId = "Practitioner.extension[2]"
-* item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:residence.value[x]:valueReference"
-* item[0].item[5].text = "Residence"
-* item[0].item[5].type = #reference
-* item[0].item[5].required = false
-* item[0].item[5].repeats = false
 
 * item[0].item[6].linkId = "Practitioner.active"
 * item[0].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.active"
@@ -155,10 +148,10 @@ Usage:          #definition
 * item[2].item[4].required = false
 * item[2].item[4].repeats = false
 
-* item[2].item[5].linkId = "PractitionerRole.extension[0]"
-* item[2].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:startYear.value[x]:valueInteger"
+* item[2].item[5].linkId = "PractitionerRole.extension[0]#year"
+* item[2].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:startYear.value[x]:valueDate"
 * item[2].item[5].text = "Year of commissioning as AC"
-* item[2].item[5].type = #integer
+* item[2].item[5].type = #date
 * item[2].item[5].required = false
 * item[2].item[5].repeats = false
 
@@ -180,27 +173,20 @@ Usage:          #definition
 * item[3].item[0].repeats = false
 * item[3].item[0].required = false
 
-* item[3].item[0].item[0].linkId = "Practitioner.identifier[0].system"
-* item[3].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.system"
-* item[3].item[0].item[0].text = "System"
+* item[3].item[0].item[0].linkId = "Practitioner.identifier[0].value"
+* item[3].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.value"
+* item[3].item[0].item[0].text = "ID Number"
 * item[3].item[0].item[0].type = #string
 * item[3].item[0].item[0].repeats = false
 * item[3].item[0].item[0].required = false
 
-* item[3].item[0].item[1].linkId = "Practitioner.identifier[0].value"
-* item[3].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.value"
-* item[3].item[0].item[1].text = "ID Number"
-* item[3].item[0].item[1].type = #string
+* item[3].item[0].item[1].linkId = "Practitioner.identifier[0].type"
+* item[3].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.type"
+* item[3].item[0].item[1].text = "ID Type"
+* item[3].item[0].item[1].type = #choice
+* item[3].item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-mdg-identifier-type"
 * item[3].item[0].item[1].repeats = false
-* item[3].item[0].item[1].required = false
-
-* item[3].item[0].item[2].linkId = "Practitioner.identifier[0].type"
-* item[3].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.type"
-* item[3].item[0].item[2].text = "ID Type"
-* item[3].item[0].item[2].type = #choice
-* item[3].item[0].item[2].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-mdg-identifier-type"
-* item[3].item[0].item[2].repeats = false
-* item[3].item[0].item[2].required = true
-* item[3].item[0].item[2].readOnly = true
-* item[3].item[0].item[2].answerOption.valueCoding = http://ihris.org/fhir/CodeSystem/ihris-mdg-identifier-codesystem#CIN
-* item[3].item[0].item[2].answerOption.initialSelected = true
+* item[3].item[0].item[1].required = true
+* item[3].item[0].item[1].readOnly = true
+* item[3].item[0].item[1].answerOption.valueCoding = http://ihris.org/fhir/CodeSystem/ihris-mdg-identifier-codesystem#CIN
+* item[3].item[0].item[1].answerOption.initialSelected = true

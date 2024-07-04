@@ -39,6 +39,14 @@
               ]
             },
             {
+              "linkId": "Practitioner.name[0].prefix",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.prefix",
+              "text": "Prefix",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            },
+            {
               "linkId": "Practitioner.name[0].family",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.family",
               "text": "Last Name",
@@ -53,14 +61,6 @@
               "type": "string",
               "required": true,
               "repeats": true
-            },
-            {
-              "linkId": "Practitioner.name[0].prefix",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.prefix",
-              "text": "Prefix",
-              "type": "string",
-              "required": false,
-              "repeats": false
             }
           ]
         },
@@ -99,14 +99,7 @@
           "required": false,
           "repeats": false
         },
-        {
-          "linkId": "Practitioner.extension[2]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:residence.value[x]:valueReference",
-          "text": "Residence",
-          "type": "reference",
-          "required": false,
-          "repeats": false
-        },
+        null,
         {
           "linkId": "Practitioner.active",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.active",
@@ -210,10 +203,10 @@
           "repeats": false
         },
         {
-          "linkId": "PractitionerRole.extension[0]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:startYear.value[x]:valueInteger",
+          "linkId": "PractitionerRole.extension[0]#year",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:startYear.value[x]:valueDate",
           "text": "Year of commissioning as AC",
-          "type": "integer",
+          "type": "date",
           "required": false,
           "repeats": false
         },
@@ -240,14 +233,6 @@
           "repeats": false,
           "required": false,
           "item": [
-            {
-              "linkId": "Practitioner.identifier[0].system",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.system",
-              "text": "System",
-              "type": "string",
-              "repeats": false,
-              "required": false
-            },
             {
               "linkId": "Practitioner.identifier[0].value",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.value",

@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-03-28T10:16:26.322Z",
+        "when": "2024-07-04T10:34:36.225Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "sZsEij48jomoQua8VkD1B5oo3OYdNQ0MpSdKOAxUEzja9ao1KRbjBUmXPjLOpaYDYJzpJnrEZB657jb6kBdgb5OENom/WMQd3Vx5PwVLrdPQfRKmdwRiy5P8izGYiY/BhYQy3UoOgoMnXjWNfyIS8zuX3E58/AnLnm5y4hbkMoc="
+        "data": "aVJMenrSyzDcJ6Q41SHRB7dWJ93s0/ECHouMYKOpQA5lmrfYA6aLpkEuSxvnISg6l7zf4d9C++/nnxBhGUtuRwDNf5YwsmdRNy9BYxU9mKMdyh0DhJJc5havvTXYCAarrcc308Spc6usNsK7y5MdnF2O5PoRxMD6Sx+6TQIIT7Q="
       }
     },
     {
@@ -447,12 +447,28 @@
           "valueString": "Basic default report showing all staff"
         },
         {
+          "name": "site:nav:menu:manage-report:text",
+          "valueString": "Manage Report"
+        },
+        {
+          "name": "site:nav:menu:manage-report:order",
+          "valueString": "10"
+        },
+        {
+          "name": "site:nav:menu:manage-report:icon",
+          "valueString": "mdi-cog-sync-outline"
+        },
+        {
+          "name": "site:nav:menu:manage-report:url",
+          "valueString": "/page/manage-report"
+        },
+        {
           "name": "site:nav:menu:users:text",
           "valueString": "System Users"
         },
         {
           "name": "site:nav:menu:users:order",
-          "valueString": "10"
+          "valueString": "11"
         },
         {
           "name": "site:nav:menu:users:icon",
@@ -467,12 +483,28 @@
           "valueString": "/resource/search/user"
         },
         {
+          "name": "site:nav:menu:users:menu:role_roles:text",
+          "valueString": "User Roles"
+        },
+        {
+          "name": "site:nav:menu:users:menu:role_roles:url",
+          "valueString": "/resource/search/role"
+        },
+        {
+          "name": "site:nav:menu:users:menu:role_tasks:text",
+          "valueString": "User Role Tasks"
+        },
+        {
+          "name": "site:nav:menu:users:menu:role_tasks:url",
+          "valueString": "/resource/search/task"
+        },
+        {
           "name": "site:nav:menu:audit:text",
           "valueString": "Audit Logs"
         },
         {
           "name": "site:nav:menu:audit:order",
-          "valueString": "11"
+          "valueString": "12"
         },
         {
           "name": "site:nav:menu:audit:icon",
@@ -488,7 +520,7 @@
         },
         {
           "name": "site:nav:menu:password:order",
-          "valueString": "12"
+          "valueString": "13"
         },
         {
           "name": "site:nav:menu:password:icon",
@@ -504,7 +536,7 @@
         },
         {
           "name": "site:nav:menu:ihris-apps-list:order",
-          "valueString": "13"
+          "valueString": "14"
         },
         {
           "name": "site:nav:menu:ihris-apps-list:icon",
@@ -564,7 +596,7 @@
         },
         {
           "name": "shortname:CodeSystem:paths:name:fhirpath",
-          "valueString": "CodeSystem.where(id='ihris-job').display"
+          "valueString": "CodeSystem.where(id='ihris-job-chwr').display"
         },
         {
           "name": "defaults:fields:PractitionerRole.location:type",
@@ -667,6 +699,26 @@
           "valueString": "2030-01-01"
         },
         {
+          "name": "defaults:components:attachment:maxValueAttachment",
+          "valueString": "512KB"
+        },
+        {
+          "name": "defaults:components:date:date-format",
+          "valueString": "DD-MM-YYYY"
+        },
+        {
+          "name": "defaults:components:date-time:date-format",
+          "valueString": "DD-MM-YYYY"
+        },
+        {
+          "name": "defaults:components:ihris-search:date-format",
+          "valueString": "DD-MM-YYYY"
+        },
+        {
+          "name": "defaults:components:ihris-secondary:date-format",
+          "valueString": "DD-MM-YYYY"
+        },
+        {
           "name": "workflow:processor:password:file",
           "valueString": "workflowChangePassword"
         },
@@ -687,6 +739,18 @@
           "valueString": "true"
         },
         {
+          "name": "app:site:routes:adx:mount",
+          "valueString": "adx"
+        },
+        {
+          "name": "app:site:routes:adx:path",
+          "valueString": "adx.js"
+        },
+        {
+          "name": "app:site:routes:adx:authenticate",
+          "valueString": "true"
+        },
+        {
           "name": "defaults:fields:Person.extension:practitioner.value[x]:valueReference:type",
           "valueString": "reportSelect"
         },
@@ -701,6 +765,102 @@
         {
           "name": "defaults:fields:Person.extension:practitioner.value[x]:valueReference:referenceDisplayPath",
           "valueString": "name.where(use='official').given.first() + ' ' + name.where(use='official').family"
+        },
+        {
+          "name": "site:intro:default:title",
+          "valueString": "Person Information"
+        },
+        {
+          "name": "site:intro:default:data:fullName:text",
+          "valueString": "Name"
+        },
+        {
+          "name": "site:intro:default:data:fullName:path",
+          "valueString": "Practitioner.name.where(use='official').given.first() + ' ' + Practitioner.name.where(use='official').family"
+        },
+        {
+          "name": "site:intro:default:data:title:text",
+          "valueString": "Job"
+        },
+        {
+          "name": "site:intro:default:data:title:path",
+          "valueString": "PractitionerRole.code.coding.display"
+        },
+        {
+          "name": "site:intro:default:data:dateOfBirth:text",
+          "valueString": "Date Of Birth"
+        },
+        {
+          "name": "site:intro:default:data:dateOfBirth:path",
+          "valueString": "Practitioner.birthDate"
+        },
+        {
+          "name": "site:intro:default:data:gender:text",
+          "valueString": "Gender"
+        },
+        {
+          "name": "site:intro:default:data:gender:path",
+          "valueString": "Practitioner.gender"
+        },
+        {
+          "name": "site:intro:default:data:profilePicture:text",
+          "valueString": "Photo"
+        },
+        {
+          "name": "site:intro:default:data:profilePicture:type",
+          "valueString": "photo"
+        },
+        {
+          "name": "site:intro:default:data:profilePicture:path",
+          "valueString": "Practitioner.photo[0]"
+        },
+        {
+          "name": "site:intro:practitionerrole:title",
+          "valueString": "Person Information"
+        },
+        {
+          "name": "site:intro:practitionerrole:data:fullName:text",
+          "valueString": "Name"
+        },
+        {
+          "name": "site:intro:practitionerrole:data:fullName:path",
+          "valueString": "Practitioner.name.where(use='official').given.first() + ' ' + Practitioner.name.where(use='official').family"
+        },
+        {
+          "name": "site:intro:practitionerrole:data:title:text",
+          "valueString": "Job"
+        },
+        {
+          "name": "site:intro:practitionerrole:data:title:path",
+          "valueString": "PractitionerRole.code.coding.display"
+        },
+        {
+          "name": "site:intro:practitionerrole:data:dateOfBirth:text",
+          "valueString": "Date Of Birth"
+        },
+        {
+          "name": "site:intro:practitionerrole:data:dateOfBirth:path",
+          "valueString": "Practitioner.birthDate"
+        },
+        {
+          "name": "site:intro:practitionerrole:data:gender:text",
+          "valueString": "Gender"
+        },
+        {
+          "name": "site:intro:practitionerrole:data:gender:path",
+          "valueString": "Practitioner.gender"
+        },
+        {
+          "name": "site:intro:practitionerrole:data:profilePicture:text",
+          "valueString": "Photo"
+        },
+        {
+          "name": "site:intro:practitionerrole:data:profilePicture:type",
+          "valueString": "photo"
+        },
+        {
+          "name": "site:intro:practitionerrole:data:profilePicture:path",
+          "valueString": "Practitioner.photo[0]"
         }
       ]
     }

@@ -22,7 +22,7 @@ Description:    "iHRIS profile of Practitioner."
 * identifier.type.coding 1..1 MS
 * identifier.type.coding ^label = "Type"
 * identifier.type.coding from IhrisMdgIdentifierType
-* identifier.system MS
+* identifier.system 0..0 MS
 * identifier.system ^label = "System"
 * identifier.value MS
 * identifier.value ^label = "Value"

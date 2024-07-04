@@ -78,7 +78,7 @@ Description: "A boundary shape that represents the outside edge of the location 
 Profile:        IhrisFacility
 Parent:         Location
 Id:             ihris-facility
-Title:          "Facility"
+Title:          "Facility/Community Site"
 Description:    "iHRIS Profile of Locations to manage facilities."
 * type 1..1 MS
 * type ^label = "Health Facility Type"
@@ -260,7 +260,7 @@ Title:          "Facility"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-facility)
-* extension[display].extension[search][0].valueString = "Facility Name|name"
+* extension[display].extension[search][0].valueString = "Facility/Community Site|name"
 * extension[display].extension[search][1].valueString = "Facility Type|type.coding.display"
 * extension[display].extension[search][2].valueString = "Report To|partOf.reference"
 * extension[display].extension[search][3].valueString = "Status|status"

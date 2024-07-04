@@ -1742,7 +1742,7 @@
         "comment": "Identifier.system is always case sensitive.",
         "requirements": "There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.system",
           "min": 0,
@@ -4351,6 +4351,7 @@
         "id": "Practitioner.identifier.system",
         "path": "Practitioner.identifier.system",
         "label": "System",
+        "max": "0",
         "mustSupport": true
       },
       {

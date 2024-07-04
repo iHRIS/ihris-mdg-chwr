@@ -36,7 +36,7 @@ Description:    "iHRIS profile of Practitioner Role."
 * location only Reference(IhrisFacility)
 * extension contains
     IhrisPractitionerRoleStartYear named startYear 0..1 MS 
-* extension[startYear].valueInteger MS
+* extension[startYear].valueDate MS
 * extension[startYear] ^label = "Year of commissioning as AC"
 
 Extension:      IhrisPractitionerRoleStartYear
@@ -45,9 +45,9 @@ Title:          "iHRIS Start Year"
 Description:    "iHRIS extension for Job Description Start Year."
 * ^context.type = #element
 * ^context.expression = "PractitionerRole"
-* value[x] only integer
-* valueInteger 0..1 MS
-* valueInteger ^label = "Start Year"
+* value[x] only date
+* valueDate 0..1 MS
+* valueDate ^label = "Start Year"
 
 CodeSystem:     IhrisJobCodeSystem
 Id:             ihris-job-chwr

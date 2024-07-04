@@ -102,7 +102,7 @@
         "reference": {
           "reference": "StructureDefinition/ihris-facility"
         },
-        "name": "Facility",
+        "name": "Facility/Community Site",
         "description": "iHRIS Profile of Locations to manage facilities.",
         "exampleBoolean": false
       },
