@@ -211,15 +211,15 @@ Title:           "Facility Ownership Type"
 ValueSet:         IhrisJurisdictionType
 Id:               ihris-jurisdiction-type
 Title:            "iHRIS Jurisdiction Type ValueSet"
-* ^date = "2023-06-12T08:41:04.362Z"
-* ^version = "0.5.0"
+* ^date = "2023-06-20T08:41:04.362Z"
+* ^version = "0.7.0"
 * codes from system IhrisJurisdictionType
 
 CodeSystem:      IhrisJurisdictionType
 Id:              ihris-jurisdiction-type
 Title:           "Jurisdiction Type"
-* ^date = "2023-06-15T08:41:04.362Z"
-* ^version = "0.6.0"
+* ^date = "2023-06-20T08:41:04.362Z"
+* ^version = "0.7.0"
 * #country "Country" "Country"
 * #region "Region" "Region"
 * #district "District" "District"
@@ -228,16 +228,16 @@ Title:           "Jurisdiction Type"
 ValueSet:         IhrisFacilityTypeValueSet
 Id:               ihris-facility-type
 Title:            "iHRIS Facility Type ValueSet"
-* ^date = "2022-02-25T08:41:04.362Z"
-* ^version = "0.9.0"
+* ^date = "2023-05-25T08:41:04.362Z"
+* ^version = "0.10.0"
 * codes from system IhrisFacilityType
 
 CodeSystem:      IhrisFacilityType
 Id:              ihris-facility-type
 Title:           "Facility Type"
-* ^date = "2022-02-25T08:41:04.362Z"
-* ^version = "0.9.0"
-* #CSB "CSB" "CSB"
+* ^date = "2023-05-25T08:41:04.362Z"
+* ^version = "0.10.0"
+* #csb "CSB" "CSB"
 * #fokontany "Fokontany" "Fokontany"
 
 Extension:      IhrisFacilityOwnership
