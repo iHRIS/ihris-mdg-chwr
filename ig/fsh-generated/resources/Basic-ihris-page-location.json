@@ -34,10 +34,6 @@
         },
         {
           "url": "search",
-          "valueString": "Physical Type|physicalType.text"
-        },
-        {
-          "url": "search",
           "valueString": "Jurisdiction|partOf.reference"
         },
         {

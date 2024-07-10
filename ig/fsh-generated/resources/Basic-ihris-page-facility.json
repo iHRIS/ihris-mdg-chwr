@@ -26,11 +26,11 @@
         },
         {
           "url": "search",
-          "valueString": "Facility/Community Site|name"
+          "valueString": "CSB/Fokotany|name"
         },
         {
           "url": "search",
-          "valueString": "Facility Type|type.coding.display"
+          "valueString": "Type|type.coding.display"
         },
         {
           "url": "search",

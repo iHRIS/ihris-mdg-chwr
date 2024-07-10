@@ -8,8 +8,7 @@ Description:    "iHRIS Profile of Locations to manage jurisdictions."
 * type.coding 1..1 MS
 * type.coding ^label = "Location Type"
 * type.coding from IhrisJurisdictionType (required)
-* physicalType 1..1 MS
-* physicalType ^label = "Location Physical Type"
+* physicalType 0..0 MS
 * name 1..1 MS
 * name ^label = "Name"
 * status 1..1 MS
@@ -219,10 +218,10 @@ Title:            "iHRIS Jurisdiction Type ValueSet"
 CodeSystem:      IhrisJurisdictionType
 Id:              ihris-jurisdiction-type
 Title:           "Jurisdiction Type"
-* ^date = "2023-06-12T08:41:04.362Z"
-* ^version = "0.5.0"
+* ^date = "2023-06-15T08:41:04.362Z"
+* ^version = "0.6.0"
 * #country "Country" "Country"
-* #region "region" "region"
+* #region "Region" "Region"
 * #district "District" "District"
 * #commune "Commune" "Commune"
 
@@ -259,8 +258,8 @@ Title:          "Facility"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-facility)
-* extension[display].extension[search][0].valueString = "Facility/Community Site|name"
-* extension[display].extension[search][1].valueString = "Facility Type|type.coding.display"
+* extension[display].extension[search][0].valueString = "CSB/Fokotany|name"
+* extension[display].extension[search][1].valueString = "Type|type.coding.display"
 * extension[display].extension[search][2].valueString = "Report To|partOf.reference"
 * extension[display].extension[search][3].valueString = "Status|status"
 * extension[display].extension[search][4].valueString = "Longitute|position.longitude"
@@ -315,8 +314,7 @@ Usage:          #example
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-jurisdiction)
 * extension[display].extension[search][0].valueString = "Name|name"
 * extension[display].extension[search][1].valueString = "Type|type.coding.code"
-* extension[display].extension[search][2].valueString = "Physical Type|physicalType.text"
-* extension[display].extension[search][3].valueString = "Jurisdiction|partOf.reference"
+* extension[display].extension[search][2].valueString = "Jurisdiction|partOf.reference"
 * extension[display].extension[filter][0].valueString = "Name|name:contains"
 * extension[display].extension[filter][1].valueString = "Type|type|http://ihris.org/fhir/ValueSet/ihris-jurisdiction-type"
 * extension[display].extension[filter][2].valueString = "Jurisdiction|partOf"
