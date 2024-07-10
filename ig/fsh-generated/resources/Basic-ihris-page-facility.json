@@ -30,7 +30,7 @@
         },
         {
           "url": "search",
-          "valueString": "Type|type.coding.display"
+          "valueString": "Type|type.coding.code"
         },
         {
           "url": "search",

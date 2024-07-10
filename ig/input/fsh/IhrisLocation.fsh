@@ -259,7 +259,7 @@ Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-facility)
 * extension[display].extension[search][0].valueString = "CSB/Fokotany|name"
-* extension[display].extension[search][1].valueString = "Type|type.coding.display"
+* extension[display].extension[search][1].valueString = "Type|type.coding.code"
 * extension[display].extension[search][2].valueString = "Report To|partOf.reference"
 * extension[display].extension[search][3].valueString = "Status|status"
 * extension[display].extension[search][4].valueString = "Longitute|position.longitude"
