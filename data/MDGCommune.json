@@ -56838,7 +56838,7 @@
           ]
         },
         "id": "MDG-18-04-1387",
-        "name": "Betsinjaka",
+        "name": "Betsinjaky",
         "status": "active",
         "partOf": {
           "reference": "Location/MDG-18-04"
@@ -57371,7 +57371,7 @@
           ]
         },
         "id": "MDG-18-04-1400",
-        "name": "Antanimena Onilahy",
+        "name": "Antanimena",
         "status": "active",
         "partOf": {
           "reference": "Location/MDG-18-04"
@@ -57576,7 +57576,7 @@
           ]
         },
         "id": "MDG-18-04-1405",
-        "name": "Milenaka",
+        "name": "Milenaky",
         "status": "active",
         "partOf": {
           "reference": "Location/MDG-18-04"
@@ -58355,7 +58355,7 @@
           ]
         },
         "id": "MDG-18-07-1424",
-        "name": "Ankatsakantsa Atsimo",
+        "name": "Ankatsakantsa Sud",
         "status": "active",
         "partOf": {
           "reference": "Location/MDG-18-07"
@@ -58478,7 +58478,7 @@
           ]
         },
         "id": "MDG-18-07-1427",
-        "name": "Antanimieva",
+        "name": "Antanimeva",
         "status": "active",
         "partOf": {
           "reference": "Location/MDG-18-07"
@@ -58519,7 +58519,7 @@
           ]
         },
         "id": "MDG-18-07-1428",
-        "name": "Befandriana Atsimo",
+        "name": "Befandriana Sud",
         "status": "active",
         "partOf": {
           "reference": "Location/MDG-18-07"
@@ -58601,7 +58601,7 @@
           ]
         },
         "id": "MDG-18-07-1430",
-        "name": "Antongo Vaovao",
+        "name": "Antongo",
         "status": "active",
         "partOf": {
           "reference": "Location/MDG-18-07"
@@ -58888,7 +58888,7 @@
           ]
         },
         "id": "MDG-18-08-1437",
-        "name": "Mikoboka",
+        "name": "Mikoboky",
         "status": "active",
         "partOf": {
           "reference": "Location/MDG-18-08"
@@ -72734,6 +72734,88 @@
       "request": {
         "method": "PUT",
         "url": "Location/MDG-23-07-1774"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-08-1775",
+        "name": "Mitsinjo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-08-1775"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-08-1776",
+        "name": "Ambinanya",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-08-1776"
       }
     }
   ]

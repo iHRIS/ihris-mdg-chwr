@@ -1,0 +1,6768 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-001",
+        "name": "CSB2 Analamisampy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-001"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-002",
+        "name": "CSB2 Ambohimahavelona",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-002"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-003",
+        "name": "CSB1 Tanandava Mahabo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-003"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-004",
+        "name": "CSB2 Ambolofoty",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-004"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-005",
+        "name": "CSB2 Anakao",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-005"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-006",
+        "name": "CSB2 Andranohinaly",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-006"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-007",
+        "name": "CSB2 Andranovory",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-007"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-008",
+        "name": "CSB1 Andrevo Bas",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-008"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-009",
+        "name": "CSB2 Ankaraobato",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-009"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-010",
+        "name": "CSB1 Ankilibe",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-010"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-011",
+        "name": "CSB2 Ankililoaka",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-011"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-012",
+        "name": "CSB2 Antseva",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-012"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-013",
+        "name": "CSB2 Ankilimalinika",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-013"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-014",
+        "name": "CSB1 Ankilimivony",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-014"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-015",
+        "name": "CSB1 Antanimena",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-015"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-016",
+        "name": "CSB1 Ambondro",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-016"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-017",
+        "name": "CSB2 Beheloka",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-017"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-018",
+        "name": "CSB2 Behompy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-018"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-019",
+        "name": "CSB2 Belalanda",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-019"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-020",
+        "name": "CSB1 Benetse",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-020"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-021",
+        "name": "CSB1 Beravy Haut",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-021"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-022",
+        "name": "CSB2 Beroroha",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-022"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-023",
+        "name": "CSB2 Betsinjaky",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-023"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-024",
+        "name": "CSB1 Betsioky Somotse",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-024"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-025",
+        "name": "CSB1 Bevala",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-025"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-026",
+        "name": "CSB2 Efoetse",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-026"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-027",
+        "name": "CSB1 Mahaleotse",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-027"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-028",
+        "name": "CSB2 Mangily",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-028"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-029",
+        "name": "CSB2 Manombo Sud",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-029"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-030",
+        "name": "CSB2 Manorofify",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-030"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-031",
+        "name": "CSB1 Manoroka",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-031"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-032",
+        "name": "CSB2 Marofoty",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-032"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-033",
+        "name": "CSB2 Maromiandra",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-033"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-034",
+        "name": "CSB2 Miary",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-034"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-035",
+        "name": "CSB1 Milenaky",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-035"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-036",
+        "name": "CSB2 Mitsinjo Betanimena",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-036"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-037",
+        "name": "CSB2 Saint Augustin",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-037"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-038",
+        "name": "CSB1 Sarodrano",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-038"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-039",
+        "name": "CSB2 Soahazo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-039"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-040",
+        "name": "CSB1 Soalara Sud",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-040"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-041",
+        "name": "Csb Sra Ifaty",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-041"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-042",
+        "name": "CSB1 Tsiafanoka",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-042"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-043",
+        "name": "CSB2 Tsiandamba",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-043"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-044",
+        "name": "CSB2 Tsianisiha",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-044"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-045",
+        "name": "CSB1 Tsifota",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-045"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-04-046",
+        "name": "CSB1 Tsihake",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-04-046"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-047",
+        "name": "CSB1 Ankilibe Lamatihy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-047"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-048",
+        "name": "CSB2 Mikoboky",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-048"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-049",
+        "name": "CSB2 Mitsinjo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-049"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-050",
+        "name": "CSB2 Mahaboboka",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-050"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-051",
+        "name": "CSB2 Miary Taheza",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-051"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-052",
+        "name": "CSB2 Vineta",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-052"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-053",
+        "name": "CSB2 Bereketa",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-053"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-054",
+        "name": "CSB2 Sakaraha",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-054"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-055",
+        "name": "Amboronabo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-055"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-056",
+        "name": "CSB1 Andoba",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-056"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-057",
+        "name": "CSB2 Miary Lamatihy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-057"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-058",
+        "name": "CSB2 Mihavatsy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-058"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-059",
+        "name": "CSB1 Ankilitelo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-059"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-060",
+        "name": "CSB1 Maromiandra",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-060"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-061",
+        "name": "CSB2 Andranolava",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-061"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-062",
+        "name": "CSB2 Besakoa",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-062"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-063",
+        "name": "CSB1 Bemanga",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-063"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-08-064",
+        "name": "CSB1 Bevilany",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-08-064"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-065",
+        "name": "CSB2 Morombe",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-065"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-066",
+        "name": "CSB1 Mamono",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-066"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-067",
+        "name": "CSB1 Mangolovolo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-067"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-068",
+        "name": "CSB2 Ambahikily",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-068"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-069",
+        "name": "CSB1 Ambalamoa",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-069"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-070",
+        "name": "CSB2 Tanandava",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-070"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-071",
+        "name": "CSB2 Antongo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-071"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-072",
+        "name": "CSB1 Ambohibe",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-072"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-073",
+        "name": "CSB2 Ankantsakantsa Sud",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-073"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-074",
+        "name": "CSB2 Nosy Ambositra",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-074"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-075",
+        "name": "CSB2 Befandriana Sud",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-075"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-076",
+        "name": "CSB1 Bekimpay",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-076"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-077",
+        "name": "CSB1 Manoy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-077"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-078",
+        "name": "CSB1 Ampilokely",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-078"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-079",
+        "name": "CSB2 Basibasy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-079"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-080",
+        "name": "CSB1 Vorehe",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-080"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-081",
+        "name": "CSB1 Befandefa",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-081"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-082",
+        "name": "CSB2 Andavadoake",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-082"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-083",
+        "name": "CSB1 Belavenoke",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-083"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-084",
+        "name": "CSB1 Ambatomilo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-084"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-085",
+        "name": "CSB1 Tampolove",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-085"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-18-07-086",
+        "name": "CSB2 Antanimeva",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-18-07-086"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-01-087",
+        "name": "CSB2 Kandreho",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-01"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-01-087"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-01-088",
+        "name": "CSB2 Ambaliha",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-01"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-01-088"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-01-089",
+        "name": "CSB2 Antanimbaribe",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-01"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-01-089"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-01-090",
+        "name": "CSB2 Betaimboay",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-01"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-01-090"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-01-091",
+        "name": "CSB2 Andasibe",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-01"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-01-091"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-01-092",
+        "name": "CSB2 Behazomaty",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-01"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-01-092"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-093",
+        "name": "CSB2 Ambalajia",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-093"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-094",
+        "name": "CSB2 Ambalanjanakomby",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-094"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-095",
+        "name": "CSB2 Berivotra 5/5",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-095"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-096",
+        "name": "CSB1 Kamolandy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-096"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-097",
+        "name": "CSB2 Andriba",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-097"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-098",
+        "name": "CSB2 Antanimbary",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-098"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-099",
+        "name": "Cbs1 Ampisavankaratra",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-099"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-100",
+        "name": "CSB1 Ampotaka Ouest",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-100"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-101",
+        "name": "CSB2 Antsiafabositra",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-101"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-102",
+        "name": "CSB2 Bemokotra",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-102"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-103",
+        "name": "CSB2 Beratsimanina",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-103"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-104",
+        "name": "CSB2 Madiromirafy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-104"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-105",
+        "name": "CSB2 Maevatanana",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-105"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-106",
+        "name": "CSB2 Beanana",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-106"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-107",
+        "name": "CSB1 Ampotaka Sud",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-107"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-108",
+        "name": "CSB2 Mahatsinjo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-108"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-109",
+        "name": "CSB2 Mahazoma",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-109"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-110",
+        "name": "CSB1 Merimandroso",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-110"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-111",
+        "name": "CSB2 Mangabe",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-111"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-112",
+        "name": "CSB2 Maria",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-112"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-113",
+        "name": "CSB2 Marokoro",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-113"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-114",
+        "name": "CSB2 Morafeno",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-114"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-115",
+        "name": "CSB1 Bevilany",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-115"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-02-116",
+        "name": "CSB2 Tsararano",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-02"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-02-116"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-117",
+        "name": "CSB2 Tsaratanana",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-117"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-118",
+        "name": "CSB1 Ambatomainty",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-118"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-119",
+        "name": "CSB1 Ambatobe",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-119"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-120",
+        "name": "CSB2 Bekapaika",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-120"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-121",
+        "name": "CSB1 Ampitetika",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-121"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-122",
+        "name": "CSB2 Tsararova",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-122"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-123",
+        "name": "CSB2 Betrandraka",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-123"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-124",
+        "name": "CSB1 Mahatazana",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-124"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-125",
+        "name": "CSB2 Sarobaratra",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-125"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-126",
+        "name": "CSB1 Masokoamena",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-126"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-127",
+        "name": "CSB1 Morafeno",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-127"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-128",
+        "name": "CSB1 Isinko",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-128"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-129",
+        "name": "CSB2 Ambakireny",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-129"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-130",
+        "name": "CSB1 Betenina",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-130"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-131",
+        "name": "CSB1 Ambohimiarina",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-131"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-132",
+        "name": "CSB1 Ambohidronono",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-132"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-133",
+        "name": "CSB2 Mahatsinjo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-133"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-134",
+        "name": "CSB1 Antaniditra",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-134"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-135",
+        "name": "CSB2 Ampandrana",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-135"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-136",
+        "name": "CSB2 Andriamena",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-136"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-137",
+        "name": "CSB2 Ambalajia",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-137"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-138",
+        "name": "CSB1 Bemavo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-138"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-139",
+        "name": "CSB1 Telomita",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-139"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-140",
+        "name": "CSB2 Brieville",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-140"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-141",
+        "name": "CSB1 Ambalanirana",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-141"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-142",
+        "name": "CSB1 Bemololo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-142"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-143",
+        "name": "CSB1 Mahabe",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-143"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-144",
+        "name": "CSB2 Keliloha",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-144"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-145",
+        "name": "CSB1 Ankisatra",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-145"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-146",
+        "name": "CSB2 Manakana",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-146"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "CSB-MDG-10-03-147",
+        "name": "CSB2 Sakoamadinika",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-10-03"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
+                "code": "csb"
+              }
+            ],
+            "text": "CSB"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/CSB-MDG-10-03-147"
+      }
+    }
+  ]
+}
