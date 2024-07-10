@@ -9,14 +9,14 @@
   "url": "http://ihris.org/fhir/CodeSystem/ihris-facility-type",
   "concept": [
     {
-      "code": "CSB1",
-      "display": "CSB1",
-      "definition": "CSB1"
+      "code": "CSB",
+      "display": "CSB",
+      "definition": "CSB"
     },
     {
-      "code": "CSB2",
-      "display": "CSB2",
-      "definition": "CSB2"
+      "code": "fokontany",
+      "display": "Fokontany",
+      "definition": "Fokontany"
     }
   ],
   "date": "2022-02-25T08:41:04.362Z",

@@ -27,13 +27,8 @@
       "code": "commune",
       "display": "Commune",
       "definition": "Commune"
-    },
-    {
-      "code": "fokontany",
-      "display": "Fokontany",
-      "definition": "Fokontany"
     }
   ],
   "date": "2023-06-12T08:41:04.362Z",
-  "count": 5
+  "count": 4
 }

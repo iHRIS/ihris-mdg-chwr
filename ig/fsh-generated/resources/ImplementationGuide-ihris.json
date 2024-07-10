@@ -102,7 +102,7 @@
         "reference": {
           "reference": "StructureDefinition/ihris-facility"
         },
-        "name": "Facility/Community Site",
+        "name": "CSB/Fokotany",
         "description": "iHRIS Profile of Locations to manage facilities.",
         "exampleBoolean": false
       },

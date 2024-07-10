@@ -16,7 +16,7 @@ Description:    "iHRIS Profile of Locations to manage jurisdictions."
 * status ^label = "Status"
 * partOf 0..1 MS
 * partOf only Reference(IhrisJurisdiction)
-* partOf ^label = "Part Of(Country/Region/District/County)"
+* partOf ^label = "Part Of(Country/Region/District/Commune)"
 * position 0..1 MS
 * position ^label = "Co-ordinates"
 * position.latitude MS
@@ -78,7 +78,7 @@ Description: "A boundary shape that represents the outside edge of the location 
 Profile:        IhrisFacility
 Parent:         Location
 Id:             ihris-facility
-Title:          "Facility/Community Site"
+Title:          "CSB/Fokotany"
 Description:    "iHRIS Profile of Locations to manage facilities."
 * type 1..1 MS
 * type ^label = "Health Facility Type"
@@ -111,7 +111,7 @@ Description:    "iHRIS Profile of Locations to manage facilities."
 * position.latitude ^label = "Latitude"
 * partOf 1..1 MS 
 * partOf only Reference(IhrisJurisdiction)
-* partOf ^label = "Part Of(Country/Region/District/Municipality)"
+* partOf ^label = "Part Of(Country/Region/District/CSB/Fokotany)"
 * extension contains
         IhrisFacilityOwnership named ownership 0..1 MS  and
         IhrisFacilityOpeningYear named openingYear 0..1 MS and 
@@ -225,7 +225,6 @@ Title:           "Jurisdiction Type"
 * #region "region" "region"
 * #district "District" "District"
 * #commune "Commune" "Commune"
-* #fokontany "Fokontany" "Fokontany"
 
 ValueSet:         IhrisFacilityTypeValueSet
 Id:               ihris-facility-type
@@ -239,8 +238,8 @@ Id:              ihris-facility-type
 Title:           "Facility Type"
 * ^date = "2022-02-25T08:41:04.362Z"
 * ^version = "0.9.0"
-* #CSB1 "CSB1" "CSB1"
-* #CSB2 "CSB2" "CSB2"
+* #CSB "CSB" "CSB"
+* #fokontany "Fokontany" "Fokontany"
 
 Extension:      IhrisFacilityOwnership
 Id:             ihris-facility-ownership-prefix

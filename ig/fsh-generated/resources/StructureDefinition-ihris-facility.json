@@ -14,7 +14,7 @@
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-facility",
   "version": "0.1.0",
   "name": "IhrisFacility",
-  "title": "Facility/Community Site",
+  "title": "CSB/Fokotany",
   "status": "active",
   "description": "iHRIS Profile of Locations to manage facilities.",
   "fhirVersion": "4.0.1",
@@ -3152,7 +3152,7 @@
       {
         "id": "Location.partOf",
         "path": "Location.partOf",
-        "label": "Part Of(Country/Region/District/Municipality)",
+        "label": "Part Of(Country/Region/District/CSB/Fokotany)",
         "short": "Another Location this one is physically a part of",
         "definition": "Another Location of which this Location is physically a part of.",
         "requirements": "For purposes of location, display and identification, knowing which locations are located within other locations is important.",
@@ -3777,7 +3777,7 @@
       {
         "id": "Location.partOf",
         "path": "Location.partOf",
-        "label": "Part Of(Country/Region/District/Municipality)",
+        "label": "Part Of(Country/Region/District/CSB/Fokotany)",
         "min": 1,
         "type": [
           {
