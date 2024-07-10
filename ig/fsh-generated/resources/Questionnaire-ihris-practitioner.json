@@ -195,9 +195,17 @@
           "repeats": false
         },
         {
-          "linkId": "PractitionerRole.location",
+          "linkId": "PractitionerRole.location#preloaded",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.location",
-          "text": "Facility/Community Site Linked to",
+          "text": "CSB/Fokotany",
+          "type": "reference",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "PractitionerRole.extension[1]#preloaded",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:commune.value[x]:valueReference",
+          "text": "Commune",
           "type": "reference",
           "required": false,
           "repeats": false

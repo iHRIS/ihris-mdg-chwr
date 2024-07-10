@@ -35,9 +35,12 @@ Description:    "iHRIS profile of Practitioner Role."
 * location ^label = "Facility/Community Site"
 * location only Reference(IhrisFacility)
 * extension contains
-    IhrisPractitionerRoleStartYear named startYear 0..1 MS 
+    IhrisPractitionerRoleStartYear named startYear 0..1 MS and
+    IhrisPractitionerRoleCommune named commune 0..1 MS
 * extension[startYear].valueDate MS
 * extension[startYear] ^label = "Year of commissioning as AC"
+* extension[commune].valueReference MS
+* extension[commune] ^label = "Commune"
 
 Extension:      IhrisPractitionerRoleStartYear
 Id:             ihris-practitionerrole-start-year
@@ -48,6 +51,16 @@ Description:    "iHRIS extension for Job Description Start Year."
 * value[x] only date
 * valueDate 0..1 MS
 * valueDate ^label = "Start Year"
+
+Extension:      IhrisPractitionerRoleCommune
+Id:             ihris-practitionerrole-commune
+Title:          "iHRIS Commune"
+Description:    "iHRIS extension for Position Commune."
+* ^context.type = #element
+* ^context.expression = "PractitionerRole"
+* value[x] only Reference
+* valueReference only Reference(IhrisJurisdiction)
+* valueReference ^label = "Commune"
 
 CodeSystem:     IhrisJobCodeSystem
 Id:             ihris-job-chwr

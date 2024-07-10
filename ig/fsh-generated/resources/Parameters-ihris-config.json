@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-07-10T12:38:25.735Z",
+        "when": "2024-07-10T12:54:10.512Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "aVJMenrSyzDcJ6Q41SHRB7dWJ93s0/ECHouMYKOpQA5lmrfYA6aLpkEuSxvnISg6l7zf4d9C++/nnxBhGUtuRwDNf5YwsmdRNy9BYxU9mKMdyh0DhJJc5havvTXYCAarrcc308Spc6usNsK7y5MdnF2O5PoRxMD6Sx+6TQIIT7Q="
+        "data": "VL2UKKCg0/I3cHFqet2J7Q7EDccyLGy2W1X05ItdiBCbKW70JgHsDDJIoCXo3LgqqAdnjbbyJY97AA780WJz2LAiPVYdHMYlH6d/HAF4HSsc70VK909ozlzmeXGMNpJv/mPckCFyf85Dhlm3iWCAVhnw/6cW/FriXgocFwYLATA="
       }
     },
     {
@@ -603,6 +603,10 @@
           "valueString": "tree"
         },
         {
+          "name": "defaults:fields:PractitionerRole.location:initialValue",
+          "valueString": "Location/MG"
+        },
+        {
           "name": "defaults:fields:PractitionerRole.location:user_filter:regex",
           "valueString": "related-location=(.+)"
         },
@@ -615,8 +619,40 @@
           "valueString": "tree"
         },
         {
+          "name": "defaults:fields:Practitioner.extension:residence.value[x]:valueReference:initialValue",
+          "valueString": "Location/MG"
+        },
+        {
+          "name": "defaults:fields:Practitioner.extension:residence.value[x]:valueReference:user_filter:regex",
+          "valueString": "related-location=(.+)"
+        },
+        {
+          "name": "defaults:fields:Practitioner.extension:residence.value[x]:valueReference:user_filter:replace",
+          "valueString": "$1"
+        },
+        {
+          "name": "defaults:fields:PractitionerRole.extension:commune.value[x]:valueReference:type",
+          "valueString": "tree"
+        },
+        {
+          "name": "defaults:fields:PractitionerRole.extension:commune.value[x]:valueReference:initialValue",
+          "valueString": "Location/MG"
+        },
+        {
+          "name": "defaults:fields:PractitionerRole.extension:commune.value[x]:valueReference:user_filter:regex",
+          "valueString": "related-location=(.+)"
+        },
+        {
+          "name": "defaults:fields:PractitionerRole.extension:commune.value[x]:valueReference:user_filter:replace",
+          "valueString": "$1"
+        },
+        {
           "name": "defaults:fields:Location.partOf:type",
           "valueString": "tree"
+        },
+        {
+          "name": "defaults:fields:Location.partOf:initialValue",
+          "valueString": "Location/MG"
         },
         {
           "name": "defaults:fields:Location.partOf:user_filter:regex",

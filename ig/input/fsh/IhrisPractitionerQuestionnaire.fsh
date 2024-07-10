@@ -141,25 +141,32 @@ Usage:          #definition
 * item[2].item[3].required = false
 * item[2].item[3].repeats = false
 
-* item[2].item[4].linkId = "PractitionerRole.location"
+* item[2].item[4].linkId = "PractitionerRole.location#preloaded"
 * item[2].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.location"
-* item[2].item[4].text = "Facility/Community Site Linked to"
+* item[2].item[4].text = "CSB/Fokotany"
 * item[2].item[4].type = #reference
 * item[2].item[4].required = false
 * item[2].item[4].repeats = false
 
-* item[2].item[5].linkId = "PractitionerRole.extension[0]#year"
-* item[2].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:startYear.value[x]:valueDate"
-* item[2].item[5].text = "Year of commissioning as AC"
-* item[2].item[5].type = #date
+* item[2].item[5].linkId = "PractitionerRole.extension[1]#preloaded"
+* item[2].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:commune.value[x]:valueReference"
+* item[2].item[5].text = "Commune"
+* item[2].item[5].type = #reference
 * item[2].item[5].required = false
 * item[2].item[5].repeats = false
 
-* item[2].item[6].linkId = "PractitionerRole.active"
-* item[2].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.active"
-* item[2].item[6].text = "Active"
-* item[2].item[6].type = #boolean
-* item[2].item[6].required = true
+* item[2].item[6].linkId = "PractitionerRole.extension[0]#year"
+* item[2].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:startYear.value[x]:valueDate"
+* item[2].item[6].text = "Year of commissioning as AC"
+* item[2].item[6].type = #date
+* item[2].item[6].required = false
+* item[2].item[6].repeats = false
+
+* item[2].item[7].linkId = "PractitionerRole.active"
+* item[2].item[7].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.active"
+* item[2].item[7].text = "Active"
+* item[2].item[7].type = #boolean
+* item[2].item[7].required = true
 
 * item[3].linkId = "Practitioner.identifier"
 * item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier"

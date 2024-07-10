@@ -448,6 +448,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ihris-practitionerrole-commune"
+        },
+        "name": "iHRIS Commune",
+        "description": "iHRIS extension for Position Commune.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ihris-practitionerrole-start-year"
         },
         "name": "iHRIS Start Year",
