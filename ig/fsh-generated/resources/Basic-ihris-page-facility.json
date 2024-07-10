@@ -260,6 +260,69 @@
                 }
               ],
               "url": "column"
+            },
+            {
+              "extension": [
+                {
+                  "url": "header",
+                  "valueString": "Actions"
+                },
+                {
+                  "url": "field",
+                  "valueString": "_action"
+                }
+              ],
+              "url": "column"
+            },
+            {
+              "extension": [
+                {
+                  "url": "link",
+                  "valueString": "/questionnaire/ihris-facilityinfo/facilityinfo?facility=FHIRID"
+                },
+                {
+                  "url": "text",
+                  "valueString": "Add CSB Information"
+                },
+                {
+                  "url": "row",
+                  "valueBoolean": false
+                },
+                {
+                  "url": "emptyDisplay",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "condition",
+                  "valueString": "Location.type.coding.code='csb'"
+                },
+                {
+                  "url": "class",
+                  "valueString": "primary"
+                }
+              ],
+              "url": "action"
+            },
+            {
+              "extension": [
+                {
+                  "url": "link",
+                  "valueString": "/resource/view/facility/ITEMID"
+                },
+                {
+                  "url": "text",
+                  "valueString": "View"
+                },
+                {
+                  "url": "row",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "class",
+                  "valueString": "primary"
+                }
+              ],
+              "url": "action"
             }
           ],
           "url": "resource"

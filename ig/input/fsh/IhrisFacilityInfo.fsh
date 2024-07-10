@@ -106,7 +106,7 @@ Usage:          #definition
 * purpose = "Workflow page for recording a FacilityInfo Information."
 
 * item[0].linkId = "Basic"
-* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.id"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info"
 * item[0].text = "Facility Information"
 * item[0].type = #group
 
