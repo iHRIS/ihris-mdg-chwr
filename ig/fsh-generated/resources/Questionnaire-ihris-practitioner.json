@@ -77,7 +77,7 @@
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.gender",
           "text": "Gender",
           "type": "choice",
-          "answerValueSet": "http://hl7.org/fhir/ValueSet/administrative-gender",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-gender-valueset",
           "required": false,
           "repeats": false
         },

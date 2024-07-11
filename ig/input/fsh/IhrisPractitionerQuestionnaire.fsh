@@ -62,7 +62,7 @@ Usage:          #definition
 * item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.gender"
 * item[0].item[2].text = "Gender"
 * item[0].item[2].type = #choice
-* item[0].item[2].answerValueSet = "http://hl7.org/fhir/ValueSet/administrative-gender"
+* item[0].item[2].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-gender-valueset"
 * item[0].item[2].required = false
 * item[0].item[2].repeats = false
 

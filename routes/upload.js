@@ -35,6 +35,7 @@ router.post("/bulkRegistration", async (req, res) => {
                       });
                   } else {
                     console.log("I Don't have Valid Response")
+                    console.log(JSON.stringify(response,null,2));
                     return res.json(response);
                   }
                 })

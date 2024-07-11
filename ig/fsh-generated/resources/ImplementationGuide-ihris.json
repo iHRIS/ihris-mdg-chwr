@@ -792,6 +792,13 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ihris-gender-valueset"
+        },
+        "name": "iHRIS Gender ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ihris-marital-status-valueset"
         },
         "name": "iHRIS Marital Status ValueSet",
@@ -1116,6 +1123,13 @@
           "reference": "CodeSystem/ihris-jurisdiction-type"
         },
         "name": "Jurisdiction Type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ihris-gender-codesystem"
+        },
+        "name": "Gender",
         "exampleBoolean": false
       },
       {
@@ -1519,6 +1533,13 @@
           "reference": "Basic/ihris-page-facilityownership"
         },
         "name": "iHRIS Facility Ownership Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-gender"
+        },
+        "name": "iHRIS Gender type CodeSystem Page",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
       },
       {

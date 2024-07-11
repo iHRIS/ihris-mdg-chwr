@@ -284,54 +284,8 @@ const setUserdata = async (req) => {
   try {
     if (usersData.length > 0) {
       for (let i = 0; i < usersData.length; i++) {
-        
-        await getCodeSystem(usersData[i]["EducationLevel"], "ihris-education-level-valueset")
-          .then((response) => {
-            usersData[i].educationCoding = response;
-          })
-          .catch((err) => {
-            console.log(err);
-            logger.error(err.message);
-          });
-
-          await getCodeSystem(usersData[i]["EducationMajor"], "ihris-educational-major-valueset")
-          .then((response) => {
-            usersData[i].majorCoding = response;
-          })
-          .catch((err) => {
-            console.log(err);
-            logger.error(err.message);
-          });
-
-          await getCodeSystem(usersData[i]["Emergency_contact_relation"], "ihris-relation-valueset")
-          .then((response) => {
-            usersData[i].relationCoding = response;
-          })
-          .catch((err) => {
-            console.log(err);
-            logger.error(err.message);
-          });
-          
-          await getCodeSystem(usersData[i]["ScoreAttained"], "ihris-performance-score-valueset")
-          .then((response) => {
-            usersData[i].scoreCoding = response;
-          })
-          .catch((err) => {
-            console.log(err);
-            logger.error(err.message);
-          });
-
-          await getCodeSystem(usersData[i]["LeaveType"], "ihris-leave-type-valueset")
-          .then((response) => {
-            usersData[i].leaveCoding = response;
-          })
-          .catch((err) => {
-            console.log(err);
-            logger.error(err.message);
-          });
-
         if (usersData[i]["Gender"]) {
-          await getCodeSystem(usersData[i]["Gender"].charAt(0).toUpperCase() + usersData[i]["Gender"].slice(1),"administrative-gender")
+          await getCodeSystem(usersData[i]["Gender"].charAt(0).toUpperCase() + usersData[i]["Gender"].slice(1),"ihris-gender-valueset")
             .then((response) => {
               usersData[i].genderCoding = response;
             })
@@ -341,16 +295,16 @@ const setUserdata = async (req) => {
             });
         }
 
-        await getCodeSystem(usersData[i]["Nationality"],"iso3166-1-2")
+       /* await getCodeSystem(usersData[i]["Nationality"],"iso3166-1-2")
           .then((response) => {
             usersData[i].nationalityCoding = response;
           })
           .catch((err) => {
             console.log(err);
             logger.error(err.message);
-          });
+          });*/
   
-        await getCodeSystem(usersData[i]["JobTitle"], "ihris-job-demo")
+        await getCodeSystem(usersData[i]["JobTitle"], "ihris-job-chwr")
           .then((response) => {
             usersData[i].jobCoding = response;
           })
@@ -358,36 +312,28 @@ const setUserdata = async (req) => {
             console.log(err);
             logger.error(err.message);
           });
-
-          await getCodeSystem(usersData[i]["EmploymentTerms"], "ihris-employment-status-valueset")
-          .then((response) => {
-            usersData[i].employmentCoding = response;
-          })
-          .catch((err) => {
-            console.log(err);
-            logger.error(err.message);
-          });
-
-          await getCodeSystem(usersData[i]["PayGrade"], "ihris-salary-grade")
-          .then((response) => {
-            usersData[i].gradeCoding = response;
-          })
-          .catch((err) => {
-            console.log(err);
-            logger.error(err.message);
-          });
-        
-          await getReferences("Location",usersData[i]["Nationality"])
+          /*await getReferences("Location",usersData[i]["Nationality"])
               .then(async (response) => {
                   usersData[i].nationalityId = response;
               })
               .catch((err) => {
                 console.log(err);
                 logger.error(err.message);
-              });
-        
-        if ((usersData[i]["FacilityName"] != null)) {
-          await getReferences("Location",usersData[i]["FacilityName"])
+              });*/
+
+        if (usersData[i]["Commune"] != null) {
+          await getReferences("Location",usersData[i]["Commune"])
+            .then((response) => {
+              usersData[i].communeId = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+
+        if ((usersData[i]["Fokotany"] != null)) {
+          await getReferences("Location",usersData[i]["Fokotany"])
             .then(async (response) => {
               usersData[i].facilityId = response;
               if (response !== undefined) {

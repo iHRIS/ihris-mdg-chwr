@@ -74,6 +74,7 @@ Description:    "iHRIS profile of Practitioner."
 // * address.country ^label = "Country"*
 * gender 1..1 MS
 * gender ^label = "Gender"
+* gender from IhrisMDGGenderValueSet (required)
 * birthDate 1..1 MS
 * birthDate ^label = "Date Of Birth"
 * birthDate obeys ihris-age-18
@@ -307,6 +308,38 @@ Usage:        #example
 * extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
 * extension[section][0].extension[title].valueString = "Marital Status"
 * extension[section][0].extension[description].valueString = "Marital Status"
+* extension[section][0].extension[name].valueString = "CodeSystem"
+* extension[section][0].extension[field][0].valueString = "CodeSystem.display"
+* extension[section][0].extension[field][1].valueString = "CodeSystem.code"
+* extension[section][0].extension[field][2].valueString = "CodeSystem.definition"
+
+CodeSystem:      IhrisMDGGenderCodesystem
+Id:              ihris-gender-codesystem
+Title:           "Gender"
+* ^date = "2023-06-29T08:41:04.362Z"
+* ^version = "0.3.0"
+* #male "Masculin" "Masculin"
+* #female "Féminin" "Féminin"
+
+ValueSet:         IhrisMDGGenderValueSet
+Id:               ihris-gender-valueset
+Title:            "iHRIS Gender ValueSet"
+* ^date = "2023-06-29T08:41:04.362Z"
+* ^version = "0.3.0"
+* codes from system IhrisMDGGenderCodesystem
+
+Instance:       ihris-page-gender
+InstanceOf:     IhrisPage
+Title:          "iHRIS Gender type CodeSystem Page"
+Usage:          #example
+* code = IhrisResourceCodeSystem#page
+* extension[display].extension[resource].valueReference = Reference(CodeSystem/ihris-gender-codesystem)
+* extension[display].extension[search][0].valueString = "Code|code"
+* extension[display].extension[search][1].valueString = "Display|display"
+* extension[display].extension[field][0].extension[path].valueString = "CodeSystem.code"
+* extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
+* extension[section][0].extension[title].valueString = "Gender"
+* extension[section][0].extension[description].valueString = "Gender"
 * extension[section][0].extension[name].valueString = "CodeSystem"
 * extension[section][0].extension[field][0].valueString = "CodeSystem.display"
 * extension[section][0].extension[field][1].valueString = "CodeSystem.code"

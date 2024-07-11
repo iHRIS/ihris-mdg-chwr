@@ -69,7 +69,7 @@ Description:    "iHRIS Code System for Job Titles/CHW Types."
 * ^date = "2024-01-10T08:41:04.362Z"
 * ^version = "0.1.0"
 * #CR "Community Relay"
-* #ACC "AC Commcare"
+* #AC "AC Commcare"
 
 ValueSet:         IhrisJobValueset
 Id:               ihris-job-chwr
