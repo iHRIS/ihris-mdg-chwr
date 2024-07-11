@@ -1432,6 +1432,13 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-es-report-staff-directorate-mdg"
+        },
+        "name": "ihris-es-report-staff-directorate-mdg",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-es-report-staff-test"
         },
         "name": "Staff Relationship Test",

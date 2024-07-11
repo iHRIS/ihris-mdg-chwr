@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-07-11T11:24:21.274Z",
+        "when": "2024-07-11T19:05:20.021Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "VL2UKKCg0/I3cHFqet2J7Q7EDccyLGy2W1X05ItdiBCbKW70JgHsDDJIoCXo3LgqqAdnjbbyJY97AA780WJz2LAiPVYdHMYlH6d/HAF4HSsc70VK909ozlzmeXGMNpJv/mPckCFyf85Dhlm3iWCAVhnw/6cW/FriXgocFwYLATA="
+        "data": "w47QMnmHG63e5qCGSLnmBcjfOuIrXjChiV3+NirbephFpMSquAOVUags7zlLml5EPDW355/+5MYbJrDRKkPSZNcyZKXps1aU21D71Yop9lWq6fLgdzO0X5CY6JJABtz341XcmbQVTXvpqVDM5Hc4VHQ02LuAMeYF7ru3YJKNQS4="
       }
     },
     {
@@ -431,8 +431,24 @@
           "valueString": "true"
         },
         {
+          "name": "site:nav:menu:reports:menu:directorate:text",
+          "valueString": "AC directorate"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:directorate:url",
+          "valueString": "/report/ihris-es-report-staff-directorate-mdg"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:directorate:order",
+          "valueString": "1"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:directorate:description",
+          "valueString": "Basic default report showing all staff"
+        },
+        {
           "name": "site:nav:menu:reports:menu:staff:text",
-          "valueString": "Staff Report"
+          "valueString": "AC Report"
         },
         {
           "name": "site:nav:menu:reports:menu:staff:url",
@@ -440,7 +456,7 @@
         },
         {
           "name": "site:nav:menu:reports:menu:staff:order",
-          "valueString": "1"
+          "valueString": "2"
         },
         {
           "name": "site:nav:menu:reports:menu:staff:description",
