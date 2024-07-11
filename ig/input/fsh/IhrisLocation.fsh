@@ -310,7 +310,7 @@ Usage:          #example
 * extension[section][1].extension[resource].extension[action][0].extension[text].valueString = "Add CSB Information"
 * extension[section][1].extension[resource].extension[action][0].extension[row].valueBoolean = false
 * extension[section][1].extension[resource].extension[action][0].extension[emptyDisplay].valueBoolean = true
-* extension[section][1].extension[resource].extension[action][0].extension[condition].valueString = "Location.type.coding.code='csb'"
+* extension[section][1].extension[resource].extension[action][0].extension[condition].valueString = "Location.type.coding.where(code='csb')"
 * extension[section][1].extension[resource].extension[action][0].extension[class].valueString = "primary"
 * extension[section][1].extension[resource].extension[action][1].extension[link].valueString = "/resource/view/facility/ITEMID"
 * extension[section][1].extension[resource].extension[action][1].extension[text].valueString = "View"
