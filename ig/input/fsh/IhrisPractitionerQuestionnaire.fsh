@@ -141,14 +141,14 @@ Usage:          #definition
 * item[2].item[3].required = false
 * item[2].item[3].repeats = false
 
-* item[2].item[4].linkId = "PractitionerRole.location#preloaded"
+* item[2].item[4].linkId = "PractitionerRole.location#tree"
 * item[2].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.location"
 * item[2].item[4].text = "CSB/Fokotany"
 * item[2].item[4].type = #reference
 * item[2].item[4].required = false
 * item[2].item[4].repeats = false
 
-* item[2].item[5].linkId = "PractitionerRole.extension[1]#preloaded"
+* item[2].item[5].linkId = "PractitionerRole.extension[1]#tree"
 * item[2].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:commune.value[x]:valueReference"
 * item[2].item[5].text = "Commune"
 * item[2].item[5].type = #reference

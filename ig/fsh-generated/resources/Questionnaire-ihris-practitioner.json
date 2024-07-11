@@ -195,7 +195,7 @@
           "repeats": false
         },
         {
-          "linkId": "PractitionerRole.location#preloaded",
+          "linkId": "PractitionerRole.location#tree",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.location",
           "text": "CSB/Fokotany",
           "type": "reference",
@@ -203,7 +203,7 @@
           "repeats": false
         },
         {
-          "linkId": "PractitionerRole.extension[1]#preloaded",
+          "linkId": "PractitionerRole.extension[1]#tree",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:commune.value[x]:valueReference",
           "text": "Commune",
           "type": "reference",
