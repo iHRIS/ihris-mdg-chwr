@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-07-11T19:05:20.021Z",
+        "when": "2024-07-11T19:42:26.512Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "w47QMnmHG63e5qCGSLnmBcjfOuIrXjChiV3+NirbephFpMSquAOVUags7zlLml5EPDW355/+5MYbJrDRKkPSZNcyZKXps1aU21D71Yop9lWq6fLgdzO0X5CY6JJABtz341XcmbQVTXvpqVDM5Hc4VHQ02LuAMeYF7ru3YJKNQS4="
+        "data": "LC/mJgwLU7aRDI23hwvpRqpC4StEcOgCVYX54CDx8EYPu4TOMB3MKnQJN6nEj6Iad4d1bKMfCKLeBGrP6v9aWLiYfV26OFAep3lSNRCxboOoCXK1pcMcdHVMS17hw2kr51NFUCfL5oTxbRuxqEmEU0iwvnd2NjFI7QlcJJVIULs="
       }
     },
     {
@@ -120,7 +120,7 @@
         },
         {
           "name": "site:nav:menu:dashboard:url",
-          "valueString": "/ihrisapp/ihris-dashboard/index.html#/dashBuilder"
+          "valueString": "/ihrisapp/ihris-data-visualizer/index.html#/dashBuilder"
         },
         {
           "name": "site:nav:menu:dashboard:external",
