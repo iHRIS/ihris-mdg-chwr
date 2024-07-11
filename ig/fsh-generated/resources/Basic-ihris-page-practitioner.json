@@ -38,7 +38,7 @@
         },
         {
           "url": "search",
-          "valueString": "Gender|Practitioner.gender|http://hl7.org/fhir/administrative-gender"
+          "valueString": "Gender|Practitioner.gender|http://ihris.org/fhir/ValueSet/ihris-gender-valueset"
         },
         {
           "url": "search",
@@ -50,7 +50,7 @@
         },
         {
           "url": "filter",
-          "valueString": "Gender|gender|http://hl7.org/fhir/ValueSet/administrative-gender"
+          "valueString": "Gender|gender|http://ihris.org/fhir/ValueSet/ihris-gender-valueset"
         },
         {
           "extension": [
