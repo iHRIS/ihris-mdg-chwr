@@ -9948,11 +9948,11 @@
             "http://ihris.org/fhir/StructureDefinition/ihris-facility"
           ]
         },
-        "id": "#N/A",
+        "id": "FKT-CSB-MDG-18-08-060-0217",
         "name": "Andasy",
         "status": "active",
         "partOf": {
-          "reference": "Location/#N/A"
+          "reference": "Location/CSB-MDG-18-08-060"
         },
         "position": {
           "latitude": "",
@@ -9981,7 +9981,7 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Location/#N/A"
+        "url": "Location/FKT-CSB-MDG-18-08-060-0217"
       }
     },
     {
@@ -9994,11 +9994,11 @@
             "http://ihris.org/fhir/StructureDefinition/ihris-facility"
           ]
         },
-        "id": "#N/A",
+        "id": "FKT-CSB-MDG-18-08-060-0218",
         "name": "Maromiandra",
         "status": "active",
         "partOf": {
-          "reference": "Location/#N/A"
+          "reference": "Location/CSB-MDG-18-08-060"
         },
         "position": {
           "latitude": "",
@@ -10027,7 +10027,7 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Location/#N/A"
+        "url": "Location/FKT-CSB-MDG-18-08-060-0218"
       }
     },
     {
@@ -10040,11 +10040,11 @@
             "http://ihris.org/fhir/StructureDefinition/ihris-facility"
           ]
         },
-        "id": "#N/A",
+        "id": "FKT-CSB-MDG-18-08-060-0219",
         "name": "Sanamena",
         "status": "active",
         "partOf": {
-          "reference": "Location/#N/A"
+          "reference": "Location/CSB-MDG-18-08-060"
         },
         "position": {
           "latitude": "",
@@ -10073,7 +10073,7 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Location/#N/A"
+        "url": "Location/FKT-CSB-MDG-18-08-060-0219"
       }
     },
     {
