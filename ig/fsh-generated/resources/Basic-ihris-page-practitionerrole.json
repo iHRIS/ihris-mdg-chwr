@@ -54,6 +54,35 @@
           "url": "link"
         },
         {
+          "extension": [
+            {
+              "url": "url",
+              "valueUrl": "/resource/view/practitionerrole/FIELD?edit=true"
+            },
+            {
+              "url": "field",
+              "valueString": "PractitionerRole.id"
+            },
+            {
+              "url": "text",
+              "valueString": "Edit"
+            },
+            {
+              "url": "button",
+              "valueBoolean": true
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-pencil"
+            },
+            {
+              "url": "class",
+              "valueString": "secondary"
+            }
+          ],
+          "url": "link"
+        },
+        {
           "url": "search",
           "valueString": "Start Date|PractitionerRole.period.start"
         },

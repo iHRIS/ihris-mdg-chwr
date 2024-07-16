@@ -86,16 +86,7 @@ Description:    "iHRIS profile of Practitioner."
 * birthDate ^maxValueQuantity.value = -18
 * photo 0..1 MS
 * photo ^label = "Photo"
-* communication 0..* MS
-* communication ^label = "Communication"
-* communication.coding 1..1 MS
-* communication.coding ^label = "Language"
-* communication.extension contains
-    IhrisPractitionerLanguageProficiency named proficiency 0..* MS
-* communication.extension[proficiency] MS
-* communication.extension[proficiency] ^label = "Language Proficiency"
-* communication.extension[proficiency].extension[level].valueCoding MS
-* communication.extension[proficiency].extension[type].valueCoding MS
+* communication 0..0
 * extension contains
     IhrisPractitionerNationality named nationality 0..1 and
     IhrisPractitionerMaritalStatus named maritalStatus 0..1 and

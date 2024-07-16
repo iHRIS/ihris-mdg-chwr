@@ -199,10 +199,6 @@
         {
           "url": "name",
           "valueString": "contact"
-        },
-        {
-          "url": "field",
-          "valueString": "Practitioner.extension:phone"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"
@@ -210,26 +206,9 @@
     {
       "extension": [
         {
-          "url": "title",
-          "valueString": "Language Details"
-        },
-        {
-          "url": "description",
-          "valueString": "Languages spoken"
-        },
-        {
-          "url": "name",
-          "valueString": "language"
-        },
-        {
           "url": "field",
-          "valueString": "Practitioner.communication"
-        }
-      ],
-      "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"
-    },
-    {
-      "extension": [
+          "valueString": "PractitionerRole.code"
+        },
         {
           "url": "title",
           "valueString": "Position"
@@ -241,10 +220,6 @@
         {
           "url": "name",
           "valueString": "position"
-        },
-        {
-          "url": "field",
-          "valueString": "PractitionerRole.code"
         },
         {
           "extension": [

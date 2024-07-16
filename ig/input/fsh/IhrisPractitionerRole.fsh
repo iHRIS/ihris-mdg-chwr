@@ -85,11 +85,17 @@ Title:          "iHRIS PractitionerRole Page"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-practitioner-role)
-* extension[display].extension[link].extension[field].valueString = "PractitionerRole.practitioner.reference"
-* extension[display].extension[link].extension[text].valueString = "View Practitioner"
-* extension[display].extension[link].extension[button].valueBoolean = true
-* extension[display].extension[link].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
+* extension[display].extension[link][0].extension[field].valueString = "PractitionerRole.practitioner.reference"
+* extension[display].extension[link][0].extension[text].valueString = "View Practitioner"
+* extension[display].extension[link][0].extension[button].valueBoolean = true
+* extension[display].extension[link][0].extension[icon].valueString = "mdi-account-arrow-right"
+* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
+* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/practitionerrole/FIELD?edit=true"
+* extension[display].extension[link][1].extension[field].valueString = "PractitionerRole.id"
+* extension[display].extension[link][1].extension[text].valueString = "Edit"
+* extension[display].extension[link][1].extension[button].valueBoolean = true
+* extension[display].extension[link][1].extension[icon].valueString = "mdi-pencil"
+* extension[display].extension[link][1].extension[class].valueString = "secondary"
 * extension[display].extension[search][0].valueString = "Job|PractitionerRole.code[0].coding[0]"
 * extension[display].extension[search][1].valueString = "Start Date|PractitionerRole.period.start"
 * extension[display].extension[search][2].valueString = "Practitioner|PractitionerRole.practitioner"

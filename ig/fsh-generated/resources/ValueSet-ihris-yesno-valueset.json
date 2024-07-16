@@ -4,9 +4,9 @@
   "name": "IhrisYesNoValueSet",
   "id": "ihris-yesno-valueset",
   "title": "iHRIS Yes-no ValueSet",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "url": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
-  "date": "2020-09-29T08:41:04.362Z",
+  "date": "2023-09-29T08:41:04.362Z",
   "compose": {
     "include": [
       {

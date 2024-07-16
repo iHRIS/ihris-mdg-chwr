@@ -5,20 +5,20 @@
   "name": "IhrisYesNo",
   "id": "ihris-yesno",
   "title": "Yes/No",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-yesno",
   "concept": [
     {
       "code": "yes",
-      "display": "Yes",
-      "definition": "Yes"
+      "display": "Oui",
+      "definition": "Oui"
     },
     {
       "code": "no",
-      "display": "No",
-      "definition": "No"
+      "display": "Non",
+      "definition": "Non"
     }
   ],
-  "date": "2020-09-29T08:41:04.362Z",
+  "date": "2023-09-29T08:41:04.362Z",
   "count": 2
 }

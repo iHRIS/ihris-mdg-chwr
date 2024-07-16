@@ -29,15 +29,16 @@ Title:          "Incentive details"
 CodeSystem:      IhrisYesNo
 Id:              ihris-yesno
 Title:           "Yes/No"
-* ^date = "2020-09-29T08:41:04.362Z"
-* #yes "Yes" "Yes"
-* #no "No" "No"
+* ^date = "2023-09-29T08:41:04.362Z"
+* ^version = "0.3.0"
+* #yes "Oui" "Oui"
+* #no "Non" "Non"
 
 ValueSet:         IhrisYesNoValueSet
 Id:               ihris-yesno-valueset
 Title:            "iHRIS Yes-no ValueSet"
-* ^date = "2020-09-29T08:41:04.362Z"
-* ^version = "0.2.0"
+* ^date = "2023-09-29T08:41:04.362Z"
+* ^version = "0.3.0"
 * codes from system IhrisYesNo
 
 CodeSystem:      IhrisIncentive

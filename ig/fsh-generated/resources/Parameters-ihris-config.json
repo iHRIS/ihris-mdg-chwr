@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-07-16T08:38:19.121Z",
+        "when": "2024-07-16T15:06:31.345Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "aoHtg9SyTKto9oIIE4brGB0i6IAJ1JwdEMt6UkdHSKUa1tse7CDoWo8ZaYmTpypO6soCLm6L0vCnWsPYGNOVF9UJLBisjTCk/9p13KqS5b5tA8uE9reJTk1Og5N0Sj4ZaYHcBg9bmY7jAjoiZvb2SgVhL00YD+CDhdqNWTLuOM0="
+        "data": "fzseiqj4myi0s/AlQpu/yQ68idC5B/yERx1UjQbXpPeODtP04LOc7wH4t3iKgnkKZUw+e6Ra9Sh7tewxfCF4S3W4Ju3QMF231JRVLpVOMMzxTbq6hgMiqoSsk6g2TkiZUlTu1bq0pchJ9fdql9gn3//t5Pjfnz1J7grjoA/ClYE="
       }
     },
     {
@@ -828,7 +828,7 @@
         },
         {
           "name": "site:intro:default:data:fullName:path",
-          "valueString": "Practitioner.name.where(use='official').given.first() + ' ' + Practitioner.name.where(use='official').family"
+          "valueString": "Practitioner.name.where(use='official').family + ' ' + Practitioner.name.where(use='official').given"
         },
         {
           "name": "site:intro:default:data:title:text",
@@ -876,7 +876,7 @@
         },
         {
           "name": "site:intro:practitionerrole:data:fullName:path",
-          "valueString": "Practitioner.name.where(use='official').given.first() + ' ' + Practitioner.name.where(use='official').family"
+          "valueString": "Practitioner.name.where(use='official').family + ' ' + Practitioner.name.where(use='official').given"
         },
         {
           "name": "site:intro:practitionerrole:data:title:text",
