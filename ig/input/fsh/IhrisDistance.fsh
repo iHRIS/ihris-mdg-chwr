@@ -41,7 +41,7 @@ Usage:          #definition
 * purpose = "Workflow page for recording a Education History information."
 
 * item[0].linkId = "Basic"
-* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.id"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance"
 * item[0].text = "Distance From the Centers"
 * item[0].type = #group
 
@@ -76,11 +76,11 @@ Usage:          #example
 * extension[display].extension[link][0].extension[button].valueBoolean = true
 * extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
 * extension[display].extension[link][0].extension[class].valueString = "secondary"
-* extension[display].extension[link][1].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-location-reference').valueReference.reference"
-* extension[display].extension[link][1].extension[text].valueString = "View Location/Site"
+* extension[display].extension[link][1].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+* extension[display].extension[link][1].extension[text].valueString = "View Health Worker"
 * extension[display].extension[link][1].extension[button].valueBoolean = true
 * extension[display].extension[link][1].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/facility/FIELD"
+* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
 * extension[display].extension[search][0].valueString = "Location|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-location-reference').valueReference.reference"
 * extension[display].extension[search][1].valueString = "Fokotany|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='fokotany').valueDecimal"
 * extension[display].extension[search][2].valueString = "CSB|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='csb').valueDecimal"

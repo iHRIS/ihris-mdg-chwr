@@ -498,6 +498,65 @@
                 }
               ],
               "url": "column"
+            },
+            {
+              "extension": [
+                {
+                  "url": "header",
+                  "valueString": "Actions"
+                },
+                {
+                  "url": "field",
+                  "valueString": "_action"
+                }
+              ],
+              "url": "column"
+            },
+            {
+              "extension": [
+                {
+                  "url": "link",
+                  "valueString": "/questionnaire/ihris-distance/basic-distance?practitioner=FHIRID"
+                },
+                {
+                  "url": "text",
+                  "valueString": "Add Distance Information"
+                },
+                {
+                  "url": "row",
+                  "valueBoolean": false
+                },
+                {
+                  "url": "emptyDisplay",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "class",
+                  "valueString": "primary"
+                }
+              ],
+              "url": "action"
+            },
+            {
+              "extension": [
+                {
+                  "url": "link",
+                  "valueString": "/resource/view/basic-distance/ITEMID"
+                },
+                {
+                  "url": "text",
+                  "valueString": "View"
+                },
+                {
+                  "url": "row",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "class",
+                  "valueString": "primary"
+                }
+              ],
+              "url": "action"
             }
           ],
           "url": "resource"
@@ -686,7 +745,7 @@
               "extension": [
                 {
                   "url": "link",
-                  "valueString": "/questionnaire/ihris-incentive/incentive?practitioner=FHIRID"
+                  "valueString": "/questionnaire/ihris-incentive/basic-incentive?practitioner=FHIRID"
                 },
                 {
                   "url": "text",
@@ -711,7 +770,7 @@
               "extension": [
                 {
                   "url": "link",
-                  "valueString": "/resource/view/incentive/ITEMID"
+                  "valueString": "/resource/view/basic-incentive/ITEMID"
                 },
                 {
                   "url": "text",
@@ -820,7 +879,7 @@
               "extension": [
                 {
                   "url": "link",
-                  "valueString": "/questionnaire/ihris-training/training?practitioner=FHIRID"
+                  "valueString": "/questionnaire/ihris-training/basic-training?practitioner=FHIRID"
                 },
                 {
                   "url": "text",

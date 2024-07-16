@@ -101,7 +101,7 @@ Usage:          #definition
 * purpose = "Workflow page for recording a  Training Information."
 
 * item[0].linkId = "Basic"
-* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.id"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-training"
 * item[0].text = "Training Information"
 * item[0].type = #group
 

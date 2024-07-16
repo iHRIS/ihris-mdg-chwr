@@ -11,7 +11,7 @@
   "item": [
     {
       "linkId": "Basic",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.id",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance",
       "text": "Distance From the Centers",
       "type": "group",
       "item": [

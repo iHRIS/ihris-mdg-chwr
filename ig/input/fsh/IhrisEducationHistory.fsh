@@ -53,7 +53,7 @@ Usage:          #definition
 * purpose = "Workflow page for recording a Education History information."
 
 * item[0].linkId = "Basic"
-* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.id"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history"
 * item[0].text = "Education History"
 * item[0].type = #group
 

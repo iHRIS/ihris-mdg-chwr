@@ -370,7 +370,7 @@ Usage: #example
 * parameter[=].part[+].name = "workflow:questionnaire:training:url"
 * parameter[=].part[=].valueString = "http://ihris.org/fhir/Questionnaire/ihris-training"
 * parameter[=].part[+].name = "workflow:processor:incentive:file"
-* parameter[=].part[=].valueString = "workflowIncentive"
+* parameter[=].part[=].valueString = "workflowMdgIncentive"
 * parameter[=].part[+].name = "workflow:questionnaire:incentive:url"
 * parameter[=].part[=].valueString = "http://ihris.org/fhir/Questionnaire/ihris-incentive"
 * parameter[=].part[+].name = "workflow:processor:distance:file"
