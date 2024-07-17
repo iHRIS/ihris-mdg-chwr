@@ -36,11 +36,14 @@ Description:    "iHRIS profile of Practitioner Role."
 * location only Reference(IhrisFacility)
 * extension contains
     IhrisPractitionerRoleStartYear named startYear 0..1 MS and
-    IhrisPractitionerRoleCommune named commune 0..1 MS
+    IhrisPractitionerRoleCommune named commune 0..1 MS and
+    IhrisPractitionerRoleWorkPlace named workPlace 0..1 MS
 * extension[startYear].valueDate MS
 * extension[startYear] ^label = "Year of commissioning as AC"
 * extension[commune].valueReference MS
 * extension[commune] ^label = "Commune"
+* extension[workPlace].valueCoding MS
+* extension[workPlace] ^label = "Place of Work"
 
 Extension:      IhrisPractitionerRoleStartYear
 Id:             ihris-practitionerrole-start-year
@@ -79,6 +82,35 @@ Description:      "iHRIS ValueSet for: iHRISJob"
 * ^version = "0.6.0"
 * codes from system IhrisJobCodeSystem
 
+Extension: IhrisPractitionerRoleWorkPlace
+Id: ihris-practitionerrole-workplace
+Title: "iHRIS Work Place"
+Description: "iHRIS extension for Work Place."
+* ^context.type = #element
+* ^context.expression = "PractitionerRole"
+* value[x] only Coding
+* valueCoding 0..1 MS
+* valueCoding ^label = "Place of Work"
+* valueCoding from IhrisWorkPlaceValueset
+
+ValueSet:         IhrisWorkPlaceValueset
+Id:               ihris-workplace
+Title:            "Work Place"
+Description:      "iHRIS ValueSet for: iHRISWorkPlace"
+* ^date = "2024-01-10T08:41:04.362Z"
+* ^version = "0.1.0"
+* codes from system IhrisWorkPlaceCodeSystem
+
+CodeSystem:     IhrisWorkPlaceCodeSystem
+Id:             ihris-workplace
+Title:          "Work Place"
+Description:    "iHRIS Code System for Work Place."
+* ^date = "2024-01-10T08:41:04.362Z"
+* ^version = "0.1.0"
+* #csb "CSB"
+* #fokontany "Fokontany"
+* #home "Domicile"
+
 Instance:       ihris-page-practitionerrole
 InstanceOf:     IhrisPage
 Title:          "iHRIS PractitionerRole Page"
@@ -111,6 +143,8 @@ Usage:          #example
 * extension[section][0].extension[field][3].valueString = "PractitionerRole.period"
 * extension[section][0].extension[field][4].valueString = "PractitionerRole.active"
 * extension[section][0].extension[field][5].valueString = "PractitionerRole.extension:startYear.value[x]:valueInteger"
+* extension[section][0].extension[field][6].valueString = "PractitionerRole.extension:commune.value[x]:valueReference"
+* extension[section][0].extension[field][7].valueString = "PractitionerRole.extension:workPlace.value[x]:valueCoding.display"
 
 Instance:       ihris-page-job
 InstanceOf:     IhrisPage
@@ -127,6 +161,20 @@ Usage:          #example
 * extension[section][0].extension[field][1].valueString = "CodeSystem.definition"
 * extension[section][0].extension[field][2].valueString = "CodeSystem.display"
 
+Instance:       ihris-page-workplace
+InstanceOf:     IhrisPage
+Title:          "iHRIS Work Place CodeSystem Page"
+Usage:          #example
+* code = IhrisResourceCodeSystem#page
+* extension[display].extension[resource].valueReference = Reference(CodeSystem/ihris-workplace)
+* extension[display].extension[search][0].valueString = "Code|code"
+* extension[display].extension[search][1].valueString = "Display|display"
+* extension[section][0].extension[title].valueString = "Place Of Work"
+* extension[section][0].extension[description].valueString = "Place Of Work"
+* extension[section][0].extension[name].valueString = "CodeSystem"
+* extension[section][0].extension[field][0].valueString = "CodeSystem.code"
+* extension[section][0].extension[field][1].valueString = "CodeSystem.definition"
+* extension[section][0].extension[field][2].valueString = "CodeSystem.display"
 
 Instance:       IhrisPractitionerWorkflowEndRole
 InstanceOf:     IhrisQuestionnaire

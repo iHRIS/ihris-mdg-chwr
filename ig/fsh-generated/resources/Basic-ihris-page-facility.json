@@ -311,7 +311,28 @@
                 },
                 {
                   "url": "text",
-                  "valueString": "View"
+                  "valueString": "Afficher"
+                },
+                {
+                  "url": "row",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "class",
+                  "valueString": "primary"
+                }
+              ],
+              "url": "action"
+            },
+            {
+              "extension": [
+                {
+                  "url": "link",
+                  "valueString": "/questionnaire/ihris-facilityinfo/facilityinfo/ITEMID?facility=FHIRID"
+                },
+                {
+                  "url": "text",
+                  "valueString": "Modifier"
                 },
                 {
                   "url": "row",

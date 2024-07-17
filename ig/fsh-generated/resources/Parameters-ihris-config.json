@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-07-16T15:06:31.345Z",
+        "when": "2024-07-17T11:29:51.935Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "fzseiqj4myi0s/AlQpu/yQ68idC5B/yERx1UjQbXpPeODtP04LOc7wH4t3iKgnkKZUw+e6Ra9Sh7tewxfCF4S3W4Ju3QMF231JRVLpVOMMzxTbq6hgMiqoSsk6g2TkiZUlTu1bq0pchJ9fdql9gn3//t5Pjfnz1J7grjoA/ClYE="
+        "data": "hdoxsynjpTRJlEht402IhHiRmX2LndeUilS/e3rfDMrHiw8zLO7uSr01bX2aBqWArxHONxdhHPcYsDTOa+tOYyVeupASVpCV2tHGwx+8JOTOFQU8V4p/ycy9HhpyIG9OANU39SNg+cvj2MxMpRxeWC90WXQl4H9X77Jv88BDWvk="
       }
     },
     {
@@ -295,6 +295,18 @@
           "valueString": "3"
         },
         {
+          "name": "site:nav:menu:database:menu:facilityLists:menu:workplace:text",
+          "valueString": "Work Place Types"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:menu:workplace:url",
+          "valueString": "/resource/search/workplace"
+        },
+        {
+          "name": "site:nav:menu:database:menu:facilityLists:menu:workplace:order",
+          "valueString": "4"
+        },
+        {
           "name": "site:nav:menu:database:menu:jobLists:text",
           "valueString": "Job Lists"
         },
@@ -413,6 +425,18 @@
         {
           "name": "site:nav:menu:database:menu:otherLists:menu:maritalStatus:order",
           "valueString": "3"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:relation:text",
+          "valueString": "Relationship Types"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:relation:url",
+          "valueString": "/resource/search/relation"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:relation:order",
+          "valueString": "4"
         },
         {
           "name": "site:nav:menu:reports:text",
@@ -725,6 +749,22 @@
         {
           "name": "workflow:questionnaire:facilityinfo:url",
           "valueString": "http://ihris.org/fhir/Questionnaire/ihris-facilityinfo"
+        },
+        {
+          "name": "workflow:processor:emergency:file",
+          "valueString": "workflowMdgEmergency"
+        },
+        {
+          "name": "workflow:questionnaire:emergency:url",
+          "valueString": "http://ihris.org/fhir/Questionnaire/ihris-emergency"
+        },
+        {
+          "name": "workflow:processor:careports:file",
+          "valueString": "workflowMdgCareports"
+        },
+        {
+          "name": "workflow:questionnaire:careports:url",
+          "valueString": "http://ihris.org/fhir/Questionnaire/ihris-careports"
         },
         {
           "name": "workflow:processor:user:file",

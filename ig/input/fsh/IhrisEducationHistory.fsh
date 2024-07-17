@@ -57,13 +57,18 @@ Usage:          #definition
 * item[0].text = "Education History"
 * item[0].type = #group
 
-* item[0].item[0].linkId = "Basic.extension[0].extension[0]"
-* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:level.value[x]:valueCoding"
-* item[0].item[0].text = "Highest Level of Study"
-* item[0].item[0].type = #choice
-* item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-education-level-valueset"
-* item[0].item[0].required = true
-* item[0].item[0].repeats = false
+* item[0].item[0].linkId = "Basic.extension[0]"
+* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory"
+* item[0].item[0].text = "Details"
+* item[0].item[0].type = #group
+
+* item[0].item[0].item[0].linkId = "Basic.extension[0].extension[0]"
+* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:level.value[x]:valueCoding"
+* item[0].item[0].item[0].text = "Highest Level of Study"
+* item[0].item[0].item[0].type = #choice
+* item[0].item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-education-level-valueset"
+* item[0].item[0].item[0].required = true
+* item[0].item[0].item[0].repeats = false
 
 Instance:       ihris-page-basic-education-history
 InstanceOf:     IhrisPage

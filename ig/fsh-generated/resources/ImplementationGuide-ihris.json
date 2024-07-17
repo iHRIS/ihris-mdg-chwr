@@ -36,6 +36,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ihris-basic-careports"
+        },
+        "name": "CA Report Information",
+        "description": "iHRIS Profile of the Basic resource for CA Report.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ihris-basic-distance"
         },
         "name": "Education History Information",
@@ -48,6 +56,14 @@
         },
         "name": "Education History Information",
         "description": "iHRIS Profile of the Basic resource for Education History.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ihris-basic-emergency"
+        },
+        "name": "Emergency Information",
+        "description": "iHRIS Profile of the Basic resource for Emergency.",
         "exampleBoolean": false
       },
       {
@@ -284,6 +300,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ihris-careports"
+        },
+        "name": "CA Report details",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ihris-dashboard-visualization"
         },
         "name": "iHRIS Dashboard Visualization",
@@ -302,6 +325,13 @@
           "reference": "StructureDefinition/ihris-education-history"
         },
         "name": "Education History details",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ihris-emergency"
+        },
+        "name": "Emergency details",
         "exampleBoolean": false
       },
       {
@@ -460,6 +490,14 @@
         },
         "name": "iHRIS Start Year",
         "description": "iHRIS extension for Job Description Start Year.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ihris-practitionerrole-workplace"
+        },
+        "name": "iHRIS Work Place",
+        "description": "iHRIS extension for Work Place.",
         "exampleBoolean": false
       },
       {
@@ -856,6 +894,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ihris-workplace"
+        },
+        "name": "Work Place",
+        "description": "iHRIS ValueSet for: iHRISWorkPlace",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ihris-yesno-valueset"
         },
         "name": "iHRIS Yes-no ValueSet",
@@ -1198,6 +1244,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/ihris-workplace"
+        },
+        "name": "Work Place",
+        "description": "iHRIS Code System for Work Place.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ihris-yesno"
         },
         "name": "Yes/No",
@@ -1369,6 +1423,13 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/ihris-careports"
+        },
+        "name": "IhrisPractitionerWorkflowCareport",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/ihris-change-password"
         },
         "name": "IhrisChangePassword",
@@ -1400,6 +1461,13 @@
           "reference": "Questionnaire/ihris-education-history"
         },
         "name": "IhrisPractitionerWorkflowEducationHistory",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/ihris-emergency"
+        },
+        "name": "IhrisPractitionerWorkflowEmergency",
         "exampleBoolean": false
       },
       {
@@ -1474,6 +1542,13 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-page-basic-careports"
+        },
+        "name": "Careport",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-page-basic-distance"
         },
         "name": "Distance from Centers",
@@ -1505,6 +1580,13 @@
           "reference": "Basic/ihris-page-education-level"
         },
         "name": "iHRIS Education Level CodeSystem Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-emergency"
+        },
+        "name": "iHRIS Basic Emergency Page",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
       },
       {
@@ -1652,6 +1734,13 @@
           "reference": "Basic/ihris-page-user"
         },
         "name": "User",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-workplace"
+        },
+        "name": "iHRIS Work Place CodeSystem Page",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
       },
       {

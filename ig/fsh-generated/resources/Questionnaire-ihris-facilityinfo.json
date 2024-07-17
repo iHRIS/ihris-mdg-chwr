@@ -16,56 +16,64 @@
       "type": "group",
       "item": [
         {
-          "linkId": "Basic.extension[0].extension[0]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:electricity.value[x]:valueCoding",
-          "text": "Electricity Availability (Yes/No)",
-          "type": "choice",
-          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
-          "required": true
-        },
-        {
-          "linkId": "Basic.extension[0].extension[1]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:internet.value[x]:valueCoding",
-          "text": "Internet Network Availability (Yes/No)",
-          "type": "choice",
-          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
-          "required": true
-        },
-        {
-          "linkId": "Basic.extension[0].extension[2]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:fokontany.value[x]:valueInteger",
-          "text": "Number of Fokontany attached to the CSB",
-          "type": "integer",
-          "required": false
-        },
-        {
-          "linkId": "Basic.extension[0].extension[3]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:ac.value[x]:valueInteger",
-          "text": "Number of ACs",
-          "type": "integer",
-          "required": false
-        },
-        {
-          "linkId": "Basic.extension[0].extension[4]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:inputtools.value[x]:valueCoding",
-          "text": "Availability of input tools (Yes/No)",
-          "type": "choice",
-          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
-          "required": true
-        },
-        {
-          "linkId": "Basic.extension[0].extension[5]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:tablets.value[x]:valueInteger",
-          "text": "Number of Tablets",
-          "type": "integer",
-          "required": false
-        },
-        {
-          "linkId": "Basic.extension[0].extension[6]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:cosan.value[x]:valueString",
-          "text": "COSAN Order",
-          "type": "string",
-          "required": false
+          "linkId": "Basic.extension[0]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo",
+          "text": "Details",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "Basic.extension[0].extension[0]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:electricity.value[x]:valueCoding",
+              "text": "Electricity Availability (Yes/No)",
+              "type": "choice",
+              "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
+              "required": true
+            },
+            {
+              "linkId": "Basic.extension[0].extension[1]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:internet.value[x]:valueCoding",
+              "text": "Internet Network Availability (Yes/No)",
+              "type": "choice",
+              "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
+              "required": true
+            },
+            {
+              "linkId": "Basic.extension[0].extension[2]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:fokontany.value[x]:valueInteger",
+              "text": "Number of Fokontany attached to the CSB",
+              "type": "integer",
+              "required": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[3]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:ac.value[x]:valueInteger",
+              "text": "Number of ACs",
+              "type": "integer",
+              "required": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[4]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:inputtools.value[x]:valueCoding",
+              "text": "Availability of input tools (Yes/No)",
+              "type": "choice",
+              "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
+              "required": true
+            },
+            {
+              "linkId": "Basic.extension[0].extension[5]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:tablets.value[x]:valueInteger",
+              "text": "Number of Tablets",
+              "type": "integer",
+              "required": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[6]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:cosan.value[x]:valueString",
+              "text": "COSAN Order",
+              "type": "string",
+              "required": false
+            }
+          ]
         }
       ]
     }

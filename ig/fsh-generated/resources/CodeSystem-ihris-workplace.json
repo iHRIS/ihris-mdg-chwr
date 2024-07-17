@@ -1,0 +1,27 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisWorkPlaceCodeSystem",
+  "id": "ihris-workplace",
+  "title": "Work Place",
+  "description": "iHRIS Code System for Work Place.",
+  "version": "0.1.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-workplace",
+  "concept": [
+    {
+      "code": "csb",
+      "display": "CSB"
+    },
+    {
+      "code": "fokontany",
+      "display": "Fokontany"
+    },
+    {
+      "code": "home",
+      "display": "Domicile"
+    }
+  ],
+  "date": "2024-01-10T08:41:04.362Z",
+  "count": 3
+}

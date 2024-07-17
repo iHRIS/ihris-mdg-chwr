@@ -8,19 +8,19 @@ Description:    "iHRIS Profile of the Basic resource for Education History."
 * extension contains
     IhrisDistance named distance 1..1 MS
 * extension[distance].extension[fokontany].valueDecimal ^label = "Distance from Fokontany"
-* extension[distance].extension[fokontany].valueDecimal 1..1 MS
+* extension[distance].extension[fokontany].valueDecimal 0..1 MS
 * extension[distance].extension[csb].valueDecimal ^label = "Distance from CSB"
-* extension[distance].extension[csb].valueDecimal 1..1 MS
+* extension[distance].extension[csb].valueDecimal 0..1 MS
 * extension[distance].extension[commsite].valueDecimal ^label = "Distance from Community Site"
-* extension[distance].extension[commsite].valueDecimal 1..1 MS
+* extension[distance].extension[commsite].valueDecimal 0..1 MS
     
 Extension:      IhrisDistance
 Id:             ihris-distance
 Title:          "Education History details"
 * extension contains
-    fokontany 1..1 MS and
-    csb 1..1 MS and
-    commsite 1..1 MS
+    fokontany 0..1 MS and
+    csb 0..1 MS and
+    commsite 0..1 MS
 * extension[fokontany].value[x] only decimal
 * extension[fokontany].valueDecimal ^label = "Distance from Fokontany"
 * extension[csb].value[x] only decimal
@@ -45,23 +45,28 @@ Usage:          #definition
 * item[0].text = "Distance From the Centers"
 * item[0].type = #group
 
-* item[0].item[0].linkId = "Basic.extension[0].extension[0]"
-* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:fokontany.value[x]:valueDecimal"
-* item[0].item[0].text = "Distance from Fokontany"
-* item[0].item[0].type = #decimal
-* item[0].item[0].required = true
+* item[0].item[0].linkId = "Basic.extension[0]"
+* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance"
+* item[0].item[0].text = "Details"
+* item[0].item[0].type = #group
 
-* item[0].item[1].linkId = "Basic.extension[0].extension[1]"
-* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:csb.value[x]:valueDecimal"
-* item[0].item[1].text = "Distance from CSB"
-* item[0].item[1].type = #decimal
-* item[0].item[1].required = true
+* item[0].item[0].item[0].linkId = "Basic.extension[0].extension[0]"
+* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:fokontany.value[x]:valueDecimal"
+* item[0].item[0].item[0].text = "Distance from Fokontany"
+* item[0].item[0].item[0].type = #decimal
+* item[0].item[0].item[0].required = false
 
-* item[0].item[2].linkId = "Basic.extension[0].extension[2]"
-* item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:commsite.value[x]:valueDecimal"
-* item[0].item[2].text = "Distance from Community Site"
-* item[0].item[2].type = #decimal
-* item[0].item[2].required = true
+* item[0].item[0].item[1].linkId = "Basic.extension[0].extension[1]"
+* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:csb.value[x]:valueDecimal"
+* item[0].item[0].item[1].text = "Distance from CSB"
+* item[0].item[0].item[1].type = #decimal
+* item[0].item[0].item[1].required = false
+
+* item[0].item[0].item[2].linkId = "Basic.extension[0].extension[2]"
+* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:commsite.value[x]:valueDecimal"
+* item[0].item[0].item[2].text = "Distance from Community Site"
+* item[0].item[0].item[2].type = #decimal
+* item[0].item[0].item[2].required = false
 
 
 Instance:       ihris-page-basic-distance

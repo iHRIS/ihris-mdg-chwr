@@ -16,29 +16,37 @@
       "type": "group",
       "item": [
         {
-          "linkId": "Basic.extension[0].extension[0]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:provider.value[x]:valueString",
-          "text": "Training Provider",
-          "type": "string",
-          "required": true,
-          "repeats": false
-        },
-        {
-          "linkId": "Basic.extension[0].extension[1]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:training.value[x]:valueCoding",
-          "text": "Training Recieved",
-          "type": "choice",
-          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-training-valueset",
-          "required": true,
-          "repeats": false
-        },
-        {
-          "linkId": "Basic.extension[0].extension[2]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:date.value[x]:valueDate",
-          "text": "Training Date",
-          "type": "date",
-          "required": true,
-          "repeats": false
+          "linkId": "Basic.extension[0]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training",
+          "text": "Details",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "Basic.extension[0].extension[0]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:provider.value[x]:valueString",
+              "text": "Training Provider",
+              "type": "string",
+              "required": true,
+              "repeats": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[1]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:training.value[x]:valueCoding",
+              "text": "Training Recieved",
+              "type": "choice",
+              "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-training-valueset",
+              "required": true,
+              "repeats": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[2]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:date.value[x]:valueDate",
+              "text": "Training Date",
+              "type": "date",
+              "required": true,
+              "repeats": false
+            }
+          ]
         }
       ]
     }

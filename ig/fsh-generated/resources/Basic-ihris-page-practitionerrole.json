@@ -137,6 +137,14 @@
         {
           "url": "field",
           "valueString": "PractitionerRole.extension:startYear.value[x]:valueInteger"
+        },
+        {
+          "url": "field",
+          "valueString": "PractitionerRole.extension:commune.value[x]:valueReference"
+        },
+        {
+          "url": "field",
+          "valueString": "PractitionerRole.extension:workPlace.value[x]:valueCoding.display"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"

@@ -1,0 +1,59 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ihris-emergency",
+  "meta": {
+    "profile": [
+      "http://ihris.org/fhir/StructureDefinition/ihris-questionnaire"
+    ]
+  },
+  "url": "http://ihris.org/fhir/Questionnaire/ihris-emergency",
+  "title": "iHRIS Emergency Workflow",
+  "description": "iHRIS workflow to record a Emergency",
+  "name": "ihris-emergency",
+  "status": "active",
+  "date": "2020-09-02",
+  "purpose": "Workflow page for recording a Emergency information.",
+  "item": [
+    {
+      "linkId": "Basic",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency",
+      "text": "Emergency Contact Information",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Basic.extension[0]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:emergency",
+          "text": "Details",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "Basic.extension[0].extension[0]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:emergency.extension:name.value[x]:valueString",
+              "text": "Full Name",
+              "type": "string",
+              "required": true,
+              "repeats": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[1]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:emergency.extension:relation.value[x]:valueCoding",
+              "text": "Relation",
+              "type": "choice",
+              "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-relation-valueset",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[2]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:emergency.extension:phone.value[x]:valueString",
+              "text": "Phone Number",
+              "type": "string",
+              "required": true,
+              "repeats": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

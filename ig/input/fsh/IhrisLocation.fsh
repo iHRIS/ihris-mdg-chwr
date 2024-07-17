@@ -313,9 +313,13 @@ Usage:          #example
 * extension[section][1].extension[resource].extension[action][0].extension[condition].valueString = "Location.type.coding.where(code='csb')"
 * extension[section][1].extension[resource].extension[action][0].extension[class].valueString = "primary"
 * extension[section][1].extension[resource].extension[action][1].extension[link].valueString = "/resource/view/facility/ITEMID"
-* extension[section][1].extension[resource].extension[action][1].extension[text].valueString = "View"
+* extension[section][1].extension[resource].extension[action][1].extension[text].valueString = "Afficher"
 * extension[section][1].extension[resource].extension[action][1].extension[row].valueBoolean = true
 * extension[section][1].extension[resource].extension[action][1].extension[class].valueString = "primary"
+* extension[section][1].extension[resource].extension[action][2].extension[link].valueString = "/questionnaire/ihris-facilityinfo/facilityinfo/ITEMID?facility=FHIRID"
+* extension[section][1].extension[resource].extension[action][2].extension[text].valueString = "Modifier"
+* extension[section][1].extension[resource].extension[action][2].extension[row].valueBoolean = true
+* extension[section][1].extension[resource].extension[action][2].extension[class].valueString = "primary"
 
 
 Instance:       ihris-page-location

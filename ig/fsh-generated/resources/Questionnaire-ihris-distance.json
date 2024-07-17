@@ -16,25 +16,33 @@
       "type": "group",
       "item": [
         {
-          "linkId": "Basic.extension[0].extension[0]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:fokontany.value[x]:valueDecimal",
-          "text": "Distance from Fokontany",
-          "type": "decimal",
-          "required": true
-        },
-        {
-          "linkId": "Basic.extension[0].extension[1]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:csb.value[x]:valueDecimal",
-          "text": "Distance from CSB",
-          "type": "decimal",
-          "required": true
-        },
-        {
-          "linkId": "Basic.extension[0].extension[2]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:commsite.value[x]:valueDecimal",
-          "text": "Distance from Community Site",
-          "type": "decimal",
-          "required": true
+          "linkId": "Basic.extension[0]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance",
+          "text": "Details",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "Basic.extension[0].extension[0]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:fokontany.value[x]:valueDecimal",
+              "text": "Distance from Fokontany",
+              "type": "decimal",
+              "required": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[1]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:csb.value[x]:valueDecimal",
+              "text": "Distance from CSB",
+              "type": "decimal",
+              "required": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[2]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:commsite.value[x]:valueDecimal",
+              "text": "Distance from Community Site",
+              "type": "decimal",
+              "required": false
+            }
+          ]
         }
       ]
     }

@@ -222,20 +222,20 @@ Title:          "Marital Status"
 CodeSystem:      IhrisRelationCodesystem
 Id:              ihris-relation-codesystem
 Title:           "Relationship"
-* ^date = "2020-10-29T08:41:04.362Z"
-* ^version = "0.2.0"
-* #spouse "Spouse" "Spouse"
-* #mother "Mother" "Mother"
-* #father "Father" "Father"
-* #adoptedchild "Adopted Child" "Adopted Child"
-* #bilogicalChild "Biological Child" "Biological Child"
-* #other "other" "other"
+* ^date = "2023-10-29T08:41:04.362Z"
+* ^version = "0.3.0"
+* #spouse "Époux/Epouse"
+* #mother "Mère"
+* #father "Père"
+* #adoptedchild "Enfant adoptif"
+* #bilogicalChild "Enfant biologique"
+* #other "Autres"
 
 ValueSet:         IhrisRelationValueSet
 Id:               ihris-relation-valueset
 Title:            "iHRIS Relationship ValueSet"
-* ^date = "2020-10-29T08:41:04.362Z"
-* ^version = "0.2.0"
+* ^date = "2023-10-29T08:41:04.362Z"
+* ^version = "0.3.0"
 * codes from system IhrisRelationCodesystem
 
 ValueSet:         IhrisMdgIdentifierType

@@ -110,47 +110,52 @@ Usage:          #definition
 * item[0].text = "Facility Information"
 * item[0].type = #group
 
-* item[0].item[0].linkId = "Basic.extension[0].extension[0]"
-* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:electricity.value[x]:valueCoding"
-* item[0].item[0].text = "Electricity Availability (Yes/No)"
-* item[0].item[0].type = #choice
-* item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
-* item[0].item[0].required = true
+* item[0].item[0].linkId = "Basic.extension[0]"
+* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo"
+* item[0].item[0].text = "Details"
+* item[0].item[0].type = #group
 
-* item[0].item[1].linkId = "Basic.extension[0].extension[1]"
-* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:internet.value[x]:valueCoding"
-* item[0].item[1].text = "Internet Network Availability (Yes/No)"
-* item[0].item[1].type = #choice
-* item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
-* item[0].item[1].required = true
+* item[0].item[0].item[0].linkId = "Basic.extension[0].extension[0]"
+* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:electricity.value[x]:valueCoding"
+* item[0].item[0].item[0].text = "Electricity Availability (Yes/No)"
+* item[0].item[0].item[0].type = #choice
+* item[0].item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
+* item[0].item[0].item[0].required = true
 
-* item[0].item[2].linkId = "Basic.extension[0].extension[2]"
-* item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:fokontany.value[x]:valueInteger"
-* item[0].item[2].text = "Number of Fokontany attached to the CSB"
-* item[0].item[2].type = #integer
-* item[0].item[2].required = false
+* item[0].item[0].item[1].linkId = "Basic.extension[0].extension[1]"
+* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:internet.value[x]:valueCoding"
+* item[0].item[0].item[1].text = "Internet Network Availability (Yes/No)"
+* item[0].item[0].item[1].type = #choice
+* item[0].item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
+* item[0].item[0].item[1].required = true
 
-* item[0].item[3].linkId = "Basic.extension[0].extension[3]"
-* item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:ac.value[x]:valueInteger"
-* item[0].item[3].text = "Number of ACs"
-* item[0].item[3].type = #integer
-* item[0].item[3].required = false
+* item[0].item[0].item[2].linkId = "Basic.extension[0].extension[2]"
+* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:fokontany.value[x]:valueInteger"
+* item[0].item[0].item[2].text = "Number of Fokontany attached to the CSB"
+* item[0].item[0].item[2].type = #integer
+* item[0].item[0].item[2].required = false
 
-* item[0].item[4].linkId = "Basic.extension[0].extension[4]"
-* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:inputtools.value[x]:valueCoding"
-* item[0].item[4].text = "Availability of input tools (Yes/No)"
-* item[0].item[4].type = #choice
-* item[0].item[4].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
-* item[0].item[4].required = true
+* item[0].item[0].item[3].linkId = "Basic.extension[0].extension[3]"
+* item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:ac.value[x]:valueInteger"
+* item[0].item[0].item[3].text = "Number of ACs"
+* item[0].item[0].item[3].type = #integer
+* item[0].item[0].item[3].required = false
 
-* item[0].item[5].linkId = "Basic.extension[0].extension[5]"
-* item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:tablets.value[x]:valueInteger"
-* item[0].item[5].text = "Number of Tablets"
-* item[0].item[5].type = #integer
-* item[0].item[5].required = false
+* item[0].item[0].item[4].linkId = "Basic.extension[0].extension[4]"
+* item[0].item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:inputtools.value[x]:valueCoding"
+* item[0].item[0].item[4].text = "Availability of input tools (Yes/No)"
+* item[0].item[0].item[4].type = #choice
+* item[0].item[0].item[4].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
+* item[0].item[0].item[4].required = true
 
-* item[0].item[6].linkId = "Basic.extension[0].extension[6]"
-* item[0].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:cosan.value[x]:valueString"
-* item[0].item[6].text = "COSAN Order"
-* item[0].item[6].type = #string
-* item[0].item[6].required = false
+* item[0].item[0].item[5].linkId = "Basic.extension[0].extension[5]"
+* item[0].item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:tablets.value[x]:valueInteger"
+* item[0].item[0].item[5].text = "Number of Tablets"
+* item[0].item[0].item[5].type = #integer
+* item[0].item[0].item[5].required = false
+
+* item[0].item[0].item[6].linkId = "Basic.extension[0].extension[6]"
+* item[0].item[0].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-facility-info#Basic.extension:facilityInfo.extension:cosan.value[x]:valueString"
+* item[0].item[0].item[6].text = "COSAN Order"
+* item[0].item[0].item[6].type = #string
+* item[0].item[0].item[6].required = false

@@ -105,24 +105,29 @@ Usage:          #definition
 * item[0].text = "Training Information"
 * item[0].type = #group
 
-* item[0].item[0].linkId = "Basic.extension[0].extension[0]"
-* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:provider.value[x]:valueString"
-* item[0].item[0].text = "Training Provider"
-* item[0].item[0].type = #string
-* item[0].item[0].required = true
-* item[0].item[0].repeats = false
+* item[0].item[0].linkId = "Basic.extension[0]"
+* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training"
+* item[0].item[0].text = "Details"
+* item[0].item[0].type = #group
 
-* item[0].item[1].linkId = "Basic.extension[0].extension[1]"
-* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:training.value[x]:valueCoding"
-* item[0].item[1].text = "Training Recieved"
-* item[0].item[1].type = #choice
-* item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-training-valueset"
-* item[0].item[1].required = true
-* item[0].item[1].repeats = false
+* item[0].item[0].item[0].linkId = "Basic.extension[0].extension[0]"
+* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:provider.value[x]:valueString"
+* item[0].item[0].item[0].text = "Training Provider"
+* item[0].item[0].item[0].type = #string
+* item[0].item[0].item[0].required = true
+* item[0].item[0].item[0].repeats = false
 
-* item[0].item[2].linkId = "Basic.extension[0].extension[2]"
-* item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:date.value[x]:valueDate"
-* item[0].item[2].text = "Training Date"
-* item[0].item[2].type = #date
-* item[0].item[2].required = true
-* item[0].item[2].repeats = false
+* item[0].item[0].item[1].linkId = "Basic.extension[0].extension[1]"
+* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:training.value[x]:valueCoding"
+* item[0].item[0].item[1].text = "Training Recieved"
+* item[0].item[0].item[1].type = #choice
+* item[0].item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-training-valueset"
+* item[0].item[0].item[1].required = true
+* item[0].item[0].item[1].repeats = false
+
+* item[0].item[0].item[2].linkId = "Basic.extension[0].extension[2]"
+* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:date.value[x]:valueDate"
+* item[0].item[0].item[2].text = "Training Date"
+* item[0].item[0].item[2].type = #date
+* item[0].item[0].item[2].required = true
+* item[0].item[0].item[2].repeats = false
