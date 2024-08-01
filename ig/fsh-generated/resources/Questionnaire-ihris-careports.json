@@ -23,6 +23,23 @@
           "item": [
             {
               "linkId": "Basic.extension[0].extension[0]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:month.value[x]:valueCoding",
+              "text": "Year",
+              "type": "choice",
+              "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-month-valueset",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[1]#year",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:year.value[x]:valueDate",
+              "text": "Year",
+              "type": "date",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[2]",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:recieved.value[x]:valueCoding",
               "text": "Recieved Report?",
               "type": "choice",
@@ -31,7 +48,7 @@
               "repeats": false
             },
             {
-              "linkId": "Basic.extension[0].extension[1]",
+              "linkId": "Basic.extension[0].extension[3]",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:date.value[x]:valueDate",
               "text": "Date",
               "type": "date",

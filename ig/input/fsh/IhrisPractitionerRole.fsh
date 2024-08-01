@@ -16,11 +16,11 @@ Description:    "iHRIS profile of Practitioner Role."
 * period.start 1..1 MS
 * period.start ^label = "Start Date"
 * period.start ^minValueDateTime = "1950-01-01"
-* period.start ^maxValueDateTime = "2030-01-01"
+* period.start ^maxValueDateTime = "2040-01-01"
 * period.end 0..1 MS
 * period.end ^label = "End Date"
 * period.end ^minValueDateTime = "1950-01-01"
-* period.end ^maxValueDateTime = "2030-01-01"
+* period.end ^maxValueDateTime = "2040-01-01"
 * practitioner 0..1 MS
 * practitioner ^label = "Health Worker"
 * practitioner.reference ^label = "Health Worker"
@@ -35,17 +35,14 @@ Description:    "iHRIS profile of Practitioner Role."
 * location ^label = "Facility/Community Site"
 * location only Reference(IhrisFacility)
 * extension contains
-    IhrisPractitionerRoleStartYear named startYear 0..1 MS and
     IhrisPractitionerRoleCommune named commune 0..1 MS and
     IhrisPractitionerRoleWorkPlace named workPlace 0..1 MS
-* extension[startYear].valueDate MS
-* extension[startYear] ^label = "Year of commissioning as AC"
 * extension[commune].valueReference MS
 * extension[commune] ^label = "Commune"
 * extension[workPlace].valueCoding MS
 * extension[workPlace] ^label = "Place of Work"
 
-Extension:      IhrisPractitionerRoleStartYear
+/*Extension:      IhrisPractitionerRoleStartYear
 Id:             ihris-practitionerrole-start-year
 Title:          "iHRIS Start Year"
 Description:    "iHRIS extension for Job Description Start Year."
@@ -53,7 +50,7 @@ Description:    "iHRIS extension for Job Description Start Year."
 * ^context.expression = "PractitionerRole"
 * value[x] only date
 * valueDate 0..1 MS
-* valueDate ^label = "Start Year"
+* valueDate ^label = "Start Year"*/
 
 Extension:      IhrisPractitionerRoleCommune
 Id:             ihris-practitionerrole-commune
@@ -69,17 +66,17 @@ CodeSystem:     IhrisJobCodeSystem
 Id:             ihris-job-chwr
 Title:          "Job Titles/CHW Types"
 Description:    "iHRIS Code System for Job Titles/CHW Types."
-* ^date = "2024-01-10T08:41:04.362Z"
-* ^version = "0.1.0"
-* #CR "Community Relay"
-* #AC "AC Commcare"
+* ^date = "2024-02-10T08:41:04.362Z"
+* ^version = "0.2.0"
+* #CR "Relais Communautaire"
+* #AC "Agent Communautaire"
 
 ValueSet:         IhrisJobValueset
 Id:               ihris-job-chwr
 Title:            "Job Titles"
 Description:      "iHRIS ValueSet for: iHRISJob"
-* ^date = "2023-07-15T08:41:04.362Z"
-* ^version = "0.6.0"
+* ^date = "2024-07-10T08:41:04.362Z"
+* ^version = "0.8.0"
 * codes from system IhrisJobCodeSystem
 
 Extension: IhrisPractitionerRoleWorkPlace
@@ -142,9 +139,8 @@ Usage:          #example
 * extension[section][0].extension[field][2].valueString = "PractitionerRole.location"
 * extension[section][0].extension[field][3].valueString = "PractitionerRole.period"
 * extension[section][0].extension[field][4].valueString = "PractitionerRole.active"
-* extension[section][0].extension[field][5].valueString = "PractitionerRole.extension:startYear.value[x]:valueInteger"
-* extension[section][0].extension[field][6].valueString = "PractitionerRole.extension:commune.value[x]:valueReference"
-* extension[section][0].extension[field][7].valueString = "PractitionerRole.extension:workPlace.value[x]:valueCoding.display"
+* extension[section][0].extension[field][5].valueString = "PractitionerRole.extension:commune.value[x]:valueReference"
+* extension[section][0].extension[field][6].valueString = "PractitionerRole.extension:workPlace.value[x]:valueCoding.display"
 
 Instance:       ihris-page-job
 InstanceOf:     IhrisPage

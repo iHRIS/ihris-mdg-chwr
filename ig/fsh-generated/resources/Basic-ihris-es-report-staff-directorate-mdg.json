@@ -45,7 +45,7 @@
               "extension": [
                 {
                   "url": "format",
-                  "valueString": "%s, %s"
+                  "valueString": "%s %s"
                 },
                 {
                   "url": "order",

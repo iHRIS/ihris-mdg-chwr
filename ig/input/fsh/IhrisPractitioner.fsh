@@ -28,7 +28,7 @@ Description:    "iHRIS profile of Practitioner."
 * identifier.value ^label = "Value"
 * name 1..* MS
 * name ^label = "Name"
-* name.use 1..1 MS
+* name.use 0..0 MS
 * name.use ^label = "Use"
 * name.family 1..1 MS
 * name.family ^label = "Last Name"
@@ -38,8 +38,10 @@ Description:    "iHRIS profile of Practitioner."
 * name.family ^constraint[0].human = "Name must be only text."
 * name.given 1..* MS
 * name.given ^label = "First Name"
-* name.prefix 0..1 MS
-* name.prefix ^label = "Prefix"
+* name.prefix 0..0 MS
+* name.extension contains IhrisPractitionerPrefix named prefix 0..1 MS
+* name.extension[prefix].valueCoding MS
+* name.extension[prefix] ^label = "Prefix"
 * name.suffix 0..0
 //* name.suffix ^label = "Suffix"
 * telecom 0..0 MS
@@ -202,12 +204,11 @@ Id:             ihris-marital-status-codesystem
 Title:          "Marital Status"
 * ^date = "2023-10-29T08:41:04.362Z"
 * ^version = "0.2.0"
-* #single "Single" "Single"
-* #married "Married" "Married"
-* #divorced "Divorced" "Divorced"
-* #widowed "Widowed" "Widowed"
-* #separated "Separated" "Separated"
-* #other "Other" "Other"
+* #single "Célibataire" "Célibataire"
+* #married "Marié(e)" "Marié(e)"
+* #divorced "Divorcé(e)" "Divorcé(e)"
+* #widowed "Veuf(ve)" "Veuf(ve)"
+* #other "Autre" "Autre"
 
 // Extension:      IhrisPractitionerDependents
 // Id:             ihris-practitioner-dependents
@@ -241,17 +242,43 @@ Title:            "iHRIS Relationship ValueSet"
 ValueSet:         IhrisMdgIdentifierType
 Id:               ihris-mdg-identifier-type
 Title: "iHRIS Identifier Type ValueSet"
-* ^date = "2023-10-29T08:41:04.362Z"
-* ^version = "0.2.0"
+* ^date = "2023-11-29T08:41:04.362Z"
+* ^version = "0.3.0"
 * codes from system IhrisMdgIdentifierCodesystem
 
 CodeSystem:      IhrisMdgIdentifierCodesystem
 Id:              ihris-mdg-identifier-codesystem
 Title:           "Identifier Types"
-* ^date = "2023-10-29T08:41:04.362Z"
-* ^version = "0.2.0"
-* #CIN "National Identintification Number" "National Identintification Number"
+* ^date = "2023-11-29T08:41:04.362Z"
+* ^version = "0.3.0"
+* #CIN "Carte d'Identité Nationale" "Carte d'Identité Nationale"
 
+Extension:      IhrisPractitionerPrefix
+Id:             ihris-practitioner-prefix
+Title:          "iHRIS Personal Information Prefix"
+Description:    "iHRIS extension for Personal Prefix."
+* ^context.type = #element
+* ^context.expression = "Practitioner"
+* value[x] only Coding
+* valueCoding 0..1 MS
+* valueCoding ^label = "Prefix"
+* valueCoding from IhrisMDGPrefixValueSet (required)
+
+ValueSet:         IhrisMDGPrefixValueSet
+Id:               ihris-mdg-prefix-valueset
+Title:            "iHRIS Ethiopia Prefix ValueSet"
+* ^date = "2020-11-11T09:25:04.362Z"
+* ^version = "0.4.0"
+* codes from system IhrisMDGPrefixCodeSystem
+
+CodeSystem:         IhrisMDGPrefixCodeSystem
+Id:               ihris-mdg-prefix-codesystem
+Title:            "iHRIS Ethiopia Prefix Codesystem"
+* ^date = "2020-11-11T09:25:04.362Z"
+* ^version = "0.4.0"
+* #mr "Mr."
+* #mme "Mme."
+* #mlle "Mlle."
 
 Instance:       ihris-page-relation
 InstanceOf:     IhrisPage
@@ -307,16 +334,16 @@ Usage:        #example
 CodeSystem:      IhrisMDGGenderCodesystem
 Id:              ihris-gender-codesystem
 Title:           "Gender"
-* ^date = "2023-06-29T08:41:04.362Z"
-* ^version = "0.3.0"
-* #male "Masculin" "Masculin"
-* #female "Féminin" "Féminin"
+* ^date = "2024-06-29T08:41:04.362Z"
+* ^version = "0.4.0"
+* #Masculin "Masculin" "Masculin"
+* #Féminin "Féminin" "Féminin"
 
 ValueSet:         IhrisMDGGenderValueSet
 Id:               ihris-gender-valueset
 Title:            "iHRIS Gender ValueSet"
-* ^date = "2023-06-29T08:41:04.362Z"
-* ^version = "0.3.0"
+* ^date = "2024-06-29T08:41:04.362Z"
+* ^version = "0.4.0"
 * codes from system IhrisMDGGenderCodesystem
 
 Instance:       ihris-page-gender

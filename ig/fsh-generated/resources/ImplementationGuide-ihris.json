@@ -462,6 +462,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ihris-practitioner-prefix"
+        },
+        "name": "iHRIS Personal Information Prefix",
+        "description": "iHRIS extension for Personal Prefix.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ihris-practitioner-reference"
         },
         "name": "iHRIS Practitioner Reference",
@@ -482,14 +490,6 @@
         },
         "name": "iHRIS Commune",
         "description": "iHRIS extension for Position Commune.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ihris-practitionerrole-start-year"
-        },
-        "name": "iHRIS Start Year",
-        "description": "iHRIS extension for Job Description Start Year.",
         "exampleBoolean": false
       },
       {
@@ -837,6 +837,13 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ihris-mdg-prefix-valueset"
+        },
+        "name": "iHRIS Ethiopia Prefix ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ihris-marital-status-valueset"
         },
         "name": "iHRIS Marital Status ValueSet",
@@ -847,6 +854,13 @@
           "reference": "ValueSet/ihris-mdg-identifier-type"
         },
         "name": "iHRIS Identifier Type ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ihris-month-valueset"
+        },
+        "name": "iHRIS Activity Packs ValueSet",
         "exampleBoolean": false
       },
       {
@@ -1180,6 +1194,13 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/ihris-mdg-prefix-codesystem"
+        },
+        "name": "iHRIS Ethiopia Prefix Codesystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ihris-marital-status-codesystem"
         },
         "name": "Marital Status",
@@ -1190,6 +1211,13 @@
           "reference": "CodeSystem/ihris-mdg-identifier-codesystem"
         },
         "name": "Identifier Types",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ihris-month-codesystem"
+        },
+        "name": "Activity Packs",
         "exampleBoolean": false
       },
       {

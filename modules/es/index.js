@@ -6,7 +6,13 @@ const index = {
       let age = moment().diff(fields.dob, 'years');
       resolve(age)
     })
-  }
+  },
+  startyear: (fields) => {
+    return new Promise((resolve, reject) => {
+      let year = moment(fields.startDate).year();
+      resolve(year)
+    })
+}
 }
 
 module.exports = index

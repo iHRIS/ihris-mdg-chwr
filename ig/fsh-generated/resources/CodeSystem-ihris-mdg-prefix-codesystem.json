@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisMDGPrefixCodeSystem",
+  "id": "ihris-mdg-prefix-codesystem",
+  "title": "iHRIS Ethiopia Prefix Codesystem",
+  "version": "0.4.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-mdg-prefix-codesystem",
+  "concept": [
+    {
+      "code": "mr",
+      "display": "Mr."
+    },
+    {
+      "code": "mme",
+      "display": "Mme."
+    },
+    {
+      "code": "mlle",
+      "display": "Mlle."
+    }
+  ],
+  "date": "2020-11-11T09:25:04.362Z",
+  "count": 3
+}

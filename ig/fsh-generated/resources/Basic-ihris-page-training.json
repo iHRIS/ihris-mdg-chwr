@@ -29,6 +29,27 @@
           "valueString": "Code|code"
         },
         {
+          "extension": [
+            {
+              "url": "text",
+              "valueString": "Add Training"
+            },
+            {
+              "url": "url",
+              "valueUrl": "/resource/add/training"
+            },
+            {
+              "url": "button",
+              "valueBoolean": true
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-account-arrow-right"
+            }
+          ],
+          "url": "link"
+        },
+        {
           "url": "search",
           "valueString": "Display|display"
         }

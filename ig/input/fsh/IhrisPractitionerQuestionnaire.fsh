@@ -20,36 +20,27 @@ Usage:          #definition
 * item[0].item[0].text = "Name"
 * item[0].item[0].type = #group
 
-* item[0].item[0].item[0].linkId = "Practitioner.name[0].use"
-* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.use"
-* item[0].item[0].item[0].text = "Name Usage"
+* item[0].item[0].item[0].linkId = "Practitioner.name[0].prefix"
+* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.extension:prefix.value[x]:valueCoding"
+* item[0].item[0].item[0].text = "Prefix"
 * item[0].item[0].item[0].type = #choice
-* item[0].item[0].item[0].required = true
+* item[0].item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-mdg-prefix-valueset"
+* item[0].item[0].item[0].required = false
 * item[0].item[0].item[0].repeats = false
-* item[0].item[0].item[0].readOnly = true
-* item[0].item[0].item[0].answerOption.valueCoding = http://hl7.org/fhir/name-use#official
-* item[0].item[0].item[0].answerOption.initialSelected = true
 
-* item[0].item[0].item[1].linkId = "Practitioner.name[0].prefix"
-* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.prefix"
-* item[0].item[0].item[1].text = "Prefix"
+* item[0].item[0].item[1].linkId = "Practitioner.name[0].family"
+* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.family"
+* item[0].item[0].item[1].text = "Last Name"
 * item[0].item[0].item[1].type = #string
-* item[0].item[0].item[1].required = false
+* item[0].item[0].item[1].required = true
 * item[0].item[0].item[1].repeats = false
 
-* item[0].item[0].item[2].linkId = "Practitioner.name[0].family"
-* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.family"
-* item[0].item[0].item[2].text = "Last Name"
+* item[0].item[0].item[2].linkId = "Practitioner.name[0].given[0]"
+* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.given"
+* item[0].item[0].item[2].text = "First Names"
 * item[0].item[0].item[2].type = #string
 * item[0].item[0].item[2].required = true
-* item[0].item[0].item[2].repeats = false
-
-* item[0].item[0].item[3].linkId = "Practitioner.name[0].given[0]"
-* item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.given"
-* item[0].item[0].item[3].text = "First Names"
-* item[0].item[0].item[3].type = #string
-* item[0].item[0].item[3].required = true
-* item[0].item[0].item[3].repeats = true
+* item[0].item[0].item[2].repeats = true
 
 * item[0].item[1].linkId = "Practitioner.birthDate"
 * item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.birthDate"
@@ -134,39 +125,33 @@ Usage:          #definition
 * item[2].item[2].required = true
 * item[2].item[2].repeats = false
 
-* item[2].item[3].linkId = "PractitionerRole.period.end"
-* item[2].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.period.end"
-* item[2].item[3].text = "End Date"
-* item[2].item[3].type = #dateTime
+* item[2].item[3].linkId = "PractitionerRole.location#tree"
+* item[2].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.location"
+* item[2].item[3].text = "CSB/Fokotany"
+* item[2].item[3].type = #reference
 * item[2].item[3].required = false
 * item[2].item[3].repeats = false
 
-* item[2].item[4].linkId = "PractitionerRole.location#tree"
-* item[2].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.location"
-* item[2].item[4].text = "CSB/Fokotany"
+* item[2].item[4].linkId = "PractitionerRole.extension[1]#tree"
+* item[2].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:commune.value[x]:valueReference"
+* item[2].item[4].text = "Commune"
 * item[2].item[4].type = #reference
 * item[2].item[4].required = false
 * item[2].item[4].repeats = false
 
-* item[2].item[5].linkId = "PractitionerRole.extension[1]#tree"
-* item[2].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:commune.value[x]:valueReference"
-* item[2].item[5].text = "Commune"
-* item[2].item[5].type = #reference
+* item[2].item[5].linkId = "PractitionerRole.extension[0]#preload"
+* item[2].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:workPlace.value[x]:valueCoding"
+* item[2].item[5].text = "Place of Work"
+* item[2].item[5].type = #choice
+* item[2].item[5].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-workplace"
 * item[2].item[5].required = false
 * item[2].item[5].repeats = false
 
-* item[2].item[6].linkId = "PractitionerRole.extension[0]#year"
-* item[2].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:startYear.value[x]:valueDate"
-* item[2].item[6].text = "Year of commissioning as AC"
-* item[2].item[6].type = #date
-* item[2].item[6].required = false
-* item[2].item[6].repeats = false
-
-* item[2].item[7].linkId = "PractitionerRole.active"
-* item[2].item[7].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.active"
-* item[2].item[7].text = "Active"
-* item[2].item[7].type = #boolean
-* item[2].item[7].required = true
+* item[2].item[6].linkId = "PractitionerRole.active"
+* item[2].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.active"
+* item[2].item[6].text = "Active"
+* item[2].item[6].type = #boolean
+* item[2].item[6].required = true
 
 * item[3].linkId = "Practitioner.identifier"
 * item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier"

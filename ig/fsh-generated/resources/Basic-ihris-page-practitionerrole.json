@@ -136,10 +136,6 @@
         },
         {
           "url": "field",
-          "valueString": "PractitionerRole.extension:startYear.value[x]:valueInteger"
-        },
-        {
-          "url": "field",
           "valueString": "PractitionerRole.extension:commune.value[x]:valueReference"
         },
         {

@@ -23,7 +23,7 @@ Usage: #example
 * extension.extension[=].extension[=].valueString = "fullname"
 * extension.extension[=].extension[+].url = "displayformat"
 * extension.extension[=].extension[=].extension[0].url = "format"
-* extension.extension[=].extension[=].extension[=].valueString = "%s, %s"
+* extension.extension[=].extension[=].extension[=].valueString = "%s %s"
 * extension.extension[=].extension[=].extension[+].url = "order"
 * extension.extension[=].extension[=].extension[=].valueString = "given, family"
 * extension.extension[=].extension[=].extension[+].url = "paths:given:fhirpath"

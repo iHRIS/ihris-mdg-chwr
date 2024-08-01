@@ -49,29 +49,23 @@ Usage:          #example
 * extension[reportdetails].extension[reportelement][4].extension[dropDownFilter].valueBoolean = false
 * extension[reportdetails].extension[reportelement][4].extension[order].valueInteger = 5
 
-* extension[reportdetails].extension[reportelement][5].extension[name].valueString = "nationality"
-* extension[reportdetails].extension[reportelement][5].extension[fhirpath].valueString = "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-nationality').valueCoding.display"
-* extension[reportdetails].extension[reportelement][5].extension[display].valueString = "Citizenship"
-* extension[reportdetails].extension[reportelement][5].extension[filter].valueBoolean = true
-* extension[reportdetails].extension[reportelement][5].extension[dropDownFilter].valueBoolean = true
+* extension[reportdetails].extension[reportelement][5].extension[name].valueString = "phone"
+* extension[reportdetails].extension[reportelement][5].extension[fhirpath].valueString = "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-phone').valueString"
+* extension[reportdetails].extension[reportelement][5].extension[display].valueString = "Phone Number"
+* extension[reportdetails].extension[reportelement][5].extension[filter].valueBoolean = false
+* extension[reportdetails].extension[reportelement][5].extension[dropDownFilter].valueBoolean = false
+* extension[reportdetails].extension[reportelement][5].extension[order].valueInteger = 6
 
-* extension[reportdetails].extension[reportelement][6].extension[name].valueString = "phone"
-* extension[reportdetails].extension[reportelement][6].extension[fhirpath].valueString = "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-phone').valueString"
-* extension[reportdetails].extension[reportelement][6].extension[display].valueString = "Phone Number"
-* extension[reportdetails].extension[reportelement][6].extension[filter].valueBoolean = false
-* extension[reportdetails].extension[reportelement][6].extension[dropDownFilter].valueBoolean = false
-* extension[reportdetails].extension[reportelement][6].extension[order].valueInteger = 6
+* extension[reportdetails].extension[reportelement][6].extension[name].valueString = "martialStatus"
+* extension[reportdetails].extension[reportelement][6].extension[fhirpath].valueString = "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-marital-status').valueCoding.display"
+* extension[reportdetails].extension[reportelement][6].extension[display].valueString = "Marital Status"
+* extension[reportdetails].extension[reportelement][6].extension[filter].valueBoolean = true
+* extension[reportdetails].extension[reportelement][6].extension[dropDownFilter].valueBoolean = true
 
-* extension[reportdetails].extension[reportelement][7].extension[name].valueString = "martialStatus"
-* extension[reportdetails].extension[reportelement][7].extension[fhirpath].valueString = "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-marital-status').valueCoding.display"
-* extension[reportdetails].extension[reportelement][7].extension[display].valueString = "Marital Status"
-* extension[reportdetails].extension[reportelement][7].extension[filter].valueBoolean = true
-* extension[reportdetails].extension[reportelement][7].extension[dropDownFilter].valueBoolean = true
-
-* extension[reportdetails].extension[reportelement][8].extension[name].valueString = "ihris-related-group"
-* extension[reportdetails].extension[reportelement][8].extension[fhirpath].valueString = "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-related-group').extension.where(url='location').valueString"
-* extension[reportdetails].extension[reportelement][8].extension[filter].valueBoolean = false
-* extension[reportdetails].extension[reportelement][8].extension[dropDownFilter].valueBoolean = false
+* extension[reportdetails].extension[reportelement][7].extension[name].valueString = "ihris-related-group"
+* extension[reportdetails].extension[reportelement][7].extension[fhirpath].valueString = "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-related-group').extension.where(url='location').valueString"
+* extension[reportdetails].extension[reportelement][7].extension[filter].valueBoolean = false
+* extension[reportdetails].extension[reportelement][7].extension[dropDownFilter].valueBoolean = false
 
 * extension[reportlink][0].extension[name].valueString = "role"
 * extension[reportlink][0].extension[resource].valueString = "PractitionerRole"
@@ -99,12 +93,13 @@ Usage:          #example
 * extension[reportlink][0].extension[reportelement][2].extension[filter].valueBoolean = true
 * extension[reportlink][0].extension[reportelement][2].extension[dropDownFilter].valueBoolean = false
 
-* extension[reportlink][0].extension[reportelement][3].extension[name].valueString = "startYear"
-* extension[reportlink][0].extension[reportelement][3].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-start-year').valueDate"
-* extension[reportlink][0].extension[reportelement][3].extension[display].valueString = "End Date"
+/* extension[reportlink][0].extension[reportelement][3].extension[name].valueString = "startYear"
+* extension[reportlink][0].extension[reportelement][3].extension[function].valueString = "mdgmodule.startyear({startDate})"
+* extension[reportlink][0].extension[reportelement][3].extension[parameters].valueString = "startDate"
+* extension[reportlink][0].extension[reportelement][3].extension[display].valueString = "Start Year"
 * extension[reportlink][0].extension[reportelement][3].extension[filter].valueBoolean = true
 * extension[reportlink][0].extension[reportelement][3].extension[dropDownFilter].valueBoolean = false
-* extension[reportlink][0].extension[reportelement][3].extension[order].valueInteger = 8
+* extension[reportlink][0].extension[reportelement][3].extension[order].valueInteger = 8*/
 
 * extension[reportlink][1].extension[name].valueString = "site"
 * extension[reportlink][1].extension[resource].valueString = "Location"

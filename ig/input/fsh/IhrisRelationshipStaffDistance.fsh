@@ -31,7 +31,7 @@ Usage:          #example
 
 * extension[reportdetails].extension[reportelement][2].extension[name].valueString = "commsite"
 * extension[reportdetails].extension[reportelement][2].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='commsite').valueDecimal"
-* extension[reportdetails].extension[reportelement][2].extension[display].valueString = "Distance from Commune"
+* extension[reportdetails].extension[reportelement][2].extension[display].valueString = "Distance from Community site"
 * extension[reportdetails].extension[reportelement][2].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][2].extension[dropDownFilter].valueBoolean = false
 * extension[reportdetails].extension[reportelement][2].extension[order].valueInteger = 11

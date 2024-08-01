@@ -10,35 +10,30 @@
   "concept": [
     {
       "code": "single",
-      "display": "Single",
-      "definition": "Single"
+      "display": "Célibataire",
+      "definition": "Célibataire"
     },
     {
       "code": "married",
-      "display": "Married",
-      "definition": "Married"
+      "display": "Marié(e)",
+      "definition": "Marié(e)"
     },
     {
       "code": "divorced",
-      "display": "Divorced",
-      "definition": "Divorced"
+      "display": "Divorcé(e)",
+      "definition": "Divorcé(e)"
     },
     {
       "code": "widowed",
-      "display": "Widowed",
-      "definition": "Widowed"
-    },
-    {
-      "code": "separated",
-      "display": "Separated",
-      "definition": "Separated"
+      "display": "Veuf(ve)",
+      "definition": "Veuf(ve)"
     },
     {
       "code": "other",
-      "display": "Other",
-      "definition": "Other"
+      "display": "Autre",
+      "definition": "Autre"
     }
   ],
   "date": "2023-10-29T08:41:04.362Z",
-  "count": 6
+  "count": 5
 }

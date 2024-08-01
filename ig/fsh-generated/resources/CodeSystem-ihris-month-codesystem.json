@@ -1,0 +1,62 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisMonthCodeSystem",
+  "id": "ihris-month-codesystem",
+  "title": "Activity Packs",
+  "version": "0.3.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-month-codesystem",
+  "concept": [
+    {
+      "code": "january",
+      "display": "Janvier"
+    },
+    {
+      "code": "february",
+      "display": "Février"
+    },
+    {
+      "code": "march",
+      "display": "Mars"
+    },
+    {
+      "code": "april",
+      "display": "Avril"
+    },
+    {
+      "code": "may",
+      "display": "Mai"
+    },
+    {
+      "code": "june",
+      "display": "Juin"
+    },
+    {
+      "code": "july",
+      "display": "Juillet"
+    },
+    {
+      "code": "august",
+      "display": "Août"
+    },
+    {
+      "code": "september",
+      "display": "Septembre"
+    },
+    {
+      "code": "october",
+      "display": "Octobre"
+    },
+    {
+      "code": "november",
+      "display": "Novembre"
+    },
+    {
+      "code": "december",
+      "display": "Décembre"
+    }
+  ],
+  "date": "2022-09-29T08:41:04.362Z",
+  "count": 12
+}

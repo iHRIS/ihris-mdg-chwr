@@ -5,25 +5,25 @@
   "name": "IhrisIncentive",
   "id": "ihris-incentive",
   "title": "Activity Packs",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-incentive",
   "concept": [
     {
       "code": "basic",
-      "display": "Basic",
-      "definition": "Basic"
+      "display": "Basique",
+      "definition": "Basique"
     },
     {
       "code": "essential",
-      "display": "Essential",
-      "definition": "Essential"
+      "display": "Essentiel",
+      "definition": "Essentiel"
     },
     {
       "code": "specific",
-      "display": "Specific",
-      "definition": "Specific"
+      "display": "Spécifique",
+      "definition": "Spécifique"
     }
   ],
-  "date": "2020-09-29T08:41:04.362Z",
+  "date": "2022-09-29T08:41:04.362Z",
   "count": 3
 }

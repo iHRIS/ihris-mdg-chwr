@@ -4,9 +4,9 @@
   "name": "IhrisMdgIdentifierType",
   "id": "ihris-mdg-identifier-type",
   "title": "iHRIS Identifier Type ValueSet",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "url": "http://ihris.org/fhir/ValueSet/ihris-mdg-identifier-type",
-  "date": "2023-10-29T08:41:04.362Z",
+  "date": "2023-11-29T08:41:04.362Z",
   "compose": {
     "include": [
       {

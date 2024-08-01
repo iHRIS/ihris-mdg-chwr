@@ -22,21 +22,18 @@ Title:          "Education History details"
 CodeSystem:      IhrisEducationLevel
 Id:              ihris-education-level
 Title:           "Education Level"
-* ^date = "2023-07-20T08:41:04.362Z"
-* ^version = "0.4.0"
-* #hs "High School" "High School"
-* #college "College" "College"
-* #advancedCert "Advance Certificate" "Advance Certificate"
-* #certificate "Certificate" "Certificate"
-* #tertiary "Tertiary" "Tertiary"
-* #degree "Degree" "Degree"
-* #none "None" "None"
+* ^date = "2024-07-20T08:41:04.362Z"
+* ^version = "0.5.0"
+* #primary "Primaire"
+* #secondary "Secondaire"
+* #university "Universitaire"
+* #none "Aucun"
 
 ValueSet:         IhrisEducationLevelValueSet
 Id:               ihris-education-level-valueset
 Title:            "iHRIS Education Level ValueSet"
-* ^date = "2023-07-20T08:41:04.362Z"
-* ^version = "0.4.0"
+* ^date = "2024-07-20T08:41:04.362Z"
+* ^version = "0.5.0"
 * codes from system IhrisEducationLevel
 
 
