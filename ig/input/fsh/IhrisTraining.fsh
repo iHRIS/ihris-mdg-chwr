@@ -10,7 +10,7 @@ Description:    "iHRIS Profile of the Basic resource for a  Training."
 * extension[training].extension[provider] ^label = "Training Provider"
 * extension[training].extension[provider].valueString 0..1 MS
 * extension[training].extension[provider].valueString ^label = "Training Provider"
-* extension[training].extension[training] ^label = "Training Type/Recived"
+* extension[training].extension[training] ^label = "Training Type/Received"
 * extension[training].extension[training].valueCoding 0..1 MS
 * extension[training].extension[training].valueCoding ^label = "Training Recived"
 * extension[training].extension[date] ^label = "Training Date"

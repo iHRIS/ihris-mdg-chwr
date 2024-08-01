@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-07-17T11:29:51.935Z",
+        "when": "2024-08-01T06:41:06.144Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "hdoxsynjpTRJlEht402IhHiRmX2LndeUilS/e3rfDMrHiw8zLO7uSr01bX2aBqWArxHONxdhHPcYsDTOa+tOYyVeupASVpCV2tHGwx+8JOTOFQU8V4p/ycy9HhpyIG9OANU39SNg+cvj2MxMpRxeWC90WXQl4H9X77Jv88BDWvk="
+        "data": "BxEFRktj+6YP+/dSkUm8wsXO/lujHr9Ua6Z4GzeE6ngcpElURsXhPyj7fgjBH06Pq+wrfPCDI0t4majdLI6gZj2YcvuwOEJKIPpWZdc5qamIYHhM+4nBPN0WrYGqvyJS/QCFsek8dPYk1VhZt/m/ZfNLP27iTctpZCGJJwleAIk="
       }
     },
     {
@@ -485,6 +485,54 @@
         {
           "name": "site:nav:menu:reports:menu:staff:description",
           "valueString": "Basic default report showing all staff"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:training:text",
+          "valueString": "Training Report"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:training:url",
+          "valueString": "/report/ihris-es-report-staff-training"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:training:order",
+          "valueString": "3"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:training:description",
+          "valueString": "Report showing all staff training information"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:incentive:text",
+          "valueString": "Motivation Report"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:incentive:url",
+          "valueString": "/report/ihris-es-report-staff-incentive"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:incentive:order",
+          "valueString": "4"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:incentive:description",
+          "valueString": "Report showing all staff motivation information"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:distance:text",
+          "valueString": "Distance from location Report"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:distance:url",
+          "valueString": "/report/ihris-es-report-staff-distance"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:distance:order",
+          "valueString": "5"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:distance:description",
+          "valueString": "Report showing all staff distance from location"
         },
         {
           "name": "site:nav:menu:manage-report:text",

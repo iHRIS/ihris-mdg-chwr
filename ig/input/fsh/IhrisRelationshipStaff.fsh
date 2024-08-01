@@ -111,6 +111,7 @@ Usage:          #example
 * extension[reportlink][1].extension[linkElement].valueString = "Location.id"
 * extension[reportlink][1].extension[linkTo].valueString = "role.location.reference"
 * extension[reportlink][1].extension[multiple].valueBoolean = false
+* extension[reportlink][1].extension[initialFilter].valueString = "_profile=http://ihris.org/fhir/StructureDefinition/ihris-facility"
 * extension[reportlink][1].extension[reportelement][0].extension[name].valueString = "siteName"
 * extension[reportlink][1].extension[reportelement][0].extension[fhirpath].valueString = "name"
 * extension[reportlink][1].extension[reportelement][0].extension[display].valueString = "Fokontany"
@@ -123,6 +124,7 @@ Usage:          #example
 * extension[reportlink][2].extension[linkElement].valueString = "Location.id"
 * extension[reportlink][2].extension[linkTo].valueString = "site.partOf.reference"
 * extension[reportlink][2].extension[multiple].valueBoolean = false
+* extension[reportlink][2].extension[initialFilter].valueString = "_profile=http://ihris.org/fhir/StructureDefinition/ihris-facility"
 * extension[reportlink][2].extension[reportelement][0].extension[name].valueString = "csbName"
 * extension[reportlink][2].extension[reportelement][0].extension[fhirpath].valueString = "name"
 * extension[reportlink][2].extension[reportelement][0].extension[display].valueString = "CSB"
@@ -135,6 +137,7 @@ Usage:          #example
 * extension[reportlink][3].extension[linkElement].valueString = "Location.id"
 * extension[reportlink][3].extension[linkTo].valueString = "role.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-commune').valueReference.reference"
 * extension[reportlink][3].extension[multiple].valueBoolean = false
+* extension[reportlink][3].extension[initialFilter].valueString = "_profile=http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
 * extension[reportlink][3].extension[reportelement][0].extension[name].valueString = "communeName"
 * extension[reportlink][3].extension[reportelement][0].extension[fhirpath].valueString = "name"
 * extension[reportlink][3].extension[reportelement][0].extension[display].valueString = "Commune"
@@ -147,6 +150,7 @@ Usage:          #example
 * extension[reportlink][4].extension[linkElement].valueString = "Location.id"
 * extension[reportlink][4].extension[linkTo].valueString = "commune.partOf.reference"
 * extension[reportlink][4].extension[multiple].valueBoolean = false
+* extension[reportlink][4].extension[initialFilter].valueString = "_profile=http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
 * extension[reportlink][4].extension[reportelement][0].extension[name].valueString = "districtName"
 * extension[reportlink][4].extension[reportelement][0].extension[fhirpath].valueString = "name"
 * extension[reportlink][4].extension[reportelement][0].extension[display].valueString = "District"
@@ -159,6 +163,7 @@ Usage:          #example
 * extension[reportlink][5].extension[linkElement].valueString = "Location.id"
 * extension[reportlink][5].extension[linkTo].valueString = "district.partOf.reference"
 * extension[reportlink][5].extension[multiple].valueBoolean = false
+* extension[reportlink][5].extension[initialFilter].valueString = "_profile=http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
 * extension[reportlink][5].extension[reportelement][0].extension[name].valueString = "regionName"
 * extension[reportlink][5].extension[reportelement][0].extension[fhirpath].valueString = "name"
 * extension[reportlink][5].extension[reportelement][0].extension[display].valueString = "Region"

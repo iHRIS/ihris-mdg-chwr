@@ -1507,9 +1507,30 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-es-report-staff-distance"
+        },
+        "name": "Staff Distance from Site Relationship ",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/iHRISRelationship"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-es-report-staff-incentive"
+        },
+        "name": "Staff Distance from Site Relationship ",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/iHRISRelationship"
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-es-report-staff-test"
         },
         "name": "Staff Relationship Test",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/iHRISRelationship"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-es-report-staff-training"
+        },
+        "name": "Staff Distance from Site Relationship ",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/iHRISRelationship"
       },
       {

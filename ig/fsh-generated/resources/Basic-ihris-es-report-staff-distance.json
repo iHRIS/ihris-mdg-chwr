@@ -1,6 +1,6 @@
 {
   "resourceType": "Basic",
-  "id": "ihris-es-report-staff",
+  "id": "ihris-es-report-staff-distance",
   "meta": {
     "profile": [
       "http://ihris.org/fhir/StructureDefinition/iHRISRelationship"
@@ -12,23 +12,27 @@
       "extension": [
         {
           "url": "name",
-          "valueString": "practitioner"
+          "valueString": "distance"
         },
         {
           "url": "label",
-          "valueString": "Staff Report"
+          "valueString": "Distance Information"
         },
         {
           "url": "resource",
-          "valueString": "Practitioner"
+          "valueString": "Basic"
         },
         {
-          "url": "resourcePage",
-          "valueString": "practitioner"
+          "url": "initialFilter",
+          "valueString": "_profile=http://ihris.org/fhir/StructureDefinition/ihris-basic-distance"
         },
         {
           "url": "query",
-          "valueString": "active=true"
+          "valueString": "Basic.meta.profile = 'http://ihris.org/fhir/StructureDefinition/ihris-basic-distance'"
+        },
+        {
+          "url": "resourcePage",
+          "valueString": "basic-distance"
         },
         {
           "url": "displayCheckbox",
@@ -37,6 +41,125 @@
         {
           "url": "locationBasedConstraint",
           "valueBoolean": true
+        },
+        {
+          "extension": [
+            {
+              "url": "name",
+              "valueString": "fokontany"
+            },
+            {
+              "url": "fhirpath",
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='fokontany').valueDecimal"
+            },
+            {
+              "url": "display",
+              "valueString": "Distance from Fokontany"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            },
+            {
+              "url": "order",
+              "valueInteger": 9
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "name",
+              "valueString": "csb"
+            },
+            {
+              "url": "fhirpath",
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='csb').valueDecimal"
+            },
+            {
+              "url": "display",
+              "valueString": "Distance from CSB"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            },
+            {
+              "url": "order",
+              "valueInteger": 10
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "name",
+              "valueString": "commsite"
+            },
+            {
+              "url": "fhirpath",
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='commsite').valueDecimal"
+            },
+            {
+              "url": "display",
+              "valueString": "Distance from Commune"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": false
+            },
+            {
+              "url": "order",
+              "valueInteger": 11
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "name",
+          "valueString": "practitioner"
+        },
+        {
+          "url": "resource",
+          "valueString": "Practitioner"
+        },
+        {
+          "url": "linkElement",
+          "valueString": "Practitioner.id"
+        },
+        {
+          "url": "linkTo",
+          "valueString": "distance.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+        },
+        {
+          "url": "linkElementSearchParameter",
+          "valueString": "practitioner"
+        },
+        {
+          "url": "multiple",
+          "valueBoolean": false
+        },
+        {
+          "url": "query",
+          "valueString": "active=true"
         },
         {
           "extension": [
@@ -283,7 +406,8 @@
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
         }
-      ]
+      ],
+      "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportLink"
     },
     {
       "extension": [
@@ -472,7 +596,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 14
+              "valueInteger": 16
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -530,7 +654,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 13
+              "valueInteger": 15
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -588,7 +712,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 12
+              "valueInteger": 14
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -646,7 +770,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 11
+              "valueInteger": 13
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -704,7 +828,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 10
+              "valueInteger": 12
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -722,6 +846,6 @@
     ]
   },
   "subject": {
-    "reference": "StructureDefinition/ihris-practitioner"
+    "reference": "StructureDefinition/ihris-basic-distance"
   }
 }
