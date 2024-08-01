@@ -990,6 +990,148 @@
       "extension": [
         {
           "url": "title",
+          "valueString": "CA Reports"
+        },
+        {
+          "url": "description",
+          "valueString": "CA Reports Details for the Health Worker"
+        },
+        {
+          "url": "name",
+          "valueString": "careports"
+        },
+        {
+          "extension": [
+            {
+              "url": "resource",
+              "valueReference": {
+                "reference": "StructureDefinition/ihris-basic-careports"
+              }
+            },
+            {
+              "url": "linkfield",
+              "valueString": "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+            },
+            {
+              "url": "column",
+              "extension": [
+                {
+                  "url": "header",
+                  "valueString": "Received"
+                },
+                {
+                  "url": "field",
+                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-careports').extension.where(url='recieved').valueCoding.display"
+                }
+              ]
+            },
+            {
+              "url": "searchfield",
+              "valueString": "practitioner"
+            },
+            {
+              "extension": [
+                {
+                  "url": "header",
+                  "valueString": "Date"
+                },
+                {
+                  "url": "field",
+                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-careports').extension.where(url='date').valueDate"
+                }
+              ],
+              "url": "column"
+            },
+            {
+              "extension": [
+                {
+                  "url": "header",
+                  "valueString": "Actions"
+                },
+                {
+                  "url": "field",
+                  "valueString": "_action"
+                }
+              ],
+              "url": "column"
+            },
+            {
+              "extension": [
+                {
+                  "url": "link",
+                  "valueString": "/questionnaire/ihris-careports/basic-careports?practitioner=FHIRID"
+                },
+                {
+                  "url": "text",
+                  "valueString": "Add CA Report Information"
+                },
+                {
+                  "url": "row",
+                  "valueBoolean": false
+                },
+                {
+                  "url": "emptyDisplay",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "class",
+                  "valueString": "primary"
+                }
+              ],
+              "url": "action"
+            },
+            {
+              "extension": [
+                {
+                  "url": "link",
+                  "valueString": "/resource/view/basic-careports/ITEMID"
+                },
+                {
+                  "url": "text",
+                  "valueString": "Afficher"
+                },
+                {
+                  "url": "row",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "class",
+                  "valueString": "primary"
+                }
+              ],
+              "url": "action"
+            },
+            {
+              "extension": [
+                {
+                  "url": "link",
+                  "valueString": "/questionnaire/ihris-careports/basic-careports/ITEMID?practitioner=FHIRID"
+                },
+                {
+                  "url": "text",
+                  "valueString": "Modifier"
+                },
+                {
+                  "url": "row",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "class",
+                  "valueString": "primary"
+                }
+              ],
+              "url": "action"
+            }
+          ],
+          "url": "resource"
+        }
+      ],
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"
+    },
+    {
+      "extension": [
+        {
+          "url": "title",
           "valueString": "Emergency Contact"
         },
         {
@@ -1098,148 +1240,6 @@
                 {
                   "url": "link",
                   "valueString": "/questionnaire/ihris-emergency/emergency/ITEMID?practitioner=FHIRID"
-                },
-                {
-                  "url": "text",
-                  "valueString": "Modifier"
-                },
-                {
-                  "url": "row",
-                  "valueBoolean": true
-                },
-                {
-                  "url": "class",
-                  "valueString": "primary"
-                }
-              ],
-              "url": "action"
-            }
-          ],
-          "url": "resource"
-        }
-      ],
-      "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"
-    },
-    {
-      "extension": [
-        {
-          "url": "title",
-          "valueString": "CA Reports"
-        },
-        {
-          "url": "description",
-          "valueString": "CA Reports Details for the Health Worker"
-        },
-        {
-          "url": "name",
-          "valueString": "careports"
-        },
-        {
-          "extension": [
-            {
-              "url": "resource",
-              "valueReference": {
-                "reference": "StructureDefinition/ihris-basic-careports"
-              }
-            },
-            {
-              "url": "linkfield",
-              "valueString": "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-            },
-            {
-              "url": "column",
-              "extension": [
-                {
-                  "url": "header",
-                  "valueString": "Received"
-                },
-                {
-                  "url": "field",
-                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-careports').extension.where(url='recieved').valueCoding.display"
-                }
-              ]
-            },
-            {
-              "url": "searchfield",
-              "valueString": "practitioner"
-            },
-            {
-              "extension": [
-                {
-                  "url": "header",
-                  "valueString": "Date"
-                },
-                {
-                  "url": "field",
-                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-careports').extension.where(url='date').valueDate"
-                }
-              ],
-              "url": "column"
-            },
-            {
-              "extension": [
-                {
-                  "url": "header",
-                  "valueString": "Actions"
-                },
-                {
-                  "url": "field",
-                  "valueString": "_action"
-                }
-              ],
-              "url": "column"
-            },
-            {
-              "extension": [
-                {
-                  "url": "link",
-                  "valueString": "/questionnaire/ihris-careports/basic-careports?practitioner=FHIRID"
-                },
-                {
-                  "url": "text",
-                  "valueString": "Add Motivation Information"
-                },
-                {
-                  "url": "row",
-                  "valueBoolean": false
-                },
-                {
-                  "url": "emptyDisplay",
-                  "valueBoolean": true
-                },
-                {
-                  "url": "class",
-                  "valueString": "primary"
-                }
-              ],
-              "url": "action"
-            },
-            {
-              "extension": [
-                {
-                  "url": "link",
-                  "valueString": "/resource/view/basic-careports/ITEMID"
-                },
-                {
-                  "url": "text",
-                  "valueString": "Afficher"
-                },
-                {
-                  "url": "row",
-                  "valueBoolean": true
-                },
-                {
-                  "url": "class",
-                  "valueString": "primary"
-                }
-              ],
-              "url": "action"
-            },
-            {
-              "extension": [
-                {
-                  "url": "link",
-                  "valueString": "/questionnaire/ihris-careports/basic-careports/ITEMID?practitioner=FHIRID"
                 },
                 {
                   "url": "text",
