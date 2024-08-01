@@ -250,7 +250,7 @@
               "extension": [
                 {
                   "url": "header",
-                  "valueString": "Facility/Community Site"
+                  "valueString": "Fokontany"
                 },
                 {
                   "url": "field",
@@ -281,6 +281,19 @@
                 {
                   "url": "field",
                   "valueString": "PractitionerRole.period.end"
+                }
+              ],
+              "url": "column"
+            },
+            {
+              "extension": [
+                {
+                  "url": "header",
+                  "valueString": "Workplace"
+                },
+                {
+                  "url": "field",
+                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-workplace').valueCoding.display"
                 }
               ],
               "url": "column"

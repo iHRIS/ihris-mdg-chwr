@@ -21,15 +21,6 @@
           "type": "group",
           "item": [
             {
-              "linkId": "Practitioner.name[0].prefix",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.extension:prefix.value[x]:valueCoding",
-              "text": "Prefix",
-              "type": "choice",
-              "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-mdg-prefix-valueset",
-              "required": false,
-              "repeats": false
-            },
-            {
               "linkId": "Practitioner.name[0].family",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.family",
               "text": "Last Name",
@@ -172,15 +163,7 @@
         {
           "linkId": "PractitionerRole.location#tree",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.location",
-          "text": "CSB/Fokotany",
-          "type": "reference",
-          "required": false,
-          "repeats": false
-        },
-        {
-          "linkId": "PractitionerRole.extension[1]#tree",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:commune.value[x]:valueReference",
-          "text": "Commune",
+          "text": "Fokotany",
           "type": "reference",
           "required": false,
           "repeats": false
@@ -194,6 +177,7 @@
           "required": false,
           "repeats": false
         },
+        null,
         {
           "linkId": "PractitionerRole.active",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.active",

@@ -37,10 +37,7 @@ Description:    "iHRIS profile of Practitioner."
 * name.family ^constraint[0].human = "Name must be only text."
 * name.given 1..* MS
 * name.given ^label = "First Name"
-* name.prefix 0..0 MS
-* name.extension contains IhrisPractitionerPrefix named prefix 0..1 MS
-* name.extension[prefix].valueCoding MS
-* name.extension[prefix] ^label = "Prefix"
+* name.prefix 0..0
 * name.suffix 0..0
 //* name.suffix ^label = "Suffix"
 * telecom 0..0 MS

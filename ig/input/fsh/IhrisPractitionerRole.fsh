@@ -35,10 +35,7 @@ Description:    "iHRIS profile of Practitioner Role."
 * location ^label = "Facility/Community Site"
 * location only Reference(IhrisFacility)
 * extension contains
-    IhrisPractitionerRoleCommune named commune 0..1 MS and
     IhrisPractitionerRoleWorkPlace named workPlace 0..1 MS
-* extension[commune].valueReference MS
-* extension[commune] ^label = "Commune"
 * extension[workPlace].valueCoding MS
 * extension[workPlace] ^label = "Place of Work"
 
