@@ -1007,6 +1007,19 @@
               "extension": [
                 {
                   "url": "header",
+                  "valueString": "Month"
+                },
+                {
+                  "url": "field",
+                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-careports').extension.where(url='month').valueCoding.display"
+                }
+              ],
+              "url": "column"
+            },
+            {
+              "extension": [
+                {
+                  "url": "header",
                   "valueString": "Date"
                 },
                 {

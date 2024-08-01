@@ -83,27 +83,27 @@ Usage:          #definition
 * item[0].item[0].text = "Details"
 * item[0].item[0].type = #group
 
-* item[0].item[0].item[0].linkId = "Basic.extension[0].extension[0]"
-* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:month.value[x]:valueCoding"
-* item[0].item[0].item[0].text = "Year"
+* item[0].item[0].item[0].linkId = "Basic.extension[0].extension[2]"
+* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:recieved.value[x]:valueCoding"
+* item[0].item[0].item[0].text = "Recieved Report?"
 * item[0].item[0].item[0].type = #choice
-* item[0].item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-month-valueset"
-* item[0].item[0].item[0].required = false
+* item[0].item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
+* item[0].item[0].item[0].required = true
 * item[0].item[0].item[0].repeats = false
 
-* item[0].item[0].item[1].linkId = "Basic.extension[0].extension[1]#year"
-* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:year.value[x]:valueDate"
-* item[0].item[0].item[1].text = "Year"
-* item[0].item[0].item[1].type = #date
+* item[0].item[0].item[1].linkId = "Basic.extension[0].extension[0]"
+* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:month.value[x]:valueCoding"
+* item[0].item[0].item[1].text = "Month"
+* item[0].item[0].item[1].type = #choice
+* item[0].item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-month-valueset"
 * item[0].item[0].item[1].required = false
 * item[0].item[0].item[1].repeats = false
 
-* item[0].item[0].item[2].linkId = "Basic.extension[0].extension[2]"
-* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:recieved.value[x]:valueCoding"
-* item[0].item[0].item[2].text = "Recieved Report?"
-* item[0].item[0].item[2].type = #choice
-* item[0].item[0].item[2].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
-* item[0].item[0].item[2].required = true
+* item[0].item[0].item[2].linkId = "Basic.extension[0].extension[1]#year"
+* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:year.value[x]:valueDate"
+* item[0].item[0].item[2].text = "Year"
+* item[0].item[0].item[2].type = #date
+* item[0].item[0].item[2].required = false
 * item[0].item[0].item[2].repeats = false
 
 * item[0].item[0].item[3].linkId = "Basic.extension[0].extension[3]"
