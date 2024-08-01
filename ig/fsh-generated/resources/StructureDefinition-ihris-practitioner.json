@@ -2397,7 +2397,6 @@
       {
         "id": "Practitioner.name.use",
         "path": "Practitioner.name.use",
-        "label": "Use",
         "short": "usual | official | temp | nickname | anonymous | old | maiden",
         "definition": "Identifies the purpose for this name.",
         "comment": "Applications can assume that a name is current unless it explicitly says that it is temporary or old.",
@@ -2424,7 +2423,6 @@
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }
         ],
-        "mustSupport": true,
         "isModifier": true,
         "isModifierReason": "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old name etc.for a current/permanent one",
         "isSummary": true,
@@ -3549,9 +3547,7 @@
       {
         "id": "Practitioner.name.use",
         "path": "Practitioner.name.use",
-        "label": "Use",
-        "max": "0",
-        "mustSupport": true
+        "max": "0"
       },
       {
         "id": "Practitioner.name.family",

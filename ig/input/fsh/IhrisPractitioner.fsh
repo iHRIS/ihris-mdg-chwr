@@ -28,8 +28,7 @@ Description:    "iHRIS profile of Practitioner."
 * identifier.value ^label = "Value"
 * name 1..* MS
 * name ^label = "Name"
-* name.use 0..0 MS
-* name.use ^label = "Use"
+* name.use 0..0
 * name.family 1..1 MS
 * name.family ^label = "Last Name"
 * name.family ^constraint[0].key = "ihris-name-check"

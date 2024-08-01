@@ -289,19 +289,6 @@
               "extension": [
                 {
                   "url": "header",
-                  "valueString": "Year of Commissioning"
-                },
-                {
-                  "url": "field",
-                  "valueString": "PractitionerRole.extension(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-start-year').value[x]:valueInteger"
-                }
-              ],
-              "url": "column"
-            },
-            {
-              "extension": [
-                {
-                  "url": "header",
                   "valueString": "Active/Functional"
                 },
                 {
