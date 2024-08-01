@@ -5,7 +5,7 @@
   "name": "IhrisMaritalStatusCodeSystem",
   "id": "ihris-marital-status-codesystem",
   "title": "Marital Status",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-marital-status-codesystem",
   "concept": [
     {
@@ -34,6 +34,6 @@
       "definition": "Autre"
     }
   ],
-  "date": "2023-10-29T08:41:04.362Z",
+  "date": "2023-12-29T08:41:04.362Z",
   "count": 5
 }

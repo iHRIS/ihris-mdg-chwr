@@ -194,15 +194,15 @@ Description:    "iHRIS extension for Practitioner marital status."
 ValueSet:       IhrisMaritalStatusValueSet
 Id:             ihris-marital-status-valueset
 Title:          "iHRIS Marital Status ValueSet"
-* ^date = "2023-10-29T08:41:04.362Z"
-* ^version = "0.2.0"
+* ^date = "2023-12-29T08:41:04.362Z"
+* ^version = "0.4.0"
 * codes from system IhrisMaritalStatusCodeSystem
 
 CodeSystem:      IhrisMaritalStatusCodeSystem
 Id:             ihris-marital-status-codesystem
 Title:          "Marital Status"
-* ^date = "2023-10-29T08:41:04.362Z"
-* ^version = "0.2.0"
+* ^date = "2023-12-29T08:41:04.362Z"
+* ^version = "0.4.0"
 * #single "Célibataire" "Célibataire"
 * #married "Marié(e)" "Marié(e)"
 * #divorced "Divorcé(e)" "Divorcé(e)"
