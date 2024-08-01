@@ -85,6 +85,19 @@
         {
           "url": "search",
           "valueString": "Motivation Status|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-incentive').extension.where(url='motivation').valueCoding.display"
+        },
+        {
+          "extension": [
+            {
+              "url": "path",
+              "valueString": "Basic.extension:practitioner.value[x]:valueReference"
+            },
+            {
+              "url": "readOnlyIfSet",
+              "valueBoolean": true
+            }
+          ],
+          "url": "field"
         }
       ]
     },
@@ -113,6 +126,14 @@
         {
           "url": "field",
           "valueString": "extension:incentive.extension:motivation.value[x]:valueBoolean"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:incentive.extension:motivationType.value[x]:valueCoding.display"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:incentive.extension:other.value[x]:valueString"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"

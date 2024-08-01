@@ -9,8 +9,12 @@ Description:    "iHRIS Profile of the Basic resource for Incentive."
     IhrisIncentive named incentive 1..1 MS
 * extension[incentive].extension[incentive].valueCoding ^label = "Activity Packs"
 * extension[incentive].extension[incentive].valueCoding 1..1 MS
-* extension[incentive].extension[motivation].valueCoding ^label = "Monthly Motivation status"
+* extension[incentive].extension[motivation].valueCoding ^label = "Motivation status"
 * extension[incentive].extension[motivation].valueCoding 1..1 MS
+* extension[incentive].extension[motivationType].valueCoding ^label = "Motivation Type"
+* extension[incentive].extension[motivationType].valueCoding 1..1 MS
+* extension[incentive].extension[other].valueString ^label = "Other"
+* extension[incentive].extension[other].valueString 0..1 MS
 
 
 Extension:      IhrisIncentive
@@ -18,13 +22,20 @@ Id:             ihris-incentive
 Title:          "Incentive details"
 * extension contains
       incentive 1..1 MS and
-      motivation 0..1 MS
+      motivation 0..1 MS and
+      motivationType 0..1 MS and
+      other 0..1 MS
 * extension[incentive].value[x] only Coding
 * extension[incentive].valueCoding ^label = "Activity Packs"
 * extension[incentive].valueCoding from IhrisIncentiveValueSet (required)
 * extension[motivation].value[x] only Coding
-* extension[motivation].valueCoding ^label =  "Monthly Motivation status"
+* extension[motivation].valueCoding ^label =  "Motivation status"
 * extension[motivation].valueCoding from IhrisYesNoValueSet (required)
+* extension[motivationType].value[x] only Coding
+* extension[motivationType].valueCoding ^label =  "Motivation Type"
+* extension[motivationType].valueCoding from IhrisMotivationTypeValueSet (required)
+* extension[other].valueString ^label = "Other"
+* extension[other].valueString 0..1 MS
 
 CodeSystem:      IhrisYesNo
 Id:              ihris-yesno
@@ -56,6 +67,23 @@ Title:            "iHRIS Activity Packs ValueSet"
 * ^date = "2022-09-29T08:41:04.362Z"
 * ^version = "0.3.0"
 * codes from system IhrisIncentive
+
+CodeSystem:      IhrisMotivationType
+Id:              ihris-motivation-type
+Title:           "Motivation Type"
+* ^date = "2022-09-29T08:41:04.362Z"
+* ^version = "0.1.0"
+* #rf "Financière Régulière"
+* #of "Financière Occasionnelle"
+* #nf "Non Financière"
+
+ValueSet:         IhrisMotivationTypeValueSet
+Id:               ihris-motivation-type-valueset
+Title:            "iHRIS Motivation Type ValueSet"
+* ^date = "2022-09-29T08:41:04.362Z"
+* ^version = "0.1.0"
+* codes from system IhrisMotivationType
+
 
 Instance:       IhrisPractitionerWorkflowIncentive
 InstanceOf:      Questionnaire
@@ -89,11 +117,34 @@ Usage:          #definition
 
 * item[0].item[0].item[1].linkId = "Basic.extension[0].extension[1]"
 * item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivation.value[x]:valueCoding"
-* item[0].item[0].item[1].text = "Monthly motivation status"
+* item[0].item[0].item[1].text = "motivation status"
 * item[0].item[0].item[1].type = #choice
 * item[0].item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
 * item[0].item[0].item[1].required = false
 * item[0].item[0].item[1].repeats = false
+
+* item[0].item[0].item[2].linkId = "Basic.extension[0].extension[2]"
+* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivationType.value[x]:valueCoding"
+* item[0].item[0].item[2].text = "Motivation Type"
+* item[0].item[0].item[2].type = #choice
+* item[0].item[0].item[2].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-motivation-type-valueset"
+* item[0].item[0].item[2].required = false
+* item[0].item[0].item[2].repeats = false
+* item[0].item[0].item[2].enableBehavior = #any
+* item[0].item[0].item[2].enableWhen[0].question = "Basic.extension[0].extension[1]"
+* item[0].item[0].item[2].enableWhen[0].operator = #=
+* item[0].item[0].item[2].enableWhen[0].answerCoding = ihris-yesno#yes
+
+* item[0].item[0].item[3].linkId = "Basic.extension[0].extension[3]"
+* item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:other.value[x]:valueString"
+* item[0].item[0].item[3].text = "Other"
+* item[0].item[0].item[3].type = #string
+* item[0].item[0].item[3].required = false
+* item[0].item[0].item[3].repeats = false
+* item[0].item[0].item[3].enableBehavior = #any
+* item[0].item[0].item[3].enableWhen[0].question = "Basic.extension[0].extension[2]"
+* item[0].item[0].item[3].enableWhen[0].operator = #=
+* item[0].item[0].item[3].enableWhen[0].answerCoding = ihris-motivation-type#nf
 
 Instance:       ihris-page-basic-incentive
 InstanceOf:     IhrisPage
@@ -120,12 +171,16 @@ Usage:          #example
 * extension[display].extension[search][0].valueString = "Practitioner|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
 * extension[display].extension[search][1].valueString = "Activity Packs|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-incentive').extension.where(url='incentive').valueCoding.display"
 * extension[display].extension[search][1].valueString = "Motivation Status|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-incentive').extension.where(url='motivation').valueCoding.display"
+* extension[display].extension[field][0].extension[path].valueString = "Basic.extension:practitioner.value[x]:valueReference"
+* extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
 * extension[section][0].extension[title].valueString = "Incentive"
 * extension[section][0].extension[description].valueString = "Incentive details"
 * extension[section][0].extension[name].valueString = "Basic"
 * extension[section][0].extension[field][0].valueString = "extension:practitioner"
 * extension[section][0].extension[field][1].valueString = "extension:incentive.extension:incentive.value[x]:valueCoding.display"
 * extension[section][0].extension[field][2].valueString = "extension:incentive.extension:motivation.value[x]:valueBoolean"
+* extension[section][0].extension[field][3].valueString = "extension:incentive.extension:motivationType.value[x]:valueCoding.display"
+* extension[section][0].extension[field][4].valueString = "extension:incentive.extension:other.value[x]:valueString"
 
 Instance:       ihris-page-incentive
 InstanceOf:     IhrisPage
@@ -139,6 +194,23 @@ Usage:          #example
 * extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
 * extension[section][0].extension[title].valueString = "Activity Packs"
 * extension[section][0].extension[description].valueString = "Activity Packs"
+* extension[section][0].extension[name].valueString = "CodeSystem"
+* extension[section][0].extension[field][0].valueString = "CodeSystem.display"
+* extension[section][0].extension[field][1].valueString = "CodeSystem.code"
+* extension[section][0].extension[field][2].valueString = "CodeSystem.definition"
+
+Instance:      ihris-page-motivation-type
+InstanceOf:    IhrisPage
+Title:         "iHRIS Motivation Type CodeSystem Page"
+Usage:         #example
+* code = IhrisResourceCodeSystem#page
+* extension[display].extension[resource].valueReference = Reference(CodeSystem/ihris-motivation-type)
+* extension[display].extension[search][0].valueString = "Code|code"
+* extension[display].extension[search][1].valueString = "Display|display"
+* extension[display].extension[field][0].extension[path].valueString = "CodeSystem.code"
+* extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
+* extension[section][0].extension[title].valueString = "Motivation Type"
+* extension[section][0].extension[description].valueString = "Motivation Type"
 * extension[section][0].extension[name].valueString = "CodeSystem"
 * extension[section][0].extension[field][0].valueString = "CodeSystem.display"
 * extension[section][0].extension[field][1].valueString = "CodeSystem.code"

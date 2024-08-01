@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-08-01T10:13:48.135Z",
+        "when": "2024-08-01T16:50:31.438Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "BxEFRktj+6YP+/dSkUm8wsXO/lujHr9Ua6Z4GzeE6ngcpElURsXhPyj7fgjBH06Pq+wrfPCDI0t4majdLI6gZj2YcvuwOEJKIPpWZdc5qamIYHhM+4nBPN0WrYGqvyJS/QCFsek8dPYk1VhZt/m/ZfNLP27iTctpZCGJJwleAIk="
+        "data": "WvBINKIuBDP23vyzSDPKL15vO4Ipt4HR0mKF9S9OXWW29dyb5m7fWpj+G44VxvENoh3mZvlYRSuODYwdl19ag67zR+4xba6J+QgSGhtitfCwIbg4QiNUuUmrbKH3Lf5PhzwvPRjkkJ3PZmp1QrrwDud9/h523GFpqOGd5wV81To="
       }
     },
     {
@@ -439,6 +439,30 @@
           "valueString": "4"
         },
         {
+          "name": "site:nav:menu:database:menu:otherLists:menu:motivationTypes:text",
+          "valueString": "Motivation Types"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:motivationTypes:url",
+          "valueString": "/resource/search/motivation-type"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:motivationTypes:order",
+          "valueString": "5"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:equipmenttype:text",
+          "valueString": "Equipment Types"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:equipmenttype:url",
+          "valueString": "/resource/search/equipment-type"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:equipmenttype:order",
+          "valueString": "6"
+        },
+        {
           "name": "site:nav:menu:reports:text",
           "valueString": "Reports"
         },
@@ -813,6 +837,22 @@
         {
           "name": "workflow:questionnaire:careports:url",
           "valueString": "http://ihris.org/fhir/Questionnaire/ihris-careports"
+        },
+        {
+          "name": "workflow:processor:equipment:file",
+          "valueString": "workflowMdgEquipment"
+        },
+        {
+          "name": "workflow:questionnaire:equipment:url",
+          "valueString": "http://ihris.org/fhir/Questionnaire/ihris-equipment"
+        },
+        {
+          "name": "workflow:processor:supervision:file",
+          "valueString": "workflowMdgSupervision"
+        },
+        {
+          "name": "workflow:questionnaire:supervision:url",
+          "valueString": "http://ihris.org/fhir/Questionnaire/ihris-supervision"
         },
         {
           "name": "workflow:processor:user:file",

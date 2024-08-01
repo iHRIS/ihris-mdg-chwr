@@ -139,6 +139,8 @@ Usage:          #example
 * extension[display].extension[search][1].valueString = "Month|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-careports').extension.where(url='month').valueCoding.display"
 * extension[display].extension[search][2].valueString = "Recieved Report?|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-careports').extension.where(url='careports').valueCoding.display"
 * extension[display].extension[search][3].valueString = "Date|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-careports').extension.where(url='date').valueCoding.display"
+* extension[display].extension[field][0].extension[path].valueString = "Basic.extension:practitioner.value[x]:valueReference"
+* extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
 * extension[section][0].extension[title].valueString = "CA Report"
 * extension[section][0].extension[description].valueString = "CA Report details"
 * extension[section][0].extension[name].valueString = "Basic"

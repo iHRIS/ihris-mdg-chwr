@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisMotivationType",
+  "id": "ihris-motivation-type",
+  "title": "Motivation Type",
+  "version": "0.1.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-motivation-type",
+  "concept": [
+    {
+      "code": "rf",
+      "display": "Financière Régulière"
+    },
+    {
+      "code": "of",
+      "display": "Financière Occasionnelle"
+    },
+    {
+      "code": "nf",
+      "display": "Non Financière"
+    }
+  ],
+  "date": "2022-09-29T08:41:04.362Z",
+  "count": 3
+}

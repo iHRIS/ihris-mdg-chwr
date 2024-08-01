@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "IhrisAvailabilityValueSet",
+  "id": "ihris-availability-valueset",
+  "title": "iHRIS Equipment Availability ValueSet",
+  "version": "0.1.0",
+  "url": "http://ihris.org/fhir/ValueSet/ihris-availability-valueset",
+  "date": "2022-09-29T08:41:04.362Z",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-availability"
+      }
+    ]
+  }
+}

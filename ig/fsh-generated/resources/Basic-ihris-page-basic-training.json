@@ -65,7 +65,7 @@
           "extension": [
             {
               "url": "path",
-              "valueString": "Basic.extension:training.value[x]:valueReference"
+              "valueString": "Basic.extension:practitioner.value[x]:valueReference"
             },
             {
               "url": "readOnlyIfSet",

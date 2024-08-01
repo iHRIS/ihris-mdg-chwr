@@ -44,7 +44,7 @@ Usage:          #example
 * extension[display].extension[search][0].valueString = "Training|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-training').extension.where(url='training').valueCoding"
 * extension[display].extension[search][1].valueString = "Practitioner|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
 * extension[display].extension[search][2].valueString = "Training Date|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-training').extension.where(url='date').valueDate"
-* extension[display].extension[field][0].extension[path].valueString = "Basic.extension:training.value[x]:valueReference"
+* extension[display].extension[field][0].extension[path].valueString = "Basic.extension:practitioner.value[x]:valueReference"
 * extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
 * extension[section][0].extension[title].valueString = "Training"
 * extension[section][0].extension[description].valueString = "Training details"
@@ -75,12 +75,26 @@ Usage:          #example
 CodeSystem:      IhrisTrainingCodeSystem
 Id:              ihris-training-codesystem
 Title:           "Training"
-* ^version = "0.2.0"
+* ^date = "2024-07-20T08:41:04.362Z"
+* ^version = "0.3.0"
+* #ma "Module A" "Module A"
+* #mb "Module B" "Module B"
+* #md "Module D" "Module D"
+* #me "Module E" "Module E"
+* #mabde "Module ABDE" "Module ABDE"
+* #mf "Module F" "Module F"
+* #pal "Paludisme" "Paludisme"
+* #pf "PF" "PF"
+* #pc "PCIMEC" "PCIMEC"
+* #nut "Nutrition" "Nutrient"
+* #vih "VIH" "VIH"
+* #tb "Tuberculose" "Tuberculose"
 
 ValueSet:         IhrisTrainingValueSet
 Id:               ihris-training-valueset
 Title:            "iHRIS  Training ValueSet"
-* ^version = "0.2.0"
+* ^date = "2024-07-20T08:41:04.362Z"
+* ^version = "0.3.0"
 * codes from system IhrisTrainingCodeSystem
 
 Instance:       IhrisPractitionerWorkflowTraining

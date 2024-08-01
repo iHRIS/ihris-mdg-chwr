@@ -33,11 +33,50 @@
             {
               "linkId": "Basic.extension[0].extension[1]",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivation.value[x]:valueCoding",
-              "text": "Monthly motivation status",
+              "text": "motivation status",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
               "required": false,
               "repeats": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[2]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivationType.value[x]:valueCoding",
+              "text": "Motivation Type",
+              "type": "choice",
+              "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-motivation-type-valueset",
+              "required": false,
+              "repeats": false,
+              "enableBehavior": "any",
+              "enableWhen": [
+                {
+                  "question": "Basic.extension[0].extension[1]",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "yes",
+                    "system": "http://ihris.org/fhir/CodeSystem/ihris-yesno"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "Basic.extension[0].extension[3]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:other.value[x]:valueString",
+              "text": "Other",
+              "type": "string",
+              "required": false,
+              "repeats": false,
+              "enableBehavior": "any",
+              "enableWhen": [
+                {
+                  "question": "Basic.extension[0].extension[2]",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "nf",
+                    "system": "http://ihris.org/fhir/CodeSystem/ihris-motivation-type"
+                  }
+                }
+              ]
             }
           ]
         }

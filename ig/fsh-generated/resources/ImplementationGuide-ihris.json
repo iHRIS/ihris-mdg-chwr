@@ -68,6 +68,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ihris-basic-equipment"
+        },
+        "name": "Equipment Information",
+        "description": "iHRIS Profile of the Basic resource for Equipment.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ihris-basic-facility-info"
         },
         "name": "iHRIS FacilityInfo",
@@ -80,6 +88,14 @@
         },
         "name": "Incentive Information",
         "description": "iHRIS Profile of the Basic resource for Incentive.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ihris-basic-supervision"
+        },
+        "name": "Supervision Information",
+        "description": "iHRIS Profile of the Basic resource for Supervision.",
         "exampleBoolean": false
       },
       {
@@ -336,6 +352,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ihris-equipment"
+        },
+        "name": "Equipment details",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ihris-facility-closure-year"
         },
         "name": "iHRIS facility closure year",
@@ -538,6 +561,13 @@
         },
         "name": "iHRIS Role Primary",
         "description": "iHRIS flag for roles to indicate a primary role for assignment to users.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ihris-supervision"
+        },
+        "name": "Supervision details",
         "exampleBoolean": false
       },
       {
@@ -749,6 +779,13 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ihris-availability-valueset"
+        },
+        "name": "iHRIS Equipment Availability ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ihris-cadre"
         },
         "name": "iHRIS Cadre",
@@ -775,6 +812,13 @@
           "reference": "ValueSet/ihris-education-level-valueset"
         },
         "name": "iHRIS Education Level ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ihris-equipment-type-valueset"
+        },
+        "name": "iHRIS Equipment Type ValueSet",
         "exampleBoolean": false
       },
       {
@@ -861,6 +905,13 @@
           "reference": "ValueSet/ihris-month-valueset"
         },
         "name": "iHRIS Activity Packs ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ihris-motivation-type-valueset"
+        },
+        "name": "iHRIS Motivation Type ValueSet",
         "exampleBoolean": false
       },
       {
@@ -1106,6 +1157,13 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/ihris-availability"
+        },
+        "name": "Equipment Availability",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ihris-cadre"
         },
         "name": "iHRIS Cadre",
@@ -1132,6 +1190,13 @@
           "reference": "CodeSystem/ihris-education-level"
         },
         "name": "Education Level",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ihris-equipment-type"
+        },
+        "name": "Equipment Type",
         "exampleBoolean": false
       },
       {
@@ -1218,6 +1283,13 @@
           "reference": "CodeSystem/ihris-month-codesystem"
         },
         "name": "Activity Packs",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ihris-motivation-type"
+        },
+        "name": "Motivation Type",
         "exampleBoolean": false
       },
       {
@@ -1507,6 +1579,13 @@
       },
       {
         "reference": {
+          "reference": "Questionnaire/ihris-equipment"
+        },
+        "name": "IhrisPractitionerWorkflowEquipment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-es-report-mhero-send-message"
         },
         "name": "iHRIS Relationship Example",
@@ -1612,9 +1691,23 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-page-basic-equipment"
+        },
+        "name": "Equipment",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-page-basic-incentive"
         },
         "name": "Incentive",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-basic-supervision"
+        },
+        "name": "Supervision",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
       },
       {
@@ -1636,6 +1729,13 @@
           "reference": "Basic/ihris-page-emergency"
         },
         "name": "iHRIS Basic Emergency Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-equipment-type"
+        },
+        "name": "iHRIS Education Level CodeSystem Page",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
       },
       {
@@ -1720,6 +1820,13 @@
           "reference": "Basic/ihris-page-marital-status"
         },
         "name": "iHRIS marital status CodeSystem Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-motivation-type"
+        },
+        "name": "iHRIS Motivation Type CodeSystem Page",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
       },
       {
@@ -1833,6 +1940,13 @@
         },
         "name": "iHRIS Self Service Role",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-role"
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/ihris-supervision"
+        },
+        "name": "IhrisPractitionerWorkflowSupervision",
+        "exampleBoolean": false
       },
       {
         "reference": {

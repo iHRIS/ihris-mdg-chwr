@@ -5,6 +5,70 @@
   "name": "IhrisTrainingCodeSystem",
   "id": "ihris-training-codesystem",
   "title": "Training",
-  "version": "0.2.0",
-  "url": "http://ihris.org/fhir/CodeSystem/ihris-training-codesystem"
+  "version": "0.3.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-training-codesystem",
+  "concept": [
+    {
+      "code": "ma",
+      "display": "Module A",
+      "definition": "Module A"
+    },
+    {
+      "code": "mb",
+      "display": "Module B",
+      "definition": "Module B"
+    },
+    {
+      "code": "md",
+      "display": "Module D",
+      "definition": "Module D"
+    },
+    {
+      "code": "me",
+      "display": "Module E",
+      "definition": "Module E"
+    },
+    {
+      "code": "mabde",
+      "display": "Module ABDE",
+      "definition": "Module ABDE"
+    },
+    {
+      "code": "mf",
+      "display": "Module F",
+      "definition": "Module F"
+    },
+    {
+      "code": "pal",
+      "display": "Paludisme",
+      "definition": "Paludisme"
+    },
+    {
+      "code": "pf",
+      "display": "PF",
+      "definition": "PF"
+    },
+    {
+      "code": "pc",
+      "display": "PCIMEC",
+      "definition": "PCIMEC"
+    },
+    {
+      "code": "nut",
+      "display": "Nutrition",
+      "definition": "Nutrient"
+    },
+    {
+      "code": "vih",
+      "display": "VIH",
+      "definition": "VIH"
+    },
+    {
+      "code": "tb",
+      "display": "Tuberculose",
+      "definition": "Tuberculose"
+    }
+  ],
+  "date": "2024-07-20T08:41:04.362Z",
+  "count": 12
 }

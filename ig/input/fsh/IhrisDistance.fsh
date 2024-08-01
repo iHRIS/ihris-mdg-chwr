@@ -91,7 +91,7 @@ Usage:          #example
 * extension[display].extension[search][2].valueString = "CSB|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='csb').valueDecimal"
 * extension[display].extension[search][3].valueString = "Community Site|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='commsite').valueDecimal"
 * extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
-* extension[display].extension[field][1].extension[path].valueString = "Basic.extension:location.value[x]:valueReference"
+* extension[display].extension[field][0].extension[path].valueString = "Basic.extension:location.value[x]:valueReference"
 * extension[section][0].extension[title].valueString = "Distance from Centers"
 * extension[section][0].extension[description].valueString = "Distance details"
 * extension[section][0].extension[name].valueString = "Basic"
