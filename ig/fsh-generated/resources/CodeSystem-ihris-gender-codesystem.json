@@ -5,20 +5,20 @@
   "name": "IhrisMDGGenderCodesystem",
   "id": "ihris-gender-codesystem",
   "title": "Gender",
-  "version": "0.4.0",
+  "version": "0.6.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-gender-codesystem",
   "concept": [
     {
-      "code": "Masculin",
+      "code": "male",
       "display": "Masculin",
       "definition": "Masculin"
     },
     {
-      "code": "Féminin",
+      "code": "female",
       "display": "Féminin",
       "definition": "Féminin"
     }
   ],
-  "date": "2024-06-29T08:41:04.362Z",
+  "date": "2024-07-02T08:41:04.362Z",
   "count": 2
 }

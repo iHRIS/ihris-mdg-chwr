@@ -73,7 +73,6 @@
           "required": false,
           "repeats": false
         },
-        null,
         {
           "linkId": "Practitioner.active",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.active",
@@ -90,7 +89,7 @@
       "type": "group",
       "item": [
         {
-          "linkId": "Practitioner.extension[3]",
+          "linkId": "Practitioner.extension[2]",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]:valueString",
           "text": "Mobile Phone",
           "type": "string",
@@ -177,7 +176,6 @@
           "required": false,
           "repeats": false
         },
-        null,
         {
           "linkId": "PractitionerRole.active",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.active",

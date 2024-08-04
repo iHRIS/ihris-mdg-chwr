@@ -25,7 +25,7 @@ Usage: #example
 * extension.extension[=].extension[=].extension[0].url = "format"
 * extension.extension[=].extension[=].extension[=].valueString = "%s %s"
 * extension.extension[=].extension[=].extension[+].url = "order"
-* extension.extension[=].extension[=].extension[=].valueString = "given, family"
+* extension.extension[=].extension[=].extension[=].valueString = "given family"
 * extension.extension[=].extension[=].extension[+].url = "paths:given:fhirpath"
 * extension.extension[=].extension[=].extension[=].valueString = "name.where(use='official').first().given"
 * extension.extension[=].extension[=].extension[+].url = "paths:given:join"

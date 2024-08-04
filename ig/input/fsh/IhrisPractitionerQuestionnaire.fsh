@@ -65,18 +65,18 @@ Usage:          #definition
 * item[0].item[4].required = false
 * item[0].item[4].repeats = false
 
-* item[0].item[6].linkId = "Practitioner.active"
-* item[0].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.active"
-* item[0].item[6].text = "Active"
-* item[0].item[6].type = #boolean
-* item[0].item[6].required = true
+* item[0].item[5].linkId = "Practitioner.active"
+* item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.active"
+* item[0].item[5].text = "Active"
+* item[0].item[5].type = #boolean
+* item[0].item[5].required = true
 
 * item[1].linkId = "__Practitioner:contact"
 * item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner"
 * item[1].text = "Contact Details| phone numbers"
 * item[1].type = #group
 
-* item[1].item[0].linkId = "Practitioner.extension[3]"
+* item[1].item[0].linkId = "Practitioner.extension[2]"
 * item[1].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]:valueString"
 * item[1].item[0].text = "Mobile Phone"
 * item[1].item[0].type = #string
@@ -132,11 +132,11 @@ Usage:          #definition
 * item[2].item[4].required = false
 * item[2].item[4].repeats = false
 
-* item[2].item[6].linkId = "PractitionerRole.active"
-* item[2].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.active"
-* item[2].item[6].text = "Active"
-* item[2].item[6].type = #boolean
-* item[2].item[6].required = true
+* item[2].item[5].linkId = "PractitionerRole.active"
+* item[2].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.active"
+* item[2].item[5].text = "Active"
+* item[2].item[5].type = #boolean
+* item[2].item[5].required = true
 
 * item[3].linkId = "Practitioner.identifier"
 * item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier"

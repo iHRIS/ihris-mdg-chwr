@@ -330,16 +330,16 @@ Usage:        #example
 CodeSystem:      IhrisMDGGenderCodesystem
 Id:              ihris-gender-codesystem
 Title:           "Gender"
-* ^date = "2024-06-29T08:41:04.362Z"
-* ^version = "0.4.0"
-* #Masculin "Masculin" "Masculin"
-* #Féminin "Féminin" "Féminin"
+* ^date = "2024-07-02T08:41:04.362Z"
+* ^version = "0.6.0"
+* #male "Masculin" "Masculin"
+* #female "Féminin" "Féminin"
 
 ValueSet:         IhrisMDGGenderValueSet
 Id:               ihris-gender-valueset
 Title:            "iHRIS Gender ValueSet"
-* ^date = "2024-06-29T08:41:04.362Z"
-* ^version = "0.4.0"
+* ^date = "2024-07-02T08:41:04.362Z"
+* ^version = "0.6.0"
 * codes from system IhrisMDGGenderCodesystem
 
 Instance:       ihris-page-gender
