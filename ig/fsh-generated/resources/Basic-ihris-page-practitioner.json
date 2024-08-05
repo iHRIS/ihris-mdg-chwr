@@ -26,11 +26,11 @@
         },
         {
           "url": "search",
-          "valueString": "Last Name|Practitioner.name.where(use='official').family"
+          "valueString": "Last Name|Practitioner.name.where.family"
         },
         {
           "url": "search",
-          "valueString": "First Name(s)|Practitioner.name.where(use='official').given"
+          "valueString": "First Name(s)|Practitioner.name.where.given"
         },
         {
           "url": "search",
