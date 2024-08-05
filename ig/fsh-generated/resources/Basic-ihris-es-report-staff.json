@@ -75,7 +75,7 @@
             },
             {
               "url": "fhirpath",
-              "valueString": "name.where(use='official').first().given"
+              "valueString": "name.first().given"
             },
             {
               "url": "display",
@@ -104,7 +104,7 @@
             },
             {
               "url": "fhirpath",
-              "valueString": "name.where(use='official').family"
+              "valueString": "name.family"
             },
             {
               "url": "display",
@@ -430,64 +430,6 @@
       "extension": [
         {
           "url": "name",
-          "valueString": "csb"
-        },
-        {
-          "url": "resource",
-          "valueString": "Location"
-        },
-        {
-          "url": "linkElement",
-          "valueString": "Location.id"
-        },
-        {
-          "url": "linkTo",
-          "valueString": "site.partOf.reference"
-        },
-        {
-          "url": "multiple",
-          "valueBoolean": false
-        },
-        {
-          "url": "initialFilter",
-          "valueString": "_profile=http://ihris.org/fhir/StructureDefinition/ihris-facility"
-        },
-        {
-          "extension": [
-            {
-              "url": "name",
-              "valueString": "csbName"
-            },
-            {
-              "url": "fhirpath",
-              "valueString": "name"
-            },
-            {
-              "url": "display",
-              "valueString": "CSB"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            },
-            {
-              "url": "order",
-              "valueInteger": 13
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        }
-      ],
-      "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportLink"
-    },
-    {
-      "extension": [
-        {
-          "url": "name",
           "valueString": "commune"
         },
         {
@@ -500,7 +442,7 @@
         },
         {
           "url": "linkTo",
-          "valueString": "role.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-commune').valueReference.reference"
+          "valueString": "site.partOf.reference"
         },
         {
           "url": "multiple",

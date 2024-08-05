@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-08-02T15:13:54.368Z",
+        "when": "2024-08-05T12:37:42.970Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "EmX+pkwvsyhP35uYAxLPCefd9Nmq9LJeodKaZltLQtH25EqLHw2Vx793CO9V3mY2L2CfJzbBP8cX6iUOXv1nydpm8Q4+r1qeLiI6p+LFBtFSmXCYrxCpJImxq+JkLNfSjdAQB3ldvEcTvUBDt6wW4MOBLQ690XM9io9P9kBYaM0="
+        "data": "RKkI1c2WEQqr7evlEOk6YWhfdVPpLzDUX0FJ/nfGu15IAYZd1mHXkLMjgHkU+PGb8/dgS4MK5lNuxrB32wmQ3++SkPIhypS60wMrA4N6YrrpFA64OtW446K/lZ4eZBwolYielP15cn2hHeeOt6v8/dlip7beYG4DZLxAuBAwAJU="
       }
     },
     {
@@ -559,6 +559,38 @@
           "valueString": "Report showing all staff distance from location"
         },
         {
+          "name": "site:nav:menu:reports:menu:equipment:text",
+          "valueString": "Equipment Report"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:equipment:url",
+          "valueString": "/report/ihris-es-report-staff-equipment"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:equipment:order",
+          "valueString": "6"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:equipment:description",
+          "valueString": "Report showing all staff equipment information"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:supervision:text",
+          "valueString": "Supervision Report"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:supervision:url",
+          "valueString": "/report/ihris-es-report-staff-supervision"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:supervision:order",
+          "valueString": "7"
+        },
+        {
+          "name": "site:nav:menu:reports:menu:supervision:description",
+          "valueString": "Report showing all staff supervision information"
+        },
+        {
           "name": "site:nav:menu:manage-report:text",
           "valueString": "Manage Report"
         },
@@ -1012,7 +1044,7 @@
         },
         {
           "name": "site:intro:practitionerrole:data:fullName:path",
-          "valueString": "Practitioner.name.where(use='official').family + ' ' + Practitioner.name.where(use='official').given"
+          "valueString": "Practitioner.name.where(use='official').family + ' ' + Practitioner.name.where(use='official').given[0] + ' ' + practitioner.name.where(use='official').given[1]"
         },
         {
           "name": "site:intro:practitionerrole:data:title:text",

@@ -1,6 +1,6 @@
 {
   "resourceType": "Basic",
-  "id": "ihris-es-report-staff-distance",
+  "id": "ihris-es-report-staff-supervision",
   "meta": {
     "profile": [
       "http://ihris.org/fhir/StructureDefinition/iHRISRelationship"
@@ -12,11 +12,11 @@
       "extension": [
         {
           "url": "name",
-          "valueString": "distance"
+          "valueString": "supervision"
         },
         {
           "url": "label",
-          "valueString": "Distance Information"
+          "valueString": "Supervision Information"
         },
         {
           "url": "resource",
@@ -24,15 +24,15 @@
         },
         {
           "url": "initialFilter",
-          "valueString": "_profile=http://ihris.org/fhir/StructureDefinition/ihris-basic-distance"
+          "valueString": "_profile=http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision"
         },
         {
           "url": "query",
-          "valueString": "Basic.meta.profile = 'http://ihris.org/fhir/StructureDefinition/ihris-basic-distance'"
+          "valueString": "Basic.meta.profile = 'http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision'"
         },
         {
           "url": "resourcePage",
-          "valueString": "basic-distance"
+          "valueString": "basic-supervision"
         },
         {
           "url": "displayCheckbox",
@@ -46,15 +46,15 @@
           "extension": [
             {
               "url": "name",
-              "valueString": "fokontany"
+              "valueString": "supervised"
             },
             {
               "url": "fhirpath",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='fokontany').valueDecimal"
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-supervision').extension.where(url='supervised').valueCoding.display"
             },
             {
               "url": "display",
-              "valueString": "Distance from Fokontany"
+              "valueString": "Supervised?"
             },
             {
               "url": "filter",
@@ -75,15 +75,15 @@
           "extension": [
             {
               "url": "name",
-              "valueString": "csb"
+              "valueString": "motivationStatus"
             },
             {
               "url": "fhirpath",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='csb').valueDecimal"
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-supervision').extension.where(url='monthlyacg').valueCoding.display"
             },
             {
               "url": "display",
-              "valueString": "Distance from CSB"
+              "valueString": "Monthly AC Gathering"
             },
             {
               "url": "filter",
@@ -104,15 +104,15 @@
           "extension": [
             {
               "url": "name",
-              "valueString": "commsite"
+              "valueString": "date"
             },
             {
               "url": "fhirpath",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='commsite').valueDecimal"
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-supervision').extension.where(url='date').valueDate"
             },
             {
               "url": "display",
-              "valueString": "Distance from Community site"
+              "valueString": "Date of Supervision"
             },
             {
               "url": "filter",
@@ -120,7 +120,7 @@
             },
             {
               "url": "dropDownFilter",
-              "valueBoolean": false
+              "valueBoolean": true
             },
             {
               "url": "order",
@@ -147,7 +147,7 @@
         },
         {
           "url": "linkTo",
-          "valueString": "distance.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+          "valueString": "supervision.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
         },
         {
           "url": "linkElementSearchParameter",
@@ -513,35 +513,6 @@
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "name",
-              "valueString": "startYear"
-            },
-            {
-              "url": "fhirpath",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-start-year').valueDate"
-            },
-            {
-              "url": "display",
-              "valueString": "End Date"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": false
-            },
-            {
-              "url": "order",
-              "valueInteger": 8
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportLink"
@@ -788,6 +759,6 @@
     ]
   },
   "subject": {
-    "reference": "StructureDefinition/ihris-basic-distance"
+    "reference": "StructureDefinition/ihris-basic-supervision"
   }
 }

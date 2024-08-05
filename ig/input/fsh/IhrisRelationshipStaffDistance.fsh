@@ -52,14 +52,14 @@ Usage:          #example
 * extension[reportlink][0].extension[reportelement][0].extension[order].valueInteger = 1
 
 * extension[reportlink][0].extension[reportelement][1].extension[name].valueString = "given"
-* extension[reportlink][0].extension[reportelement][1].extension[fhirpath].valueString = "name.where(use='official').first().given"
+* extension[reportlink][0].extension[reportelement][1].extension[fhirpath].valueString = "name.first().given"
 * extension[reportlink][0].extension[reportelement][1].extension[display].valueString = "Given name"
 * extension[reportlink][0].extension[reportelement][1].extension[filter].valueBoolean = true
 * extension[reportlink][0].extension[reportelement][1].extension[dropDownFilter].valueBoolean = false
 * extension[reportlink][0].extension[reportelement][1].extension[order].valueInteger = 2
 
 * extension[reportlink][0].extension[reportelement][2].extension[name].valueString = "family"
-* extension[reportlink][0].extension[reportelement][2].extension[fhirpath].valueString = "name.where(use='official').family"
+* extension[reportlink][0].extension[reportelement][2].extension[fhirpath].valueString = "name.family"
 * extension[reportlink][0].extension[reportelement][2].extension[display].valueString = "Family name"
 * extension[reportlink][0].extension[reportelement][2].extension[filter].valueBoolean = true
 * extension[reportlink][0].extension[reportelement][2].extension[dropDownFilter].valueBoolean = false
@@ -147,56 +147,43 @@ Usage:          #example
 * extension[reportlink][2].extension[reportelement][0].extension[display].valueString = "Fokontany"
 * extension[reportlink][2].extension[reportelement][0].extension[filter].valueBoolean = true
 * extension[reportlink][2].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true
-* extension[reportlink][2].extension[reportelement][0].extension[order].valueInteger = 16
+* extension[reportlink][2].extension[reportelement][0].extension[order].valueInteger = 15
 
-* extension[reportlink][3].extension[name].valueString = "csb"
+* extension[reportlink][3].extension[name].valueString = "commune"
 * extension[reportlink][3].extension[resource].valueString = "Location"
 * extension[reportlink][3].extension[linkElement].valueString = "Location.id"
 * extension[reportlink][3].extension[linkTo].valueString = "site.partOf.reference"
 * extension[reportlink][3].extension[multiple].valueBoolean = false
-* extension[reportlink][3].extension[initialFilter].valueString = "_profile=http://ihris.org/fhir/StructureDefinition/ihris-facility"
-* extension[reportlink][3].extension[reportelement][0].extension[name].valueString = "csbName"
+* extension[reportlink][3].extension[initialFilter].valueString = "_profile=http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+* extension[reportlink][3].extension[reportelement][0].extension[name].valueString = "communeName"
 * extension[reportlink][3].extension[reportelement][0].extension[fhirpath].valueString = "name"
-* extension[reportlink][3].extension[reportelement][0].extension[display].valueString = "CSB"
+* extension[reportlink][3].extension[reportelement][0].extension[display].valueString = "Commune"
 * extension[reportlink][3].extension[reportelement][0].extension[filter].valueBoolean = true
 * extension[reportlink][3].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true
-* extension[reportlink][3].extension[reportelement][0].extension[order].valueInteger = 15
+* extension[reportlink][3].extension[reportelement][0].extension[order].valueInteger = 14
 
-* extension[reportlink][4].extension[name].valueString = "commune"
+* extension[reportlink][4].extension[name].valueString = "district"
 * extension[reportlink][4].extension[resource].valueString = "Location"
 * extension[reportlink][4].extension[linkElement].valueString = "Location.id"
-* extension[reportlink][4].extension[linkTo].valueString = "role.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-commune').valueReference.reference"
+* extension[reportlink][4].extension[linkTo].valueString = "commune.partOf.reference"
 * extension[reportlink][4].extension[multiple].valueBoolean = false
 * extension[reportlink][4].extension[initialFilter].valueString = "_profile=http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
-* extension[reportlink][4].extension[reportelement][0].extension[name].valueString = "communeName"
+* extension[reportlink][4].extension[reportelement][0].extension[name].valueString = "districtName"
 * extension[reportlink][4].extension[reportelement][0].extension[fhirpath].valueString = "name"
-* extension[reportlink][4].extension[reportelement][0].extension[display].valueString = "Commune"
+* extension[reportlink][4].extension[reportelement][0].extension[display].valueString = "District"
 * extension[reportlink][4].extension[reportelement][0].extension[filter].valueBoolean = true
 * extension[reportlink][4].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true
-* extension[reportlink][4].extension[reportelement][0].extension[order].valueInteger = 14
+* extension[reportlink][4].extension[reportelement][0].extension[order].valueInteger = 13
 
-* extension[reportlink][5].extension[name].valueString = "district"
+* extension[reportlink][5].extension[name].valueString = "region"
 * extension[reportlink][5].extension[resource].valueString = "Location"
 * extension[reportlink][5].extension[linkElement].valueString = "Location.id"
-* extension[reportlink][5].extension[linkTo].valueString = "commune.partOf.reference"
+* extension[reportlink][5].extension[linkTo].valueString = "district.partOf.reference"
 * extension[reportlink][5].extension[multiple].valueBoolean = false
 * extension[reportlink][5].extension[initialFilter].valueString = "_profile=http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
-* extension[reportlink][5].extension[reportelement][0].extension[name].valueString = "districtName"
+* extension[reportlink][5].extension[reportelement][0].extension[name].valueString = "regionName"
 * extension[reportlink][5].extension[reportelement][0].extension[fhirpath].valueString = "name"
-* extension[reportlink][5].extension[reportelement][0].extension[display].valueString = "District"
+* extension[reportlink][5].extension[reportelement][0].extension[display].valueString = "Region"
 * extension[reportlink][5].extension[reportelement][0].extension[filter].valueBoolean = true
 * extension[reportlink][5].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true
-* extension[reportlink][5].extension[reportelement][0].extension[order].valueInteger = 13
-
-* extension[reportlink][6].extension[name].valueString = "region"
-* extension[reportlink][6].extension[resource].valueString = "Location"
-* extension[reportlink][6].extension[linkElement].valueString = "Location.id"
-* extension[reportlink][6].extension[linkTo].valueString = "district.partOf.reference"
-* extension[reportlink][6].extension[multiple].valueBoolean = false
-* extension[reportlink][6].extension[initialFilter].valueString = "_profile=http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
-* extension[reportlink][6].extension[reportelement][0].extension[name].valueString = "regionName"
-* extension[reportlink][6].extension[reportelement][0].extension[fhirpath].valueString = "name"
-* extension[reportlink][6].extension[reportelement][0].extension[display].valueString = "Region"
-* extension[reportlink][6].extension[reportelement][0].extension[filter].valueBoolean = true
-* extension[reportlink][6].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true
-* extension[reportlink][6].extension[reportelement][0].extension[order].valueInteger = 12
+* extension[reportlink][5].extension[reportelement][0].extension[order].valueInteger = 12

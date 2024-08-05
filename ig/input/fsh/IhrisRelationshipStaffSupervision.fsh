@@ -1,37 +1,37 @@
-Instance:       ihris-es-report-staff-incentive
+Instance:       ihris-es-report-staff-supervision
 InstanceOf:     IhrisRelationship
-Title:          "Staff Distance from Site Relationship "
+Title:          "Staff Supervison Relationship "
 Usage:          #example
 
 * code.text = "iHRISRelationship"
 * code.coding = #iHRISRelationship
-* subject.reference = "StructureDefinition/ihris-basic-incentive"
-* extension[reportdetails].extension[name].valueString = "incentive"
-* extension[reportdetails].extension[label].valueString = "Motivation Information"
-* extension[reportdetails].extension[initialFilter].valueString = "_profile=http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive"
-* extension[reportdetails].extension[query].valueString = "Basic.meta.profile = 'http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive'"
+* subject.reference = "StructureDefinition/ihris-basic-supervision"
+* extension[reportdetails].extension[name].valueString = "supervision"
+* extension[reportdetails].extension[label].valueString = "Supervision Information"
+* extension[reportdetails].extension[initialFilter].valueString = "_profile=http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision"
+* extension[reportdetails].extension[query].valueString = "Basic.meta.profile = 'http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision'"
 * extension[reportdetails].extension[resource].valueString = "Basic"
-* extension[reportdetails].extension[resourcePage].valueString = "basic-incentive"
+* extension[reportdetails].extension[resourcePage].valueString = "basic-supervision"
 * extension[reportdetails].extension[displayCheckbox].valueBoolean = true
 * extension[reportdetails].extension[locationBasedConstraint].valueBoolean = true
 
-* extension[reportdetails].extension[reportelement][0].extension[name].valueString = "activityPacks"
-* extension[reportdetails].extension[reportelement][0].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-incentive').extension.where(url='incentive').valueCoding.display"
-* extension[reportdetails].extension[reportelement][0].extension[display].valueString = "Activity Packs"
+* extension[reportdetails].extension[reportelement][0].extension[name].valueString = "supervised"
+* extension[reportdetails].extension[reportelement][0].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-supervision').extension.where(url='supervised').valueCoding.display"
+* extension[reportdetails].extension[reportelement][0].extension[display].valueString = "Supervised?"
 * extension[reportdetails].extension[reportelement][0].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][0].extension[order].valueInteger = 9
 
 * extension[reportdetails].extension[reportelement][1].extension[name].valueString = "motivationStatus"
-* extension[reportdetails].extension[reportelement][1].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-incentive').extension.where(url='motivation').valueCoding.display"
-* extension[reportdetails].extension[reportelement][1].extension[display].valueString = "Monthly Motivation status"
+* extension[reportdetails].extension[reportelement][1].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-supervision').extension.where(url='monthlyacg').valueCoding.display"
+* extension[reportdetails].extension[reportelement][1].extension[display].valueString = "Monthly AC Gathering"
 * extension[reportdetails].extension[reportelement][1].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][1].extension[dropDownFilter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][1].extension[order].valueInteger = 10
 
-* extension[reportdetails].extension[reportelement][2].extension[name].valueString = "motivationType"
-* extension[reportdetails].extension[reportelement][2].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-incentive').extension.where(url='motivationType').valueCoding.display"
-* extension[reportdetails].extension[reportelement][2].extension[display].valueString = "Motivation Type"
+* extension[reportdetails].extension[reportelement][2].extension[name].valueString = "date"
+* extension[reportdetails].extension[reportelement][2].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-supervision').extension.where(url='date').valueDate"
+* extension[reportdetails].extension[reportelement][2].extension[display].valueString = "Date of Supervision"
 * extension[reportdetails].extension[reportelement][2].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][2].extension[dropDownFilter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][2].extension[order].valueInteger = 11
@@ -39,7 +39,7 @@ Usage:          #example
 * extension[reportlink][0].extension[name].valueString = "practitioner"
 * extension[reportlink][0].extension[resource].valueString = "Practitioner"
 * extension[reportlink][0].extension[linkElement].valueString = "Practitioner.id"
-* extension[reportlink][0].extension[linkTo].valueString = "incentive.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+* extension[reportlink][0].extension[linkTo].valueString = "supervision.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
 * extension[reportlink][0].extension[linkElementSearchParameter].valueString = "practitioner"
 * extension[reportlink][0].extension[multiple].valueBoolean = false
 * extension[reportlink][0].extension[query].valueString =  "active=true"

@@ -99,6 +99,35 @@
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "name",
+              "valueString": "motivationType"
+            },
+            {
+              "url": "fhirpath",
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-incentive').extension.where(url='motivationType').valueCoding.display"
+            },
+            {
+              "url": "display",
+              "valueString": "Motivation Type"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            },
+            {
+              "url": "order",
+              "valueInteger": 11
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
         }
       ]
     },
@@ -169,7 +198,7 @@
             },
             {
               "url": "fhirpath",
-              "valueString": "name.where(use='official').first().given"
+              "valueString": "name.first().given"
             },
             {
               "url": "display",
@@ -198,7 +227,7 @@
             },
             {
               "url": "fhirpath",
-              "valueString": "name.where(use='official').family"
+              "valueString": "name.family"
             },
             {
               "url": "display",
@@ -484,35 +513,6 @@
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "name",
-              "valueString": "startYear"
-            },
-            {
-              "url": "fhirpath",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-start-year').valueDate"
-            },
-            {
-              "url": "display",
-              "valueString": "End Date"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": false
-            },
-            {
-              "url": "order",
-              "valueInteger": 8
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportLink"
@@ -579,64 +579,6 @@
       "extension": [
         {
           "url": "name",
-          "valueString": "csb"
-        },
-        {
-          "url": "resource",
-          "valueString": "Location"
-        },
-        {
-          "url": "linkElement",
-          "valueString": "Location.id"
-        },
-        {
-          "url": "linkTo",
-          "valueString": "site.partOf.reference"
-        },
-        {
-          "url": "multiple",
-          "valueBoolean": false
-        },
-        {
-          "url": "initialFilter",
-          "valueString": "_profile=http://ihris.org/fhir/StructureDefinition/ihris-facility"
-        },
-        {
-          "extension": [
-            {
-              "url": "name",
-              "valueString": "csbName"
-            },
-            {
-              "url": "fhirpath",
-              "valueString": "name"
-            },
-            {
-              "url": "display",
-              "valueString": "CSB"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            },
-            {
-              "url": "order",
-              "valueInteger": 14
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        }
-      ],
-      "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportLink"
-    },
-    {
-      "extension": [
-        {
-          "url": "name",
           "valueString": "commune"
         },
         {
@@ -649,7 +591,7 @@
         },
         {
           "url": "linkTo",
-          "valueString": "role.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-commune').valueReference.reference"
+          "valueString": "site.partOf.reference"
         },
         {
           "url": "multiple",
@@ -683,7 +625,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 13
+              "valueInteger": 14
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -741,7 +683,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 12
+              "valueInteger": 13
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -799,7 +741,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 11
+              "valueInteger": 12
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"

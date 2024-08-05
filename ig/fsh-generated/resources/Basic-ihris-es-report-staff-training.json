@@ -46,35 +46,6 @@
           "extension": [
             {
               "url": "name",
-              "valueString": "provider"
-            },
-            {
-              "url": "fhirpath",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-training').extension.where(url='provider').valueString"
-            },
-            {
-              "url": "display",
-              "valueString": "Training Provider"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            },
-            {
-              "url": "order",
-              "valueInteger": 9
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "name",
               "valueString": "training"
             },
             {
@@ -83,7 +54,7 @@
             },
             {
               "url": "display",
-              "valueString": "Training Type/Received"
+              "valueString": "Training Received"
             },
             {
               "url": "filter",
@@ -596,64 +567,6 @@
             },
             {
               "url": "order",
-              "valueInteger": 16
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        }
-      ],
-      "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportLink"
-    },
-    {
-      "extension": [
-        {
-          "url": "name",
-          "valueString": "csb"
-        },
-        {
-          "url": "resource",
-          "valueString": "Location"
-        },
-        {
-          "url": "linkElement",
-          "valueString": "Location.id"
-        },
-        {
-          "url": "linkTo",
-          "valueString": "site.partOf.reference"
-        },
-        {
-          "url": "multiple",
-          "valueBoolean": false
-        },
-        {
-          "url": "initialFilter",
-          "valueString": "_profile=http://ihris.org/fhir/StructureDefinition/ihris-facility"
-        },
-        {
-          "extension": [
-            {
-              "url": "name",
-              "valueString": "csbName"
-            },
-            {
-              "url": "fhirpath",
-              "valueString": "name"
-            },
-            {
-              "url": "display",
-              "valueString": "CSB"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            },
-            {
-              "url": "order",
               "valueInteger": 15
             }
           ],
@@ -678,7 +591,7 @@
         },
         {
           "url": "linkTo",
-          "valueString": "role.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-commune').valueReference.reference"
+          "valueString": "site.partOf.reference"
         },
         {
           "url": "multiple",

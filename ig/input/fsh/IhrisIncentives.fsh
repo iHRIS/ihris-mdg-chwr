@@ -171,7 +171,7 @@ Usage:          #example
 * extension[display].extension[search][0].valueString = "Practitioner|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
 * extension[display].extension[search][1].valueString = "Activity Packs|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-incentive').extension.where(url='incentive').valueCoding.display"
 * extension[display].extension[search][1].valueString = "Motivation Status|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-incentive').extension.where(url='motivation').valueCoding.display"
-* extension[display].extension[field][0].extension[path].valueString = "Basic.extension:practitioner.value[x]:valueReference"
+* extension[display].extension[field][0].extension[path].valueString = "Basic.extension:practitioner"
 * extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
 * extension[section][0].extension[title].valueString = "Incentive"
 * extension[section][0].extension[description].valueString = "Incentive details"

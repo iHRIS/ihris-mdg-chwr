@@ -49,7 +49,7 @@
                 },
                 {
                   "url": "order",
-                  "valueString": "given, family"
+                  "valueString": "given family"
                 },
                 {
                   "url": "paths:given:fhirpath",
