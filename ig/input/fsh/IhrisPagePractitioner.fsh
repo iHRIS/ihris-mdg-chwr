@@ -4,8 +4,8 @@ Title:          "Practitioner"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-practitioner)
-* extension[display].extension[search][0].valueString = "Last Name|Practitioner.name.where.family"
-* extension[display].extension[search][1].valueString = "First Name(s)|Practitioner.name.where.given"
+* extension[display].extension[search][0].valueString = "Last Name|Practitioner.name.family"
+* extension[display].extension[search][1].valueString = "First Name(s)|Practitioner.name.given"
 * extension[display].extension[search][2].valueString = "Birth Date|Practitioner.birthDate"
 * extension[display].extension[search][3].valueString = "Gender|Practitioner.gender|http://ihris.org/fhir/ValueSet/ihris-gender-valueset"
 * extension[display].extension[search][4].valueString = "Status|Practitioner.active"

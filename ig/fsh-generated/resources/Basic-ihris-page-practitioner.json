@@ -26,11 +26,11 @@
         },
         {
           "url": "search",
-          "valueString": "Last Name|Practitioner.name.where.family"
+          "valueString": "Last Name|Practitioner.name.family"
         },
         {
           "url": "search",
-          "valueString": "First Name(s)|Practitioner.name.where.given"
+          "valueString": "First Name(s)|Practitioner.name.given"
         },
         {
           "url": "search",
