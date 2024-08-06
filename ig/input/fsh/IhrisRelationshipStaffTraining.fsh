@@ -15,7 +15,7 @@ Usage:          #example
 * extension[reportdetails].extension[displayCheckbox].valueBoolean = true
 * extension[reportdetails].extension[locationBasedConstraint].valueBoolean = true
 
-* extension[reportdetails].extension[reportelement][0].extension[name].valueString = "training"
+* extension[reportdetails].extension[reportelement][0].extension[name].valueString = "trainingReceived"
 * extension[reportdetails].extension[reportelement][0].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-training').extension.where(url='training').valueCoding.display"
 * extension[reportdetails].extension[reportelement][0].extension[display].valueString = "Training Received"
 * extension[reportdetails].extension[reportelement][0].extension[filter].valueBoolean = true

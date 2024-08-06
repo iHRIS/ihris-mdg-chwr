@@ -46,7 +46,7 @@
           "extension": [
             {
               "url": "name",
-              "valueString": "training"
+              "valueString": "trainingReceived"
             },
             {
               "url": "fhirpath",
