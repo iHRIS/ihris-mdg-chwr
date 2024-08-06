@@ -182,7 +182,7 @@ Usage:          #definition
 * purpose = "Workflow page for ending a role/job."
 
 * item[0].linkId = "PractitionerRole"
-* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.id"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role"
 * item[0].text = "End Appointment"
 * item[0].type = #group
 

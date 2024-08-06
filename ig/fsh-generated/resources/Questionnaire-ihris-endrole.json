@@ -16,7 +16,7 @@
   "item": [
     {
       "linkId": "PractitionerRole",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.id",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role",
       "text": "End Appointment",
       "type": "group",
       "item": [
