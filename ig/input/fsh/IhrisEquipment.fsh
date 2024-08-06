@@ -52,8 +52,8 @@ Title:            "iHRIS Equipment Type ValueSet"
 CodeSystem:      IhrisAvailability
 Id:              ihris-availability
 Title:           "Equipment Availability"
-* ^date = "2022-09-29T08:41:04.362Z"
-* ^version = "0.1.0"
+* ^date = "2023-09-29T08:41:04.362Z"
+* ^version = "0.2.0"
 * #good "Bon"
 * #average "Moyen"
 * #bad "Moyen"
@@ -61,8 +61,8 @@ Title:           "Equipment Availability"
 ValueSet:         IhrisAvailabilityValueSet
 Id:               ihris-availability-valueset
 Title:            "iHRIS Equipment Availability ValueSet"
-* ^date = "2022-09-29T08:41:04.362Z"
-* ^version = "0.1.0"
+* ^date = "2023-09-29T08:41:04.362Z"
+* ^version = "0.2.0"
 * codes from system IhrisAvailability
 
 Instance:       IhrisPractitionerWorkflowEquipment
