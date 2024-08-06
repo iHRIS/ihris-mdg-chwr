@@ -1316,7 +1316,7 @@
         "id": "Basic.extension:supervision.extension:monthlyacg.value[x]:valueCoding",
         "path": "Basic.extension.extension.value[x]",
         "sliceName": "valueCoding",
-        "label": "Monthly AC Gathering",
+        "label": "Monthly AC Grouping",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 1,

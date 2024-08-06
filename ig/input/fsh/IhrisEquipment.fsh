@@ -1,7 +1,7 @@
 Profile:        IhrisBasicEquipment
 Parent:         IhrisPractitionerBasic
 Id:             ihris-basic-equipment
-Title:          "Equipment Information"
+Title:          "EMOIS Information"
 Description:    "iHRIS Profile of the Basic resource for Equipment."
 * extension[practitioner].valueReference 1..1 MS
 * extension[practitioner].valueReference ^label = "Health Worker"
@@ -18,7 +18,7 @@ Description:    "iHRIS Profile of the Basic resource for Equipment."
 
 Extension:      IhrisEquipment
 Id:             ihris-equipment
-Title:          "Equipment details"
+Title:          "EMOIS details"
 * extension contains
       recieved 1..1 MS and
       equipmenttype 1..1 MS and
@@ -31,7 +31,7 @@ Title:          "Equipment details"
 * extension[equipmenttype].valueCoding ^label = "Type of Equipment"
 * extension[equipmenttype].valueCoding from IhrisEquipmentTypeValueSet (required)
 * extension[availability].value[x] only Coding
-* extension[availability].valueCoding ^label = "Availability"
+* extension[availability].valueCoding ^label = "Status of Equipment"
 * extension[availability].valueCoding from IhrisAvailabilityValueSet (required)
 * extension[date].value[x] only date
 * extension[date].valueDate ^label =  "Date"
@@ -54,8 +54,9 @@ Id:              ihris-availability
 Title:           "Equipment Availability"
 * ^date = "2022-09-29T08:41:04.362Z"
 * ^version = "0.1.0"
-* #available "Disponible"
-* #notavailable "Indisponible"
+* #good "Bon"
+* #average "Moyen"
+* #bad "Moyen"
 
 ValueSet:         IhrisAvailabilityValueSet
 Id:               ihris-availability-valueset
@@ -78,7 +79,7 @@ Usage:          #definition
 
 * item[0].linkId = "Basic"
 * item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment"
-* item[0].text = "Equipment Information"
+* item[0].text = "EMOIS Information"
 * item[0].type = #group
 
 * item[0].item[0].linkId = "Basic.extension[0]"
@@ -108,7 +109,7 @@ Usage:          #definition
 
 * item[0].item[0].item[2].linkId = "Basic.extension[0].extension[2]"
 * item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:availability.value[x]:valueCoding"
-* item[0].item[0].item[2].text = "Availability"
+* item[0].item[0].item[2].text = "Status of Equipment"
 * item[0].item[0].item[2].type = #choice
 * item[0].item[0].item[2].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-availability-valueset"
 * item[0].item[0].item[2].required = false
@@ -156,10 +157,10 @@ Usage:          #example
 * extension[display].extension[search][2].valueString = "Equipment Type|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment').extension.where(url='equipmenttype').valueCoding.display"
 * extension[display].extension[search][3].valueString = "availability|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment').extension.where(url='availability').valueCoding.display"
 * extension[display].extension[search][4].valueString = "Date|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment').extension.where(url='date').valueDate"
-* extension[display].extension[field][1].extension[path].valueString = "Basic.extension:practitioner.value[x]:valueReference"
-* extension[display].extension[field][1].extension[readOnlyIfSet].valueBoolean = true
-* extension[section][0].extension[title].valueString = "Equipment"
-* extension[section][0].extension[description].valueString = "Equipment details"
+* extension[display].extension[field][0].extension[path].valueString = "Basic.extension:practitioner.value[x]:valueReference"
+* extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
+* extension[section][0].extension[title].valueString = "EMOIS (Equips, Materials, Management Tools, Inputs, Supports)"
+* extension[section][0].extension[description].valueString = "EMOIS details"
 * extension[section][0].extension[name].valueString = "Basic"
 * extension[section][0].extension[field][0].valueString = "extension:practitioner"
 * extension[section][0].extension[field][1].valueString = "extension:equipment.extension:recieved.value[x]:valueCoding"

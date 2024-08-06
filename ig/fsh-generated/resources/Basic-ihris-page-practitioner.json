@@ -1158,11 +1158,11 @@
       "extension": [
         {
           "url": "title",
-          "valueString": "Eqiupment Information"
+          "valueString": "EMOIS (Equips, Materials, Management Tools, Inputs, Supports)"
         },
         {
           "url": "description",
-          "valueString": "Equipment Information for the Health Worker"
+          "valueString": "EMOIS Information for the Health Worker"
         },
         {
           "url": "name",
@@ -1356,7 +1356,7 @@
               "extension": [
                 {
                   "url": "header",
-                  "valueString": "Monthly AC Gathering"
+                  "valueString": "Monthly AC Grouping"
                 },
                 {
                   "url": "field",

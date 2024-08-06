@@ -692,7 +692,7 @@
         },
         {
           "name": "shortname:Practitioner:format",
-          "valueString": "%s, %s"
+          "valueString": "%s %s"
         },
         {
           "name": "shortname:Practitioner:order",
@@ -700,11 +700,11 @@
         },
         {
           "name": "shortname:Practitioner:paths:family:fhirpath",
-          "valueString": "name.where(use='official').first().family"
+          "valueString": "name.family"
         },
         {
           "name": "shortname:Practitioner:paths:given:fhirpath",
-          "valueString": "name.where(use='official').first().given"
+          "valueString": "name.first().given"
         },
         {
           "name": "shortname:Location:format",
@@ -756,38 +756,6 @@
         },
         {
           "name": "defaults:fields:PractitionerRole.location:user_filter:replace",
-          "valueString": "$1"
-        },
-        {
-          "name": "defaults:fields:Practitioner.extension:residence.value[x]:valueReference:type",
-          "valueString": "tree"
-        },
-        {
-          "name": "defaults:fields:Practitioner.extension:residence.value[x]:valueReference:initialValue",
-          "valueString": "Location/MG"
-        },
-        {
-          "name": "defaults:fields:Practitioner.extension:residence.value[x]:valueReference:user_filter:regex",
-          "valueString": "related-location=(.+)"
-        },
-        {
-          "name": "defaults:fields:Practitioner.extension:residence.value[x]:valueReference:user_filter:replace",
-          "valueString": "$1"
-        },
-        {
-          "name": "defaults:fields:PractitionerRole.extension:commune.value[x]:valueReference:type",
-          "valueString": "tree"
-        },
-        {
-          "name": "defaults:fields:PractitionerRole.extension:commune.value[x]:valueReference:initialValue",
-          "valueString": "Location/MG"
-        },
-        {
-          "name": "defaults:fields:PractitionerRole.extension:commune.value[x]:valueReference:user_filter:regex",
-          "valueString": "related-location=(.+)"
-        },
-        {
-          "name": "defaults:fields:PractitionerRole.extension:commune.value[x]:valueReference:user_filter:replace",
           "valueString": "$1"
         },
         {
@@ -984,7 +952,7 @@
         },
         {
           "name": "defaults:fields:Person.extension:practitioner.value[x]:valueReference:referenceDisplayPath",
-          "valueString": "name.where(use='official').given.first() + ' ' + name.where(use='official').family"
+          "valueString": "name.given + ' ' + name.family"
         },
         {
           "name": "site:intro:default:title",
@@ -996,7 +964,7 @@
         },
         {
           "name": "site:intro:default:data:fullName:path",
-          "valueString": "Practitioner.name.where(use='official').family + ' ' + Practitioner.name.where(use='official').given"
+          "valueString": "Practitioner.name.family + ' ' + Practitioner.name.given"
         },
         {
           "name": "site:intro:default:data:title:text",
@@ -1044,7 +1012,7 @@
         },
         {
           "name": "site:intro:practitionerrole:data:fullName:path",
-          "valueString": "Practitioner.name.where(use='official').family + ' ' + Practitioner.name.where(use='official').given[0] + ' ' + practitioner.name.where(use='official').given[1]"
+          "valueString": "Practitioner.name.family + ' ' + Practitioner.name.given"
         },
         {
           "name": "site:intro:practitionerrole:data:title:text",

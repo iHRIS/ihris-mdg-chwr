@@ -1045,7 +1045,7 @@
         "id": "Basic.extension:distance.extension:fokontany.value[x]:valueDecimal",
         "path": "Basic.extension.extension.value[x]",
         "sliceName": "valueDecimal",
-        "label": "Distance from Fokontany",
+        "label": "Distance(km) from Fokontany",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
@@ -1312,7 +1312,7 @@
         "id": "Basic.extension:distance.extension:csb.value[x]:valueDecimal",
         "path": "Basic.extension.extension.value[x]",
         "sliceName": "valueDecimal",
-        "label": "Distance from CSB",
+        "label": "Distance(km) from CSB",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
@@ -1579,7 +1579,7 @@
         "id": "Basic.extension:distance.extension:commsite.value[x]:valueDecimal",
         "path": "Basic.extension.extension.value[x]",
         "sliceName": "valueDecimal",
-        "label": "Distance from Community Site",
+        "label": "Distance(km) from Community Site",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
@@ -2185,6 +2185,7 @@
       {
         "id": "Basic.extension:distance.extension:csb.valueDecimal",
         "path": "Basic.extension.extension.valueDecimal",
+        "label": "Distance(km) from CSB",
         "mustSupport": true
       },
       {

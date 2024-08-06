@@ -38,7 +38,7 @@ Usage:          #definition
 * item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.birthDate"
 * item[0].item[1].text = "Date of Birth"
 * item[0].item[1].type = #date
-* item[0].item[1].required = false
+* item[0].item[1].required = true
 * item[0].item[1].repeats = false
 
 * item[0].item[2].linkId = "Practitioner.gender"
@@ -46,7 +46,7 @@ Usage:          #definition
 * item[0].item[2].text = "Gender"
 * item[0].item[2].type = #choice
 * item[0].item[2].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-gender-valueset"
-* item[0].item[2].required = false
+* item[0].item[2].required = true
 * item[0].item[2].repeats = false
 
 * item[0].item[3].linkId = "Practitioner.extension[0]"
@@ -80,7 +80,7 @@ Usage:          #definition
 * item[1].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]:valueString"
 * item[1].item[0].text = "Mobile Phone"
 * item[1].item[0].type = #string
-* item[1].item[0].required = false
+* item[1].item[0].required = true
 * item[1].item[0].repeats = false
 
 * item[2].linkId = "PractitionerRole"
@@ -121,7 +121,7 @@ Usage:          #definition
 * item[2].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.location"
 * item[2].item[3].text = "Fokotany"
 * item[2].item[3].type = #reference
-* item[2].item[3].required = false
+* item[2].item[3].required = true
 * item[2].item[3].repeats = false
 
 * item[2].item[4].linkId = "PractitionerRole.extension[0]#preload"
@@ -155,7 +155,7 @@ Usage:          #definition
 * item[3].item[0].item[0].text = "ID Number"
 * item[3].item[0].item[0].type = #string
 * item[3].item[0].item[0].repeats = false
-* item[3].item[0].item[0].required = false
+* item[3].item[0].item[0].required = true
 
 * item[3].item[0].item[1].linkId = "Practitioner.identifier[0].type"
 * item[3].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.identifier.type"

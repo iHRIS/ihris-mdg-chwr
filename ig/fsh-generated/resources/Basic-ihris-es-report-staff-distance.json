@@ -54,7 +54,7 @@
             },
             {
               "url": "display",
-              "valueString": "Distance from Fokontany"
+              "valueString": "Distance(km) from Fokontany"
             },
             {
               "url": "filter",
@@ -83,7 +83,7 @@
             },
             {
               "url": "display",
-              "valueString": "Distance from CSB"
+              "valueString": "Distance(km) from CSB"
             },
             {
               "url": "filter",
@@ -112,7 +112,7 @@
             },
             {
               "url": "display",
-              "valueString": "Distance from Community site"
+              "valueString": "Distance(km) from Community site"
             },
             {
               "url": "filter",

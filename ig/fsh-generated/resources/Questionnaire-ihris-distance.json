@@ -24,21 +24,21 @@
             {
               "linkId": "Basic.extension[0].extension[0]",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:fokontany.value[x]:valueDecimal",
-              "text": "Distance from Fokontany",
+              "text": "Distance(km) from Fokontany",
               "type": "decimal",
               "required": false
             },
             {
               "linkId": "Basic.extension[0].extension[1]",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:csb.value[x]:valueDecimal",
-              "text": "Distance from CSB",
+              "text": "Distance(km) from CSB",
               "type": "decimal",
               "required": false
             },
             {
               "linkId": "Basic.extension[0].extension[2]",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:commsite.value[x]:valueDecimal",
-              "text": "Distance from Community Site",
+              "text": "Distance(km) from Commune",
               "type": "decimal",
               "required": false
             }

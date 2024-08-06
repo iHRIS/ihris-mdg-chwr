@@ -30,6 +30,14 @@ const workflowMdgEndRole = {
                   valueReference: { reference: "Practitioner/" +req.query.practitioner}
                })
               }
+              if ( req.body.item[0].item[1].linkId === "PractitionerRole.extension[0]" 
+                && req.body.item[0].item[1].answer 
+                && req.body.item[0].item[1].answer[0] 
+                && req.body.item[0].item[1].answer[0].valueCoding) {
+                  extensions.push({ url: "http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-reason-departure",
+                  valueCoding: req.body.item[0].item[1].answer[0].valueCoding
+                })
+              }
 
               let practitioner = await fhirAxios.read(
                 "Practitioner",

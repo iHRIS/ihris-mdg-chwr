@@ -126,14 +126,6 @@
         {
           "extension": [
             {
-              "url": "path"
-            }
-          ],
-          "url": "field"
-        },
-        {
-          "extension": [
-            {
               "url": "path",
               "valueString": "Basic.extension:practitioner.value[x]:valueReference"
             },
@@ -150,11 +142,11 @@
       "extension": [
         {
           "url": "title",
-          "valueString": "Equipment"
+          "valueString": "EMOIS (Equips, Materials, Management Tools, Inputs, Supports)"
         },
         {
           "url": "description",
-          "valueString": "Equipment details"
+          "valueString": "EMOIS details"
         },
         {
           "url": "name",

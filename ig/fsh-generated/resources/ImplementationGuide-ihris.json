@@ -70,7 +70,7 @@
         "reference": {
           "reference": "StructureDefinition/ihris-basic-equipment"
         },
-        "name": "Equipment Information",
+        "name": "EMOIS Information",
         "description": "iHRIS Profile of the Basic resource for Equipment.",
         "exampleBoolean": false
       },
@@ -354,7 +354,7 @@
         "reference": {
           "reference": "StructureDefinition/ihris-equipment"
         },
-        "name": "Equipment details",
+        "name": "EMOIS details",
         "exampleBoolean": false
       },
       {
@@ -513,6 +513,14 @@
         },
         "name": "iHRIS Commune",
         "description": "iHRIS extension for Position Commune.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ihris-practitionerrole-reason-departure"
+        },
+        "name": "iHRIS Position Information Reason for Departure",
+        "description": "iHRIS extension for Position Information Reason for Departure.",
         "exampleBoolean": false
       },
       {
@@ -916,6 +924,13 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ihris-reason-departure-valueset"
+        },
+        "name": "iHRIS Reason Departure ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ihris-relation-valueset"
         },
         "name": "iHRIS Relationship ValueSet",
@@ -1290,6 +1305,13 @@
           "reference": "CodeSystem/ihris-motivation-type"
         },
         "name": "Motivation Type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ihris-reason-departure-codesystem"
+        },
+        "name": "Reason For Change/Departure",
         "exampleBoolean": false
       },
       {

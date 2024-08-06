@@ -12,7 +12,7 @@
     {
       "linkId": "Basic",
       "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment",
-      "text": "Equipment Information",
+      "text": "EMOIS Information",
       "type": "group",
       "item": [
         {
@@ -53,7 +53,7 @@
             {
               "linkId": "Basic.extension[0].extension[2]",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:availability.value[x]:valueCoding",
-              "text": "Availability",
+              "text": "Status of Equipment",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-availability-valueset",
               "required": false,

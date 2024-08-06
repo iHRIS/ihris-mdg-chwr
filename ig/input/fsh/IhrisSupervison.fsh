@@ -10,7 +10,7 @@ Description:    "iHRIS Profile of the Basic resource for Supervision."
 * extension[supervision].extension[supervised].valueCoding ^label = "Supervised?"
 * extension[supervision].extension[supervised].valueCoding 1..1 MS
 * extension[supervision].extension[monthlyacg].valueCoding 1..1 MS
-* extension[supervision].extension[monthlyacg].valueCoding ^label = "Monthly AC Gathering"
+* extension[supervision].extension[monthlyacg].valueCoding ^label = "Monthly AC Grouping"
 * extension[supervision].extension[date].valueDate ^label = "Date of Supervision"
 * extension[supervision].extension[date].valueDate 1..1 MS
 
@@ -25,7 +25,7 @@ Title:          "Supervision details"
 * extension[supervised].valueCoding ^label = "Supervised?"
 * extension[supervised].valueCoding from IhrisYesNoValueSet (required)
 * extension[monthlyacg].value[x] only Coding
-* extension[monthlyacg].valueCoding ^label = "Monthly AC Gathering"
+* extension[monthlyacg].valueCoding ^label = "Monthly AC Grouping"
 * extension[monthlyacg].valueCoding from IhrisYesNoValueSet (required)
 * extension[date].value[x] only date
 * extension[date].valueDate ^label =  "Date"
@@ -62,7 +62,7 @@ Usage:          #definition
 
 * item[0].item[0].item[1].linkId = "Basic.extension[0].extension[1]"
 * item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:monthlyacg.value[x]:valueCoding"
-* item[0].item[0].item[1].text = "Monthly AC Gathering"
+* item[0].item[0].item[1].text = "Monthly AC Grouping"
 * item[0].item[0].item[1].type = #choice
 * item[0].item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
 * item[0].item[0].item[1].required = true
@@ -103,7 +103,7 @@ Usage:          #example
 * extension[display].extension[link][2].extension[url].valueUrl = "/questionnaire/ihris-supervision/basic-supervision?practitioner=FIELD"
 * extension[display].extension[search][0].valueString = "Practitioner|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
 * extension[display].extension[search][1].valueString = "Supervised|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision').extension.where(url='received').valueCoding.display"
-* extension[display].extension[search][2].valueString = "Monthly AC Gathering|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision').extension.where(url='monthlyacg').valueCoding.display"
+* extension[display].extension[search][2].valueString = "Monthly AC Grouping|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision').extension.where(url='monthlyacg').valueCoding.display"
 * extension[display].extension[search][3].valueString = "Date|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision').extension.where(url='date').valueDate"
 * extension[display].extension[field][0].extension[path].valueString = "Basic.extension:practitioner.value[x]:valueReference"
 * extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true

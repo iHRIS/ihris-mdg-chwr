@@ -17,21 +17,21 @@ Usage:          #example
 
 * extension[reportdetails].extension[reportelement][0].extension[name].valueString = "fokontany"
 * extension[reportdetails].extension[reportelement][0].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='fokontany').valueDecimal"
-* extension[reportdetails].extension[reportelement][0].extension[display].valueString = "Distance from Fokontany"
+* extension[reportdetails].extension[reportelement][0].extension[display].valueString = "Distance(km) from Fokontany"
 * extension[reportdetails].extension[reportelement][0].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][0].extension[order].valueInteger = 9
 
 * extension[reportdetails].extension[reportelement][1].extension[name].valueString = "csb"
 * extension[reportdetails].extension[reportelement][1].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='csb').valueDecimal"
-* extension[reportdetails].extension[reportelement][1].extension[display].valueString = "Distance from CSB"
+* extension[reportdetails].extension[reportelement][1].extension[display].valueString = "Distance(km) from CSB"
 * extension[reportdetails].extension[reportelement][1].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][1].extension[dropDownFilter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][1].extension[order].valueInteger = 10
 
 * extension[reportdetails].extension[reportelement][2].extension[name].valueString = "commsite"
 * extension[reportdetails].extension[reportelement][2].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='commsite').valueDecimal"
-* extension[reportdetails].extension[reportelement][2].extension[display].valueString = "Distance from Community site"
+* extension[reportdetails].extension[reportelement][2].extension[display].valueString = "Distance(km) from Community site"
 * extension[reportdetails].extension[reportelement][2].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][2].extension[dropDownFilter].valueBoolean = false
 * extension[reportdetails].extension[reportelement][2].extension[order].valueInteger = 11

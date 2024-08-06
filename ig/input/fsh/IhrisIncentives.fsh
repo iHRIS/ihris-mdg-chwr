@@ -21,7 +21,7 @@ Extension:      IhrisIncentive
 Id:             ihris-incentive
 Title:          "Incentive details"
 * extension contains
-      incentive 1..1 MS and
+      incentive 1..* MS and
       motivation 0..1 MS and
       motivationType 0..1 MS and
       other 0..1 MS
@@ -113,7 +113,7 @@ Usage:          #definition
 * item[0].item[0].item[0].type = #choice
 * item[0].item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-incentive-valueset"
 * item[0].item[0].item[0].required = true
-* item[0].item[0].item[0].repeats = false
+* item[0].item[0].item[0].repeats = true
 
 * item[0].item[0].item[1].linkId = "Basic.extension[0].extension[1]"
 * item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivation.value[x]:valueCoding"
@@ -171,7 +171,7 @@ Usage:          #example
 * extension[display].extension[search][0].valueString = "Practitioner|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
 * extension[display].extension[search][1].valueString = "Activity Packs|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-incentive').extension.where(url='incentive').valueCoding.display"
 * extension[display].extension[search][1].valueString = "Motivation Status|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-incentive').extension.where(url='motivation').valueCoding.display"
-* extension[display].extension[field][0].extension[path].valueString = "Basic.extension:practitioner"
+* extension[display].extension[field][0].extension[path].valueString = "Basic.extension:practitioner.value[x]:valueReference"
 * extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
 * extension[section][0].extension[title].valueString = "Incentive"
 * extension[section][0].extension[description].valueString = "Incentive details"

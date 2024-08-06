@@ -16,7 +16,7 @@
         },
         {
           "url": "label",
-          "valueString": "Equipment Information"
+          "valueString": "EMOIS Information"
         },
         {
           "url": "resource",
@@ -141,7 +141,7 @@
             },
             {
               "url": "display",
-              "valueString": "Availability/Functionality"
+              "valueString": "Status Of Equipment"
             },
             {
               "url": "filter",

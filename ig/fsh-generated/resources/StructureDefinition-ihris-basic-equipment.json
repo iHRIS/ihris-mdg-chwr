@@ -14,7 +14,7 @@
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment",
   "version": "0.1.0",
   "name": "IhrisBasicEquipment",
-  "title": "Equipment Information",
+  "title": "EMOIS Information",
   "status": "active",
   "description": "iHRIS Profile of the Basic resource for Equipment.",
   "fhirVersion": "4.0.1",
@@ -2491,6 +2491,7 @@
       {
         "id": "Basic.extension:equipment.extension:availability.valueCoding",
         "path": "Basic.extension.extension.valueCoding",
+        "label": "Availability",
         "min": 1,
         "mustSupport": true
       },

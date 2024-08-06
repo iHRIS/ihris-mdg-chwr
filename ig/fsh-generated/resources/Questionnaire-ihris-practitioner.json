@@ -43,7 +43,7 @@
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.birthDate",
           "text": "Date of Birth",
           "type": "date",
-          "required": false,
+          "required": true,
           "repeats": false
         },
         {
@@ -52,7 +52,7 @@
           "text": "Gender",
           "type": "choice",
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-gender-valueset",
-          "required": false,
+          "required": true,
           "repeats": false
         },
         {
@@ -93,7 +93,7 @@
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]:valueString",
           "text": "Mobile Phone",
           "type": "string",
-          "required": false,
+          "required": true,
           "repeats": false
         }
       ]
@@ -164,7 +164,7 @@
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.location",
           "text": "Fokotany",
           "type": "reference",
-          "required": false,
+          "required": true,
           "repeats": false
         },
         {
@@ -205,7 +205,7 @@
               "text": "ID Number",
               "type": "string",
               "repeats": false,
-              "required": false
+              "required": true
             },
             {
               "linkId": "Practitioner.identifier[0].type",

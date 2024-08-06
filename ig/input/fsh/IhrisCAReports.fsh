@@ -119,22 +119,16 @@ Title:          "Careport"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-basic-careports)
-* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/basic-careports/FIELD?edit=true"
-* extension[display].extension[link][0].extension[field].valueString = "Basic.id"
-* extension[display].extension[link][0].extension[text].valueString = "Edit"
+* extension[display].extension[link][0].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+* extension[display].extension[link][0].extension[text].valueString = "View Health Worker"
 * extension[display].extension[link][0].extension[button].valueBoolean = true
-* extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
-* extension[display].extension[link][0].extension[class].valueString = "secondary"
+* extension[display].extension[link][0].extension[icon].valueString = "mdi-account-arrow-right"
+* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
 * extension[display].extension[link][1].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][1].extension[text].valueString = "View Health Worker"
+* extension[display].extension[link][1].extension[text].valueString = "Add Another"
 * extension[display].extension[link][1].extension[button].valueBoolean = true
 * extension[display].extension[link][1].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
-* extension[display].extension[link][2].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][2].extension[text].valueString = "Add Another"
-* extension[display].extension[link][2].extension[button].valueBoolean = true
-* extension[display].extension[link][2].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][2].extension[url].valueUrl = "/questionnaire/ihris-careports/basic-careports?practitioner=FIELD"
+* extension[display].extension[link][1].extension[url].valueUrl = "/questionnaire/ihris-careports/basic-careports?practitioner=FIELD"
 * extension[display].extension[search][0].valueString = "Practitioner|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
 * extension[display].extension[search][1].valueString = "Month|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-careports').extension.where(url='month').valueCoding.display"
 * extension[display].extension[search][2].valueString = "Recieved Report?|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-careports').extension.where(url='careports').valueCoding.display"

@@ -1283,7 +1283,7 @@
         },
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Extension.value[x]",
@@ -1321,7 +1321,7 @@
         "label": "Training Date",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "Extension.value[x]",
@@ -1912,16 +1912,6 @@
         "path": "Basic.extension.extension",
         "sliceName": "date",
         "label": "Training Date"
-      },
-      {
-        "id": "Basic.extension:training.extension:date.value[x]",
-        "path": "Basic.extension.extension.value[x]",
-        "min": 1
-      },
-      {
-        "id": "Basic.extension:training.extension:date.valueDate",
-        "path": "Basic.extension.extension.valueDate",
-        "min": 1
       }
     ]
   }

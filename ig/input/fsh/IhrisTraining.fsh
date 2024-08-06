@@ -11,7 +11,7 @@ Description:    "iHRIS Profile of the Basic resource for a  Training."
 * extension[training].extension[training].valueCoding 0..1 MS
 * extension[training].extension[training].valueCoding ^label = "Training Recived"
 * extension[training].extension[date] ^label = "Training Date"
-* extension[training].extension[date].valueDate 1..1 MS
+* extension[training].extension[date].valueDate 0..1 MS
 * extension[training].extension[date].valueDate ^label = "Training Date"
 
 
@@ -131,5 +131,5 @@ Usage:          #definition
 * item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:date.value[x]:valueDate"
 * item[0].item[0].item[1].text = "Training Date"
 * item[0].item[0].item[1].type = #date
-* item[0].item[0].item[1].required = true
+* item[0].item[0].item[1].required = false
 * item[0].item[0].item[1].repeats = false

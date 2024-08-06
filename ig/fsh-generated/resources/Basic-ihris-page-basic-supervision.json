@@ -113,7 +113,7 @@
         },
         {
           "url": "search",
-          "valueString": "Monthly AC Gathering|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision').extension.where(url='monthlyacg').valueCoding.display"
+          "valueString": "Monthly AC Grouping|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision').extension.where(url='monthlyacg').valueCoding.display"
         },
         {
           "url": "search",

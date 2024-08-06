@@ -35,9 +35,43 @@ Description:    "iHRIS profile of Practitioner Role."
 * location ^label = "Facility/Community Site"
 * location only Reference(IhrisFacility)
 * extension contains
-    IhrisPractitionerRoleWorkPlace named workPlace 0..1 MS
+    IhrisPractitionerRoleWorkPlace named workPlace 0..1 MS and
+    IhrisPractitionerRoleReasonDeparture named reasonForDepature 0..1 MS
 * extension[workPlace].valueCoding MS
 * extension[workPlace] ^label = "Place of Work"
+* extension[reasonForDepature].valueCoding MS
+* extension[reasonForDepature] ^label = "Reason for Departure"
+
+Extension:      IhrisPractitionerRoleReasonDeparture
+Id:             ihris-practitionerrole-reason-departure
+Title:          "iHRIS Position Information Reason for Departure"
+Description:    "iHRIS extension for Position Information Reason for Departure."
+* ^context.type = #element
+* ^context.expression = "PractitionerRole"
+* value[x] only Coding
+* valueCoding 0..1 MS
+* valueCoding ^label = "Reason for Change/Departure"
+* valueCoding from IhrisReasonDepartureValueSet (required)
+
+CodeSystem:      IhrisReasonDepartureCodeSystem
+Id:              ihris-reason-departure-codesystem
+Title:           "Reason For Change/Departure"
+* ^date = "2023-12-29T08:41:04.362Z"
+* ^version = "0.5.0"
+* #Dismissal "Démission"
+* #death "Mort"
+* #displacement "Déplacement"
+* #illness "Maladie"
+* #elective "Mandat Electif"
+* #employed "Recrutement en tant que Salarié"
+* #others "Autre"
+
+ValueSet:         IhrisReasonDepartureValueSet
+Id:               ihris-reason-departure-valueset
+Title:            "iHRIS Reason Departure ValueSet"
+* ^date = "2023-12-29T08:41:04.362Z"
+* ^version = "0.5.0"
+* codes from system IhrisReasonDepartureCodeSystem
 
 /*Extension:      IhrisPractitionerRoleStartYear
 Id:             ihris-practitionerrole-start-year
@@ -128,6 +162,8 @@ Usage:          #example
 * extension[display].extension[search][3].valueString = "Facility|PractitionerRole.location"
 * extension[display].extension[search][3].valueString = "Active|PractitionerRole.active"
 * extension[display].extension[filter][0].valueString = "Job|role|http://ihris.org/fhir/ValueSet/ihris-job"
+* extension[display].extension[field][0].extension[path].valueString = "PractitionerRole.practitioner"
+* extension[display].extension[field][0].extension[readOnlyIfSet].valueBoolean = true
 * extension[section][0].extension[title].valueString = "Position"
 * extension[section][0].extension[description].valueString = "Position details"
 * extension[section][0].extension[name].valueString = "PractitionerRole"
@@ -186,15 +222,22 @@ Usage:          #definition
 * item[0].text = "End Appointment"
 * item[0].type = #group
 
-* item[0].item[0].linkId = "PracitionerRole.period.end"
-* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PracitionerRole.period.end"
-* item[0].item[0].text = "End Date"
-* item[0].item[0].type = #date
-* item[0].item[0].required = true
-* item[0].item[0].repeats = false
+* item[0].item[0].linkId = "PracitionerRole.id"
+* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#PracitionerRole.id"
+* item[0].item[0].text = "Detail"
+* item[0].item[0].type = #group
 
-* item[0].item[1].linkId = "PracitionerRole.active"
-* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PracitionerRole.active"
-* item[0].item[1].text = "Status"
-* item[0].item[1].type = #boolean
-* item[0].item[1].required = true
+* item[0].item[0].item[0].linkId = "PracitionerRole.period.end"
+* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PracitionerRole.period.end"
+* item[0].item[0].item[0].text = "End Date"
+* item[0].item[0].item[0].type = #dateTime
+* item[0].item[0].item[0].required = true
+* item[0].item[0].item[0].repeats = false
+
+* item[0].item[0].item[1].linkId = "PractitionerRole.extension[0]"
+* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:reasonForDepature.value[x]:valueCoding"
+* item[0].item[0].item[1].text = "Reason For Departure"
+* item[0].item[0].item[1].type = #choice
+* item[0].item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-reason-departure-valueset"
+* item[0].item[0].item[1].required = true
+* item[0].item[0].item[1].repeats = false

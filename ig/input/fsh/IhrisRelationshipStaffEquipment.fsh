@@ -7,7 +7,7 @@ Usage:          #example
 * code.coding = #iHRISRelationship
 * subject.reference = "StructureDefinition/ihris-basic-equipment"
 * extension[reportdetails].extension[name].valueString = "equipment"
-* extension[reportdetails].extension[label].valueString = "Equipment Information"
+* extension[reportdetails].extension[label].valueString = "EMOIS Information"
 * extension[reportdetails].extension[initialFilter].valueString = "_profile=http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment"
 * extension[reportdetails].extension[query].valueString = "Basic.meta.profile = 'http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment'"
 * extension[reportdetails].extension[resource].valueString = "Basic"
@@ -38,7 +38,7 @@ Usage:          #example
 
 * extension[reportdetails].extension[reportelement][3].extension[name].valueString = "availability"
 * extension[reportdetails].extension[reportelement][3].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-equipment').extension.where(url='availability').valueCoding.display"
-* extension[reportdetails].extension[reportelement][3].extension[display].valueString = "Availability/Functionality"
+* extension[reportdetails].extension[reportelement][3].extension[display].valueString = "Status Of Equipment"
 * extension[reportdetails].extension[reportelement][3].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][3].extension[dropDownFilter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][3].extension[order].valueInteger = 12

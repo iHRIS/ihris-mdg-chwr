@@ -28,7 +28,7 @@
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-incentive-valueset",
               "required": true,
-              "repeats": false
+              "repeats": true
             },
             {
               "linkId": "Basic.extension[0].extension[1]",

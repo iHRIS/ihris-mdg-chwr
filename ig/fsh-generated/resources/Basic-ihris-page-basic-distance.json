@@ -97,12 +97,12 @@
         {
           "extension": [
             {
-              "url": "readOnlyIfSet",
-              "valueBoolean": true
+              "url": "path",
+              "valueString": "Basic.extension:practitioner.value[x]:valueReference"
             },
             {
-              "url": "path",
-              "valueString": "Basic.extension:location.value[x]:valueReference"
+              "url": "readOnlyIfSet",
+              "valueBoolean": true
             }
           ],
           "url": "field"

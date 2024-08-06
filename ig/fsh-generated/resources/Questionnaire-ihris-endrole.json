@@ -21,19 +21,29 @@
       "type": "group",
       "item": [
         {
-          "linkId": "PracitionerRole.period.end",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PracitionerRole.period.end",
-          "text": "End Date",
-          "type": "date",
-          "required": true,
-          "repeats": false
-        },
-        {
-          "linkId": "PracitionerRole.active",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PracitionerRole.active",
-          "text": "Status",
-          "type": "boolean",
-          "required": true
+          "linkId": "PracitionerRole.id",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#PracitionerRole.id",
+          "text": "Detail",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "PracitionerRole.period.end",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PracitionerRole.period.end",
+              "text": "End Date",
+              "type": "dateTime",
+              "required": true,
+              "repeats": false
+            },
+            {
+              "linkId": "PractitionerRole.extension[0]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:reasonForDepature.value[x]:valueCoding",
+              "text": "Reason For Departure",
+              "type": "choice",
+              "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-reason-departure-valueset",
+              "required": true,
+              "repeats": false
+            }
+          ]
         }
       ]
     }

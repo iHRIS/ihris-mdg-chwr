@@ -4,7 +4,7 @@
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-equipment",
   "version": "0.1.0",
   "name": "IhrisEquipment",
-  "title": "Equipment details",
+  "title": "EMOIS details",
   "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -40,7 +40,7 @@
           }
         ],
         "path": "Extension",
-        "short": "Equipment details",
+        "short": "EMOIS details",
         "definition": "Optional Extension Element - found in all resources.",
         "min": 0,
         "max": "*",
@@ -947,7 +947,7 @@
         "id": "Extension.extension:availability.value[x]:valueCoding",
         "path": "Extension.extension.value[x]",
         "sliceName": "valueCoding",
-        "label": "Availability",
+        "label": "Status of Equipment",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
@@ -1478,7 +1478,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Equipment details"
+        "short": "EMOIS details"
       },
       {
         "id": "Extension.extension",
@@ -1621,7 +1621,7 @@
       {
         "id": "Extension.extension:availability.valueCoding",
         "path": "Extension.extension.valueCoding",
-        "label": "Availability",
+        "label": "Status of Equipment",
         "min": 0,
         "max": "1",
         "binding": {

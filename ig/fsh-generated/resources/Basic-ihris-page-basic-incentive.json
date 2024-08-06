@@ -90,7 +90,7 @@
           "extension": [
             {
               "url": "path",
-              "valueString": "Basic.extension:practitioner"
+              "valueString": "Basic.extension:practitioner.value[x]:valueReference"
             },
             {
               "url": "readOnlyIfSet",

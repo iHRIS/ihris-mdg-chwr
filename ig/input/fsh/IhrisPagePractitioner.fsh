@@ -214,8 +214,8 @@ Usage:          #example
 * extension[section][8].extension[resource].extension[action][2].extension[text].valueString = "Modifier"
 * extension[section][8].extension[resource].extension[action][2].extension[row].valueBoolean = true
 * extension[section][8].extension[resource].extension[action][2].extension[class].valueString = "primary"
-* extension[section][9].extension[title].valueString = "Eqiupment Information"
-* extension[section][9].extension[description].valueString = "Equipment Information for the Health Worker"
+* extension[section][9].extension[title].valueString = "EMOIS (Equips, Materials, Management Tools, Inputs, Supports)"
+* extension[section][9].extension[description].valueString = "EMOIS Information for the Health Worker"
 * extension[section][9].extension[name].valueString = "equipment"
 * extension[section][9].extension[resource].extension[resource].valueReference = Reference(StructureDefinition/ihris-basic-equipment)
 * extension[section][9].extension[resource].extension[searchfield].valueString = "practitioner"
@@ -249,7 +249,7 @@ Usage:          #example
 * extension[section][10].extension[resource].extension[linkfield].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
 * extension[section][10].extension[resource].extension[column][0].extension[header].valueString = "Supervised?"
 * extension[section][10].extension[resource].extension[column][0].extension[field].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-supervision').extension.where(url='supervised').valueCoding.display"
-* extension[section][10].extension[resource].extension[column][1].extension[header].valueString = "Monthly AC Gathering"
+* extension[section][10].extension[resource].extension[column][1].extension[header].valueString = "Monthly AC Grouping"
 * extension[section][10].extension[resource].extension[column][1].extension[field].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-supervision').extension.where(url='monthlyacg').valueCoding.display"
 * extension[section][10].extension[resource].extension[column][2].extension[header].valueString = "Date of Supervision"
 * extension[section][10].extension[resource].extension[column][2].extension[field].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-supervision').extension.where(url='date').valueDate"

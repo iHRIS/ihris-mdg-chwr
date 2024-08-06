@@ -97,6 +97,19 @@
         {
           "url": "filter",
           "valueString": "Job|role|http://ihris.org/fhir/ValueSet/ihris-job"
+        },
+        {
+          "extension": [
+            {
+              "url": "path",
+              "valueString": "PractitionerRole.practitioner"
+            },
+            {
+              "url": "readOnlyIfSet",
+              "valueBoolean": true
+            }
+          ],
+          "url": "field"
         }
       ]
     },
