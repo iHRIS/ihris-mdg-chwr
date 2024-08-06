@@ -55,17 +55,17 @@ Title:            "iHRIS Yes-no ValueSet"
 CodeSystem:      IhrisIncentive
 Id:              ihris-incentive
 Title:           "Activity Packs"
-* ^date = "2022-09-29T08:41:04.362Z"
-* ^version = "0.3.0"
-* #basic "Basique" "Basique"
-* #essential "Essentiel" "Essentiel"
-* #specific "Spécifique" "Spécifique"
+* ^date = "2023-09-29T08:41:04.362Z"
+* ^version = "0.4.0"
+* #basic "Paquet de Base" "Paquet de Base"
+* #essential "Paquet Essentiel" "Paquet Essentiel"
+* #specific "Paquet Spécifique" "Paquet Spécifique"
 
 ValueSet:         IhrisIncentiveValueSet
 Id:               ihris-incentive-valueset
 Title:            "iHRIS Activity Packs ValueSet"
-* ^date = "2022-09-29T08:41:04.362Z"
-* ^version = "0.3.0"
+* ^date = "2023-09-29T08:41:04.362Z"
+* ^version = "0.4.0"
 * codes from system IhrisIncentive
 
 CodeSystem:      IhrisMotivationType
