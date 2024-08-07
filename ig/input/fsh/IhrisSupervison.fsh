@@ -99,22 +99,11 @@ Title:          "Supervision"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-basic-supervision)
-* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/basic-supervision/FIELD?edit=true"
-* extension[display].extension[link][0].extension[field].valueString = "Basic.id"
-* extension[display].extension[link][0].extension[text].valueString = "Edit"
+* extension[display].extension[link][0].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+* extension[display].extension[link][0].extension[text].valueString = "View Health Worker"
 * extension[display].extension[link][0].extension[button].valueBoolean = true
-* extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
-* extension[display].extension[link][0].extension[class].valueString = "secondary"
-* extension[display].extension[link][1].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][1].extension[text].valueString = "View Health Worker"
-* extension[display].extension[link][1].extension[button].valueBoolean = true
-* extension[display].extension[link][1].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
-* extension[display].extension[link][2].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][2].extension[text].valueString = "Add Another"
-* extension[display].extension[link][2].extension[button].valueBoolean = true
-* extension[display].extension[link][2].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][2].extension[url].valueUrl = "/questionnaire/ihris-supervision/basic-supervision?practitioner=FIELD"
+* extension[display].extension[link][0].extension[icon].valueString = "mdi-account-arrow-right"
+* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
 * extension[display].extension[search][0].valueString = "Practitioner|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
 * extension[display].extension[search][1].valueString = "Supervised|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision').extension.where(url='received').valueCoding.display"
 * extension[display].extension[search][2].valueString = "Monthly AC Grouping|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision').extension.where(url='monthlyacg').valueCoding.display"
