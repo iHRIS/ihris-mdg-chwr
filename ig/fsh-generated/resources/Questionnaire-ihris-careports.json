@@ -2,27 +2,40 @@
   "resourceType": "Questionnaire",
   "id": "ihris-careports",
   "url": "http://ihris.org/fhir/Questionnaire/ihris-careports",
-  "title": "iHRIS CA Report Workflow",
-  "description": "iHRIS workflow to record a CA Report",
-  "name": "ihris-careports",
-  "status": "active",
-  "date": "2020-08-27",
-  "purpose": "Workflow page for recording a CA Report information.",
   "item": [
     {
-      "linkId": "Basic",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports",
-      "text": "CA Reports",
-      "type": "group",
       "item": [
         {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "key",
+                  "valueId": "ihris-start-end-date"
+                },
+                {
+                  "url": "severity",
+                  "valueCode": "error"
+                },
+                {
+                  "url": "expression",
+                  "valueString": "where(linkId='Basic.extension[0].extension[3]').answer.first().valueDate.empty() or where(linkId='Basic.extension[0].extension[3]').answer.first().valueDate > where(linkId='Basic.extension[0].extension[2]').answer.first().valueDate"
+                },
+                {
+                  "url": "human",
+                  "valueString": "La date de soumission doit être postérieure à l’année du rapport."
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint"
+            }
+          ],
           "linkId": "Basic.extension[0]",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports",
           "text": "Details",
           "type": "group",
           "item": [
             {
-              "linkId": "Basic.extension[0].extension[2]",
+              "linkId": "Basic.extension[0].extension[0]",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:recieved.value[x]:valueCoding",
               "text": "Recieved Report?",
               "type": "choice",
@@ -31,7 +44,7 @@
               "repeats": false
             },
             {
-              "linkId": "Basic.extension[0].extension[0]",
+              "linkId": "Basic.extension[0].extension[1]",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:month.value[x]:valueCoding",
               "text": "Month",
               "type": "choice",
@@ -40,9 +53,9 @@
               "repeats": false
             },
             {
-              "linkId": "Basic.extension[0].extension[1]#year",
+              "linkId": "Basic.extension[0].extension[2]#year",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:year.value[x]:valueDate",
-              "text": "Year",
+              "text": "Report Year",
               "type": "date",
               "required": false,
               "repeats": false
@@ -50,14 +63,24 @@
             {
               "linkId": "Basic.extension[0].extension[3]",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:date.value[x]:valueDate",
-              "text": "Date",
+              "text": "Submmision Date",
               "type": "date",
               "required": false,
               "repeats": false
             }
           ]
         }
-      ]
+      ],
+      "linkId": "Basic",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports",
+      "text": "CA Reports",
+      "type": "group"
     }
-  ]
+  ],
+  "title": "iHRIS CA Report Workflow",
+  "description": "iHRIS workflow to record a CA Report",
+  "name": "ihris-careports",
+  "status": "active",
+  "date": "2020-08-27",
+  "purpose": "Workflow page for recording a CA Report information."
 }

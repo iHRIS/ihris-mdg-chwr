@@ -82,8 +82,12 @@ Usage:          #definition
 * item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports"
 * item[0].item[0].text = "Details"
 * item[0].item[0].type = #group
+* item[0].item[0].extension[constraint][0].extension[key].valueId = "ihris-start-end-date"
+* item[0].item[0].extension[constraint][0].extension[severity].valueCode = #error
+* item[0].item[0].extension[constraint][0].extension[expression].valueString = "where(linkId='Basic.extension[0].extension[3]').answer.first().valueDate.empty() or where(linkId='Basic.extension[0].extension[3]').answer.first().valueDate > where(linkId='Basic.extension[0].extension[2]').answer.first().valueDate"
+* item[0].item[0].extension[constraint][0].extension[human].valueString = "La date de soumission doit être postérieure à l’année du rapport."
 
-* item[0].item[0].item[0].linkId = "Basic.extension[0].extension[2]"
+* item[0].item[0].item[0].linkId = "Basic.extension[0].extension[0]"
 * item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:recieved.value[x]:valueCoding"
 * item[0].item[0].item[0].text = "Recieved Report?"
 * item[0].item[0].item[0].type = #choice
@@ -91,7 +95,7 @@ Usage:          #definition
 * item[0].item[0].item[0].required = true
 * item[0].item[0].item[0].repeats = false
 
-* item[0].item[0].item[1].linkId = "Basic.extension[0].extension[0]"
+* item[0].item[0].item[1].linkId = "Basic.extension[0].extension[1]"
 * item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:month.value[x]:valueCoding"
 * item[0].item[0].item[1].text = "Month"
 * item[0].item[0].item[1].type = #choice
@@ -99,16 +103,16 @@ Usage:          #definition
 * item[0].item[0].item[1].required = false
 * item[0].item[0].item[1].repeats = false
 
-* item[0].item[0].item[2].linkId = "Basic.extension[0].extension[1]#year"
+* item[0].item[0].item[2].linkId = "Basic.extension[0].extension[2]#year"
 * item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:year.value[x]:valueDate"
-* item[0].item[0].item[2].text = "Year"
+* item[0].item[0].item[2].text = "Report Year"
 * item[0].item[0].item[2].type = #date
 * item[0].item[0].item[2].required = false
 * item[0].item[0].item[2].repeats = false
 
 * item[0].item[0].item[3].linkId = "Basic.extension[0].extension[3]"
 * item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:date.value[x]:valueDate"
-* item[0].item[0].item[3].text = "Date"
+* item[0].item[0].item[3].text = "Submmision Date"
 * item[0].item[0].item[3].type = #date
 * item[0].item[0].item[3].required = false
 * item[0].item[0].item[3].repeats = false

@@ -162,6 +162,10 @@
         },
         {
           "url": "field",
+          "valueString": "extension:supervision.extension:performing.value[x]:valueCoding"
+        },
+        {
+          "url": "field",
           "valueString": "extension:supervision.extension:date.value[x]:valueDate"
         }
       ],

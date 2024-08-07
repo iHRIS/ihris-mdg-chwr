@@ -1369,6 +1369,19 @@
               "extension": [
                 {
                   "url": "header",
+                  "valueString": "Performing"
+                },
+                {
+                  "url": "field",
+                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-supervision').extension.where(url='performing').valueCoding.display"
+                }
+              ],
+              "url": "column"
+            },
+            {
+              "extension": [
+                {
+                  "url": "header",
                   "valueString": "Date of Supervision"
                 },
                 {

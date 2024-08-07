@@ -125,18 +125,18 @@ ValueSet:         IhrisWorkPlaceValueset
 Id:               ihris-workplace
 Title:            "Work Place"
 Description:      "iHRIS ValueSet for: iHRISWorkPlace"
-* ^date = "2024-01-10T08:41:04.362Z"
-* ^version = "0.1.0"
+* ^date = "2024-03-10T08:41:04.362Z"
+* ^version = "0.2.0"
 * codes from system IhrisWorkPlaceCodeSystem
 
 CodeSystem:     IhrisWorkPlaceCodeSystem
 Id:             ihris-workplace
 Title:          "Work Place"
 Description:    "iHRIS Code System for Work Place."
-* ^date = "2024-01-10T08:41:04.362Z"
-* ^version = "0.1.0"
+* ^date = "2024-03-10T08:41:04.362Z"
+* ^version = "0.2.0"
 * #csb "CSB"
-* #fokontany "Fokontany"
+* #fokontany "Site Communautaire"
 * #home "Domicile"
 
 Instance:       ihris-page-practitionerrole

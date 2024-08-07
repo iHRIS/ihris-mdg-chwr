@@ -104,6 +104,35 @@
           "extension": [
             {
               "url": "name",
+              "valueString": "performing"
+            },
+            {
+              "url": "fhirpath",
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-supervision').extension.where(url='performing').valueCoding.display"
+            },
+            {
+              "url": "display",
+              "valueString": "Performing?"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            },
+            {
+              "url": "order",
+              "valueInteger": 11
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "name",
               "valueString": "date"
             },
             {
@@ -124,7 +153,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 11
+              "valueInteger": 12
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -567,7 +596,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 15
+              "valueInteger": 16
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -625,7 +654,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 14
+              "valueInteger": 15
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -683,7 +712,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 13
+              "valueInteger": 14
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -741,7 +770,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 12
+              "valueInteger": 13
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"

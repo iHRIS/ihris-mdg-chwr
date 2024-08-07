@@ -29,12 +29,19 @@ Usage:          #example
 * extension[reportdetails].extension[reportelement][1].extension[dropDownFilter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][1].extension[order].valueInteger = 10
 
-* extension[reportdetails].extension[reportelement][2].extension[name].valueString = "date"
-* extension[reportdetails].extension[reportelement][2].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-supervision').extension.where(url='date').valueDate"
-* extension[reportdetails].extension[reportelement][2].extension[display].valueString = "Date of Supervision"
+* extension[reportdetails].extension[reportelement][2].extension[name].valueString = "performing"
+* extension[reportdetails].extension[reportelement][2].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-supervision').extension.where(url='performing').valueCoding.display"
+* extension[reportdetails].extension[reportelement][2].extension[display].valueString = "Performing?"
 * extension[reportdetails].extension[reportelement][2].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][2].extension[dropDownFilter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][2].extension[order].valueInteger = 11
+
+* extension[reportdetails].extension[reportelement][3].extension[name].valueString = "date"
+* extension[reportdetails].extension[reportelement][3].extension[fhirpath].valueString = "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-supervision').extension.where(url='date').valueDate"
+* extension[reportdetails].extension[reportelement][3].extension[display].valueString = "Date of Supervision"
+* extension[reportdetails].extension[reportelement][3].extension[filter].valueBoolean = true
+* extension[reportdetails].extension[reportelement][3].extension[dropDownFilter].valueBoolean = true
+* extension[reportdetails].extension[reportelement][3].extension[order].valueInteger = 12
 
 * extension[reportlink][0].extension[name].valueString = "practitioner"
 * extension[reportlink][0].extension[resource].valueString = "Practitioner"
@@ -147,7 +154,7 @@ Usage:          #example
 * extension[reportlink][2].extension[reportelement][0].extension[display].valueString = "Fokontany"
 * extension[reportlink][2].extension[reportelement][0].extension[filter].valueBoolean = true
 * extension[reportlink][2].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true
-* extension[reportlink][2].extension[reportelement][0].extension[order].valueInteger = 15
+* extension[reportlink][2].extension[reportelement][0].extension[order].valueInteger = 16
 
 * extension[reportlink][3].extension[name].valueString = "commune"
 * extension[reportlink][3].extension[resource].valueString = "Location"
@@ -160,7 +167,7 @@ Usage:          #example
 * extension[reportlink][3].extension[reportelement][0].extension[display].valueString = "Commune"
 * extension[reportlink][3].extension[reportelement][0].extension[filter].valueBoolean = true
 * extension[reportlink][3].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true
-* extension[reportlink][3].extension[reportelement][0].extension[order].valueInteger = 14
+* extension[reportlink][3].extension[reportelement][0].extension[order].valueInteger = 15
 
 * extension[reportlink][4].extension[name].valueString = "district"
 * extension[reportlink][4].extension[resource].valueString = "Location"
@@ -173,7 +180,7 @@ Usage:          #example
 * extension[reportlink][4].extension[reportelement][0].extension[display].valueString = "District"
 * extension[reportlink][4].extension[reportelement][0].extension[filter].valueBoolean = true
 * extension[reportlink][4].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true
-* extension[reportlink][4].extension[reportelement][0].extension[order].valueInteger = 13
+* extension[reportlink][4].extension[reportelement][0].extension[order].valueInteger = 14
 
 * extension[reportlink][5].extension[name].valueString = "region"
 * extension[reportlink][5].extension[resource].valueString = "Location"
@@ -186,4 +193,4 @@ Usage:          #example
 * extension[reportlink][5].extension[reportelement][0].extension[display].valueString = "Region"
 * extension[reportlink][5].extension[reportelement][0].extension[filter].valueBoolean = true
 * extension[reportlink][5].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true
-* extension[reportlink][5].extension[reportelement][0].extension[order].valueInteger = 12
+* extension[reportlink][5].extension[reportelement][0].extension[order].valueInteger = 13

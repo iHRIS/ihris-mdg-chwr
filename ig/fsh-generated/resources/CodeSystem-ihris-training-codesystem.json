@@ -5,7 +5,7 @@
   "name": "IhrisTrainingCodeSystem",
   "id": "ihris-training-codesystem",
   "title": "Training",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-training-codesystem",
   "concept": [
     {
@@ -67,8 +67,13 @@
       "code": "tb",
       "display": "Tuberculose",
       "definition": "Tuberculose"
+    },
+    {
+      "code": "other",
+      "display": "Autre",
+      "definition": "Autre"
     }
   ],
-  "date": "2024-07-20T08:41:04.362Z",
-  "count": 12
+  "date": "2024-07-24T08:41:04.362Z",
+  "count": 13
 }
