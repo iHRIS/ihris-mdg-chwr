@@ -1209,7 +1209,7 @@
             "key": "ihris-phone-check",
             "severity": "error",
             "human": "Phone Number is not properly formatted.",
-            "expression": "matches('^$|^(([+][0-9]{13})|([0][1-9][0-9]{8}))')",
+            "expression": "matches('^$|^(([+][2][6][1][1-9][0-9]{8})|([0][1-9][0-9]{8}))')",
             "xpath": "@value|f:*|h:div",
             "source": "http://hl7.org/fhir/StructureDefinition/Element"
           }

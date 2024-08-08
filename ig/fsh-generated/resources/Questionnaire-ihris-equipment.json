@@ -85,6 +85,24 @@
                   }
                 }
               ]
+            },
+            {
+              "linkId": "Basic.extension[0].extension[4]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:rctablet.value[x]:valueCoding",
+              "text": "Is the RC equipped with an Android or Tablet for reporting?",
+              "type": "choice",
+              "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "Basic.extension[0].extension[5]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:actablet.value[x]:valueCoding",
+              "text": "Is the AC equipped with an Android or Tablet for managing community health programs?",
+              "type": "choice",
+              "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
+              "required": false,
+              "repeats": false
             }
           ]
         }

@@ -82,6 +82,10 @@ Usage:          #definition
 * item[1].item[0].type = #string
 * item[1].item[0].required = true
 * item[1].item[0].repeats = false
+* item[1].item[0].extension[constraint][0].extension[key].valueId = "ihris-phone-check"
+* item[1].item[0].extension[constraint][0].extension[severity].valueCode = #error
+* item[1].item[0].extension[constraint][0].extension[expression].valueString = "matches('^$|^(([+][2][6][1][1-9][0-9]{8})|([0][1-9][0-9]{8}))')"
+* item[1].item[0].extension[constraint][0].extension[human].valueString = "Phone number must be in the format +261xxxxxxxxx or 0xxxxxxxxx"
 
 * item[2].linkId = "PractitionerRole"
 * item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role"

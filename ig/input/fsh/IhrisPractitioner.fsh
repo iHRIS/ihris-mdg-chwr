@@ -109,7 +109,7 @@ Description:    "iHRIS extension for Phone."
 * valueString 0..1 MS
 * valueString ^constraint[0].key = "ihris-phone-check"
 * valueString ^constraint[0].severity = #error
-* valueString ^constraint[0].expression = "matches('^$|^(([+][0-9]{13})|([0][1-9][0-9]{8}))')"
+* valueString ^constraint[0].expression = "matches('^$|^(([+][2][6][1][1-9][0-9]{8})|([0][1-9][0-9]{8}))')"
 * valueString ^constraint[0].human = "Phone Number is not properly formatted."
 
 Extension:      IhrisPractitionerLanguageProficiency

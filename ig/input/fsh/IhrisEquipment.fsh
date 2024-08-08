@@ -13,6 +13,10 @@ Description:    "iHRIS Profile of the Basic resource for Equipment."
 * extension[equipment].extension[equipmenttype].valueCoding ^label = "Type of Equipment"
 * extension[equipment].extension[availability].valueCoding 1..1 MS
 * extension[equipment].extension[availability].valueCoding ^label = "Availability"
+* extension[equipment].extension[rctablet].valueCoding 1..1 MS
+* extension[equipment].extension[rctablet].valueCoding ^label = "Is the RC equipped with an Android or Tablet for reporting?"
+* extension[equipment].extension[actablet].valueCoding 1..1 MS
+* extension[equipment].extension[actablet].valueCoding ^label = "Is the AC equipped with an Android or Tablet for managing community health programs?"
 * extension[equipment].extension[date].valueDate ^label = "Date"
 * extension[equipment].extension[date].valueDate 1..1 MS
 
@@ -21,8 +25,10 @@ Id:             ihris-equipment
 Title:          "EMOIS details"
 * extension contains
       recieved 1..1 MS and
-      equipmenttype 1..1 MS and
+      equipmenttype 1..* MS and
       availability 0..1 MS and
+      rctablet 0..1 MS and
+      actablet 0..1 MS and
       date 0..1 MS
 * extension[recieved].value[x] only Coding
 * extension[recieved].valueCoding ^label = "Recieved Equipment?"
@@ -33,20 +39,31 @@ Title:          "EMOIS details"
 * extension[availability].value[x] only Coding
 * extension[availability].valueCoding ^label = "Status of Equipment"
 * extension[availability].valueCoding from IhrisAvailabilityValueSet (required)
+* extension[rctablet].value[x] only Coding
+* extension[rctablet].valueCoding ^label = "Is the RC equipped with an Android or Tablet for reporting?"  
+* extension[rctablet].valueCoding from IhrisYesNoValueSet (required)
+* extension[actablet].value[x] only Coding
+* extension[actablet].valueCoding ^label = "Is the AC equipped with an Android or Tablet for managing community health programs?"
 * extension[date].value[x] only date
 * extension[date].valueDate ^label =  "Date"
 
 CodeSystem:      IhrisEquipmentType
 Id:              ihris-equipment-type
 Title:           "Equipment Type"
-* ^date = "2022-09-29T08:41:04.362Z"
-* ^version = "0.1.0"
+* ^date = "2023-09-29T08:41:04.362Z"
+* ^version = "0.3.0"
+* #equipements "Equipements"
+* #matériels "Matériels"
+* #travail "Outils de travail"
+* #gestion "Outils de Gestion"
+* #supports "Supports"
+* #intrants "Intrants"
 
 ValueSet:         IhrisEquipmentTypeValueSet
 Id:               ihris-equipment-type-valueset
 Title:            "iHRIS Equipment Type ValueSet"
-* ^date = "2022-09-29T08:41:04.362Z"
-* ^version = "0.1.0"
+* ^date = "2023-09-29T08:41:04.362Z"
+* ^version = "0.3.0"
 * codes from system IhrisEquipmentType
 
 CodeSystem:      IhrisAvailability
@@ -56,7 +73,7 @@ Title:           "Equipment Availability"
 * ^version = "0.2.0"
 * #good "Bon"
 * #average "Moyen"
-* #bad "Moyen"
+* #bad "Mauvais"
 
 ValueSet:         IhrisAvailabilityValueSet
 Id:               ihris-availability-valueset
@@ -130,6 +147,22 @@ Usage:          #definition
 * item[0].item[0].item[3].enableWhen[0].operator = #=
 * item[0].item[0].item[3].enableWhen[0].answerCoding = ihris-yesno#yes
 
+* item[0].item[0].item[4].linkId = "Basic.extension[0].extension[4]"
+* item[0].item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:rctablet.value[x]:valueCoding"
+* item[0].item[0].item[4].text = "Is the RC equipped with an Android or Tablet for reporting?"
+* item[0].item[0].item[4].type = #choice
+* item[0].item[0].item[4].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
+* item[0].item[0].item[4].required = false
+* item[0].item[0].item[4].repeats = false
+
+* item[0].item[0].item[5].linkId = "Basic.extension[0].extension[5]"
+* item[0].item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:actablet.value[x]:valueCoding"
+* item[0].item[0].item[5].text = "Is the AC equipped with an Android or Tablet for managing community health programs?"
+* item[0].item[0].item[5].type = #choice
+* item[0].item[0].item[5].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
+* item[0].item[0].item[5].required = false
+* item[0].item[0].item[5].repeats = false
+
 Instance:       ihris-page-basic-equipment
 InstanceOf:     IhrisPage
 Title:          "Equipment"
@@ -167,6 +200,8 @@ Usage:          #example
 * extension[section][0].extension[field][2].valueString = "extension:equipment.extension:equipmenttype.value[x]:valueCoding"
 * extension[section][0].extension[field][3].valueString = "extension:equipment.extension:availability.value[x]:valueCoding"
 * extension[section][0].extension[field][4].valueString = "extension:equipment.extension:date.value[x]:valueDate"
+* extension[section][0].extension[field][5].valueString = "extension:equipment.extension:rctablet.value[x]:valueCoding"
+* extension[section][0].extension[field][6].valueString = "extension:equipment.extension:actablet.value[x]:valueCoding"
 
 Instance:       ihris-page-equipment-type
 InstanceOf:     IhrisPage

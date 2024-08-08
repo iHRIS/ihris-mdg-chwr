@@ -26,7 +26,7 @@
         },
         {
           "url": "search",
-          "valueString": "Location|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-location-reference').valueReference.reference"
+          "valueString": "Distance Domicile – Hameau le plus éloigné|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='village').valueDecimal"
         },
         {
           "extension": [
@@ -84,15 +84,15 @@
         },
         {
           "url": "search",
-          "valueString": "Fokotany|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='fokotany').valueDecimal"
+          "valueString": "Distance lieu de travail – CSB|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='csb').valueDecimal"
         },
         {
           "url": "search",
-          "valueString": "CSB|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='csb').valueDecimal"
+          "valueString": "Distance Domicile - lieu de travail|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='workplace').valueDecimal"
         },
         {
           "url": "search",
-          "valueString": "Community Site|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='commsite').valueDecimal"
+          "valueString": "Distance CSB – AC le plus éloigné|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='csbrc').valueDecimal"
         },
         {
           "extension": [
@@ -129,7 +129,7 @@
         },
         {
           "url": "field",
-          "valueString": "extension:distance.extension:fokotany.value[x]:valueDecimal"
+          "valueString": "extension:distance.extension:village.value[x]:valueDecimal"
         },
         {
           "url": "field",
@@ -137,7 +137,11 @@
         },
         {
           "url": "field",
-          "valueString": "extension:distance.extension:commsite.value[x]:valueDecimal"
+          "valueString": "extension:distance.extension:workplace.value[x]:valueDecimal"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:distance.extension:csbrc.value[x]:valueDecimal"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"

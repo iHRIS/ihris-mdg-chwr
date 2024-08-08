@@ -5,7 +5,34 @@
   "name": "IhrisEquipmentType",
   "id": "ihris-equipment-type",
   "title": "Equipment Type",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-equipment-type",
-  "date": "2022-09-29T08:41:04.362Z"
+  "concept": [
+    {
+      "code": "equipements",
+      "display": "Equipements"
+    },
+    {
+      "code": "matériels",
+      "display": "Matériels"
+    },
+    {
+      "code": "travail",
+      "display": "Outils de travail"
+    },
+    {
+      "code": "gestion",
+      "display": "Outils de Gestion"
+    },
+    {
+      "code": "supports",
+      "display": "Supports"
+    },
+    {
+      "code": "intrants",
+      "display": "Intrants"
+    }
+  ],
+  "date": "2023-09-29T08:41:04.362Z",
+  "count": 6
 }

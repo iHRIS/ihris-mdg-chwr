@@ -171,6 +171,14 @@
         {
           "url": "field",
           "valueString": "extension:equipment.extension:date.value[x]:valueDate"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:equipment.extension:rctablet.value[x]:valueCoding"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:equipment.extension:actablet.value[x]:valueCoding"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"

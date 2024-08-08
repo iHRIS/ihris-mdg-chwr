@@ -83,12 +83,31 @@
       ]
     },
     {
-      "linkId": "__Practitioner:contact",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner",
-      "text": "Contact Details| phone numbers",
-      "type": "group",
       "item": [
         {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "key",
+                  "valueId": "ihris-phone-check"
+                },
+                {
+                  "url": "severity",
+                  "valueCode": "error"
+                },
+                {
+                  "url": "expression",
+                  "valueString": "matches('^$|^(([+][2][6][1][1-9][0-9]{8})|([0][1-9][0-9]{8}))')"
+                },
+                {
+                  "url": "human",
+                  "valueString": "Phone number must be in the format +261xxxxxxxxx or 0xxxxxxxxx"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint"
+            }
+          ],
           "linkId": "Practitioner.extension[2]",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]:valueString",
           "text": "Mobile Phone",
@@ -96,7 +115,11 @@
           "required": true,
           "repeats": false
         }
-      ]
+      ],
+      "linkId": "__Practitioner:contact",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner",
+      "text": "Contact Details| phone numbers",
+      "type": "group"
     },
     {
       "extension": [

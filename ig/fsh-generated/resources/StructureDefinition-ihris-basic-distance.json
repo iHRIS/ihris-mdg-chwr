@@ -814,9 +814,9 @@
         ]
       },
       {
-        "id": "Basic.extension:distance.extension:fokontany",
+        "id": "Basic.extension:distance.extension:village",
         "path": "Basic.extension.extension",
-        "sliceName": "fokontany",
+        "sliceName": "village",
         "short": "Additional content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -865,7 +865,7 @@
         ]
       },
       {
-        "id": "Basic.extension:distance.extension:fokontany.id",
+        "id": "Basic.extension:distance.extension:village.id",
         "path": "Basic.extension.extension.id",
         "representation": [
           "xmlAttr"
@@ -900,7 +900,7 @@
         ]
       },
       {
-        "id": "Basic.extension:distance.extension:fokontany.extension",
+        "id": "Basic.extension:distance.extension:village.extension",
         "path": "Basic.extension.extension.extension",
         "slicing": {
           "discriminator": [
@@ -959,7 +959,7 @@
         ]
       },
       {
-        "id": "Basic.extension:distance.extension:fokontany.url",
+        "id": "Basic.extension:distance.extension:village.url",
         "path": "Basic.extension.extension.url",
         "representation": [
           "xmlAttr"
@@ -985,7 +985,7 @@
             ]
           }
         ],
-        "fixedUri": "fokontany",
+        "fixedUri": "village",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -996,7 +996,7 @@
         ]
       },
       {
-        "id": "Basic.extension:distance.extension:fokontany.value[x]",
+        "id": "Basic.extension:distance.extension:village.value[x]",
         "path": "Basic.extension.extension.value[x]",
         "slicing": {
           "discriminator": [
@@ -1042,10 +1042,10 @@
         ]
       },
       {
-        "id": "Basic.extension:distance.extension:fokontany.value[x]:valueDecimal",
+        "id": "Basic.extension:distance.extension:village.value[x]:valueDecimal",
         "path": "Basic.extension.extension.value[x]",
         "sliceName": "valueDecimal",
-        "label": "Distance(km) from Fokontany",
+        "label": "Distance Domicile – Hameau le plus éloigné (km)",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
@@ -1312,7 +1312,7 @@
         "id": "Basic.extension:distance.extension:csb.value[x]:valueDecimal",
         "path": "Basic.extension.extension.value[x]",
         "sliceName": "valueDecimal",
-        "label": "Distance(km) from CSB",
+        "label": "Distance lieu de travail – CSB (km)",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
@@ -1348,9 +1348,9 @@
         ]
       },
       {
-        "id": "Basic.extension:distance.extension:commsite",
+        "id": "Basic.extension:distance.extension:workplace",
         "path": "Basic.extension.extension",
-        "sliceName": "commsite",
+        "sliceName": "workplace",
         "short": "Additional content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
         "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -1399,7 +1399,7 @@
         ]
       },
       {
-        "id": "Basic.extension:distance.extension:commsite.id",
+        "id": "Basic.extension:distance.extension:workplace.id",
         "path": "Basic.extension.extension.id",
         "representation": [
           "xmlAttr"
@@ -1434,7 +1434,7 @@
         ]
       },
       {
-        "id": "Basic.extension:distance.extension:commsite.extension",
+        "id": "Basic.extension:distance.extension:workplace.extension",
         "path": "Basic.extension.extension.extension",
         "slicing": {
           "discriminator": [
@@ -1493,7 +1493,7 @@
         ]
       },
       {
-        "id": "Basic.extension:distance.extension:commsite.url",
+        "id": "Basic.extension:distance.extension:workplace.url",
         "path": "Basic.extension.extension.url",
         "representation": [
           "xmlAttr"
@@ -1519,7 +1519,7 @@
             ]
           }
         ],
-        "fixedUri": "commsite",
+        "fixedUri": "workplace",
         "isModifier": false,
         "isSummary": false,
         "mapping": [
@@ -1530,7 +1530,7 @@
         ]
       },
       {
-        "id": "Basic.extension:distance.extension:commsite.value[x]",
+        "id": "Basic.extension:distance.extension:workplace.value[x]",
         "path": "Basic.extension.extension.value[x]",
         "slicing": {
           "discriminator": [
@@ -1576,10 +1576,277 @@
         ]
       },
       {
-        "id": "Basic.extension:distance.extension:commsite.value[x]:valueDecimal",
+        "id": "Basic.extension:distance.extension:workplace.value[x]:valueDecimal",
         "path": "Basic.extension.extension.value[x]",
         "sliceName": "valueDecimal",
-        "label": "Distance(km) from Community Site",
+        "label": "Distance Domicile - lieu de travail (km)",
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "mustSupport": true,
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Basic.extension:distance.extension:csbrc",
+        "path": "Basic.extension.extension",
+        "sliceName": "csbrc",
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "mustSupport": true,
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Basic.extension:distance.extension:csbrc.id",
+        "path": "Basic.extension.extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhirpath/System.String",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Basic.extension:distance.extension:csbrc.extension",
+        "path": "Basic.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "Basic.extension:distance.extension:csbrc.url",
+        "path": "Basic.extension.extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comment": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhirpath/System.String",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "uri"
+              }
+            ]
+          }
+        ],
+        "fixedUri": "csbrc",
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Basic.extension:distance.extension:csbrc.value[x]",
+        "path": "Basic.extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Basic.extension:distance.extension:csbrc.value[x]:valueDecimal",
+        "path": "Basic.extension.extension.value[x]",
+        "sliceName": "valueDecimal",
+        "label": "Distance CSB – AC le plus éloigné (km) - RC",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
         "min": 0,
@@ -2168,12 +2435,12 @@
         "mustSupport": true
       },
       {
-        "id": "Basic.extension:distance.extension:fokontany",
+        "id": "Basic.extension:distance.extension:village",
         "path": "Basic.extension.extension",
-        "sliceName": "fokontany"
+        "sliceName": "village"
       },
       {
-        "id": "Basic.extension:distance.extension:fokontany.valueDecimal",
+        "id": "Basic.extension:distance.extension:village.valueDecimal",
         "path": "Basic.extension.extension.valueDecimal",
         "mustSupport": true
       },
@@ -2185,16 +2452,25 @@
       {
         "id": "Basic.extension:distance.extension:csb.valueDecimal",
         "path": "Basic.extension.extension.valueDecimal",
-        "label": "Distance(km) from CSB",
         "mustSupport": true
       },
       {
-        "id": "Basic.extension:distance.extension:commsite",
+        "id": "Basic.extension:distance.extension:workplace",
         "path": "Basic.extension.extension",
-        "sliceName": "commsite"
+        "sliceName": "workplace"
       },
       {
-        "id": "Basic.extension:distance.extension:commsite.valueDecimal",
+        "id": "Basic.extension:distance.extension:workplace.valueDecimal",
+        "path": "Basic.extension.extension.valueDecimal",
+        "mustSupport": true
+      },
+      {
+        "id": "Basic.extension:distance.extension:csbrc",
+        "path": "Basic.extension.extension",
+        "sliceName": "csbrc"
+      },
+      {
+        "id": "Basic.extension:distance.extension:csbrc.valueDecimal",
         "path": "Basic.extension.extension.valueDecimal",
         "mustSupport": true
       }
