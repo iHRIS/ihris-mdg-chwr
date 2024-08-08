@@ -62,15 +62,15 @@ Title:           "Equipment Type"
 ValueSet:         IhrisEquipmentTypeValueSet
 Id:               ihris-equipment-type-valueset
 Title:            "iHRIS Equipment Type ValueSet"
-* ^date = "2023-09-29T08:41:04.362Z"
+* ^date = "2023-10-29T08:41:04.362Z"
 * ^version = "0.3.0"
 * codes from system IhrisEquipmentType
 
 CodeSystem:      IhrisAvailability
 Id:              ihris-availability
 Title:           "Equipment Availability"
-* ^date = "2023-09-29T08:41:04.362Z"
-* ^version = "0.2.0"
+* ^date = "2023-10-29T08:41:04.362Z"
+* ^version = "0.3.0"
 * #good "Bon"
 * #average "Moyen"
 * #bad "Mauvais"
