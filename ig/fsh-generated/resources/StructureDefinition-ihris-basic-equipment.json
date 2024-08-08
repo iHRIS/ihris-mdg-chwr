@@ -2157,6 +2157,10 @@
         "mustSupport": true,
         "isModifier": false,
         "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
+        },
         "mapping": [
           {
             "identity": "rim",

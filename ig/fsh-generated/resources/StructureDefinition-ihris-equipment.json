@@ -1514,6 +1514,10 @@
         ],
         "isModifier": false,
         "isSummary": false,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
+        },
         "mapping": [
           {
             "identity": "rim",
@@ -2255,7 +2259,11 @@
         "path": "Extension.extension.valueCoding",
         "label": "Is the AC equipped with an Android or Tablet for managing community health programs?",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
+        }
       },
       {
         "id": "Extension.extension:date",

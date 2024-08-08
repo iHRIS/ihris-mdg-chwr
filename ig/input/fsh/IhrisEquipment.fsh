@@ -44,6 +44,7 @@ Title:          "EMOIS details"
 * extension[rctablet].valueCoding from IhrisYesNoValueSet (required)
 * extension[actablet].value[x] only Coding
 * extension[actablet].valueCoding ^label = "Is the AC equipped with an Android or Tablet for managing community health programs?"
+* extension[actablet].valueCoding from IhrisYesNoValueSet (required)
 * extension[date].value[x] only date
 * extension[date].valueDate ^label =  "Date"
 
