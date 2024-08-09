@@ -762,7 +762,15 @@
       "Recieved Equipment?": "Équipement reçu?",
       "Type of Equipment": "Type d'équipement",
       "Date Recieved?": "Date reçue?",
-      "Status Of Equipment": "Statut de l'équipement"
+      "Status Of Equipment": "Statut de l'équipement",
+      "End Date": "Date de fin",
+      "Job Title": "Titre du poste",
+      "Start Date": "Date de début",
+      "Region": "Région",
+      "District": "District",
+      "Commune": "Commune",
+      "Fokontany": "Fokontany",
+      "Citizenship": "La citoyenneté"
     }
   }
 }

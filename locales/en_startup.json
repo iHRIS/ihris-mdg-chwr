@@ -532,6 +532,16 @@
       "Fresh Load": "Fresh Load",
       "This will cache the report afresh": "This will cache the report afresh",
       "Print": "Print"
+    },
+    "reports": {
+      "End Date": "End Date",
+      "Job Title": "Job Title",
+      "Start Date": "Start Date",
+      "Region": "Region",
+      "District": "District",
+      "Commune": "Commune",
+      "Fokontany": "Fokontany",
+      "Citizenship": "Citizenship"
     }
   }
 }

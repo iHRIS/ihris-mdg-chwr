@@ -796,7 +796,14 @@
       "Monthly AC Grouping": "",
       "EMOIS Information": "",
       "Status Of Equipment": "",
-      "Performing?": ""
+      "Performing?": "",
+      "End Date": "",
+      "Job Title": "",
+      "Start Date": "",
+      "Region": "",
+      "District": "",
+      "Commune": "Commune",
+      "Fokontany": "Fokontany"
     }
   }
 }

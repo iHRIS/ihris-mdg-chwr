@@ -762,7 +762,15 @@
       "Recieved Equipment?": "Recieved Equipment?",
       "Type of Equipment": "Type of Equipment",
       "Date Recieved?": "Date Recieved?",
-      "Status Of Equipment": "Status Of Equipment"
+      "Status Of Equipment": "Status Of Equipment",
+      "End Date": "End Date",
+      "Job Title": "Job Title",
+      "Start Date": "Start Date",
+      "Region": "Region",
+      "District": "District",
+      "Commune": "Commune",
+      "Fokontany": "Fokontany",
+      "Citizenship": "Citizenship"
     }
   }
 }
