@@ -1999,7 +1999,7 @@
         "short": "The location(s) at which this practitioner provides care",
         "definition": "The location(s) at which this practitioner provides care.",
         "min": 1,
-        "max": "1",
+        "max": "*",
         "base": {
           "path": "PractitionerRole.location",
           "min": 0,
@@ -2920,7 +2920,6 @@
         "path": "PractitionerRole.location",
         "label": "Facility/Community Site",
         "min": 1,
-        "max": "1",
         "type": [
           {
             "code": "Reference",

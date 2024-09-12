@@ -188,7 +188,7 @@
           "text": "Fokotany",
           "type": "reference",
           "required": true,
-          "repeats": false
+          "repeats": true
         },
         {
           "linkId": "PractitionerRole.extension[0]#preload",

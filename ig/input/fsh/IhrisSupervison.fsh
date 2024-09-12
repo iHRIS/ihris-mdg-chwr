@@ -15,6 +15,11 @@ Description:    "iHRIS Profile of the Basic resource for Supervision."
 * extension[supervision].extension[performing].valueCoding 1..1 MS
 * extension[supervision].extension[date].valueDate ^label = "Date of Supervision"
 * extension[supervision].extension[date].valueDate 1..1 MS
+* extension[supervision].extension[rc].valueCoding ^label = "Is RC?"
+* extension[supervision].extension[rc].valueCoding 0..1 MS
+* extension[supervision].extension[rcsupervisionnum].valueInteger ^label = "RC - Number of Supervisions"
+* extension[supervision].extension[rcsupervisionnum].valueInteger 0..1 MS
+* extension[supervision].extension[rcsupervisedFK].valueCoding ^label = "RC - Supervised Fokotany"
 
 Extension:      IhrisSupervision
 Id:             ihris-supervision
@@ -23,7 +28,10 @@ Title:          "Supervision details"
       supervised 1..1 MS and
       monthlyacg 1..1 MS and
       performing 1..1 MS and
-      date 0..1 MS
+      date 0..1 MS and
+      rc 0..1 MS and
+      rcsupervisionnum 0..1 MS and
+      rcsupervisedFK 0..1 MS
 * extension[supervised].value[x] only Coding
 * extension[supervised].valueCoding ^label = "Supervised?"
 * extension[supervised].valueCoding from IhrisYesNoValueSet (required)
@@ -35,6 +43,33 @@ Title:          "Supervision details"
 * extension[performing].valueCoding from IhrisYesNoValueSet (required)
 * extension[date].value[x] only date
 * extension[date].valueDate ^label =  "Date"
+* extension[rc].value[x] only Coding
+* extension[rc].valueCoding ^label = "Is RC ?"
+* extension[rc].valueCoding from IhrisYesNoValueSet (required)
+* extension[rcsupervisionnum].value[x] only integer
+* extension[rcsupervisionnum].valueInteger ^label = "RC - Number of Supervisions"
+* extension[rcsupervisedFK].value[x] only Coding
+* extension[rcsupervisedFK].valueCoding ^label = "RC - Supervised Fokotany"
+* extension[rcsupervisedFK].valueCoding from IhrisNumValueSet (required)
+
+CodeSystem:      IhrisNumCodeSystem
+Id:              ihris-num-codesystem
+Title:           "Number of Supervisions"
+* ^date = "2022-09-29T08:41:04.362Z"
+* ^version = "0.3.0"
+* #0 "0"
+* #1 "1"
+* #2 "2"
+* #3 "3"
+* #4 "4"
+* #5 "5"
+
+ValueSet:         IhrisNumValueSet
+Id:               ihris-num-valueset
+Title:            "iHRIS Number of Supervisions ValueSet"
+* ^date = "2022-09-29T08:41:04.362Z"
+* ^version = "0.3.0"
+* codes from system IhrisNumCodeSystem
 
 Instance:       IhrisPractitionerWorkflowSupervision
 InstanceOf:      Questionnaire
