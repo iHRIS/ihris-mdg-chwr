@@ -126,7 +126,7 @@ Usage:          #definition
 * item[2].item[3].text = "Fokotany"
 * item[2].item[3].type = #reference
 * item[2].item[3].required = true
-* item[2].item[3].repeats = false
+* item[2].item[3].repeats = true
 
 * item[2].item[4].linkId = "PractitionerRole.extension[0]#preload"
 * item[2].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:workPlace.value[x]:valueCoding"

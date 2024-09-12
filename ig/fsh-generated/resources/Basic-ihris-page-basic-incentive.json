@@ -134,6 +134,14 @@
         {
           "url": "field",
           "valueString": "extension:incentive.extension:other.value[x]:valueString"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:incentive.extension:motivationMonth.value[x]:valueCoding.display"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:incentive.extension:motivationYear.value[x]:valueDate"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"

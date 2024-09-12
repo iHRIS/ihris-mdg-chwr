@@ -924,6 +924,13 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ihris-num-valueset"
+        },
+        "name": "iHRIS Number of Supervisions ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/ihris-reason-departure-valueset"
         },
         "name": "iHRIS Reason Departure ValueSet",
@@ -1305,6 +1312,13 @@
           "reference": "CodeSystem/ihris-motivation-type"
         },
         "name": "Motivation Type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ihris-num-codesystem"
+        },
+        "name": "Number of Supervisions",
         "exampleBoolean": false
       },
       {

@@ -31,7 +31,7 @@ Description:    "iHRIS profile of Practitioner Role."
 * code.coding 1..1 MS
 * code.coding ^label = "Job"
 * specialty 0..0 MS
-* location 1..1 MS 
+* location 1..* MS 
 * location ^label = "Facility/Community Site"
 * location only Reference(IhrisFacility)
 * extension contains

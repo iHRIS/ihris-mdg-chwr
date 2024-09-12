@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2024-08-08T11:23:51.720Z",
+        "when": "2024-09-12T11:46:51.063Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "ABwSOuvPoxW+0XylzOz8sOgqGC/+LOmZ0bx1IjjcT1sQ0RPNabxNWcMncVYeoQ7fg89697VXapr7qUEiqF/KV2KFJVMErJs1hHAMIU/xaUndvsg7mcuhz41ojBMuTXdb3jPDieuE5OZnS8b+gFXah6PIab7Tw/qmK1hfWKrT2UQ="
+        "data": "LkOvc4X5k3uHTAbL6nVbP/8N+lG3AN43bmCwzePBsfCbtj9C1J1Cw1rdD2tGNYil3R2cqV2UN/BhY+pg23pXMkOvDSPg7J2FmNWve+cCoV2V5f/+TsibdwJSR+m3HJCkHsLBOXSnIorQPNM2lV+c9cJjMwknP9u45GaYGdxDVGM="
       }
     },
     {
@@ -656,7 +656,7 @@
         },
         {
           "name": "site:nav:menu:audit:url",
-          "valueString": "/resource/search/auditevent"
+          "valueString": "/auditevent"
         },
         {
           "name": "site:nav:menu:password:text",
