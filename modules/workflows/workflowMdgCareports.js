@@ -15,7 +15,7 @@ const workflowMdgCareports = {
             reference: 'Practitioner/' + practitioner
           }
         })
-        let careport = careports.resource.extension.find((ext) => {
+/*        let careport = careports.resource.extension.find((ext) => {
           return ext.url === "http://ihris.org/fhir/StructureDefinition/ihris-ihris-careports"
         })
         let reportYear = careport.extension.find((ext) => {
@@ -26,9 +26,9 @@ const workflowMdgCareports = {
         })
         if(reportYear && submissionDate && moment(reportYear.valueDate).isAfter(endDate.submissionDate)) {
           resolve(await workflowMdgCareports.outcome("La date est antérieure à l'année du rapport"))
-        } else {
+        } else {*/
          return resolve(bundle)  
-        }
+        //}
       })
     })
   },

@@ -202,7 +202,8 @@ const template = async (users) => {
                             suffix: [user["Suffix"]]
                         }
                     ],
-                    gender: user["genderCoding"].code,
+                    //gender: user["genderCoding"].code,
+                    gender: "",
                     birthDate: user["BirthDate"],
                 },
                 request: {
