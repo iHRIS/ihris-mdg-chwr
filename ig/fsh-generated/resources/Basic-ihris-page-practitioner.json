@@ -302,6 +302,19 @@
               "extension": [
                 {
                   "url": "header",
+                  "valueString": "Category"
+                },
+                {
+                  "url": "field",
+                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-category').valueCoding.display"
+                }
+              ],
+              "url": "column"
+            },
+            {
+              "extension": [
+                {
+                  "url": "header",
                   "valueString": "Active/Functional"
                 },
                 {

@@ -509,6 +509,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ihris-practitionerrole-category"
+        },
+        "name": "iHRIS Category",
+        "description": "iHRIS extension for Position Category.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ihris-practitionerrole-commune"
         },
         "name": "iHRIS Commune",
@@ -798,6 +806,13 @@
         },
         "name": "iHRIS Cadre",
         "description": "Sample iHRIS ValueSet for: IhrisCadre",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ihris-category-valueset"
+        },
+        "name": "iHRIS Category ValueSet",
         "exampleBoolean": false
       },
       {
@@ -1190,6 +1205,13 @@
         },
         "name": "iHRIS Cadre",
         "description": "Sample iHRIS CodeSystem for: IhrisCadre",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ihris-category-codesystem"
+        },
+        "name": "Category",
         "exampleBoolean": false
       },
       {
@@ -1765,6 +1787,13 @@
           "reference": "Basic/ihris-page-basic-training"
         },
         "name": "iHRIS Basic  Training Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-category"
+        },
+        "name": "iHRIS Category CodeSystem Page",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
       },
       {

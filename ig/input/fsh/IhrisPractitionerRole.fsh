@@ -36,11 +36,40 @@ Description:    "iHRIS profile of Practitioner Role."
 * location only Reference(IhrisFacility)
 * extension contains
     IhrisPractitionerRoleWorkPlace named workPlace 0..1 MS and
+    IhrisPractitionerRoleCategory named category 0..1 MS and
     IhrisPractitionerRoleReasonDeparture named reasonForDepature 0..1 MS
 * extension[workPlace].valueCoding MS
 * extension[workPlace] ^label = "Place of Work"
+* extension[category].valueCoding MS
+* extension[category] ^label = "Category"
 * extension[reasonForDepature].valueCoding MS
 * extension[reasonForDepature] ^label = "Reason for Departure"
+
+Extension:      IhrisPractitionerRoleCategory
+Id:             ihris-practitionerrole-category
+Title:          "iHRIS Category"
+Description:    "iHRIS extension for Position Category."
+* ^context.type = #element
+* ^context.expression = "PractitionerRole"
+* value[x] only Coding
+* valueCoding 0..1 MS
+* valueCoding ^label = "Category"
+* valueCoding from IhrisCategoryValueset (required)
+
+ValueSet:         IhrisCategoryValueset
+Id:               ihris-category-valueset
+Title:            "iHRIS Category ValueSet"
+* ^date = "2023-12-29T08:41:04.362Z"
+* ^version = "0.5.0"
+* codes from system IhrisCategoryCodeSystem
+
+CodeSystem:      IhrisCategoryCodeSystem
+Id:              ihris-category-codesystem
+Title:           "Category"
+* ^date = "2023-12-29T08:41:04.362Z"
+* ^version = "0.5.0"
+* #base "Base"
+* #essentiel "Essentiel"
 
 Extension:      IhrisPractitionerRoleReasonDeparture
 Id:             ihris-practitionerrole-reason-departure
@@ -173,7 +202,8 @@ Usage:          #example
 * extension[section][0].extension[field][3].valueString = "PractitionerRole.period"
 * extension[section][0].extension[field][4].valueString = "PractitionerRole.active"
 * extension[section][0].extension[field][5].valueString = "PractitionerRole.extension:commune.value[x]:valueReference"
-* extension[section][0].extension[field][6].valueString = "PractitionerRole.extension:workPlace.value[x]:valueCoding.display"
+* extension[section][0].extension[field][6].valueString = "PractitionerRole.extension:category.value[x]:valueCoding.display"
+* extension[section][0].extension[field][7].valueString = "PractitionerRole.extension:workPlace.value[x]:valueCoding.display"
 
 Instance:       ihris-page-job
 InstanceOf:     IhrisPage
@@ -200,6 +230,21 @@ Usage:          #example
 * extension[display].extension[search][1].valueString = "Display|display"
 * extension[section][0].extension[title].valueString = "Place Of Work"
 * extension[section][0].extension[description].valueString = "Place Of Work"
+* extension[section][0].extension[name].valueString = "CodeSystem"
+* extension[section][0].extension[field][0].valueString = "CodeSystem.code"
+* extension[section][0].extension[field][1].valueString = "CodeSystem.definition"
+* extension[section][0].extension[field][2].valueString = "CodeSystem.display"
+
+Instance:       ihris-page-category
+InstanceOf:     IhrisPage
+Title:          "iHRIS Category CodeSystem Page"
+Usage:          #example
+* code = IhrisResourceCodeSystem#page
+* extension[display].extension[resource].valueReference = Reference(CodeSystem/ihris-category-codesystem)
+* extension[display].extension[search][0].valueString = "Code|code"
+* extension[display].extension[search][1].valueString = "Display|display"
+* extension[section][0].extension[title].valueString = "Category"
+* extension[section][0].extension[description].valueString = "Category"
 * extension[section][0].extension[name].valueString = "CodeSystem"
 * extension[section][0].extension[field][0].valueString = "CodeSystem.code"
 * extension[section][0].extension[field][1].valueString = "CodeSystem.definition"

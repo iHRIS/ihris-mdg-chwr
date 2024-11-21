@@ -75,8 +75,8 @@ Usage:          #example
 CodeSystem:      IhrisTrainingCodeSystem
 Id:              ihris-training-codesystem
 Title:           "Training"
-* ^date = "2024-07-24T08:41:04.362Z"
-* ^version = "0.4.0"
+* ^date = "2024-07-30T08:41:04.362Z"
+* ^version = "0.5.0"
 * #ma "Module A" "Module A"
 * #mb "Module B" "Module B"
 * #md "Module D" "Module D"
@@ -89,13 +89,14 @@ Title:           "Training"
 * #nut "Nutrition" "Nutrient"
 * #vih "VIH" "VIH"
 * #tb "Tuberculose" "Tuberculose"
+* #smne "SMNE" "SMNE"
 * #other "Autre" "Autre"
 
 ValueSet:         IhrisTrainingValueSet
 Id:               ihris-training-valueset
 Title:            "iHRIS  Training ValueSet"
-* ^date = "2024-07-24T08:41:04.362Z"
-* ^version = "0.4.0"
+* ^date = "2024-07-30T08:41:04.362Z"
+* ^version = "0.5.0"
 * codes from system IhrisTrainingCodeSystem
 
 Instance:       IhrisPractitionerWorkflowTraining

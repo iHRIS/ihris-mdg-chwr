@@ -153,6 +153,10 @@
         },
         {
           "url": "field",
+          "valueString": "PractitionerRole.extension:category.value[x]:valueCoding.display"
+        },
+        {
+          "url": "field",
           "valueString": "PractitionerRole.extension:workPlace.value[x]:valueCoding.display"
         }
       ],

@@ -200,6 +200,15 @@
           "repeats": false
         },
         {
+          "linkId": "PractitionerRole.extension[1]#preload",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:category.value[x]:valueCoding",
+          "text": "Category",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-category-valueset",
+          "required": false,
+          "repeats": false
+        },
+        {
           "linkId": "PractitionerRole.active",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.active",
           "text": "Active",
