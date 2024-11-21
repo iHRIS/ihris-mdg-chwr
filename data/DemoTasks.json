@@ -1,0 +1,6217 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "read-practitioner-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Practitioner"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-practitioner-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "write-practitioner-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "write"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Practitioner"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-read-practitioner-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-write-practitioner-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "read-structuredefinition-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "StructureDefinition"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-structuredefinition-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "write-structuredefinition-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "write"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "StructureDefinition"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-read-structuredefinition-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-write-structuredefinition-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "read-valueset-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "ValueSet"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-valueset-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "write-valueset-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "write"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "ValueSet"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-read-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-write-valueset-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "read-codesystem-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "CodeSystem"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-codesystem-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "write-codesystem-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "write"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "CodeSystem"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-read-codesystem-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-write-codesystem-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "read-basic-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-basic-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "write-basic-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "write"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-read-basic-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-write-basic-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "read-documentreference-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "DocumentReference"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-documentreference-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "write-documentreference-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "write"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "DocumentReference"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-read-documentreference-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-write-documentreference-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "read-organization-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Organization"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-organization-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "write-organization-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "write"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Organization"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-read-organization-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-write-organization-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "read-questionnaire-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Questionnaire"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-questionnaire-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "write-questionnaire-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "write"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Questionnaire"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-read-questionnaire-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-write-questionnaire-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "read-questionnaireresponse-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "QuestionnaireResponse"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-questionnaireresponse-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "write-questionnaireresponse-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "write"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "QuestionnaireResponse"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-read-questionnaireresponse-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-write-questionnaireresponse-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "read-practitionerrole-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "PractitionerRole"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-practitionerrole-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "write-practitionerrole-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "write"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "PractitionerRole"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-read-practitionerrole-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-write-practitionerrole-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "read-location-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Location"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-location-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "write-location-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "write"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Location"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-read-location-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-write-location-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "read-person-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Person"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-person-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "write-person-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "write"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Person"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-read-person-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-write-person-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "read-navigation-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-navigation-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "write-navigation-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "write"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-read-navigation-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-write-navigation-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "read-section-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-section-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "write-section-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "write"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-read-section-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-write-section-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "read-special-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "special"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-special-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "write-special-resource"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "write"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "special"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-read-special-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-write-special-resource"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Auditevent Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-auditevent"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-auditevent-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitionerrole-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-location-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-auditevent"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Basic Education History Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-basic-education-history"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-basic-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitioner-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-basic-education-history"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Basic Distance Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-basic-distance"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-basic-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitioner-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-basic-distance"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Education Level Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-education-level"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-education-level"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Basic Training Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-basic-training"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-basic-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitioner-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-basic-training"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Facility Type Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-facility-type"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-facility-type"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Facilityinfo Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-facilityinfo"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-basic-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-location-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitioner-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-facilityinfo"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Basic Incentive Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-basic-incentive"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-basic-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitioner-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-basic-incentive"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Facility Identifier Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-facility-identifier"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-facility-identifier"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Jurisdiction Type Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-jurisdiction-type"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-jurisdiction-type"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Incentive Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-incentive"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-incentive"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Facilityownership Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-facilityownership"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-facilityownership"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Facility Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-facility"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-location-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-organization-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-facility"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Location Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "Location"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-location-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View facilityInfo Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "facilityInfo"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-facilityinfo-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Job Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-job"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-job"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Location Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-location"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-location-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-organization-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-location"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Marital Status Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-marital-status"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-marital-status"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Practitionerrole Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-practitionerrole"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitionerrole-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitioner-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-location-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-organization-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-practitionerrole"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Identifier Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-identifier"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-identifier"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Relation Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-relation"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-relation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Test Practitioner Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-test-practitioner"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitioner-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-location-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-organization-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-test-practitioner"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Practitioner Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "Practitioner"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-practitioner-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View identifiers Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "identifiers"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-identifiers-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View position Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "position"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-position-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Practitioner Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-practitioner"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitioner-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-organization-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-practitioner"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Practitioner Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "Practitioner"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-practitioner-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View identifiers Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "identifiers"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-identifiers-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View contact Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "contact"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-contact-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View position Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "position"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-position-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View distance Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "distance"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-distance-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View education-history Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "education-history"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-education-history-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View incentive Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "incentive"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-incentive-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View training Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "training"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-training-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View careports Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "careports"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-careports-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View equipment Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "equipment"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-equipment-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View supervision Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "supervision"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-supervision-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View emergency Section"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "section"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "emergency"
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-view-emergency-section"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Role Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-role"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-basic-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitioner-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-role"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Task Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-task"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-basic-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitioner-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-task"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Training Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-training"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-training"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Test Codesystem Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-test-codesystem"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-test-codesystem"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View User Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-user"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-person-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-basic-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-location-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitioner-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-organization-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-user"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Gender Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-gender"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-gender"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Emergency Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-emergency"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-basic-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitioner-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-emergency"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Basic Careports Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-basic-careports"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-basic-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitioner-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-basic-careports"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Workplace Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-workplace"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-workplace"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Basic Equipment Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-basic-equipment"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-basic-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitioner-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-basic-equipment"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Basic Supervision Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-basic-supervision"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-basic-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-practitioner-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-basic-supervision"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Equipment Type Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-equipment-type"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-equipment-type"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "View Motivation Type Page"
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes",
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "read"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "Basic"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-page-motivation-type"
+                }
+              ]
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-codesystem-resource"
+              }
+            },
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+              "valueReference": {
+                "reference": "Basic/ihris-task-write-valueset-resource"
+              }
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem",
+                "code": "task"
+              }
+            ]
+          }
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-read-ihris-page-motivation-type"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-profile",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "My Profile"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "profile"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-profile"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-dashboard",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Dashboard"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "dashboard"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-dashboard"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-person",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "People"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "person"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-person"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-person-person-search",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Search People"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "person.person-search"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-person-person-search"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-person-personAdd",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Add Person"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "person.personAdd"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-person-personAdd"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-position",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Positions"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "position"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-position"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-position-positionSearch",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Search Positions"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "position.positionSearch"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-position-positionSearch"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-position-positionAdd",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Add Position"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "position.positionAdd"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-position-positionAdd"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-location",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Locations and Facilities/Community Sites"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "location"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-location"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-location-locationSearch",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Locations"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "location.locationSearch"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-location-locationSearch"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-location-facilitySearch",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Facilities/Community Sites"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "location.facilitySearch"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-location-facilitySearch"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-database",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Database"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-database"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-database-facilityLists",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Facility/Location Lists"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.facilityLists"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-database-facilityLists"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-facilityLists-type",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Facility Types"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.facilityLists.type"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-facilityLists-type"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-facilityLists-juriType",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Jurisdiction Types"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.facilityLists.juriType"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-facilityLists-juriType"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-facilityLists-ownership",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Ownership Types"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.facilityLists.ownership"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-facilityLists-ownership"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-facilityLists-identifier",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Facility Identifier Types"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.facilityLists.identifier"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-facilityLists-identifier"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-facilityLists-workplace",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Work Place Types"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.facilityLists.workplace"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-facilityLists-workplace"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-database-jobLists",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Job Lists"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.jobLists"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-database-jobLists"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-jobLists-job",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Job/Health Worker Types"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.jobLists.job"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-jobLists-job"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-database-eduLists",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Education Lists"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.eduLists"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-database-eduLists"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-eduLists-education-level",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Education Level"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.eduLists.education-level"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-eduLists-education-level"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-eduLists-training",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Trainings"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.eduLists.training"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-eduLists-training"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-database-otherLists",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Other Lists"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.otherLists"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-database-otherLists"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-otherLists-identifier",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Identifier Types"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.otherLists.identifier"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-otherLists-identifier"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-otherLists-incentive",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Activity Packs"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.otherLists.incentive"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-otherLists-incentive"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-otherLists-maritalStatus",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Marital Status"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.otherLists.maritalStatus"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-otherLists-maritalStatus"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-otherLists-relation",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Relationship Types"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.otherLists.relation"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-otherLists-relation"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-otherLists-motivationTypes",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Motivation Types"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.otherLists.motivationTypes"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-otherLists-motivationTypes"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-otherLists-equipmenttype",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Equipment Types"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "database.otherLists.equipmenttype"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-otherLists-equipmenttype"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-reports",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Reports"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "reports"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-reports"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-reports-directorate",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "AC directorate"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "reports.directorate"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-reports-directorate"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-reports-staff",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "AC Report"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "reports.staff"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-reports-staff"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-reports-training",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Training Report"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "reports.training"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-reports-training"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-reports-incentive",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Motivation Report"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "reports.incentive"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-reports-incentive"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-reports-distance",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Distance from location Report"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "reports.distance"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-reports-distance"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-reports-equipment",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Equipment Report"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "reports.equipment"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-reports-equipment"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-reports-supervision",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Supervision Report"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "reports.supervision"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-reports-supervision"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-manage-report",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Manage Report"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "manage-report"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-manage-report"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-users",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "System Users"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "users"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-users"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-users-usersSearch",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Search Users"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "users.usersSearch"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-users-usersSearch"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-users-roleRoles",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "User Roles"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "users.roleRoles"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-users-roleRoles"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-users-roleTasks",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "User Role Tasks"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "users.roleTasks"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-users-roleTasks"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-audit",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Audit Logs"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "audit"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-audit"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-password",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Change Password"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "password"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-password"
+        }
+      },
+      {
+        "resource": {
+          "resourceType": "Basic",
+          "id": "ihris-task-navigation-ihris-apps-list",
+          "meta": {
+            "profile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          },
+          "code": {
+            "coding": [
+              {
+                "code": "task",
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+              }
+            ]
+          },
+          "extension": [
+            {
+              "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+              "valueString": "Apps"
+            },
+            {
+              "extension": [
+                {
+                  "url": "permission",
+                  "valueCode": "special"
+                },
+                {
+                  "url": "resource",
+                  "valueCode": "navigation"
+                },
+                {
+                  "url": "instance",
+                  "valueId": "ihris-apps-list"
+                }
+              ],
+              "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+            }
+          ]
+        },
+        "request": {
+          "method": "PUT",
+          "url": "Basic/ihris-task-navigation-ihris-apps-list"
+        }
+      }
+    ]
+  }

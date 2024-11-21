@@ -48,6 +48,30 @@ const userDataValidation = (userData) => {
 
         let reference = [
           {Gender: "genderCoding"},
+          {Workplace: "workplaceCoding"},
+          {Categorie: "categorieCoding"},
+          {MaritalStatus: "maritalStatusCoding"},
+          {Education: "Education"},
+          {Apacks: "apacksCoding"},
+          {Motivation_Type: "motivationTypeCoding"},
+          {Motivation: "motivationCoding"},
+          {Training_Received_1: "trainingReceived1Coding"},
+          {Training_Received_2: "trainingReceived2Coding"},
+          {Training_Received_3: "trainingReceived3Coding"},
+          {Type_EMOIS_1: "emois1Coding" },
+          {Type_EMOIS_2: "emois2Coding" },
+          {Type_EMOIS_3: "emois3Coding" },
+          {Type_EMOIS_4: "emois4Coding" },
+          {Type_EMOIS_5: "emois5Coding" },
+          {Type_EMOIS_6: "emois6Coding" },
+          {Statut_1: "statut1Coding"},
+          {Statut_2: "statut2Coding"},
+          {Statut_3: "statut3Coding"},
+          {Statut_4: "statut4Coding"},
+          {Statut_5: "statut5Coding"},
+          {Statut_6: "statut6Coding"},
+          {RC_Tablet: "rcTabletCoding"},
+          {AC_Tablet: "acTabletCoding"},
           //{Nationality: "nationalityCoding"},
           {JobTitle: "jobCoding"},
           /*{EmploymentTerms: "employmentCoding"},
@@ -57,17 +81,8 @@ const userDataValidation = (userData) => {
         ];
 
         let dateType = [
-          /*  "BirthDate",
-            "StartDate",
-            "EndDate",
-            "LeaveStartDate",
-            "LeaveEndDate",
-            "LeaveRequestDate",
-            "EvaluationStartDate",
-            "EvaluationEndDate",
-            "PreviousWorkStartDate",
-            "PreviousWorkEndDate",
-            "Year"*/
+          "BirthDate",
+          "StartDate"
         ]
 
         dateType.forEach((key, index) => {
@@ -101,8 +116,8 @@ const userDataValidation = (userData) => {
 
         let requiredFieldKeys = [
             "Fokotany",
-            "Firstname",
-            "Commune"
+            "lastname",
+            "JobTitle",
         ];
 
         requiredFieldKeys.forEach((key, index) => {
@@ -163,6 +178,10 @@ const template = async (users) => {
                           valueString: user["Phone"]
                         },
                         {
+                          url: "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-marital-status",
+                          valueString: user["MaritalStatus"]
+                        },
+                        {
                           url: "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-nationality",
                           valueCoding: user["nationalityCoding"]
                         },
@@ -195,11 +214,9 @@ const template = async (users) => {
                     name: [
                         {
                             use: "official",
-                            text: user["Firstname"] + " " + user["Surname"] + " " + user["Othernames"],
-                            given: [user["Surname"], user["Othernames"] ],
-                            family: user["Firstname"],
-                            prefix: [user["Prefix"]],
-                            suffix: [user["Suffix"]]
+                            text: user["lastname"] + " " + user["othernames"],
+                            given: [user["othernames"] ],
+                            family: user["lastname"]
                         }
                     ],
                     //gender: user["genderCoding"].code,
@@ -221,14 +238,12 @@ const template = async (users) => {
                 },
                 extension: [
                   {
-                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-start-year",
-                    valueDate: user["StartYear"]
+                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-category",
+                    valueCoding: user["categorieCoding"]
                   },
                   {
-                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-commune",
-                    valueReference: {
-                      reference: `Location/${user["communeId"]}`
-                    }
+                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-workplace",
+                    valueCoding: user["workplaceCoding"]
                   }
                 ],
                 period: {
@@ -255,8 +270,237 @@ const template = async (users) => {
                 method: "POST",
                 url: "PractitionerRole",
               }
-            }];
+            },
+            {
+              resource: {
+                resourceType: "Basic",
+                meta: {
+                  profile: [
+                    "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history",
+                  ],
+                },
+                extension: [
+                  {
+                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference",
+                    valueReference: {
+                      reference: `Practitioner/${userId}`,
+                    },
+                  },
+                  {
+                    url: "http://ihris.org/fhir/StructureDefinition/ihris-education-history",
+                    extension: [
+                      {
+                        url: "level",
+                        valueCoding: user["educationCoding"]
+                      }
+                    ],
+                  },
+                ],
+              },
+              request: {
+                method: "POST",
+                url: "Basic",
+              }
+          }];
+          if (user['Distance_Hamlet'] != null || user['Distance_CSB'] != null || user['Distance_Workplace'] != null || user['Distance_RC'] != null ) {
+            bundleData.push({
+              resource: {
+                resourceType: "Basic",
+                meta: {
+                  profile: [
+                    "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance",
+                  ],
+                },
+                extension: [
+                  {
+                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference",
+                    valueReference: {
+                      reference: `Practitioner/${userId}`,
+                    },
+                  },
+                  {
+                    url: "http://ihris.org/fhir/StructureDefinition/ihris-distance",
+                    extension: [
+                      {
+                        url: "village",
+                        valueDecimal: user["Distance_Hamlet"]
+                      },
+                      {
+                        url: "csb",
+                        valueDecimal: user["Distance_CSB"]
+                      },
+                      {
+                        url: "workplace",
+                        valueDecimal: user["Distance_Workplace"]
+                      },
+                      {
+                        url: "csbrc",
+                        valueDecimal: user["Distance_RC"]
+                      }
+                    ],
+                  },
+                ],
+              },
+              request: {
+                method: "POST",
+                url: "Basic",
+              }
+            });
+          }
+          if (user["Apacks"] != null || user["Motivation"] != null || user["Motivation_Type"] != null) {
+            bundleData.push({
+              resource: {
+                resourceType: "Basic",
+                meta: {
+                  profile: [
+                    "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive",
+                  ],
+                },
+                extension: [
+                  {
+                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference",
+                    valueReference: {
+                      reference: `Practitioner/${userId}`,
+                    },
+                  },
+                  {
+                    url: "http://ihris.org/fhir/StructureDefinition/ihris-incentive",
+                    extension: [
+                      {
+                        url: "incentive",
+                        valueCoding: user["apacksCoding"]
+                      },
+                      {
+                        url: "motivation",
+                        valueCoding: user["motivationCoding"]
+                      },
+                      {
+                        url: "motivationType",
+                        valueCoding: user["motivationTypeCoding"]
+                      }
+                    ],
+                  },
+                ],
+              },
+              request: {
+                method: "POST",
+                url: "Basic",
+              }
+            });
+          }
+          const trainingKeys = [
+            { received: "Training_Received_1", coding: "trainingReceived1Coding" },
+            { received: "Training_Received_2", coding: "trainingReceived2Coding" },
+            { received: "Training_Received_3", coding: "trainingReceived3Coding" }
+          ];
+
+          trainingKeys.forEach(({ received, coding }) => {
+            if (user[received] != null) {
+              bundleData.push({
+                resource: {
+                  resourceType: "Basic",
+                  meta: {
+                    profile: [
+                      "http://ihris.org/fhir/StructureDefinition/ihris-basic-training",
+                    ],
+                  },
+                  extension: [
+                    {
+                      url: "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference",
+                      valueReference: {
+                        reference: `Practitioner/${userId}`,
+                      },
+                    },
+                    {
+                      url: "http://ihris.org/fhir/StructureDefinition/ihris-training",
+                      extension: [
+                        {
+                          url: "training",
+                          valueCoding: user[coding]
+                        }
+                      ],
+                    },
+                  ],
+                },
+                request: {
+                  method: "POST",
+                  url: "Basic",
+                }
+              });
+            }
           });
+         
+            const createResource = (type, coding, statusCoding, rcTabletCoding, acTabletCoding) => ({
+              resource: {
+                resourceType: "Basic",
+                meta: {
+                  profile: [
+                    "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment",
+                  ],
+                },
+                extension: [
+                  {
+                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference",
+                    valueReference: {
+                      reference: `Practitioner/${userId}`,
+                    },
+                  },
+                  {
+                    url: "http://ihris.org/fhir/StructureDefinition/ihris-equipment",
+                    extension: [
+                      {
+                        url: "recieved",
+                        valueCoding: {
+                          system: "http://ihris.org/fhir/CodeSystem/ihris-yesno",
+                          code: "yes",
+                          display: "Oui",
+                        },
+                      },
+                      {
+                        url: "equipmenttype",
+                        valueCoding: coding,
+                      },
+                      {
+                        url: "availability",
+                        valueCoding: statusCoding,
+                      },
+                      {
+                        url: "rctablet",
+                        valueCoding: rcTabletCoding
+                      },
+                      {
+                        url: "actablet",
+                        valueCoding: acTabletCoding
+                      }
+                    ],
+                  },
+                ],
+              },
+              request: {
+                method: "POST",
+                url: "Basic",
+              },
+            });
+
+            if (user["Type_EMOIS_1"] != null) {
+              bundleData.push(createResource("Type_EMOIS_1", user["emois1Coding"], user["statut1Coding"], user["RC_Tablet"],  user["AC_Tablet"]));
+            }
+            if (user["Type_EMOIS_2"] != null) {
+              bundleData.push(createResource("Type_EMOIS_2", user["emois2Coding"], user["statut2Coding"]));
+            }
+            if (user["Type_EMOIS_3"] != null) {
+              bundleData.push(createResource("Type_EMOIS_3", user["emois3Coding"], user["statut3Coding"]));
+            }
+            if (user["Type_EMOIS_4"] != null) {
+              bundleData.push(createResource("Type_EMOIS_4", user["emois4Coding"], user["statut4Coding"]));
+            }
+            if (user["Type_EMOIS_5"] != null) {
+              bundleData.push(createResource("Type_EMOIS_5", user["emois5Coding"], user["statut5Coding"]));
+            }
+            if (user["Type_EMOIS_6"] != null) {
+              bundleData.push(createResource("Type_EMOIS_6", user["emois6Coding"], user["statut6Coding"]));
+            } 
+        });
     return bundleData;
 };
 

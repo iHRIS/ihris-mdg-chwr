@@ -30,6 +30,7 @@ router.post("/bulkRegistration", async (req, res) => {
                       })
                       .catch((err) => {
                         logger.error(err);
+                        console.error(JSON.stringify(err.response.data,null,2))
                         // console.log(JSON.stringify(err,null,2))
                         return res.status(500).json(err);
                       });

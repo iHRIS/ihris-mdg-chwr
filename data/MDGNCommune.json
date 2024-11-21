@@ -1,0 +1,1974 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-001",
+        "name": "Ambohimahavelona",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-001"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-002",
+        "name": "Ambolofoty",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-002"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-003",
+        "name": "Anakao",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-003"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-004",
+        "name": "Analamisampy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-004"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-005",
+        "name": "Andranohinaly",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-005"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-006",
+        "name": "Andranovory",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-006"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-007",
+        "name": "Ankililioka",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-007"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-008",
+        "name": "Ankililoaka",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-008"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-009",
+        "name": "Ankilimaliniky",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-009"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-010",
+        "name": "Antanimena",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-010"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-011",
+        "name": "Beheloka",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-011"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-012",
+        "name": "Behompy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-012"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-013",
+        "name": "Belalanda",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-013"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-014",
+        "name": "Betsinjaka",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-014"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-015",
+        "name": "Efoetse",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-015"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-016",
+        "name": "Manombo Sud",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-016"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-017",
+        "name": "Manorofify",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-017"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-018",
+        "name": "Marofoty",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-018"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-019",
+        "name": "Maromiandra",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-019"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-020",
+        "name": "Miary",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-020"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-021",
+        "name": "Milenaka",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-021"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-022",
+        "name": "Mitsinjo Betanimena",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-022"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-023",
+        "name": "Saint Augustin",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-023"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-024",
+        "name": "Soahazo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-024"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-025",
+        "name": "Soalara Sud",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-025"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-026",
+        "name": "Tsianisiha",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-026"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-04-027",
+        "name": "Tsifota",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-04"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-04-027"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-07-028",
+        "name": "Ambahikily",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-07-028"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-07-029",
+        "name": "Ankantsakantsa Sud",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-07-029"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-07-030",
+        "name": "Antanimieva",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-07-030"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-07-031",
+        "name": "Antongo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-07-031"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-07-032",
+        "name": "Basibasy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-07-032"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-07-033",
+        "name": "Befandefa",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-07-033"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-07-034",
+        "name": "Befandriana Sud",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-07-034"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-07-035",
+        "name": "Morombe",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-07-035"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-07-036",
+        "name": "Tanandava",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-07"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-07-036"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-08-037",
+        "name": "Amboronabo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-08-037"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-08-038",
+        "name": "Andranolava",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-08-038"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-08-039",
+        "name": "Bereketa",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-08-039"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-08-040",
+        "name": "Besakoa",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-08-040"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-08-041",
+        "name": "Mahaboboka",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-08-041"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-08-042",
+        "name": "Miary Lamatihy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-08-042"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-08-043",
+        "name": "Miary Taheza",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-08-043"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-08-044",
+        "name": "Mihavatsy",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-08-044"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-08-045",
+        "name": "Mikoboka",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-08-045"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-08-046",
+        "name": "Mitsinjo",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-08-046"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-08-047",
+        "name": "Sakaraha",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-08-047"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "MDG-18-08-048",
+        "name": "Vineta",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/MDG-18-08"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction-type",
+                "code": "commune"
+              }
+            ],
+            "text": "Commune"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/MDG-18-08-048"
+      }
+    }
+  ]
+}

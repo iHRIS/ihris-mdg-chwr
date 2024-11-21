@@ -294,7 +294,247 @@ const setUserdata = async (req) => {
               logger.error(err.message);
             });
         }
-
+        if (usersData[i]["Workplace"]){
+          await getCodeSystem(usersData[i]["Workplace"],"ihris-workplace")
+            .then((response) => {
+              usersData[i].workplaceCoding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Categorie"]){
+          await getCodeSystem(usersData[i]["Categorie"],"ihris-category-valueset")
+            .then((response) => {
+              usersData[i].categorieCoding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["MaritalStatus"]){
+          await getCodeSystem(usersData[i]["MaritalStatus"],"ihris-marital-status-valueset")
+            .then((response) => {
+              usersData[i].maritalStatusCoding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+          }
+        if (usersData[i]["Education"]){
+          await getCodeSystem(usersData[i]["Education"],"ihris-education-level-valueset")
+            .then((response) => {
+              usersData[i].educationCoding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Apacks"]){
+          await getCodeSystem(usersData[i]["Apacks"],"ihris-incentive-valueset")
+            .then((response) => {
+              usersData[i].apacksCoding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Motivation Type"]){
+          await getCodeSystem(usersData[i]["Motivation Type"],"ihris-motivation-type-valueset")
+            .then((response) => {
+              usersData[i].motivationTypeCoding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Motivation"]){
+          await getCodeSystem(usersData[i]["Motivation"],"ihris-yesno-valueset")
+            .then((response) => {
+              usersData[i].motivationCoding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Training Received 1"]){
+          await getCodeSystem(usersData[i]["Training Received 1"],"ihris-training-valueset")
+            .then((response) => {
+              usersData[i].trainingReceived1Coding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Training Received 2"]){
+          await getCodeSystem(usersData[i]["Training Received 2"],"ihris-training-valueset")
+            .then((response) => {
+              usersData[i].trainingReceived2Coding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Training Received 3"]){
+          await getCodeSystem(usersData[i]["Training Received 3"],"ihris-training-valueset")
+            .then((response) => {
+              usersData[i].trainingReceived3Coding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Type EMOIS 1"]){
+          await getCodeSystem(usersData[i]["Type EMOIS 1"],"ihris-equipment-type-valueset")
+            .then((response) => {
+              usersData[i].emois1Coding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Type EMOIS 2"]){
+          await getCodeSystem(usersData[i]["Type EMOIS 2"],"ihris-equipment-type-valueset")
+            .then((response) => {
+              usersData[i].emois2Coding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Type EMOIS 3"]){
+          await getCodeSystem(usersData[i]["Type EMOIS 3"],"ihris-equipment-type-valueset")
+            .then((response) => {
+              usersData[i].emois3Coding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Type EMOIS 4"]){
+          await getCodeSystem(usersData[i]["Type EMOIS 4"],"ihris-equipment-type-valueset")
+            .then((response) => {
+              usersData[i].emois4Coding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Type EMOIS 5"]){
+          await getCodeSystem(usersData[i]["Type EMOIS 5"],"ihris-equipment-type-valueset")
+            .then((response) => {
+              usersData[i].emois5Coding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Type EMOIS 6"]){
+          await getCodeSystem(usersData[i]["Type EMOIS 6"],"ihris-equipment-type-valueset")
+            .then((response) => {
+              usersData[i].emois6Coding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Statut 1"]){
+          await getCodeSystem(usersData[i]["Statut 1"],"ihris-availability-valueset")
+            .then((response) => {
+              usersData[i].statut1Coding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Statut 2"]){
+          await getCodeSystem(usersData[i]["Statut 2"],"ihris-availability-valueset")
+            .then((response) => {
+              usersData[i].statut2Coding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Statut 3"]){
+          await getCodeSystem(usersData[i]["Statut 3"],"ihris-availability-valueset")
+            .then((response) => {
+              usersData[i].statut3Coding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Statut 4"]){
+          await getCodeSystem(usersData[i]["Statut 4"],"ihris-availability-valueset")
+            .then((response) => {
+              usersData[i].statut4Coding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Statut 5"]){
+          await getCodeSystem(usersData[i]["Statut 5"],"ihris-availability-valueset")
+            .then((response) => {
+              usersData[i].statut5Coding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["Statut 6"]){
+          await getCodeSystem(usersData[i]["Statut 6"],"ihris-availability-valueset")
+            .then((response) => {
+              usersData[i].statut6Coding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["RC Tablet"]){
+          await getCodeSystem(usersData[i]["RC Tablet"],"ihris-yesno-valueset")
+            .then((response) => {
+              usersData[i].rcTabletCoding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+        if (usersData[i]["AC Tablet"]){
+          await getCodeSystem(usersData[i]["AC Tablet"],"ihris-yesno-valueset")
+            .then((response) => {
+              usersData[i].acTabletCoding = response;
+            })
+            .catch((err) => {
+              console.log(err);
+              logger.error(err.message);
+            });
+        }
+       
        /* await getCodeSystem(usersData[i]["Nationality"],"iso3166-1-2")
           .then((response) => {
             usersData[i].nationalityCoding = response;
