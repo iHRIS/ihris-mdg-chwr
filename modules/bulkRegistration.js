@@ -219,8 +219,8 @@ const template = async (users) => {
                             family: user["lastname"]
                         }
                     ],
-                    //gender: user["genderCoding"].code,
-                    gender: "",
+                    gender: user["genderCoding"].code,
+                    //gender: "",
                     birthDate: user["BirthDate"],
                 },
                 request: {
