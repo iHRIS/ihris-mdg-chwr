@@ -55,7 +55,7 @@ Usage: #example
 * parameter[=].part[+].name = "site:nav:menu:dashboard:icon"
 * parameter[=].part[=].valueString = "mdi-chart-arc"
 * parameter[=].part[+].name = "site:nav:menu:dashboard:url"
-* parameter[=].part[=].valueString = "/dashboard/2b75ae60-acb7-11ef-adbe-b340f16a0a74"
+* parameter[=].part[=].valueString = "/dashboard/1a9e7efa-718f-4a5c-8ae5-ea6e37b7640c"
 * parameter[=].part[+].name = "site:nav:menu:dashboard:external"
 * parameter[=].part[=].valueString = "true"
 * parameter[=].part[+].name = "site:nav:active"
