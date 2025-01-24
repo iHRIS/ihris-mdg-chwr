@@ -4,9 +4,9 @@
   "name": "IhrisFacilityIdentifierValueSet",
   "id": "ihris-facility-identifier-valueset",
   "title": "iHRIS facility Identifier ValueSet",
-  "version": "0.5.0",
   "url": "http://ihris.org/fhir/ValueSet/ihris-facility-identifier-valueset",
   "date": "2023-02-13T08:41:04.362Z",
+  "version": "0.5.0",
   "compose": {
     "include": [
       {

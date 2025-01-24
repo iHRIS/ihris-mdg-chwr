@@ -4,9 +4,9 @@
   "name": "IhrisNumValueSet",
   "id": "ihris-num-valueset",
   "title": "iHRIS Number of Supervisions ValueSet",
-  "version": "0.3.0",
   "url": "http://ihris.org/fhir/ValueSet/ihris-num-valueset",
   "date": "2022-09-29T08:41:04.362Z",
+  "version": "0.3.0",
   "compose": {
     "include": [
       {

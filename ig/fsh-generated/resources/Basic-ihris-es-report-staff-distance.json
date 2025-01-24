@@ -46,15 +46,15 @@
           "extension": [
             {
               "url": "name",
-              "valueString": "fokontany"
+              "valueString": "village"
             },
             {
               "url": "fhirpath",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='fokontany').valueDecimal"
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='village').valueDecimal"
             },
             {
               "url": "display",
-              "valueString": "Distance(km) from Fokontany"
+              "valueString": "Distance Domicile – Hameau le plus éloigné (km)"
             },
             {
               "url": "filter",
@@ -83,7 +83,7 @@
             },
             {
               "url": "display",
-              "valueString": "Distance(km) from CSB"
+              "valueString": "Distance lieu de travail – CSB (km)"
             },
             {
               "url": "filter",
@@ -104,15 +104,15 @@
           "extension": [
             {
               "url": "name",
-              "valueString": "commsite"
+              "valueString": "workplace"
             },
             {
               "url": "fhirpath",
-              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='commsite').valueDecimal"
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='workplace').valueDecimal"
             },
             {
               "url": "display",
-              "valueString": "Distance(km) from Community site"
+              "valueString": "Distance Domicile - lieu de travail (km)"
             },
             {
               "url": "filter",
@@ -125,6 +125,35 @@
             {
               "url": "order",
               "valueInteger": 11
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "name",
+              "valueString": "csbrc"
+            },
+            {
+              "url": "fhirpath",
+              "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='csbrc').valueDecimal"
+            },
+            {
+              "url": "display",
+              "valueString": "Distance CSB – AC le plus éloigné (km) - RC"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": false
+            },
+            {
+              "url": "order",
+              "valueInteger": 12
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -596,7 +625,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 15
+              "valueInteger": 16
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -654,7 +683,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 14
+              "valueInteger": 15
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -712,7 +741,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 13
+              "valueInteger": 14
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -770,7 +799,7 @@
             },
             {
               "url": "order",
-              "valueInteger": 12
+              "valueInteger": 13
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"

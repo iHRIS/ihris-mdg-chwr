@@ -5,9 +5,9 @@
   "id": "ihris-workplace",
   "title": "Work Place",
   "description": "iHRIS ValueSet for: iHRISWorkPlace",
-  "version": "0.2.0",
   "url": "http://ihris.org/fhir/ValueSet/ihris-workplace",
   "date": "2024-03-10T08:41:04.362Z",
+  "version": "0.2.0",
   "compose": {
     "include": [
       {

@@ -6,6 +6,18 @@
       "http://ihris.org/fhir/StructureDefinition/ihris-person-user"
     ]
   },
+  "name": [
+    {
+      "use": "official",
+      "text": "iHRIS Admin"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "admin@ihris.org"
+    }
+  ],
   "extension": [
     {
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-password",
@@ -25,18 +37,6 @@
       "valueReference": {
         "reference": "Basic/ihris-role-admin"
       }
-    }
-  ],
-  "name": [
-    {
-      "use": "official",
-      "text": "iHRIS Admin"
-    }
-  ],
-  "telecom": [
-    {
-      "system": "email",
-      "value": "admin@ihris.org"
     }
   ],
   "active": true

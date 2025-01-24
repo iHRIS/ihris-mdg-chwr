@@ -6,7 +6,6 @@
   "id": "ihris-workplace",
   "title": "Work Place",
   "description": "iHRIS Code System for Work Place.",
-  "version": "0.2.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-workplace",
   "concept": [
     {
@@ -23,5 +22,6 @@
     }
   ],
   "date": "2024-03-10T08:41:04.362Z",
+  "version": "0.2.0",
   "count": 3
 }

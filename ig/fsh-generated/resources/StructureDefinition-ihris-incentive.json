@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "ihris-incentive",
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-incentive",
-  "version": "0.1.0",
   "name": "IhrisIncentive",
   "title": "Incentive details",
   "status": "active",
@@ -29,16 +28,6 @@
     "element": [
       {
         "id": "Extension",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-            "valueCode": "normative"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
-            "valueCode": "4.0.0"
-          }
-        ],
         "path": "Extension",
         "short": "Incentive details",
         "definition": "Optional Extension Element - found in all resources.",
@@ -360,53 +349,6 @@
       {
         "id": "Extension.extension:incentive.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:incentive.value[x]:valueCoding",
-        "path": "Extension.extension.value[x]",
-        "sliceName": "valueCoding",
         "label": "Activity Packs",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -630,53 +572,6 @@
       {
         "id": "Extension.extension:motivation.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:motivation.value[x]:valueCoding",
-        "path": "Extension.extension.value[x]",
-        "sliceName": "valueCoding",
         "label": "Motivation status",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -900,53 +795,6 @@
       {
         "id": "Extension.extension:motivationType.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:motivationType.value[x]:valueCoding",
-        "path": "Extension.extension.value[x]",
-        "sliceName": "valueCoding",
         "label": "Motivation Type",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1170,53 +1018,6 @@
       {
         "id": "Extension.extension:motivationMonth.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:motivationMonth.value[x]:valueCoding",
-        "path": "Extension.extension.value[x]",
-        "sliceName": "valueCoding",
         "label": "Motivation Month",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1440,53 +1241,6 @@
       {
         "id": "Extension.extension:motivationYear.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
-        "short": "Value of extension",
-        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Extension.value[x]",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "date"
-          }
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          }
-        ],
-        "isModifier": false,
-        "isSummary": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "Extension.extension:motivationYear.value[x]:valueDate",
-        "path": "Extension.extension.value[x]",
-        "sliceName": "valueDate",
         "label": "Motivation Year",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -2190,28 +1944,12 @@
       {
         "id": "Extension.extension:incentive.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
+        "label": "Activity Packs",
         "type": [
           {
             "code": "Coding"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:incentive.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "label": "Activity Packs",
-        "min": 0,
-        "max": "1",
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "http://ihris.org/fhir/ValueSet/ihris-incentive-valueset"
@@ -2238,28 +1976,12 @@
       {
         "id": "Extension.extension:motivation.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
+        "label": "Motivation status",
         "type": [
           {
             "code": "Coding"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:motivation.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "label": "Motivation status",
-        "min": 0,
-        "max": "1",
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -2286,28 +2008,12 @@
       {
         "id": "Extension.extension:motivationType.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
+        "label": "Motivation Type",
         "type": [
           {
             "code": "Coding"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:motivationType.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "label": "Motivation Type",
-        "min": 0,
-        "max": "1",
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "http://ihris.org/fhir/ValueSet/ihris-motivation-type-valueset"
@@ -2334,28 +2040,12 @@
       {
         "id": "Extension.extension:motivationMonth.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
+        "label": "Motivation Month",
         "type": [
           {
             "code": "Coding"
           }
-        ]
-      },
-      {
-        "id": "Extension.extension:motivationMonth.valueCoding",
-        "path": "Extension.extension.valueCoding",
-        "label": "Motivation Month",
-        "min": 0,
-        "max": "1",
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "http://ihris.org/fhir/ValueSet/ihris-month-valueset"
@@ -2382,28 +2072,12 @@
       {
         "id": "Extension.extension:motivationYear.value[x]",
         "path": "Extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
+        "label": "Motivation Year",
         "type": [
           {
             "code": "date"
           }
         ]
-      },
-      {
-        "id": "Extension.extension:motivationYear.valueDate",
-        "path": "Extension.extension.valueDate",
-        "label": "Motivation Year",
-        "min": 0,
-        "max": "1"
       },
       {
         "id": "Extension.extension:other",
@@ -2424,8 +2098,23 @@
         "fixedUri": "other"
       },
       {
-        "id": "Extension.extension:other.valueString",
-        "path": "Extension.extension.valueString",
+        "id": "Extension.extension:other.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:other.value[x]:valueString",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueString",
         "label": "Other",
         "min": 0,
         "max": "1",

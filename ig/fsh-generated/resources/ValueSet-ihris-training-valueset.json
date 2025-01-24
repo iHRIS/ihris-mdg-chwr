@@ -4,9 +4,9 @@
   "name": "IhrisTrainingValueSet",
   "id": "ihris-training-valueset",
   "title": "iHRIS  Training ValueSet",
-  "version": "0.5.0",
   "url": "http://ihris.org/fhir/ValueSet/ihris-training-valueset",
   "date": "2024-07-30T08:41:04.362Z",
+  "version": "0.5.0",
   "compose": {
     "include": [
       {

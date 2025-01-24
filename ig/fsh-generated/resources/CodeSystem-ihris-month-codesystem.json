@@ -5,7 +5,6 @@
   "name": "IhrisMonthCodeSystem",
   "id": "ihris-month-codesystem",
   "title": "Activity Packs",
-  "version": "0.3.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-month-codesystem",
   "concept": [
     {
@@ -58,5 +57,6 @@
     }
   ],
   "date": "2022-09-29T08:41:04.362Z",
+  "version": "0.3.0",
   "count": 12
 }

@@ -4,9 +4,9 @@
   "name": "IhrisJurisdictionType",
   "id": "ihris-jurisdiction-type",
   "title": "iHRIS Jurisdiction Type ValueSet",
-  "version": "0.7.0",
   "url": "http://ihris.org/fhir/ValueSet/ihris-jurisdiction-type",
   "date": "2023-06-20T08:41:04.362Z",
+  "version": "0.7.0",
   "compose": {
     "include": [
       {

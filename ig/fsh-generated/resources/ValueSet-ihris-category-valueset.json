@@ -4,9 +4,9 @@
   "name": "IhrisCategoryValueset",
   "id": "ihris-category-valueset",
   "title": "iHRIS Category ValueSet",
-  "version": "0.5.0",
   "url": "http://ihris.org/fhir/ValueSet/ihris-category-valueset",
   "date": "2023-12-29T08:41:04.362Z",
+  "version": "0.5.0",
   "compose": {
     "include": [
       {
