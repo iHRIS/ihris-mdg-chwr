@@ -35,12 +35,15 @@
               "valueString": "PractitionerRole.practitioner.reference"
             },
             {
-              "url": "url",
-              "valueUrl": "/resource/view/practitioner/FIELD"
-            },
-            {
               "url": "text",
               "valueString": "View Practitioner"
+            },
+            {
+              "url": "displayIn"
+            },
+            {
+              "url": "url",
+              "valueUrl": "/resource/view/practitioner/FIELD"
             },
             {
               "url": "button",
@@ -60,12 +63,15 @@
               "valueUrl": "/resource/view/practitionerrole/FIELD?edit=true"
             },
             {
-              "url": "field",
-              "valueString": "PractitionerRole.id"
-            },
-            {
               "url": "text",
               "valueString": "Edit"
+            },
+            {
+              "url": "displayIn"
+            },
+            {
+              "url": "field",
+              "valueString": "PractitionerRole.id"
             },
             {
               "url": "button",

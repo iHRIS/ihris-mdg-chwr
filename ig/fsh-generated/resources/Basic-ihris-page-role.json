@@ -35,12 +35,15 @@
               "valueString": ""
             },
             {
-              "url": "url",
-              "valueUrl": "/resource/view/basic"
-            },
-            {
               "url": "text",
               "valueString": "View Other Roles"
+            },
+            {
+              "url": "displayIn"
+            },
+            {
+              "url": "url",
+              "valueUrl": "/resource/view/basic"
             },
             {
               "url": "button",

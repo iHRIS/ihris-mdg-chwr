@@ -34,7 +34,7 @@ Basic-ihris-page-jurisdiction-type.json                           ihris-page-jur
 Basic-ihris-page-location.json                                    ihris-page-location                               Instance    IhrisLocation.fsh                        325 - 352
 Basic-ihris-page-marital-status.json                              ihris-page-marital-status                         Instance    IhrisPractitioner.fsh                    313 - 328
 Basic-ihris-page-motivation-type.json                             ihris-page-motivation-type                        Instance    IhrisIncentives.fsh                      234 - 249
-Basic-ihris-page-practitioner.json                                ihris-page-practitioner                           Instance    IhrisPagePractitioner.fsh                1 - 304
+Basic-ihris-page-practitioner.json                                ihris-page-practitioner                           Instance    IhrisPagePractitioner.fsh                1 - 310
 Basic-ihris-page-practitionerrole.json                            ihris-page-practitionerrole                       Instance    IhrisPractitionerRole.fsh                171 - 206
 Basic-ihris-page-relation.json                                    ihris-page-relation                               Instance    IhrisPractitioner.fsh                    279 - 294
 Basic-ihris-page-role.json                                        ihris-page-role                                   Instance    core/IhrisRole.fsh                       603 - 627
@@ -227,8 +227,8 @@ StructureDefinition-ihris-location-basic.json                     IhrisLocationB
 StructureDefinition-ihris-location-population.json                IhrisLocationPopulation                           Extension   IhrisLocation.fsh                        37 - 45
 StructureDefinition-ihris-location-reference.json                 IhrisLocationReference                            Extension   IhrisLocationBasic.fsh                   10 - 18
 StructureDefinition-ihris-module.json                             IhrisModule                                       Profile     core/IhrisModule.fsh                     1 - 26
-StructureDefinition-ihris-page-display.json                       IhrisPageDisplay                                  Extension   core/IhrisPage.fsh                       11 - 118
-StructureDefinition-ihris-page-section.json                       IhrisPageSection                                  Extension   core/IhrisPage.fsh                       121 - 206
+StructureDefinition-ihris-page-display.json                       IhrisPageDisplay                                  Extension   core/IhrisPage.fsh                       11 - 122
+StructureDefinition-ihris-page-section.json                       IhrisPageSection                                  Extension   core/IhrisPage.fsh                       125 - 214
 StructureDefinition-ihris-page.json                               IhrisPage                                         Profile     core/IhrisPage.fsh                       1 - 9
 StructureDefinition-ihris-parameters-local-config.json            IhrisParametersLocalConfig                        Profile     core/IhrisParametersLocalConfig.fsh      1 - 71
 StructureDefinition-ihris-parameters-remote-config.json           IhrisParametersRemoteConfig                       Profile     core/IhrisParametersRemoteConfig.fsh     1 - 35

@@ -285,7 +285,7 @@
     "fshType": "Instance",
     "fshFile": "IhrisPagePractitioner.fsh",
     "startLine": 1,
-    "endLine": 304
+    "endLine": 310
   },
   {
     "outputFile": "Basic-ihris-page-practitionerrole.json",
@@ -1829,15 +1829,15 @@
     "fshType": "Extension",
     "fshFile": "core/IhrisPage.fsh",
     "startLine": 11,
-    "endLine": 118
+    "endLine": 122
   },
   {
     "outputFile": "StructureDefinition-ihris-page-section.json",
     "fshName": "IhrisPageSection",
     "fshType": "Extension",
     "fshFile": "core/IhrisPage.fsh",
-    "startLine": 121,
-    "endLine": 206
+    "startLine": 125,
+    "endLine": 214
   },
   {
     "outputFile": "StructureDefinition-ihris-page.json",

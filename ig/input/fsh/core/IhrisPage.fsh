@@ -70,7 +70,8 @@ Description:    "iHRIS Page Display details."
 
 * extension[link].extension contains
       field 0..1 MS and
-      text 0..1 MS and
+      text 1..1 MS and
+      displayIn 1..1 MS and
       button 0..1 MS and
       icon 0..1 MS and
       url 1..1 MS and
@@ -83,6 +84,9 @@ Description:    "iHRIS Page Display details."
 * extension[link].extension[text].value[x] only string
 * extension[link].extension[text].valueString MS
 * extension[link].extension[text].valueString ^label = "Text for link"
+* extension[link].extension[displayIn].value[x] only string
+* extension[link].extension[displayIn].valueString MS
+* extension[link].extension[displayIn].valueString ^label = "Whether the link to be displayed on the questionnaire(questionnaire) or display page(view). Values are either questionnaire or view"
 * extension[link].extension[button].value[x] only boolean
 * extension[link].extension[button].valueBoolean MS
 * extension[link].extension[button].valueBoolean ^label = "Display as button"
@@ -129,6 +133,7 @@ Description:    "iHRIS Page Section information."
       description 1..1 MS and
       name 1..1 MS and
       field 0..* MS and
+      hide 0..* MS and
       resource 0..1 MS
 * extension[title].value[x] only string
 * extension[title].valueString MS
@@ -142,6 +147,9 @@ Description:    "iHRIS Page Section information."
 * extension[field].value[x] only string
 * extension[field].valueString 1..1 MS
 * extension[field].valueString ^label = "Field"
+* extension[hide].value[x] only string
+* extension[hide].valueString 1..1 MS
+* extension[hide].valueString ^label = "Hide"
 * extension[resource].extension contains
       resource 1..1 MS and
       linkfield 1..1 MS and

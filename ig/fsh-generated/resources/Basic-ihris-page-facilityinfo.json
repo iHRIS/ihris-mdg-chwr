@@ -35,12 +35,15 @@
               "valueString": "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-location-reference').valueReference.reference"
             },
             {
-              "url": "url",
-              "valueUrl": "/resource/view/facility/FIELD"
-            },
-            {
               "url": "text",
               "valueString": "View Facility"
+            },
+            {
+              "url": "displayIn"
+            },
+            {
+              "url": "url",
+              "valueUrl": "/resource/view/facility/FIELD"
             },
             {
               "url": "button",

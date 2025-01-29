@@ -35,6 +35,9 @@
               "valueString": "Add Training"
             },
             {
+              "url": "displayIn"
+            },
+            {
               "url": "url",
               "valueUrl": "/resource/add/training"
             },
