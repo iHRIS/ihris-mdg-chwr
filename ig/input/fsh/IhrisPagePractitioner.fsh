@@ -20,6 +20,12 @@ Usage:          #example
 * extension[display].extension[link][0].extension[button].valueBoolean = true
 * extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
 * extension[display].extension[link][0].extension[class].valueString = "secondary"
+//* extension[display].extension[link][1].extension[url].valueUrl = "/custom/delete-practitioner?path=/togo/components&id=FIELD"
+//* extension[display].extension[link][1].extension[field].valueString = "Practitioner.id"
+//* extension[display].extension[link][1].extension[text].valueString = "Delete"
+//* extension[display].extension[link][1].extension[button].valueBoolean = true
+//* extension[display].extension[link][1].extension[icon].valueString = "mdi-delete-circle-outline"
+//* extension[display].extension[link][1].extension[class].valueString = "error"
 * extension[section][0].extension[title].valueString = "CSB/Health Worker"
 * extension[section][0].extension[description].valueString = "Primary demographic details"
 * extension[section][0].extension[name].valueString = "Practitioner"

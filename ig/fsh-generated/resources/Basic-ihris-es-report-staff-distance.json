@@ -65,6 +65,10 @@
               "valueBoolean": true
             },
             {
+              "url": "type",
+              "valueString": "Numbers"
+            },
+            {
               "url": "order",
               "valueInteger": 9
             }
@@ -92,6 +96,10 @@
             {
               "url": "dropDownFilter",
               "valueBoolean": true
+            },
+            {
+              "url": "type",
+              "valueString": "Numbers"
             },
             {
               "url": "order",
@@ -123,6 +131,10 @@
               "valueBoolean": false
             },
             {
+              "url": "type",
+              "valueString": "Numbers"
+            },
+            {
               "url": "order",
               "valueInteger": 11
             }
@@ -150,6 +162,10 @@
             {
               "url": "dropDownFilter",
               "valueBoolean": false
+            },
+            {
+              "url": "type",
+              "valueString": "Numbers"
             },
             {
               "url": "order",

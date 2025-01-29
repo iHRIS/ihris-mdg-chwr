@@ -20,6 +20,7 @@ Usage:          #example
 * extension[reportdetails].extension[reportelement][0].extension[display].valueString = "Distance Domicile – Hameau le plus éloigné (km)"
 * extension[reportdetails].extension[reportelement][0].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][0].extension[dropDownFilter].valueBoolean = true
+* extension[reportdetails].extension[reportelement][0].extension[type].valueString = "Numbers"
 * extension[reportdetails].extension[reportelement][0].extension[order].valueInteger = 9
 
 * extension[reportdetails].extension[reportelement][1].extension[name].valueString = "csb"
@@ -27,6 +28,7 @@ Usage:          #example
 * extension[reportdetails].extension[reportelement][1].extension[display].valueString = "Distance lieu de travail – CSB (km)"
 * extension[reportdetails].extension[reportelement][1].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][1].extension[dropDownFilter].valueBoolean = true
+* extension[reportdetails].extension[reportelement][1].extension[type].valueString = "Numbers"
 * extension[reportdetails].extension[reportelement][1].extension[order].valueInteger = 10
 
 * extension[reportdetails].extension[reportelement][2].extension[name].valueString = "workplace"
@@ -34,6 +36,7 @@ Usage:          #example
 * extension[reportdetails].extension[reportelement][2].extension[display].valueString = "Distance Domicile - lieu de travail (km)"
 * extension[reportdetails].extension[reportelement][2].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][2].extension[dropDownFilter].valueBoolean = false
+* extension[reportdetails].extension[reportelement][2].extension[type].valueString = "Numbers"
 * extension[reportdetails].extension[reportelement][2].extension[order].valueInteger = 11
 
 * extension[reportdetails].extension[reportelement][3].extension[name].valueString = "csbrc"
@@ -41,6 +44,7 @@ Usage:          #example
 * extension[reportdetails].extension[reportelement][3].extension[display].valueString = "Distance CSB – AC le plus éloigné (km) - RC"
 * extension[reportdetails].extension[reportelement][3].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][3].extension[dropDownFilter].valueBoolean = false
+* extension[reportdetails].extension[reportelement][3].extension[type].valueString = "Numbers"
 * extension[reportdetails].extension[reportelement][3].extension[order].valueInteger = 12
 
 * extension[reportlink][0].extension[name].valueString = "practitioner"

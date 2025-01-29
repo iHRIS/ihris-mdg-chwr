@@ -19,6 +19,8 @@ Description:    "Defines the primary resource of the relationship"
       label 1..1 MS and
       resource 1..1 MS and
       resourcePage 0..1 MS and
+      resourcePageID 0..1 MS and
+      IhrisReportParameters named parameters 0..* MS and
       initialFilter 0..1 MS and
       query 0..1 MS and
       cachingDisabled 0..1 MS and
@@ -36,7 +38,12 @@ Description:    "Defines the primary resource of the relationship"
 * extension[resource].valueString ^label = "Resource type of the primary resource"
 * extension[resourcePage].value[x] only string
 * extension[resourcePage].valueString 0..1
-* extension[resourcePage].valueString ^label = "Resource Page of the primary resource to display the data on click"
+* extension[resourcePage].valueString ^label = "Resource Page to display the data on click"
+
+* extension[resourcePageID].value[x] only string
+* extension[resourcePageID].valueString 0..1
+* extension[resourcePageID].valueString ^label = "Resource ID of the resource to display the data on click"
+
 * extension[initialFilter].value[x] only string
 * extension[initialFilter].valueString 1..1
 * extension[initialFilter].valueString ^label = "Initial Profile filter to limit instances of this resource"
@@ -53,7 +60,17 @@ Description:    "Defines the primary resource of the relationship"
 * extension[locationBasedConstraint].valueBoolean 1..1
 * extension[locationBasedConstraint].valueBoolean ^label = "Whether rows of the report are are limited by location or not"
 
-
+Extension:      IhrisReportParameters
+Id:             iHRISReportParameters
+Title:          "ihRIS Report parameters"
+Description:    "Lists parameters "
+* extension contains
+      esFieldName 1..1 MS and
+      parameter 1..1 MS
+* extension[esFieldName].value[x] only string
+* extension[esFieldName].valueString 1..1
+* extension[parameter].value[x] only string
+* extension[parameter].valueString 1..1
 
 Extension:      IhrisReportLink
 Id:             iHRISReportLink
@@ -99,8 +116,11 @@ Description:    "Lists fields of a resource to be displayed/cached"
 * extension contains
       fhirpath 0..1 MS and
       function 0..1 MS and
+      script 0..1 MS and
       name 1..1 MS and
+      type 0..1 MS and
       display 0..1 MS and
+      displayformat 0..1 MS and
       filter 0..1 MS and
       dropDownFilter 0..1 MS and
       order 0..1 MS
@@ -110,9 +130,15 @@ Description:    "Lists fields of a resource to be displayed/cached"
 * extension[function].value[x] only string
 * extension[function].valueString 1..1
 * extension[function].valueString ^label = "External function to be called to calculate value"
+* extension[script].value[x] only string
+* extension[script].valueString 1..1
+* extension[script].valueString ^label = "Elasticsearch script to calculate field value"
 * extension[name].value[x] only string
 * extension[name].valueString 1..1
 * extension[name].valueString ^label = "Name of the field unique to the relationship"
+* extension[type].value[x] only string
+* extension[type].valueString 1..1
+* extension[type].valueString ^label = "Data Type"
 * extension[display].value[x] only string
 * extension[display].valueString 1..1
 * extension[display].valueString ^label = "Human readable name if the relation is to be displayed on the UI"

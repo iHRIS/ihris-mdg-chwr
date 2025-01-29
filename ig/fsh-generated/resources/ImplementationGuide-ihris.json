@@ -1375,6 +1375,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/iHRISReportParameters"
+        },
+        "name": "ihRIS Report parameters",
+        "description": "Lists parameters ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ihris-resource-relationships"
         },
         "name": "iHRIS Resource Relationships",

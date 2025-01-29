@@ -4,8 +4,8 @@
     "fshName": "ihris-es-report-mhero-send-message",
     "fshType": "Instance",
     "fshFile": "core/IhrisRelationship.fsh",
-    "startLine": 130,
-    "endLine": 185
+    "startLine": 156,
+    "endLine": 211
   },
   {
     "outputFile": "Basic-ihris-es-report-staff-directorate-mdg.json",
@@ -29,7 +29,7 @@
     "fshType": "Instance",
     "fshFile": "IhrisRelationshipStaffDistance.fsh",
     "startLine": 1,
-    "endLine": 196
+    "endLine": 200
   },
   {
     "outputFile": "Basic-ihris-es-report-staff-equipment.json",
@@ -285,7 +285,7 @@
     "fshType": "Instance",
     "fshFile": "IhrisPagePractitioner.fsh",
     "startLine": 1,
-    "endLine": 298
+    "endLine": 304
   },
   {
     "outputFile": "Basic-ihris-page-practitionerrole.json",
@@ -1517,23 +1517,31 @@
     "fshType": "Extension",
     "fshFile": "core/IhrisRelationship.fsh",
     "startLine": 11,
-    "endLine": 54
+    "endLine": 61
   },
   {
     "outputFile": "StructureDefinition-iHRISReportElement.json",
     "fshName": "IhrisReportElement",
     "fshType": "Extension",
     "fshFile": "core/IhrisRelationship.fsh",
-    "startLine": 95,
-    "endLine": 127
+    "startLine": 112,
+    "endLine": 153
   },
   {
     "outputFile": "StructureDefinition-iHRISReportLink.json",
     "fshName": "IhrisReportLink",
     "fshType": "Extension",
     "fshFile": "core/IhrisRelationship.fsh",
-    "startLine": 58,
-    "endLine": 92
+    "startLine": 75,
+    "endLine": 109
+  },
+  {
+    "outputFile": "StructureDefinition-iHRISReportParameters.json",
+    "fshName": "IhrisReportParameters",
+    "fshType": "Extension",
+    "fshFile": "core/IhrisRelationship.fsh",
+    "startLine": 63,
+    "endLine": 73
   },
   {
     "outputFile": "StructureDefinition-ihris-assign-role.json",

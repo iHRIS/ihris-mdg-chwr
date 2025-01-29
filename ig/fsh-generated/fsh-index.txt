@@ -1,8 +1,8 @@
 Output File                                                       Name                                              Type        FSH File                                 Lines
-Basic-ihris-es-report-mhero-send-message.json                     ihris-es-report-mhero-send-message                Instance    core/IhrisRelationship.fsh               130 - 185
+Basic-ihris-es-report-mhero-send-message.json                     ihris-es-report-mhero-send-message                Instance    core/IhrisRelationship.fsh               156 - 211
 Basic-ihris-es-report-staff-directorate-mdg.json                  ihris-es-report-staff-directorate-mdg             Instance    ihris-staff-directorate-report.fsh       3 - 84
 Basic-ihris-es-report-staff-directorate.json                      ihris-es-report-staff-directorate                 Instance    core/ihris-staff-directorate-report.fsh  3 - 84
-Basic-ihris-es-report-staff-distance.json                         ihris-es-report-staff-distance                    Instance    IhrisRelationshipStaffDistance.fsh       1 - 196
+Basic-ihris-es-report-staff-distance.json                         ihris-es-report-staff-distance                    Instance    IhrisRelationshipStaffDistance.fsh       1 - 200
 Basic-ihris-es-report-staff-equipment.json                        ihris-es-report-staff-equipment                   Instance    IhrisRelationshipStaffEquipment.fsh      1 - 196
 Basic-ihris-es-report-staff-incentive.json                        ihris-es-report-staff-incentive                   Instance    IhrisRelationshipStaffIncentives.fsh     1 - 189
 Basic-ihris-es-report-staff-supervision.json                      ihris-es-report-staff-supervision                 Instance    IhrisRelationshipStaffSupervision.fsh    1 - 196
@@ -34,7 +34,7 @@ Basic-ihris-page-jurisdiction-type.json                           ihris-page-jur
 Basic-ihris-page-location.json                                    ihris-page-location                               Instance    IhrisLocation.fsh                        325 - 352
 Basic-ihris-page-marital-status.json                              ihris-page-marital-status                         Instance    IhrisPractitioner.fsh                    313 - 328
 Basic-ihris-page-motivation-type.json                             ihris-page-motivation-type                        Instance    IhrisIncentives.fsh                      234 - 249
-Basic-ihris-page-practitioner.json                                ihris-page-practitioner                           Instance    IhrisPagePractitioner.fsh                1 - 298
+Basic-ihris-page-practitioner.json                                ihris-page-practitioner                           Instance    IhrisPagePractitioner.fsh                1 - 304
 Basic-ihris-page-practitionerrole.json                            ihris-page-practitionerrole                       Instance    IhrisPractitionerRole.fsh                171 - 206
 Basic-ihris-page-relation.json                                    ihris-page-relation                               Instance    IhrisPractitioner.fsh                    279 - 294
 Basic-ihris-page-role.json                                        ihris-page-role                                   Instance    core/IhrisRole.fsh                       603 - 627
@@ -188,9 +188,10 @@ StructureDefinition-ContactPoint.json                             ContactPoint  
 StructureDefinition-composite-task.json                           CompositeTask                                     Extension   core/IhrisRole.fsh                       91 - 101
 StructureDefinition-confirm-initial-password.json                 ConfirmInitialPassword                            Extension   IhrisUser.fsh                            118 - 125
 StructureDefinition-iHRISRelationship.json                        IhrisRelationship                                 Profile     core/IhrisRelationship.fsh               1 - 9
-StructureDefinition-iHRISReportDetails.json                       IhrisReportDetails                                Extension   core/IhrisRelationship.fsh               11 - 54
-StructureDefinition-iHRISReportElement.json                       IhrisReportElement                                Extension   core/IhrisRelationship.fsh               95 - 127
-StructureDefinition-iHRISReportLink.json                          IhrisReportLink                                   Extension   core/IhrisRelationship.fsh               58 - 92
+StructureDefinition-iHRISReportDetails.json                       IhrisReportDetails                                Extension   core/IhrisRelationship.fsh               11 - 61
+StructureDefinition-iHRISReportElement.json                       IhrisReportElement                                Extension   core/IhrisRelationship.fsh               112 - 153
+StructureDefinition-iHRISReportLink.json                          IhrisReportLink                                   Extension   core/IhrisRelationship.fsh               75 - 109
+StructureDefinition-iHRISReportParameters.json                    IhrisReportParameters                             Extension   core/IhrisRelationship.fsh               63 - 73
 StructureDefinition-ihris-assign-role.json                        IhrisAssignRole                                   Extension   core/IhrisRole.fsh                       65 - 77
 StructureDefinition-ihris-assign-task.json                        IhrisAssignTask                                   Extension   core/IhrisRole.fsh                       79 - 89
 StructureDefinition-ihris-auditevent.json                         IhrisAuditEvent                                   Profile     core/ihrisAudit.fsh                      1 - 41

@@ -176,6 +176,7 @@
 [ihris-page-relation]: Basic-ihris-page-relation.html
 [IhrisRelationValueSet]: ValueSet-ihris-relation-valueset.html
 [IhrisReport]: StructureDefinition-ihris-report.html
+[IhrisReportParameters]: StructureDefinition-iHRISReportParameters.html
 [IhrisResourceRelationships]: StructureDefinition-ihris-resource-relationships.html
 [IhrisRelationship]: StructureDefinition-iHRISRelationship.html
 [IhrisRole]: StructureDefinition-ihris-role.html
