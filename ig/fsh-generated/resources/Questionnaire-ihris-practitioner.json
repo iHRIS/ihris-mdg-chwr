@@ -57,7 +57,7 @@
         },
         {
           "linkId": "Practitioner.extension[0]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:maritalStatus",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:maritalStatus.value[x]",
           "text": "Marital Status",
           "type": "choice",
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-marital-status-valueset",
@@ -66,7 +66,7 @@
         },
         {
           "linkId": "Practitioner.extension[1]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:nationality",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:nationality.value[x]",
           "text": "Nationality",
           "type": "choice",
           "answerValueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2",
