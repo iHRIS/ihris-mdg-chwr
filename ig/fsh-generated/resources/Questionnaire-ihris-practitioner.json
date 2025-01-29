@@ -109,7 +109,7 @@
             }
           ],
           "linkId": "Practitioner.extension[2]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]:valueString",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]",
           "text": "Mobile Phone",
           "type": "string",
           "required": true,
@@ -192,7 +192,7 @@
         },
         {
           "linkId": "PractitionerRole.extension[0]#preload",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:workPlace.value[x]:valueCoding",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:workPlace.value[x]",
           "text": "Place of Work",
           "type": "choice",
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-workplace",
@@ -201,7 +201,7 @@
         },
         {
           "linkId": "PractitionerRole.extension[1]#preload",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:category.value[x]:valueCoding",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:category.value[x]",
           "text": "Category",
           "type": "choice",
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-category-valueset",
