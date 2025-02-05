@@ -1125,7 +1125,7 @@
     "fshType": "Instance",
     "fshFile": "IhrisParameters.fsh",
     "startLine": 1,
-    "endLine": 550
+    "endLine": 556
   },
   {
     "outputFile": "Parameters-ihris-dashboard.json",

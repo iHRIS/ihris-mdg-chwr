@@ -105,7 +105,35 @@
           "extension": [
             {
               "url": "url",
-              "valueUrl": "/bulk-registration"
+              "valueUrl": "/custom/delete-practitioner?path=/mdgchwr/components&id=FIELD"
+            },
+            {
+              "url": "text",
+              "valueString": "Delete"
+            },
+            {
+              "url": "displayIn"
+            },
+            {
+              "url": "field",
+              "valueString": "Practitioner.id"
+            },
+            {
+              "url": "button",
+              "valueBoolean": true
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-delete-circle-outline"
+            }
+          ],
+          "url": "link"
+        },
+        {
+          "extension": [
+            {
+              "url": "class",
+              "valueString": "primary"
             },
             {
               "url": "text",
@@ -116,16 +144,16 @@
               "valueString": "questionnaire"
             },
             {
+              "url": "url",
+              "valueUrl": "/bulk-registration"
+            },
+            {
               "url": "button",
               "valueBoolean": true
             },
             {
               "url": "icon",
               "valueString": "mdi-attachment"
-            },
-            {
-              "url": "class",
-              "valueString": "primary"
             }
           ],
           "url": "link"

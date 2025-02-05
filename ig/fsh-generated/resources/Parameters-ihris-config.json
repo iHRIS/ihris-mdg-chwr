@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2025-01-29T12:33:21.445Z",
+        "when": "2025-02-05T12:04:44.232Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "gQ867g2QsVaj91OX05a2xoCSQXUkqRElMtvxsheGa4WfYoj7UxhAXkTj5M6B9N9l9Zq/4BJOPfx2tL/gtDiWAd7h7afYS8Vim95etZOz8cv0AUh/uC+8H3HZSPCeJ6PPlCKNoijZMcBe8+CMiHojOP/UdQvvlvxHk2QvlSC4wFo="
+        "data": "tUJDlxKT9swMzTTqI/dkl9BIJmrc8CJ+QOUKh2IONz0llwMAX8RqfNERIxdzkgMye1U9G7KE5htQvnXrgEwsc1lc79PUScweh7g72aDL0vzhu2RgPIxiCualBhcQb+AhLktgGpHfmtjsZPcIbg8ZiPoxUZLLuL+K0Bk9CSU9X88="
       }
     },
     {
@@ -948,6 +948,18 @@
         },
         {
           "name": "app:site:routes:adx:authenticate",
+          "valueString": "true"
+        },
+        {
+          "name": "app:site:routes:delete:mount",
+          "valueString": "/site/delete"
+        },
+        {
+          "name": "app:site:routes:delete:path",
+          "valueString": "mdgdelete.js"
+        },
+        {
+          "name": "app:site:routes:delete:authenticate",
           "valueString": "true"
         },
         {

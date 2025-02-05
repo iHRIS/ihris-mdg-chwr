@@ -50,7 +50,7 @@ Usage:          #definition
 * item[0].item[2].repeats = false
 
 * item[0].item[3].linkId = "Practitioner.extension[0]"
-* item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:maritalStatus.value[x]:valueCoding"
+* item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:maritalStatus.value[x]"
 * item[0].item[3].text = "Marital Status"
 * item[0].item[3].type = #choice
 * item[0].item[3].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-marital-status-valueset"
@@ -58,7 +58,7 @@ Usage:          #definition
 * item[0].item[3].repeats = false
 
 * item[0].item[4].linkId = "Practitioner.extension[1]"
-* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:nationality.value[x]:valueCoding"
+* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:nationality.value[x]"
 * item[0].item[4].text = "Nationality"
 * item[0].item[4].type = #choice
 * item[0].item[4].answerValueSet = "http://hl7.org/fhir/ValueSet/iso3166-1-2"
@@ -77,7 +77,7 @@ Usage:          #definition
 * item[1].type = #group
 
 * item[1].item[0].linkId = "Practitioner.extension[2]"
-* item[1].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]:valueString"
+* item[1].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]"
 * item[1].item[0].text = "Mobile Phone"
 * item[1].item[0].type = #string
 * item[1].item[0].required = true
@@ -129,7 +129,7 @@ Usage:          #definition
 * item[2].item[3].repeats = true
 
 * item[2].item[4].linkId = "PractitionerRole.extension[0]#preload"
-* item[2].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:workPlace.value[x]:valueCoding"
+* item[2].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:workPlace.value[x]"
 * item[2].item[4].text = "Place of Work"
 * item[2].item[4].type = #choice
 * item[2].item[4].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-workplace"
@@ -137,7 +137,7 @@ Usage:          #definition
 * item[2].item[4].repeats = false
 
 * item[2].item[5].linkId = "PractitionerRole.extension[1]#preload"
-* item[2].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:category.value[x]:valueCoding"
+* item[2].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:category.value[x]"
 * item[2].item[5].text = "Category"
 * item[2].item[5].type = #choice
 * item[2].item[5].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-category-valueset"
