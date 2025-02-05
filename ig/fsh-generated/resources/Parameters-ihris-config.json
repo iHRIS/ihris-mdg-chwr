@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2025-02-05T12:04:44.232Z",
+        "when": "2025-02-05T14:29:05.023Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "tUJDlxKT9swMzTTqI/dkl9BIJmrc8CJ+QOUKh2IONz0llwMAX8RqfNERIxdzkgMye1U9G7KE5htQvnXrgEwsc1lc79PUScweh7g72aDL0vzhu2RgPIxiCualBhcQb+AhLktgGpHfmtjsZPcIbg8ZiPoxUZLLuL+K0Bk9CSU9X88="
+        "data": "CllCJykpKKGi5UL0KHYO+s5I7AzLhClijTNBNqY1EkxBxcYuH4TmmE2tQI/CsAZ0JJ6rdJU8zHWfkv3I9Pf+cTAKi43ycgESZOVs0jW6VnEyo6w4x2xf4oiKGzIfsuCEtfneZOVKoe8RHy+EFyoFN8dg2gsK5voTmshVewN7Vlc="
       }
     },
     {
@@ -120,7 +120,7 @@
         },
         {
           "name": "site:nav:menu:dashboard:url",
-          "valueString": "/dashboard/1a9e7efa-718f-4a5c-8ae5-ea6e37b7640c"
+          "valueString": "/list-dashboards"
         },
         {
           "name": "site:nav:menu:dashboard:external",
@@ -227,7 +227,7 @@
           "valueString": "mdi-database"
         },
         {
-          "name": "site:nav:menu:database:showInGrid",
+          "name": "site:nav:menu:database:menuGridView",
           "valueString": "true"
         },
         {
@@ -487,7 +487,7 @@
           "valueString": "mdi-chart-bar"
         },
         {
-          "name": "site:nav:menu:reports:showInGrid",
+          "name": "site:nav:menu:reports:menuGridView",
           "valueString": "true"
         },
         {
