@@ -293,14 +293,14 @@ Usage:          #definition
 * item[0].item[3].extension[constraint].extension[human].valueString = "Email Address is not properly formatted."
 
 * item[0].item[4].linkId = "Person.extension[0]#preloaded"
-* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:role.value[x]:valueReference"
+* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:role.value[x]"
 * item[0].item[4].text = "Role"
 * item[0].item[4].type = #reference
 * item[0].item[4].required = true
 * item[0].item[4].repeats = false
 
 * item[0].item[5].linkId = "Person.extension[1]"
-* item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:practitioner.value[x]:valueReference"
+* item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:practitioner.value[x]"
 * item[0].item[5].text = "Practitioner of this account"
 * item[0].item[5].type = #reference
 * item[0].item[5].required = false
@@ -313,7 +313,7 @@ Usage:          #definition
 * item[0].item[6].repeats = false
 
 * item[0].item[7].linkId = "Person.extension[2]#tree"
-* item[0].item[7].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:location.value[x]:valueReference"
+* item[0].item[7].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:location.value[x]"
 * item[0].item[7].text = "Location"
 * item[0].item[7].type = #reference
 * item[0].item[7].required = false
@@ -336,14 +336,14 @@ Usage:          #definition
 * item[0].item[9].repeats = false
 
 * item[0].item[10].linkId = "Person.extension[3]#password"
-* item[0].item[10].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:initial-password.value[x]:valueString"
+* item[0].item[10].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:initial-password.value[x]"
 * item[0].item[10].text = "Password"
 * item[0].item[10].type = #string
 * item[0].item[10].required = false
 * item[0].item[10].repeats = false
 
 * item[0].item[11].linkId = "Person.extension[4]#password"
-* item[0].item[11].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:confirm-initial-password.value[x]:valueString"
+* item[0].item[11].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:confirm-initial-password.value[x]"
 * item[0].item[11].text = "Confirm Password"
 * item[0].item[11].type = #string
 * item[0].item[11].required = false
@@ -376,14 +376,14 @@ Usage:          #definition
 
 * item[0].item[0].linkId = "Person.extension[0]#password"
 * item[0].item[0].text = "Old Password"
-* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:old-password.value[x]:valueString"
+* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:old-password.value[x]"
 * item[0].item[0].type = #string
 * item[0].item[0].required = true
 * item[0].item[0].repeats = false
 
 * item[0].item[1].linkId = "Person.extension[1]#password"
 * item[0].item[1].text = "Password"
-* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:initial-password.value[x]:valueString"
+* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:initial-password.value[x]"
 * item[0].item[1].type = #string
 * item[0].item[1].required = true
 * item[0].item[1].repeats = false
@@ -394,7 +394,7 @@ Usage:          #definition
 
 * item[0].item[2].linkId = "Person.extension[2]#password"
 * item[0].item[2].text = "Confirm Password"
-* item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:confirm-initial-password.value[x]:valueString"
+* item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:confirm-initial-password.value[x]"
 * item[0].item[2].type = #string
 * item[0].item[2].required = true
 * item[0].item[2].repeats = false
