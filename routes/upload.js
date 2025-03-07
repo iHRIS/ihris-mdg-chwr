@@ -11,7 +11,7 @@ const utils = ihrissmartrequire("utils")
 
 router.get("/csvTemplate", (req, res) => {
   let p = path.join(__dirname, "../", "file/sampleInput.xlsx");
-console.log(p)
+  console.log("FILE : ", p);
   res.download(p);
 });
 
