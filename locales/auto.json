@@ -626,12 +626,21 @@
       "Did the AC receive motivation this month?": "",
       "Motivation Month": "",
       "Motivation Year": "",
+<<<<<<< Updated upstream
       "If editing, leave blank to keep the same password. Password is required if not editing": "",
       "Category": "",
       "Delete": "",
       "Upload CSV/Excel": "",
       "Is RC?": "",
       "RC - Number of Supervisions": ""
+=======
+      "Category": "",
+      "If editing, leave blank to keep the same password. Password is required if not editing": "",
+      "Is RC?": "",
+      "RC - Number of Supervisions": "",
+      "Delete": "",
+      "Upload CSV/Excel": ""
+>>>>>>> Stashed changes
     },
     "hardcoded-texts": {
       "must be an integer": "",
@@ -828,8 +837,12 @@
       "Old Value": "",
       "Field": "",
       "View Changes": "",
+<<<<<<< Updated upstream
       "View Record": "",
       "Build Dashboards": ""
+=======
+      "View Record": ""
+>>>>>>> Stashed changes
     },
     "reports": {
       "Staff Report": "",
