@@ -79,7 +79,8 @@
       "Equipment Report": "",
       "Supervision Report": "",
       "Manage Report": "",
-      "User Roles": ""
+      "User Roles": "",
+      "Category": ""
     },
     "intro": {
       "Person Information": "",
@@ -621,7 +622,16 @@
       "Incentive Information": "",
       "Incentive": "",
       "Incentive details": "",
-      "Initial Password": ""
+      "Initial Password": "",
+      "Did the AC receive motivation this month?": "",
+      "Motivation Month": "",
+      "Motivation Year": "",
+      "If editing, leave blank to keep the same password. Password is required if not editing": "",
+      "Category": "",
+      "Delete": "",
+      "Upload CSV/Excel": "",
+      "Is RC?": "",
+      "RC - Number of Supervisions": ""
     },
     "hardcoded-texts": {
       "must be an integer": "",
@@ -726,7 +736,7 @@
       "Fresh Load": "",
       "This will cache the report afresh": "",
       "Print": "",
-            "confirm_delete_dashboard": "Are you sure you want to delete this Dashboard?",
+      "confirm_delete_dashboard": "Are you sure you want to delete this Dashboard?",
       "Data Vizualizer": "Data Vizualizer",
       "Open Another Visualization": "Open Another Visualization",
       "Home": "Home",
@@ -755,9 +765,9 @@
       "Data visualizer welcome text3": " visualization based on the open data visualization.",
       "Visualizations": "Visualizations",
       "Dashboards": "Dashboards",
-      "app_intro1":"The iHRIS Translation App lets you translate the iHRIS interface into different languages that are supported by Google Translate.",
-      "app_intro2":"You may start by clicking on the plus sign below, selecting the language to translate to and clicking the add button.",
-      "app_intro3":"Once done with the translating, click come back to this page and click the upload option below.",
+      "app_intro1": "The iHRIS Translation App lets you translate the iHRIS interface into different languages that are supported by Google Translate.",
+      "app_intro2": "You may start by clicking on the plus sign below, selecting the language to translate to and clicking the add button.",
+      "app_intro3": "Once done with the translating, click come back to this page and click the upload option below.",
       "Select Language": "Select Language",
       "Type Non-Google Translate Language": "Type Non-Google Translate Language",
       "Add": "Add",
@@ -792,7 +802,34 @@
       "Close translation dialog": "Close translation dialog",
       "WORD:": "WORD:",
       "TRANSLATION:": "TRANSLATION:",
-      "Full": "Full"
+      "Full": "Full",
+      "Audit Logs": "",
+      "ID": "",
+      "Action Type": "",
+      "User Email": "",
+      "Start From": "",
+      "To": "",
+      "Operation Outcome": "",
+      "View File": "",
+      "View User": "",
+      "Compare The difference": "",
+      "Full Name": "",
+      "Resource": "",
+      "Action": "",
+      "Recorded On": "",
+      "Actions": "",
+      "Success": "",
+      "Minor failure": "",
+      "Serious failure": "",
+      "Major failure": "",
+      "Changes": "",
+      "Changed fields": "",
+      "New Value": "",
+      "Old Value": "",
+      "Field": "",
+      "View Changes": "",
+      "View Record": "",
+      "Build Dashboards": ""
     },
     "reports": {
       "Staff Report": "",
@@ -837,7 +874,11 @@
       "District": "",
       "Commune": "",
       "Fokontany": "",
-      "Citizenship": ""
+      "Citizenship": "",
+      "Distance Domicile – Hameau le plus éloigné (km)": "",
+      "Distance lieu de travail – CSB (km)": "",
+      "Distance Domicile - lieu de travail (km)": "",
+      "Distance CSB – AC le plus éloigné (km) - RC": ""
     }
   }
 }

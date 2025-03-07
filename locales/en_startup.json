@@ -55,7 +55,13 @@
       "Change Password": "Change Password",
       "Apps": "Apps",
       "Staff Directorate": "Staff Directorate",
-      "User Role Tasks": "User Role Tasks"
+      "User Role Tasks": "User Role Tasks",
+      "Basic default report showing all staff": "Basic default report showing all staff",
+      "Report showing all staff training information": "Report showing all staff training information",
+      "Report showing all staff motivation information": "Report showing all staff motivation information",
+      "Report showing all staff distance from location": "Report showing all staff distance from location",
+      "Report showing all staff equipment information": "Report showing all staff equipment information",
+      "Report showing all staff supervision information": "Report showing all staff supervision information",
     },
     "intro": {},
     "ihris-codesystem": {},
@@ -624,7 +630,8 @@
       "Close translation dialog": "Close translation dialog",
       "WORD:": "WORD:",
       "TRANSLATION:": "TRANSLATION:",
-      "Full": "Full"
+      "Full": "Full",
+      "Build Dashboards": "Build Dashboards"
     },
     "reports": {
       "End Date": "End Date",
