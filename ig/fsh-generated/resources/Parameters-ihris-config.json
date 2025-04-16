@@ -475,6 +475,18 @@
           "valueString": "6"
         },
         {
+          "name": "site:nav:menu:database:menu:otherLists:menu:gender:text",
+          "valueString": "Gender"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:gender:url",
+          "valueString": "/resource/search/gender"
+        },
+        {
+          "name": "site:nav:menu:database:menu:otherLists:menu:gender:order",
+          "valueString": "7"
+        },
+        {
           "name": "site:nav:menu:reports:text",
           "valueString": "Reports"
         },

@@ -5,8 +5,8 @@
   "id": "ihris-gender-valueset",
   "title": "iHRIS Gender ValueSet",
   "url": "http://ihris.org/fhir/ValueSet/ihris-gender-valueset",
-  "date": "2024-07-02T08:41:04.362Z",
-  "version": "0.6.0",
+  "date": "2025-03-02T08:41:04.362Z",
+  "version": "0.8.0",
   "compose": {
     "include": [
       {

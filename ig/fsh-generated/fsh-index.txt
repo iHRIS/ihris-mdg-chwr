@@ -139,7 +139,7 @@ CodeSystem-v3-RoleCode.json                                       V3_RoleCode   
 DocumentReference-page-about.json                                 page-about                                        Instance    core/IhrisDocumentReference.fsh          29 - 39
 DocumentReference-page-home.json                                  page-home                                         Instance    core/IhrisDocumentReference.fsh          41 - 51
 Library-ihris-module-example.json                                 ihris-module-example                              Instance    core/IhrisModule.fsh                     28 - 41
-Parameters-ihris-config.json                                      ihris-config                                      Instance    IhrisParameters.fsh                      1 - 556
+Parameters-ihris-config.json                                      ihris-config                                      Instance    IhrisParameters.fsh                      1 - 562
 Parameters-ihris-dashboard.json                                   ihris-dashboard                                   Instance    core/IhrisParametersDashboard.fsh        1 - 20
 Person-ihris-user-admin.json                                      ihris-user-admin                                  Instance    IhrisUser.fsh                            153 - 168
 Person-ihris-user-demo.json                                       ihris-user-demo                                   Instance    IhrisUser.fsh                            181 - 195
