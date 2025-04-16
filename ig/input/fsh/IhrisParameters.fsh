@@ -517,7 +517,7 @@ Usage: #example
 * parameter[=].part[+].name = "site:intro:default:data:fullName:text"
 * parameter[=].part[=].valueString = "Name"
 * parameter[=].part[+].name = "site:intro:default:data:fullName:path"
-* parameter[=].part[=].valueString = "Practitioner.name.family + ' ' + Practitioner.name.given"
+* parameter[=].part[=].valueString = "Practitioner.name[0].family + ' ' + Practitioner.name[0].given"
 * parameter[=].part[+].name = "site:intro:default:data:title:text"
 * parameter[=].part[=].valueString = "Job"
 * parameter[=].part[+].name = "site:intro:default:data:title:path"

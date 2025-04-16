@@ -23,7 +23,7 @@
           "item": [
             {
               "linkId": "Basic.extension[0].extension[0]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:supervised.value[x]:valueCoding",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:supervised.value[x]",
               "text": "Supervised?",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
@@ -32,7 +32,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[1]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:monthlyacg.value[x]:valueCoding",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:monthlyacg.value[x]",
               "text": "Monthly AC Grouping",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
@@ -41,7 +41,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[2]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:performing.value[x]:valueCoding",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:performing.value[x]",
               "text": "Performing?",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
@@ -50,7 +50,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[3]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:date.value[x]:valueDate",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:date.value[x]",
               "text": "Date",
               "type": "date",
               "required": false,

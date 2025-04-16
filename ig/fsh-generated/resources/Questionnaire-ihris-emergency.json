@@ -28,7 +28,7 @@
           "item": [
             {
               "linkId": "Basic.extension[0].extension[0]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:emergency.extension:name.value[x]:valueString",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:emergency.extension:name.value[x]",
               "text": "Full Name",
               "type": "string",
               "required": true,
@@ -36,7 +36,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[1]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:emergency.extension:relation.value[x]:valueCoding",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:emergency.extension:relation.value[x]",
               "text": "Relation",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-relation-valueset",
@@ -45,7 +45,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[2]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:emergency.extension:phone.value[x]:valueString",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-emergency#Basic.extension:emergency.extension:phone.value[x]",
               "text": "Phone Number",
               "type": "string",
               "required": true,

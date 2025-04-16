@@ -60,7 +60,7 @@ Usage:          #definition
 * item[0].item[0].type = #group
 
 * item[0].item[0].item[0].linkId = "Basic.extension[0].extension[0]"
-* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:level.value[x]:valueCoding"
+* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:level.value[x]"
 * item[0].item[0].item[0].text = "Highest Level of Study"
 * item[0].item[0].item[0].type = #choice
 * item[0].item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-education-level-valueset"

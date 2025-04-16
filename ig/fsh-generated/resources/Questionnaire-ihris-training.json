@@ -23,7 +23,7 @@
           "item": [
             {
               "linkId": "Basic.extension[0].extension[0]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:training.value[x]:valueCoding",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:training.value[x]",
               "text": "Training Recieved",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-training-valueset",
@@ -32,7 +32,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[1]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:date.value[x]:valueDate",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-training#Basic.extension:training.extension:date.value[x]",
               "text": "Training Date",
               "type": "date",
               "required": false,

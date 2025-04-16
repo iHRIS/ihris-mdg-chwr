@@ -23,28 +23,28 @@
           "item": [
             {
               "linkId": "Basic.extension[0].extension[0]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:village.value[x]:valueDecimal",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:village.value[x]",
               "text": "Distance Domicile – Hameau le plus éloigné (km)",
               "type": "decimal",
               "required": false
             },
             {
               "linkId": "Basic.extension[0].extension[1]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:csb.value[x]:valueDecimal",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:csb.value[x]",
               "text": "Distance lieu de travail – CSB (km)",
               "type": "decimal",
               "required": false
             },
             {
               "linkId": "Basic.extension[0].extension[2]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:workplace.value[x]:valueDecimal",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:workplace.value[x]",
               "text": "Distance Domicile - lieu de travail (km)",
               "type": "decimal",
               "required": false
             },
             {
               "linkId": "Basic.extension[0].extension[3]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:csbrc.value[x]:valueDecimal",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:csbrc.value[x]",
               "text": "Distance CSB – AC le plus éloigné (km) - RC",
               "type": "decimal",
               "required": false

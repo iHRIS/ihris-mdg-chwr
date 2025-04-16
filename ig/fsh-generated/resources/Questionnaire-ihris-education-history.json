@@ -23,7 +23,7 @@
           "item": [
             {
               "linkId": "Basic.extension[0].extension[0]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:level.value[x]:valueCoding",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:level.value[x]",
               "text": "Highest Level of Study",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-education-level-valueset",

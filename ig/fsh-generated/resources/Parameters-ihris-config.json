@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2025-04-16T11:11:45.486Z",
+        "when": "2025-04-16T11:23:42.111Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "ii8Vz7PR/hLCS3+q3nLhr/iE+kK+zY0JyaGtE8p48gpW+jgKrNexcdmeSfBAMjurvvx6OrhIBFgSskJnFrWNljzy3/odPVMZGcbYjok/SALaBgYRUNWHRyIFp2Idxgvy34nVgCdP7dSDylrr+qyZlhtPJduPVQYM3Xjo/XgMBBY="
+        "data": "vcg8xuO7TxXb8AVyonKJtLqVQoivkvokh/zJsWpvOgZ3er5zV+8BZfFlJ8Xb26QL6QQUGInbEa2gsV3UvoiwRiYnWErvBc8StGItdm6wU6hh2jZZTIJKyt8znQEVw+xcEpPkj/gt88uvEXD7ii0452ZM15fetRqPEqBt3BuVZAs="
       }
     },
     {
@@ -1000,7 +1000,7 @@
         },
         {
           "name": "site:intro:default:data:fullName:path",
-          "valueString": "Practitioner.name.family + ' ' + Practitioner.name.given"
+          "valueString": "Practitioner.name[0].family + ' ' + Practitioner.name[0].given"
         },
         {
           "name": "site:intro:default:data:title:text",

@@ -23,7 +23,7 @@
           "item": [
             {
               "linkId": "Basic.extension[0].extension[0]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:recieved.value[x]:valueCoding",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:recieved.value[x]",
               "text": "Recieved Equipment?",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
@@ -32,7 +32,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[1]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:equipmenttype.value[x]:valueCoding",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:equipmenttype.value[x]",
               "text": "Type of Equipment",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-equipment-type-valueset",
@@ -52,7 +52,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[2]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:availability.value[x]:valueCoding",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:availability.value[x]",
               "text": "Status of Equipment",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-availability-valueset",
@@ -69,7 +69,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[3]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:date.value[x]:valueDate",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:date.value[x]",
               "text": "Date",
               "type": "date",
               "required": false,
@@ -88,7 +88,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[4]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:rctablet.value[x]:valueCoding",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:rctablet.value[x]",
               "text": "Is the RC equipped with an Android or Tablet for reporting?",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
@@ -97,7 +97,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[5]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:actablet.value[x]:valueCoding",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:actablet.value[x]",
               "text": "Is the AC equipped with an Android or Tablet for managing community health programs?",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",

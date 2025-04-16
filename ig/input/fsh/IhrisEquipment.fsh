@@ -106,7 +106,7 @@ Usage:          #definition
 * item[0].item[0].type = #group
 
 * item[0].item[0].item[0].linkId = "Basic.extension[0].extension[0]"
-* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:recieved.value[x]:valueCoding"
+* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:recieved.value[x]"
 * item[0].item[0].item[0].text = "Recieved Equipment?"
 * item[0].item[0].item[0].type = #choice
 * item[0].item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -114,7 +114,7 @@ Usage:          #definition
 * item[0].item[0].item[0].repeats = false
 
 * item[0].item[0].item[1].linkId = "Basic.extension[0].extension[1]"
-* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:equipmenttype.value[x]:valueCoding"
+* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:equipmenttype.value[x]"
 * item[0].item[0].item[1].text = "Type of Equipment"
 * item[0].item[0].item[1].type = #choice
 * item[0].item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-equipment-type-valueset"
@@ -126,7 +126,7 @@ Usage:          #definition
 * item[0].item[0].item[1].enableWhen[0].answerCoding = ihris-yesno#yes
 
 * item[0].item[0].item[2].linkId = "Basic.extension[0].extension[2]"
-* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:availability.value[x]:valueCoding"
+* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:availability.value[x]"
 * item[0].item[0].item[2].text = "Status of Equipment"
 * item[0].item[0].item[2].type = #choice
 * item[0].item[0].item[2].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-availability-valueset"
@@ -138,7 +138,7 @@ Usage:          #definition
 * item[0].item[0].item[2].enableWhen[0].answerBoolean = true
 
 * item[0].item[0].item[3].linkId = "Basic.extension[0].extension[3]"
-* item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:date.value[x]:valueDate"
+* item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:date.value[x]"
 * item[0].item[0].item[3].text = "Date"
 * item[0].item[0].item[3].type = #date
 * item[0].item[0].item[3].required = false
@@ -149,7 +149,7 @@ Usage:          #definition
 * item[0].item[0].item[3].enableWhen[0].answerCoding = ihris-yesno#yes
 
 * item[0].item[0].item[4].linkId = "Basic.extension[0].extension[4]"
-* item[0].item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:rctablet.value[x]:valueCoding"
+* item[0].item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:rctablet.value[x]"
 * item[0].item[0].item[4].text = "Is the RC equipped with an Android or Tablet for reporting?"
 * item[0].item[0].item[4].type = #choice
 * item[0].item[0].item[4].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -157,7 +157,7 @@ Usage:          #definition
 * item[0].item[0].item[4].repeats = false
 
 * item[0].item[0].item[5].linkId = "Basic.extension[0].extension[5]"
-* item[0].item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:actablet.value[x]:valueCoding"
+* item[0].item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:actablet.value[x]"
 * item[0].item[0].item[5].text = "Is the AC equipped with an Android or Tablet for managing community health programs?"
 * item[0].item[0].item[5].type = #choice
 * item[0].item[0].item[5].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
