@@ -267,12 +267,12 @@ Usage:          #definition
 * item[0].text = "End Appointment"
 * item[0].type = #group
 
-* item[0].item[0].linkId = "PracitionerRole.id"
-* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#PracitionerRole.id"
+* item[0].item[0].linkId = "PractitionerRole.code"
+* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PracitionerRole.code"
 * item[0].item[0].text = "Detail"
 * item[0].item[0].type = #group
 
-* item[0].item[0].item[0].linkId = "PracitionerRole.period.end"
+* item[0].item[0].item[0].linkId = "PractitionerRole.period.end"
 * item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PracitionerRole.period.end"
 * item[0].item[0].item[0].text = "End Date"
 * item[0].item[0].item[0].type = #dateTime
