@@ -22,7 +22,7 @@
       "item": [
         {
           "linkId": "PractitionerRole.code",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PracitionerRole.code",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role",
           "text": "Detail",
           "type": "group",
           "item": [

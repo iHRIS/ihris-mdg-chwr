@@ -268,7 +268,7 @@ Usage:          #definition
 * item[0].type = #group
 
 * item[0].item[0].linkId = "PractitionerRole.code"
-* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PracitionerRole.code"
+* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role"
 * item[0].item[0].text = "Detail"
 * item[0].item[0].type = #group
 
