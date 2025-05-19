@@ -21,14 +21,14 @@
       "type": "group",
       "item": [
         {
-          "linkId": "PracitionerRole.id",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#PracitionerRole.id",
+          "linkId": "PractitionerRole.code",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.id",
           "text": "Detail",
           "type": "group",
           "item": [
             {
-              "linkId": "PracitionerRole.period.end",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PracitionerRole.period.end",
+              "linkId": "PractitionerRole.period.end",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.period.end",
               "text": "End Date",
               "type": "dateTime",
               "required": true,
