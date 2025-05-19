@@ -60,7 +60,7 @@ Usage:          #definition
 * item[0].item[0].type = #group
 
 * item[0].item[0].item[0].linkId = "Basic.extension[0].extension[0]"
-* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:level.value[x]"
+* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:level.value[x]:valueCoding"
 * item[0].item[0].item[0].text = "Highest Level of Study"
 * item[0].item[0].item[0].type = #choice
 * item[0].item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-education-level-valueset"
@@ -73,22 +73,11 @@ Title:          "Education History"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-basic-education-history)
-* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/basic-education-history/FIELD?edit=true"
-* extension[display].extension[link][0].extension[field].valueString = "Basic.id"
-* extension[display].extension[link][0].extension[text].valueString = "Edit"
+* extension[display].extension[link][0].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+* extension[display].extension[link][0].extension[text].valueString = "View Health Worker"
 * extension[display].extension[link][0].extension[button].valueBoolean = true
-* extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
-* extension[display].extension[link][0].extension[class].valueString = "secondary"
-* extension[display].extension[link][1].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][1].extension[text].valueString = "View Health Worker"
-* extension[display].extension[link][1].extension[button].valueBoolean = true
-* extension[display].extension[link][1].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
-* extension[display].extension[link][2].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][2].extension[text].valueString = "Add Another"
-* extension[display].extension[link][2].extension[button].valueBoolean = true
-* extension[display].extension[link][2].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][2].extension[url].valueUrl = "/questionnaire/ihris-education-history/basic-education-history?practitioner=FIELD"
+* extension[display].extension[link][0].extension[icon].valueString = "mdi-account-arrow-right"
+* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
 * extension[display].extension[search][0].valueString = "Practitioner|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
 * extension[display].extension[search][1].valueString = "Level|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-education-history').extension.where(url='level').valueCoding.display"
 * extension[display].extension[field][0].extension[path].valueString = "Basic.extension:practitioner.value[x]:valueReference"
@@ -99,7 +88,7 @@ Usage:          #example
 * extension[section][0].extension[description].valueString = "Education History details"
 * extension[section][0].extension[name].valueString = "Basic"
 * extension[section][0].extension[field][0].valueString = "extension:practitioner"
-* extension[section][0].extension[field][1].valueString = "extension:educationHistory.extension:level.value[x]:valueCoding"
+* extension[section][0].extension[field][1].valueString = "extension:educationHistory.extension:level"
 
 Instance:       ihris-page-education-level
 InstanceOf:     IhrisPage

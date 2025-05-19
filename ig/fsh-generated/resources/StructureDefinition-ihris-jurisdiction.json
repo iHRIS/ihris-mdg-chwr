@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ihris-jurisdiction",
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction",
+  "version": "0.1.0",
   "name": "IhrisJurisdiction",
   "title": "Jurisdiction",
   "status": "active",
@@ -565,6 +566,53 @@
       {
         "id": "Location.extension:boundary.value[x]",
         "path": "Location.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Attachment"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Location.extension:boundary.value[x]:valueAttachment",
+        "path": "Location.extension.value[x]",
+        "sliceName": "valueAttachment",
         "label": "Location Boundary (GeoJSON)",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -601,7 +649,7 @@
         ]
       },
       {
-        "id": "Location.extension:boundary.value[x].id",
+        "id": "Location.extension:boundary.value[x]:valueAttachment.id",
         "path": "Location.extension.value[x].id",
         "representation": [
           "xmlAttr"
@@ -636,7 +684,7 @@
         ]
       },
       {
-        "id": "Location.extension:boundary.value[x].extension",
+        "id": "Location.extension:boundary.value[x]:valueAttachment.extension",
         "path": "Location.extension.value[x].extension",
         "slicing": {
           "discriminator": [
@@ -695,7 +743,7 @@
         ]
       },
       {
-        "id": "Location.extension:boundary.value[x].contentType",
+        "id": "Location.extension:boundary.value[x]:valueAttachment.contentType",
         "path": "Location.extension.value[x].contentType",
         "short": "Mime type of the content, with charset etc.",
         "definition": "Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.",
@@ -758,7 +806,7 @@
         ]
       },
       {
-        "id": "Location.extension:boundary.value[x].language",
+        "id": "Location.extension:boundary.value[x]:valueAttachment.language",
         "path": "Location.extension.value[x].language",
         "short": "Human language of the content (BCP-47)",
         "definition": "The human language of the content. The value can be any valid value according to BCP 47.",
@@ -820,7 +868,7 @@
         ]
       },
       {
-        "id": "Location.extension:boundary.value[x].data",
+        "id": "Location.extension:boundary.value[x]:valueAttachment.data",
         "path": "Location.extension.value[x].data",
         "short": "Data inline, base64ed",
         "definition": "The actual data of the attachment - a sequence of bytes, base64 encoded.",
@@ -863,7 +911,7 @@
         ]
       },
       {
-        "id": "Location.extension:boundary.value[x].url",
+        "id": "Location.extension:boundary.value[x]:valueAttachment.url",
         "path": "Location.extension.value[x].url",
         "short": "Uri where the data can be found",
         "definition": "A location where the data can be accessed.",
@@ -911,7 +959,7 @@
         ]
       },
       {
-        "id": "Location.extension:boundary.value[x].size",
+        "id": "Location.extension:boundary.value[x]:valueAttachment.size",
         "path": "Location.extension.value[x].size",
         "short": "Number of bytes of content (if url provided)",
         "definition": "The number of bytes of data that make up this attachment (before base64 encoding, if that is done).",
@@ -949,7 +997,7 @@
         ]
       },
       {
-        "id": "Location.extension:boundary.value[x].hash",
+        "id": "Location.extension:boundary.value[x]:valueAttachment.hash",
         "path": "Location.extension.value[x].hash",
         "short": "Hash of the data (sha-1, base64ed)",
         "definition": "The calculated hash of the data using SHA-1. Represented using base64.",
@@ -987,7 +1035,7 @@
         ]
       },
       {
-        "id": "Location.extension:boundary.value[x].title",
+        "id": "Location.extension:boundary.value[x]:valueAttachment.title",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -1036,7 +1084,7 @@
         ]
       },
       {
-        "id": "Location.extension:boundary.value[x].creation",
+        "id": "Location.extension:boundary.value[x]:valueAttachment.creation",
         "path": "Location.extension.value[x].creation",
         "short": "Date attachment was first created",
         "definition": "The date that the attachment was first created.",
@@ -1261,6 +1309,53 @@
       {
         "id": "Location.extension:population.value[x]",
         "path": "Location.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Location.extension:population.value[x]:valueInteger",
+        "path": "Location.extension.value[x]",
+        "sliceName": "valueInteger",
         "label": "Population",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -2854,19 +2949,21 @@
         "mustSupport": true
       },
       {
-        "id": "Location.extension:boundary.value[x]",
-        "path": "Location.extension.value[x]",
+        "id": "Location.extension:boundary.valueAttachment",
+        "path": "Location.extension.valueAttachment",
         "label": "Location Boundary (GeoJSON)",
+        "min": 0,
+        "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Location.extension:boundary.value[x].contentType",
-        "path": "Location.extension.value[x].contentType",
+        "id": "Location.extension:boundary.valueAttachment.contentType",
+        "path": "Location.extension.valueAttachment.contentType",
         "patternCode": "application/geo+json"
       },
       {
-        "id": "Location.extension:boundary.value[x].data",
-        "path": "Location.extension.value[x].data",
+        "id": "Location.extension:boundary.valueAttachment.data",
+        "path": "Location.extension.valueAttachment.data",
         "mustSupport": true
       },
       {

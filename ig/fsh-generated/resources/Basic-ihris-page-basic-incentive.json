@@ -127,27 +127,27 @@
         },
         {
           "url": "field",
-          "valueString": "extension:incentive.extension:incentive.value[x]:valueCoding.display"
+          "valueString": "extension:incentive.extension:incentive"
         },
         {
           "url": "field",
-          "valueString": "extension:incentive.extension:motivation.value[x]:valueBoolean"
+          "valueString": "extension:incentive.extension:motivation"
         },
         {
           "url": "field",
-          "valueString": "extension:incentive.extension:motivationType.value[x]:valueCoding.display"
+          "valueString": "extension:incentive.extension:motivationType"
         },
         {
           "url": "field",
-          "valueString": "extension:incentive.extension:other.value[x]:valueString"
+          "valueString": "extension:incentive.extension:other"
         },
         {
           "url": "field",
-          "valueString": "extension:incentive.extension:motivationMonth.value[x]:valueCoding.display"
+          "valueString": "extension:incentive.extension:motivationMonth"
         },
         {
           "url": "field",
-          "valueString": "extension:incentive.extension:motivationYear.value[x]:valueDate"
+          "valueString": "extension:incentive.extension:motivationYear"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"

@@ -5,6 +5,7 @@
   "name": "IhrisRelationCodesystem",
   "id": "ihris-relation-codesystem",
   "title": "Relationship",
+  "version": "0.3.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-relation-codesystem",
   "concept": [
     {
@@ -33,6 +34,5 @@
     }
   ],
   "date": "2023-10-29T08:41:04.362Z",
-  "version": "0.3.0",
   "count": 6
 }

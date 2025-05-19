@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ihris-practitioner-basic",
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-basic",
+  "version": "0.1.0",
   "name": "IhrisPractitionerBasic",
   "title": "iHRIS Practitioner Basic",
   "status": "active",

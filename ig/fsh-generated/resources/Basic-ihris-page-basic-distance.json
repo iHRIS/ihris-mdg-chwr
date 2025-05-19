@@ -135,19 +135,19 @@
         },
         {
           "url": "field",
-          "valueString": "extension:distance.extension:village.value[x]:valueDecimal"
+          "valueString": "extension:distance.extension:village"
         },
         {
           "url": "field",
-          "valueString": "extension:distance.extension:csb.value[x]:valueDecimal"
+          "valueString": "extension:distance.extension:csb"
         },
         {
           "url": "field",
-          "valueString": "extension:distance.extension:workplace.value[x]:valueDecimal"
+          "valueString": "extension:distance.extension:workplace"
         },
         {
           "url": "field",
-          "valueString": "extension:distance.extension:csbrc.value[x]:valueDecimal"
+          "valueString": "extension:distance.extension:csbrc"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"

@@ -6,6 +6,7 @@
   "id": "ihris-job-chwr",
   "title": "Job Titles/CHW Types",
   "description": "iHRIS Code System for Job Titles/CHW Types.",
+  "version": "0.2.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-job-chwr",
   "concept": [
     {
@@ -18,6 +19,5 @@
     }
   ],
   "date": "2024-02-10T08:41:04.362Z",
-  "version": "0.2.0",
   "count": 2
 }

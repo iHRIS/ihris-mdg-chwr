@@ -5,6 +5,7 @@
   "name": "IhrisMotivationType",
   "id": "ihris-motivation-type",
   "title": "Motivation Type",
+  "version": "0.1.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-motivation-type",
   "concept": [
     {
@@ -21,6 +22,5 @@
     }
   ],
   "date": "2022-09-29T08:41:04.362Z",
-  "version": "0.1.0",
   "count": 3
 }

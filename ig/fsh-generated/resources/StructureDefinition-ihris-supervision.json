@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ihris-supervision",
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-supervision",
+  "version": "0.1.0",
   "name": "IhrisSupervision",
   "title": "Supervision details",
   "status": "active",
@@ -28,6 +29,16 @@
     "element": [
       {
         "id": "Extension",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Extension",
         "short": "Supervision details",
         "definition": "Optional Extension Element - found in all resources.",
@@ -349,6 +360,53 @@
       {
         "id": "Extension.extension:supervised.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:supervised.value[x]:valueCoding",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueCoding",
         "label": "Supervised?",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -572,6 +630,53 @@
       {
         "id": "Extension.extension:monthlyacg.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:monthlyacg.value[x]:valueCoding",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueCoding",
         "label": "Monthly AC Grouping",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -795,6 +900,53 @@
       {
         "id": "Extension.extension:performing.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:performing.value[x]:valueCoding",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueCoding",
         "label": "Performing?",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1018,6 +1170,53 @@
       {
         "id": "Extension.extension:date.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:date.value[x]:valueDate",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueDate",
         "label": "Date",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1237,6 +1436,53 @@
       {
         "id": "Extension.extension:rc.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rc.value[x]:valueCoding",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueCoding",
         "label": "Is RC ?",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1460,6 +1706,53 @@
       {
         "id": "Extension.extension:rcsupervisionnum.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rcsupervisionnum.value[x]:valueInteger",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueInteger",
         "label": "RC - Number of Supervisions",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1679,6 +1972,53 @@
       {
         "id": "Extension.extension:rcsupervisedFK.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rcsupervisedFK.value[x]:valueCoding",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueCoding",
         "label": "RC - Supervised Fokotany",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1972,12 +2312,28 @@
       {
         "id": "Extension.extension:supervised.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "Supervised?",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:supervised.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "label": "Supervised?",
+        "min": 0,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -2004,12 +2360,28 @@
       {
         "id": "Extension.extension:monthlyacg.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "Monthly AC Grouping",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:monthlyacg.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "label": "Monthly AC Grouping",
+        "min": 0,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -2036,12 +2408,28 @@
       {
         "id": "Extension.extension:performing.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "Performing?",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:performing.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "label": "Performing?",
+        "min": 0,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -2068,12 +2456,28 @@
       {
         "id": "Extension.extension:date.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "Date",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "date"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:date.valueDate",
+        "path": "Extension.extension.valueDate",
+        "label": "Date",
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Extension.extension:rc",
@@ -2096,12 +2500,28 @@
       {
         "id": "Extension.extension:rc.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "Is RC ?",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:rc.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "label": "Is RC ?",
+        "min": 0,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -2128,12 +2548,28 @@
       {
         "id": "Extension.extension:rcsupervisionnum.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "RC - Number of Supervisions",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "integer"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:rcsupervisionnum.valueInteger",
+        "path": "Extension.extension.valueInteger",
+        "label": "RC - Number of Supervisions",
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Extension.extension:rcsupervisedFK",
@@ -2156,12 +2592,28 @@
       {
         "id": "Extension.extension:rcsupervisedFK.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "RC - Supervised Fokotany",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:rcsupervisedFK.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "label": "RC - Supervised Fokotany",
+        "min": 0,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "http://ihris.org/fhir/ValueSet/ihris-num-valueset"

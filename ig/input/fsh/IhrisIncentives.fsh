@@ -119,7 +119,7 @@ Usage:          #definition
 * item[0].item[0].type = #group
 
 * item[0].item[0].item[0].linkId = "Basic.extension[0].extension[0]"
-* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:incentive.value[x]"
+* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:incentive.value[x]:valueCoding"
 * item[0].item[0].item[0].text = "Activity Packs"
 * item[0].item[0].item[0].type = #choice
 * item[0].item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-incentive-valueset"
@@ -127,7 +127,7 @@ Usage:          #definition
 * item[0].item[0].item[0].repeats = true
 
 * item[0].item[0].item[1].linkId = "Basic.extension[0].extension[1]"
-* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivation.value[x]"
+* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivation.value[x]:valueCoding"
 * item[0].item[0].item[1].text = "Did the AC receive motivation this month?"
 * item[0].item[0].item[1].type = #choice
 * item[0].item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -135,7 +135,7 @@ Usage:          #definition
 * item[0].item[0].item[1].repeats = false
 
 * item[0].item[0].item[2].linkId = "Basic.extension[0].extension[2]"
-* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivationType.value[x]"
+* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivationType.value[x]:valueCoding"
 * item[0].item[0].item[2].text = "Motivation Type"
 * item[0].item[0].item[2].type = #choice
 * item[0].item[0].item[2].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-motivation-type-valueset"
@@ -147,7 +147,7 @@ Usage:          #definition
 * item[0].item[0].item[2].enableWhen[0].answerCoding = ihris-yesno#yes
 
 * item[0].item[0].item[3].linkId = "Basic.extension[0].extension[3]"
-* item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:other.value[x]"
+* item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:other.value[x]:valueString"
 * item[0].item[0].item[3].text = "Other"
 * item[0].item[0].item[3].type = #string
 * item[0].item[0].item[3].required = false
@@ -158,7 +158,7 @@ Usage:          #definition
 * item[0].item[0].item[3].enableWhen[0].answerCoding = ihris-motivation-type#nf
 
 * item[0].item[0].item[4].linkId = "Basic.extension[0].extension[4]"
-* item[0].item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivationMonth.value[x]"
+* item[0].item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivationMonth.value[x]:valueCoding"
 * item[0].item[0].item[4].text = "Motivation Month"
 * item[0].item[0].item[4].type = #choice
 * item[0].item[0].item[4].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-month-valueset"
@@ -170,7 +170,7 @@ Usage:          #definition
 * item[0].item[0].item[4].enableWhen[0].answerCoding = ihris-yesno#yes
 
 * item[0].item[0].item[5].linkId = "Basic.extension[0].extension[5]#year"
-* item[0].item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivationYear.value[x]"
+* item[0].item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivationYear.value[x]:valueDate"
 * item[0].item[0].item[5].text = "Motivation Year"
 * item[0].item[0].item[5].type = #date
 * item[0].item[0].item[5].required = false
@@ -207,12 +207,12 @@ Usage:          #example
 * extension[section][0].extension[description].valueString = "Incentive details"
 * extension[section][0].extension[name].valueString = "Basic"
 * extension[section][0].extension[field][0].valueString = "extension:practitioner"
-* extension[section][0].extension[field][1].valueString = "extension:incentive.extension:incentive.value[x]:valueCoding.display"
-* extension[section][0].extension[field][2].valueString = "extension:incentive.extension:motivation.value[x]:valueBoolean"
-* extension[section][0].extension[field][3].valueString = "extension:incentive.extension:motivationType.value[x]:valueCoding.display"
-* extension[section][0].extension[field][4].valueString = "extension:incentive.extension:other.value[x]:valueString"
-* extension[section][0].extension[field][5].valueString = "extension:incentive.extension:motivationMonth.value[x]:valueCoding.display"
-* extension[section][0].extension[field][6].valueString = "extension:incentive.extension:motivationYear.value[x]:valueDate"
+* extension[section][0].extension[field][1].valueString = "extension:incentive.extension:incentive"
+* extension[section][0].extension[field][2].valueString = "extension:incentive.extension:motivation"
+* extension[section][0].extension[field][3].valueString = "extension:incentive.extension:motivationType"
+* extension[section][0].extension[field][4].valueString = "extension:incentive.extension:other"
+* extension[section][0].extension[field][5].valueString = "extension:incentive.extension:motivationMonth"
+* extension[section][0].extension[field][6].valueString = "extension:incentive.extension:motivationYear"
 
 Instance:       ihris-page-incentive
 InstanceOf:     IhrisPage

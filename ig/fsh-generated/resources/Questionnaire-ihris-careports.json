@@ -36,7 +36,7 @@
           "item": [
             {
               "linkId": "Basic.extension[0].extension[0]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:recieved.value[x]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:recieved.value[x]:valueCoding",
               "text": "Recieved Report?",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
@@ -45,7 +45,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[1]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:month.value[x]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:month.value[x]:valueCoding",
               "text": "Month",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-month-valueset",
@@ -54,7 +54,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[2]#year",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:year.value[x]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:year.value[x]:valueDate",
               "text": "Report Year",
               "type": "date",
               "required": false,
@@ -62,7 +62,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[3]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:date.value[x]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-careports#Basic.extension:careports.extension:date.value[x]:valueDate",
               "text": "Submmision Date",
               "type": "date",
               "required": false,

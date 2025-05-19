@@ -32,7 +32,7 @@ Usage:          #definition
 * item[0].item[0].item[1].text = "First Names"
 * item[0].item[0].item[1].type = #string
 * item[0].item[0].item[1].required = true
-* item[0].item[0].item[1].repeats = true
+* item[0].item[0].item[1].repeats = false
 
 * item[0].item[1].linkId = "Practitioner.birthDate"
 * item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.birthDate"
@@ -57,19 +57,11 @@ Usage:          #definition
 * item[0].item[3].required = false
 * item[0].item[3].repeats = false
 
-* item[0].item[4].linkId = "Practitioner.extension[1]"
-* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:nationality.value[x]"
-* item[0].item[4].text = "Nationality"
-* item[0].item[4].type = #choice
-* item[0].item[4].answerValueSet = "http://hl7.org/fhir/ValueSet/iso3166-1-2"
-* item[0].item[4].required = false
-* item[0].item[4].repeats = false
-
-* item[0].item[5].linkId = "Practitioner.active"
-* item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.active"
-* item[0].item[5].text = "Active"
-* item[0].item[5].type = #boolean
-* item[0].item[5].required = true
+* item[0].item[4].linkId = "Practitioner.active"
+* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.active"
+* item[0].item[4].text = "Active"
+* item[0].item[4].type = #boolean
+* item[0].item[4].required = true
 
 * item[1].linkId = "__Practitioner:contact"
 * item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner"
@@ -77,15 +69,11 @@ Usage:          #definition
 * item[1].type = #group
 
 * item[1].item[0].linkId = "Practitioner.extension[2]"
-* item[1].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]"
+* item[1].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]:valueString"
 * item[1].item[0].text = "Mobile Phone"
 * item[1].item[0].type = #string
 * item[1].item[0].required = true
 * item[1].item[0].repeats = false
-* item[1].item[0].extension[constraint][0].extension[key].valueId = "ihris-phone-check"
-* item[1].item[0].extension[constraint][0].extension[severity].valueCode = #error
-* item[1].item[0].extension[constraint][0].extension[expression].valueString = "matches('^$|^(([+][2][6][1][1-9][0-9]{8})|([0][1-9][0-9]{8}))')"
-* item[1].item[0].extension[constraint][0].extension[human].valueString = "Phone number must be in the format +261xxxxxxxxx or 0xxxxxxxxx"
 
 * item[2].linkId = "PractitionerRole"
 * item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role"
@@ -126,10 +114,10 @@ Usage:          #definition
 * item[2].item[3].text = "Fokotany"
 * item[2].item[3].type = #reference
 * item[2].item[3].required = true
-* item[2].item[3].repeats = true
+* item[2].item[3].repeats = false
 
 * item[2].item[4].linkId = "PractitionerRole.extension[0]#preload"
-* item[2].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:workPlace.value[x]"
+* item[2].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:workPlace.value[x]:valueCoding"
 * item[2].item[4].text = "Place of Work"
 * item[2].item[4].type = #choice
 * item[2].item[4].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-workplace"
@@ -137,7 +125,7 @@ Usage:          #definition
 * item[2].item[4].repeats = false
 
 * item[2].item[5].linkId = "PractitionerRole.extension[1]#preload"
-* item[2].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:category.value[x]"
+* item[2].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:category.value[x]:valueCoding"
 * item[2].item[5].text = "Category"
 * item[2].item[5].type = #choice
 * item[2].item[5].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-category-valueset"

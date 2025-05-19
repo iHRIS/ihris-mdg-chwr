@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ihris-module",
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-module",
+  "version": "0.1.0",
   "name": "IhrisModule",
   "title": "iHRIS Module",
   "status": "active",

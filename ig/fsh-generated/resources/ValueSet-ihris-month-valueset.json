@@ -4,9 +4,9 @@
   "name": "IhrisMonthValueSet",
   "id": "ihris-month-valueset",
   "title": "iHRIS Activity Packs ValueSet",
+  "version": "0.3.0",
   "url": "http://ihris.org/fhir/ValueSet/ihris-month-valueset",
   "date": "2022-09-29T08:41:04.362Z",
-  "version": "0.3.0",
   "compose": {
     "include": [
       {

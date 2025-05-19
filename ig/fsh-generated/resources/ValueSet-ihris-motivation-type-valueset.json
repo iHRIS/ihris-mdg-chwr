@@ -4,9 +4,9 @@
   "name": "IhrisMotivationTypeValueSet",
   "id": "ihris-motivation-type-valueset",
   "title": "iHRIS Motivation Type ValueSet",
+  "version": "0.1.0",
   "url": "http://ihris.org/fhir/ValueSet/ihris-motivation-type-valueset",
   "date": "2022-09-29T08:41:04.362Z",
-  "version": "0.1.0",
   "compose": {
     "include": [
       {

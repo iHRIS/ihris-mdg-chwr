@@ -6,14 +6,14 @@ Usage: #example
 * parameter[=].valueSignature.type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.14
 * parameter[=].valueSignature.when = "2022-06-21T09:31:16.469Z"
 * parameter[=].valueSignature.who = Reference(http://ihris.org/fhir/Organization/ihris)
-* parameter[=].valueSignature.data = "V870cwmayGw0tOXXdiUn7/MNEaPt/KzRCk7H2t6IvqxmhshwxLxAYve8yNEdkhj/WhybFokLXR5rhtqU4VKE9EiN/dL1fHVbdu0rk/WrcFy2vPqYPUxepFAAAWQXIQV7gsVSMFEbUOTiYaQ42dt7gddrmJYq8p+6RFLAMDkxpzU="
+* parameter[=].valueSignature.data = "r39L8amaTmqvF5idMJZvttYpGVNFCIaps0y0ZTD9EMHxCVpbSmsE6tzj0hlQXrocckB+vvyet+JRtvqo+LpRf9hpNEQMlk/3eL1p1+w5ZT06/SwGwY+jMbsGRAALCDCN1y8k0hgYLgKWYRlfdFkKjZoNN29z5397DXI5BXyU+9Y="
 * parameter[+].name = "config"
 * parameter[=].part[0].name = "site:title"
 * parameter[=].part[=].valueString = "Madagascar"
 * parameter[=].part[+].name = "site:site"
 * parameter[=].part[=].valueString = "Community Health Master List - Registry"
 * parameter[=].part[+].name = "site:logo"
-* parameter[=].part[=].valueString = "logo_mdg.jpg"
+* parameter[=].part[=].valueString = "mdg_logo.png"
 * parameter[=].part[+].name = "site:auth:local:method"
 * parameter[=].part[=].valueString = "post"
 * parameter[=].part[+].name = "site:auth:local:link"

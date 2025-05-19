@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ihris-location-basic",
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-location-basic",
+  "version": "0.1.0",
   "name": "IhrisLocationBasic",
   "title": "iHRIS Location Basic",
   "status": "active",

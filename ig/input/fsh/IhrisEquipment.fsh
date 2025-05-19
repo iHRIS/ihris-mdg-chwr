@@ -106,7 +106,7 @@ Usage:          #definition
 * item[0].item[0].type = #group
 
 * item[0].item[0].item[0].linkId = "Basic.extension[0].extension[0]"
-* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:recieved.value[x]"
+* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:recieved.value[x]:valueCoding"
 * item[0].item[0].item[0].text = "Recieved Equipment?"
 * item[0].item[0].item[0].type = #choice
 * item[0].item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -114,7 +114,7 @@ Usage:          #definition
 * item[0].item[0].item[0].repeats = false
 
 * item[0].item[0].item[1].linkId = "Basic.extension[0].extension[1]"
-* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:equipmenttype.value[x]"
+* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:equipmenttype.value[x]:valueCoding"
 * item[0].item[0].item[1].text = "Type of Equipment"
 * item[0].item[0].item[1].type = #choice
 * item[0].item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-equipment-type-valueset"
@@ -126,7 +126,7 @@ Usage:          #definition
 * item[0].item[0].item[1].enableWhen[0].answerCoding = ihris-yesno#yes
 
 * item[0].item[0].item[2].linkId = "Basic.extension[0].extension[2]"
-* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:availability.value[x]"
+* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:availability.value[x]:valueCoding"
 * item[0].item[0].item[2].text = "Status of Equipment"
 * item[0].item[0].item[2].type = #choice
 * item[0].item[0].item[2].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-availability-valueset"
@@ -138,7 +138,7 @@ Usage:          #definition
 * item[0].item[0].item[2].enableWhen[0].answerBoolean = true
 
 * item[0].item[0].item[3].linkId = "Basic.extension[0].extension[3]"
-* item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:date.value[x]"
+* item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:date.value[x]:valueDate"
 * item[0].item[0].item[3].text = "Date"
 * item[0].item[0].item[3].type = #date
 * item[0].item[0].item[3].required = false
@@ -149,7 +149,7 @@ Usage:          #definition
 * item[0].item[0].item[3].enableWhen[0].answerCoding = ihris-yesno#yes
 
 * item[0].item[0].item[4].linkId = "Basic.extension[0].extension[4]"
-* item[0].item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:rctablet.value[x]"
+* item[0].item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:rctablet.value[x]:valueCoding"
 * item[0].item[0].item[4].text = "Is the RC equipped with an Android or Tablet for reporting?"
 * item[0].item[0].item[4].type = #choice
 * item[0].item[0].item[4].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -157,7 +157,7 @@ Usage:          #definition
 * item[0].item[0].item[4].repeats = false
 
 * item[0].item[0].item[5].linkId = "Basic.extension[0].extension[5]"
-* item[0].item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:actablet.value[x]"
+* item[0].item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment#Basic.extension:equipment.extension:actablet.value[x]:valueCoding"
 * item[0].item[0].item[5].text = "Is the AC equipped with an Android or Tablet for managing community health programs?"
 * item[0].item[0].item[5].type = #choice
 * item[0].item[0].item[5].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -170,22 +170,11 @@ Title:          "Equipment"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-basic-equipment)
-* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/basic-equipment/FIELD?edit=true"
-* extension[display].extension[link][0].extension[field].valueString = "Basic.id"
-* extension[display].extension[link][0].extension[text].valueString = "Edit"
+* extension[display].extension[link][0].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+* extension[display].extension[link][0].extension[text].valueString = "View Health Worker"
 * extension[display].extension[link][0].extension[button].valueBoolean = true
-* extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
-* extension[display].extension[link][0].extension[class].valueString = "secondary"
-* extension[display].extension[link][1].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][1].extension[text].valueString = "View Health Worker"
-* extension[display].extension[link][1].extension[button].valueBoolean = true
-* extension[display].extension[link][1].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
-* extension[display].extension[link][2].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][2].extension[text].valueString = "Add Another"
-* extension[display].extension[link][2].extension[button].valueBoolean = true
-* extension[display].extension[link][2].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][2].extension[url].valueUrl = "/questionnaire/ihris-equipment/basic-equipment?practitioner=FIELD"
+* extension[display].extension[link][0].extension[icon].valueString = "mdi-account-arrow-right"
+* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
 * extension[display].extension[search][0].valueString = "Practitioner|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
 * extension[display].extension[search][1].valueString = "Equipment Received|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment').extension.where(url='received').valueCoding.display"
 * extension[display].extension[search][2].valueString = "Equipment Type|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-basic-equipment').extension.where(url='equipmenttype').valueCoding.display"
@@ -197,12 +186,12 @@ Usage:          #example
 * extension[section][0].extension[description].valueString = "EMOIS details"
 * extension[section][0].extension[name].valueString = "Basic"
 * extension[section][0].extension[field][0].valueString = "extension:practitioner"
-* extension[section][0].extension[field][1].valueString = "extension:equipment.extension:recieved.value[x]:valueCoding"
-* extension[section][0].extension[field][2].valueString = "extension:equipment.extension:equipmenttype.value[x]:valueCoding"
-* extension[section][0].extension[field][3].valueString = "extension:equipment.extension:availability.value[x]:valueCoding"
-* extension[section][0].extension[field][4].valueString = "extension:equipment.extension:date.value[x]:valueDate"
-* extension[section][0].extension[field][5].valueString = "extension:equipment.extension:rctablet.value[x]:valueCoding"
-* extension[section][0].extension[field][6].valueString = "extension:equipment.extension:actablet.value[x]:valueCoding"
+* extension[section][0].extension[field][1].valueString = "extension:equipment.extension:recieved"
+* extension[section][0].extension[field][2].valueString = "extension:equipment.extension:equipmenttype"
+* extension[section][0].extension[field][3].valueString = "extension:equipment.extension:availability"
+* extension[section][0].extension[field][4].valueString = "extension:equipment.extension:date"
+* extension[section][0].extension[field][5].valueString = "extension:equipment.extension:rctablet"
+* extension[section][0].extension[field][6].valueString = "extension:equipment.extension:actablet"
 
 Instance:       ihris-page-equipment-type
 InstanceOf:     IhrisPage

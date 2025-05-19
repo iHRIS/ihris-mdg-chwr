@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ihris-distance",
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-distance",
+  "version": "0.1.0",
   "name": "IhrisDistance",
   "title": "Education History details",
   "status": "active",
@@ -28,6 +29,16 @@
     "element": [
       {
         "id": "Extension",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Extension",
         "short": "Education History details",
         "definition": "Optional Extension Element - found in all resources.",
@@ -349,6 +360,53 @@
       {
         "id": "Extension.extension:village.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:village.value[x]:valueDecimal",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueDecimal",
         "label": "Distance Domicile – Hameau le plus éloigné (km)",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -568,6 +626,53 @@
       {
         "id": "Extension.extension:csb.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:csb.value[x]:valueDecimal",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueDecimal",
         "label": "Distance lieu de travail – CSB (km)",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -787,6 +892,53 @@
       {
         "id": "Extension.extension:workplace.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:workplace.value[x]:valueDecimal",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueDecimal",
         "label": "Distance Domicile - lieu de travail (km)",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1006,6 +1158,53 @@
       {
         "id": "Extension.extension:csbrc.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:csbrc.value[x]:valueDecimal",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueDecimal",
         "label": "Distance CSB – AC le plus éloigné (km) - RC",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1290,12 +1489,28 @@
       {
         "id": "Extension.extension:village.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "Distance Domicile – Hameau le plus éloigné (km)",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "decimal"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:village.valueDecimal",
+        "path": "Extension.extension.valueDecimal",
+        "label": "Distance Domicile – Hameau le plus éloigné (km)",
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Extension.extension:csb",
@@ -1318,12 +1533,28 @@
       {
         "id": "Extension.extension:csb.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "Distance lieu de travail – CSB (km)",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "decimal"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:csb.valueDecimal",
+        "path": "Extension.extension.valueDecimal",
+        "label": "Distance lieu de travail – CSB (km)",
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Extension.extension:workplace",
@@ -1346,12 +1577,28 @@
       {
         "id": "Extension.extension:workplace.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "Distance Domicile - lieu de travail (km)",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "decimal"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:workplace.valueDecimal",
+        "path": "Extension.extension.valueDecimal",
+        "label": "Distance Domicile - lieu de travail (km)",
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Extension.extension:csbrc",
@@ -1374,12 +1621,28 @@
       {
         "id": "Extension.extension:csbrc.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "Distance CSB – AC le plus éloigné (km) - RC",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "decimal"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:csbrc.valueDecimal",
+        "path": "Extension.extension.valueDecimal",
+        "label": "Distance CSB – AC le plus éloigné (km) - RC",
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Extension.url",

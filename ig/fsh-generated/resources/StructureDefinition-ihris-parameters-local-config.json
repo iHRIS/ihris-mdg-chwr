@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ihris-parameters-local-config",
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-parameters-local-config",
+  "version": "0.1.0",
   "name": "IhrisParametersLocalConfig",
   "title": "iHRIS Parameters Local Config",
   "status": "active",
@@ -846,6 +847,50 @@
       {
         "id": "Parameters.parameter:FhirBase.value[x]",
         "path": "Parameters.parameter.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "If parameter is a data type",
+        "definition": "If the parameter is a data type.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Parameters.parameter.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "inv-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "Parameters.parameter:FhirBase.value[x]:valueString",
+        "path": "Parameters.parameter.value[x]",
+        "sliceName": "valueString",
         "short": "If parameter is a data type",
         "definition": "If the parameter is a data type.",
         "min": 1,
@@ -1135,6 +1180,50 @@
       {
         "id": "Parameters.parameter:FhirUser.value[x]",
         "path": "Parameters.parameter.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "If parameter is a data type",
+        "definition": "If the parameter is a data type.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Parameters.parameter.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "inv-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "Parameters.parameter:FhirUser.value[x]:valueString",
+        "path": "Parameters.parameter.value[x]",
+        "sliceName": "valueString",
         "short": "If parameter is a data type",
         "definition": "If the parameter is a data type.",
         "min": 1,
@@ -1424,6 +1513,50 @@
       {
         "id": "Parameters.parameter:FhirPass.value[x]",
         "path": "Parameters.parameter.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "If parameter is a data type",
+        "definition": "If the parameter is a data type.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Parameters.parameter.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "inv-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "Parameters.parameter:FhirPass.value[x]:valueString",
+        "path": "Parameters.parameter.value[x]",
+        "sliceName": "valueString",
         "short": "If parameter is a data type",
         "definition": "If the parameter is a data type.",
         "min": 1,
@@ -2151,6 +2284,50 @@
       {
         "id": "Parameters.parameter:Config.part:ConfigId.value[x]",
         "path": "Parameters.parameter.part.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "If parameter is a data type",
+        "definition": "If the parameter is a data type.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Parameters.parameter.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "inv-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "Parameters.parameter:Config.part:ConfigId.value[x]:valueString",
+        "path": "Parameters.parameter.part.value[x]",
+        "sliceName": "valueString",
         "short": "If parameter is a data type",
         "definition": "If the parameter is a data type.",
         "min": 1,
@@ -2878,6 +3055,50 @@
       {
         "id": "Parameters.parameter:Keys.part:KeyId.value[x]",
         "path": "Parameters.parameter.part.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "If parameter is a data type",
+        "definition": "If the parameter is a data type.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Parameters.parameter.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "inv-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "Parameters.parameter:Keys.part:KeyId.value[x]:valueString",
+        "path": "Parameters.parameter.part.value[x]",
+        "sliceName": "valueString",
         "short": "If parameter is a data type",
         "definition": "If the parameter is a data type.",
         "min": 1,
@@ -3605,6 +3826,50 @@
       {
         "id": "Parameters.parameter:Session.part:SessionConfig.value[x]",
         "path": "Parameters.parameter.part.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "If parameter is a data type",
+        "definition": "If the parameter is a data type.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Parameters.parameter.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "inv-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": true
+      },
+      {
+        "id": "Parameters.parameter:Session.part:SessionConfig.value[x]:valueString",
+        "path": "Parameters.parameter.part.value[x]",
+        "sliceName": "valueString",
         "short": "If parameter is a data type",
         "definition": "If the parameter is a data type.",
         "min": 1,
@@ -3720,12 +3985,28 @@
       {
         "id": "Parameters.parameter:FhirBase.value[x]",
         "path": "Parameters.parameter.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
             "code": "string"
           }
         ]
+      },
+      {
+        "id": "Parameters.parameter:FhirBase.valueString",
+        "path": "Parameters.parameter.valueString",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Parameters.parameter:FhirBase.resource",
@@ -3752,12 +4033,28 @@
       {
         "id": "Parameters.parameter:FhirUser.value[x]",
         "path": "Parameters.parameter.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
             "code": "string"
           }
         ]
+      },
+      {
+        "id": "Parameters.parameter:FhirUser.valueString",
+        "path": "Parameters.parameter.valueString",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Parameters.parameter:FhirUser.resource",
@@ -3784,12 +4081,28 @@
       {
         "id": "Parameters.parameter:FhirPass.value[x]",
         "path": "Parameters.parameter.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
             "code": "string"
           }
         ]
+      },
+      {
+        "id": "Parameters.parameter:FhirPass.valueString",
+        "path": "Parameters.parameter.valueString",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Parameters.parameter:FhirPass.resource",
@@ -3852,12 +4165,28 @@
       {
         "id": "Parameters.parameter:Config.part:ConfigId.value[x]",
         "path": "Parameters.parameter.part.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
             "code": "string"
           }
         ]
+      },
+      {
+        "id": "Parameters.parameter:Config.part:ConfigId.valueString",
+        "path": "Parameters.parameter.part.valueString",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Parameters.parameter:Config.part:ConfigId.resource",
@@ -3920,12 +4249,28 @@
       {
         "id": "Parameters.parameter:Keys.part:KeyId.value[x]",
         "path": "Parameters.parameter.part.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
             "code": "string"
           }
         ]
+      },
+      {
+        "id": "Parameters.parameter:Keys.part:KeyId.valueString",
+        "path": "Parameters.parameter.part.valueString",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Parameters.parameter:Keys.part:KeyId.resource",
@@ -3988,12 +4333,28 @@
       {
         "id": "Parameters.parameter:Session.part:SessionConfig.value[x]",
         "path": "Parameters.parameter.part.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "type": [
           {
             "code": "string"
           }
         ]
+      },
+      {
+        "id": "Parameters.parameter:Session.part:SessionConfig.valueString",
+        "path": "Parameters.parameter.part.valueString",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Parameters.parameter:Session.part:SessionConfig.resource",

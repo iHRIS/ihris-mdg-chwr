@@ -56,25 +56,25 @@ Usage:          #definition
 * item[0].item[0].type = #group
 
 * item[0].item[0].item[0].linkId = "Basic.extension[0].extension[0]"
-* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:village.value[x]"
+* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:village.value[x]:valueDecimal"
 * item[0].item[0].item[0].text = "Distance Domicile – Hameau le plus éloigné (km)"
 * item[0].item[0].item[0].type = #decimal
 * item[0].item[0].item[0].required = false
 
 * item[0].item[0].item[1].linkId = "Basic.extension[0].extension[1]"
-* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:csb.value[x]"
+* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:csb.value[x]:valueDecimal"
 * item[0].item[0].item[1].text = "Distance lieu de travail – CSB (km)"
 * item[0].item[0].item[1].type = #decimal
 * item[0].item[0].item[1].required = false
 
 * item[0].item[0].item[2].linkId = "Basic.extension[0].extension[2]"
-* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:workplace.value[x]"
+* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:workplace.value[x]:valueDecimal"
 * item[0].item[0].item[2].text = "Distance Domicile - lieu de travail (km)"
 * item[0].item[0].item[2].type = #decimal
 * item[0].item[0].item[2].required = false
 
 * item[0].item[0].item[3].linkId = "Basic.extension[0].extension[3]"
-* item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:csbrc.value[x]"
+* item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-distance#Basic.extension:distance.extension:csbrc.value[x]:valueDecimal"
 * item[0].item[0].item[3].text = "Distance CSB – AC le plus éloigné (km) - RC"
 * item[0].item[0].item[3].type = #decimal
 * item[0].item[0].item[3].required = false
@@ -107,8 +107,8 @@ Usage:          #example
 * extension[section][0].extension[description].valueString = "Distance details"
 * extension[section][0].extension[name].valueString = "Basic"
 * extension[section][0].extension[field][0].valueString = "extension:location"
-* extension[section][0].extension[field][1].valueString = "extension:distance.extension:village.value[x]:valueDecimal"
-* extension[section][0].extension[field][2].valueString = "extension:distance.extension:csb.value[x]:valueDecimal"
-* extension[section][0].extension[field][3].valueString = "extension:distance.extension:workplace.value[x]:valueDecimal"
-* extension[section][0].extension[field][4].valueString = "extension:distance.extension:csbrc.value[x]:valueDecimal"
+* extension[section][0].extension[field][1].valueString = "extension:distance.extension:village"
+* extension[section][0].extension[field][2].valueString = "extension:distance.extension:csb"
+* extension[section][0].extension[field][3].valueString = "extension:distance.extension:workplace"
+* extension[section][0].extension[field][4].valueString = "extension:distance.extension:csbrc"
 

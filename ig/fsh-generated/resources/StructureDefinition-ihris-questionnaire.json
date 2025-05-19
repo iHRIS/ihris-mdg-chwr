@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ihris-questionnaire",
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-questionnaire",
+  "version": "0.1.0",
   "name": "IhrisQuestionnaire",
   "title": "iHRIS Questionnaire",
   "status": "active",

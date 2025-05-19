@@ -5,6 +5,7 @@
   "name": "IhrisMDGGenderCodesystem",
   "id": "ihris-gender-codesystem",
   "title": "Gender",
+  "version": "0.8.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-gender-codesystem",
   "concept": [
     {
@@ -19,6 +20,5 @@
     }
   ],
   "date": "2025-03-02T08:41:04.362Z",
-  "version": "0.8.0",
   "count": 2
 }

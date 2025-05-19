@@ -23,7 +23,7 @@
           "item": [
             {
               "linkId": "Basic.extension[0].extension[0]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:incentive.value[x]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:incentive.value[x]:valueCoding",
               "text": "Activity Packs",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-incentive-valueset",
@@ -32,7 +32,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[1]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivation.value[x]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivation.value[x]:valueCoding",
               "text": "Did the AC receive motivation this month?",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset",
@@ -41,7 +41,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[2]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivationType.value[x]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivationType.value[x]:valueCoding",
               "text": "Motivation Type",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-motivation-type-valueset",
@@ -61,7 +61,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[3]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:other.value[x]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:other.value[x]:valueString",
               "text": "Other",
               "type": "string",
               "required": false,
@@ -80,7 +80,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[4]",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivationMonth.value[x]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivationMonth.value[x]:valueCoding",
               "text": "Motivation Month",
               "type": "choice",
               "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-month-valueset",
@@ -100,7 +100,7 @@
             },
             {
               "linkId": "Basic.extension[0].extension[5]#year",
-              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivationYear.value[x]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:motivationYear.value[x]:valueDate",
               "text": "Motivation Year",
               "type": "date",
               "required": false,

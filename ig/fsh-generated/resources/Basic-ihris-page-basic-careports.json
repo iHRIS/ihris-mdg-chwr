@@ -131,19 +131,19 @@
         },
         {
           "url": "field",
-          "valueString": "extension:careports.extension:month.value[x]:valueCoding"
+          "valueString": "extension:careports.extension:month"
         },
         {
           "url": "field",
-          "valueString": "extension:careports.extension:year.value[x]:valueDate"
+          "valueString": "extension:careports.extension:year"
         },
         {
           "url": "field",
-          "valueString": "extension:careports.extension:careports.value[x]:valueCoding.display"
+          "valueString": "extension:careports.extension:careports"
         },
         {
           "url": "field",
-          "valueString": "extension:careports.extension:date.value[x]:valueDate"
+          "valueString": "extension:careports.extension:date"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"

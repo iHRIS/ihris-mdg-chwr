@@ -103,19 +103,19 @@
         },
         {
           "url": "field",
-          "valueString": "extension:supervision.extension:supervised.value[x]:valueCoding"
+          "valueString": "extension:supervision.extension:supervised"
         },
         {
           "url": "field",
-          "valueString": "extension:supervision.extension:monthlyacg.value[x]:valueCoding"
+          "valueString": "extension:supervision.extension:monthlyacg"
         },
         {
           "url": "field",
-          "valueString": "extension:supervision.extension:performing.value[x]:valueCoding"
+          "valueString": "extension:supervision.extension:performing"
         },
         {
           "url": "field",
-          "valueString": "extension:supervision.extension:date.value[x]:valueDate"
+          "valueString": "extension:supervision.extension:date"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"

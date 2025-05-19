@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ihris-equipment",
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-equipment",
+  "version": "0.1.0",
   "name": "IhrisEquipment",
   "title": "EMOIS details",
   "status": "active",
@@ -28,6 +29,16 @@
     "element": [
       {
         "id": "Extension",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Extension",
         "short": "EMOIS details",
         "definition": "Optional Extension Element - found in all resources.",
@@ -349,6 +360,53 @@
       {
         "id": "Extension.extension:recieved.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:recieved.value[x]:valueCoding",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueCoding",
         "label": "Recieved Equipment?",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -572,6 +630,53 @@
       {
         "id": "Extension.extension:equipmenttype.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:equipmenttype.value[x]:valueCoding",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueCoding",
         "label": "Type of Equipment",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -795,6 +900,53 @@
       {
         "id": "Extension.extension:availability.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:availability.value[x]:valueCoding",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueCoding",
         "label": "Status of Equipment",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1018,6 +1170,53 @@
       {
         "id": "Extension.extension:rctablet.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rctablet.value[x]:valueCoding",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueCoding",
         "label": "Is the RC equipped with an Android or Tablet for reporting?",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1241,6 +1440,53 @@
       {
         "id": "Extension.extension:actablet.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:actablet.value[x]:valueCoding",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueCoding",
         "label": "Is the AC equipped with an Android or Tablet for managing community health programs?",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1464,6 +1710,53 @@
       {
         "id": "Extension.extension:date.value[x]",
         "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:date.value[x]:valueDate",
+        "path": "Extension.extension.value[x]",
+        "sliceName": "valueDate",
         "label": "Date",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1753,12 +2046,28 @@
       {
         "id": "Extension.extension:recieved.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "Recieved Equipment?",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:recieved.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "label": "Recieved Equipment?",
+        "min": 0,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -1785,12 +2094,28 @@
       {
         "id": "Extension.extension:equipmenttype.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "Type of Equipment",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:equipmenttype.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "label": "Type of Equipment",
+        "min": 0,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "http://ihris.org/fhir/ValueSet/ihris-equipment-type-valueset"
@@ -1817,12 +2142,28 @@
       {
         "id": "Extension.extension:availability.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "Status of Equipment",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:availability.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "label": "Status of Equipment",
+        "min": 0,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "http://ihris.org/fhir/ValueSet/ihris-availability-valueset"
@@ -1849,12 +2190,28 @@
       {
         "id": "Extension.extension:rctablet.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "Is the RC equipped with an Android or Tablet for reporting?",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:rctablet.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "label": "Is the RC equipped with an Android or Tablet for reporting?",
+        "min": 0,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -1881,12 +2238,28 @@
       {
         "id": "Extension.extension:actablet.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "Is the AC equipped with an Android or Tablet for managing community health programs?",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "Coding"
           }
-        ],
+        ]
+      },
+      {
+        "id": "Extension.extension:actablet.valueCoding",
+        "path": "Extension.extension.valueCoding",
+        "label": "Is the AC equipped with an Android or Tablet for managing community health programs?",
+        "min": 0,
+        "max": "1",
         "binding": {
           "strength": "required",
           "valueSet": "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -1913,12 +2286,28 @@
       {
         "id": "Extension.extension:date.value[x]",
         "path": "Extension.extension.value[x]",
-        "label": "Date",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "type": [
           {
             "code": "date"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:date.valueDate",
+        "path": "Extension.extension.valueDate",
+        "label": "Date",
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Extension.url",

@@ -5,6 +5,7 @@
   "name": "IhrisCategoryCodeSystem",
   "id": "ihris-category-codesystem",
   "title": "Category",
+  "version": "0.5.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-category-codesystem",
   "concept": [
     {
@@ -17,6 +18,5 @@
     }
   ],
   "date": "2023-12-29T08:41:04.362Z",
-  "version": "0.5.0",
   "count": 2
 }

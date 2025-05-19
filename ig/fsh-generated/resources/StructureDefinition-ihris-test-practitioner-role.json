@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ihris-test-practitioner-role",
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-test-practitioner-role",
+  "version": "0.1.0",
   "name": "IhrisTestPractitionerRole",
   "title": "iHRIS Test Practitioner Role",
   "status": "active",

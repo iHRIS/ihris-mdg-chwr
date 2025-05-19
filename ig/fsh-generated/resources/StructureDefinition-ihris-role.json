@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ihris-role",
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-role",
+  "version": "0.1.0",
   "name": "IhrisRole",
   "title": "iHRIS Role",
   "status": "active",
@@ -569,6 +570,53 @@
       {
         "id": "Basic.extension:name.value[x]",
         "path": "Basic.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Basic.extension:name.value[x]:valueString",
+        "path": "Basic.extension.value[x]",
+        "sliceName": "valueString",
         "label": "Name",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -844,6 +892,56 @@
       {
         "id": "Basic.extension:role.value[x]",
         "path": "Basic.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-role"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Basic.extension:role.value[x]:valueReference",
+        "path": "Basic.extension.value[x]",
+        "sliceName": "valueReference",
         "label": "Role",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -883,7 +981,7 @@
         ]
       },
       {
-        "id": "Basic.extension:role.value[x].id",
+        "id": "Basic.extension:role.value[x]:valueReference.id",
         "path": "Basic.extension.value[x].id",
         "representation": [
           "xmlAttr"
@@ -918,7 +1016,7 @@
         ]
       },
       {
-        "id": "Basic.extension:role.value[x].extension",
+        "id": "Basic.extension:role.value[x]:valueReference.extension",
         "path": "Basic.extension.value[x].extension",
         "slicing": {
           "discriminator": [
@@ -977,7 +1075,7 @@
         ]
       },
       {
-        "id": "Basic.extension:role.value[x].reference",
+        "id": "Basic.extension:role.value[x]:valueReference.reference",
         "path": "Basic.extension.value[x].reference",
         "label": "Role",
         "short": "Literal reference, Relative, internal or absolute URL",
@@ -1018,7 +1116,7 @@
         ]
       },
       {
-        "id": "Basic.extension:role.value[x].type",
+        "id": "Basic.extension:role.value[x]:valueReference.type",
         "path": "Basic.extension.value[x].type",
         "short": "Type the reference refers to (e.g. \"Patient\")",
         "definition": "The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.\n\nThe type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. \"Patient\" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).",
@@ -1066,7 +1164,7 @@
         ]
       },
       {
-        "id": "Basic.extension:role.value[x].identifier",
+        "id": "Basic.extension:role.value[x]:valueReference.identifier",
         "path": "Basic.extension.value[x].identifier",
         "short": "Logical reference, when literal reference is not known",
         "definition": "An identifier for the target resource. This is used when there is no way to reference the other resource directly, either because the entity it represents is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference.",
@@ -1103,7 +1201,7 @@
         ]
       },
       {
-        "id": "Basic.extension:role.value[x].display",
+        "id": "Basic.extension:role.value[x]:valueReference.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -1332,6 +1430,56 @@
       {
         "id": "Basic.extension:task.value[x]",
         "path": "Basic.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Value of extension",
+        "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Basic.extension:task.value[x]:valueReference",
+        "path": "Basic.extension.value[x]",
+        "sliceName": "valueReference",
         "label": "Task",
         "short": "Value of extension",
         "definition": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
@@ -1371,7 +1519,7 @@
         ]
       },
       {
-        "id": "Basic.extension:task.value[x].id",
+        "id": "Basic.extension:task.value[x]:valueReference.id",
         "path": "Basic.extension.value[x].id",
         "representation": [
           "xmlAttr"
@@ -1406,7 +1554,7 @@
         ]
       },
       {
-        "id": "Basic.extension:task.value[x].extension",
+        "id": "Basic.extension:task.value[x]:valueReference.extension",
         "path": "Basic.extension.value[x].extension",
         "slicing": {
           "discriminator": [
@@ -1465,7 +1613,7 @@
         ]
       },
       {
-        "id": "Basic.extension:task.value[x].reference",
+        "id": "Basic.extension:task.value[x]:valueReference.reference",
         "path": "Basic.extension.value[x].reference",
         "label": "Task",
         "short": "Literal reference, Relative, internal or absolute URL",
@@ -1506,7 +1654,7 @@
         ]
       },
       {
-        "id": "Basic.extension:task.value[x].type",
+        "id": "Basic.extension:task.value[x]:valueReference.type",
         "path": "Basic.extension.value[x].type",
         "short": "Type the reference refers to (e.g. \"Patient\")",
         "definition": "The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.\n\nThe type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. \"Patient\" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).",
@@ -1554,7 +1702,7 @@
         ]
       },
       {
-        "id": "Basic.extension:task.value[x].identifier",
+        "id": "Basic.extension:task.value[x]:valueReference.identifier",
         "path": "Basic.extension.value[x].identifier",
         "short": "Logical reference, when literal reference is not known",
         "definition": "An identifier for the target resource. This is used when there is no way to reference the other resource directly, either because the entity it represents is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference.",
@@ -1591,7 +1739,7 @@
         ]
       },
       {
-        "id": "Basic.extension:task.value[x].display",
+        "id": "Basic.extension:task.value[x]:valueReference.display",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
@@ -1990,6 +2138,18 @@
         ]
       },
       {
+        "id": "Basic.extension:role.value[x]",
+        "path": "Basic.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-role"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Basic.extension:task",
         "path": "Basic.extension",
         "sliceName": "task",
@@ -2000,6 +2160,18 @@
             "code": "Extension",
             "profile": [
               "http://ihris.org/fhir/StructureDefinition/ihris-assign-task"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Basic.extension:task.value[x]",
+        "path": "Basic.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://ihris.org/fhir/StructureDefinition/ihris-task"
             ]
           }
         ]

@@ -38,7 +38,7 @@
         },
         {
           "url": "search",
-          "valueString": "Gender|Practitioner.gender|http://ihris.org/fhir/ValueSet/ihris-gender-valueset"
+          "valueString": "Gender|Practitioner.gender|http://ihris.org/fhir/CodeSystem/ihris-gender-codesystem"
         },
         {
           "url": "search",
@@ -73,7 +73,7 @@
           "extension": [
             {
               "url": "url",
-              "valueUrl": "/resource/view/practitioner/FIELD?edit=true"
+              "valueUrl": "/questionnaire/ihris-practitioner/practitioner/FIELD"
             },
             {
               "url": "text",
@@ -307,6 +307,14 @@
               ]
             },
             {
+              "url": "searchfield",
+              "valueString": "practitioner"
+            },
+            {
+              "url": "searchfieldtarget",
+              "valueString": "Practitioner"
+            },
+            {
               "extension": [
                 {
                   "url": "header",
@@ -509,11 +517,11 @@
               "extension": [
                 {
                   "url": "header",
-                  "valueString": "Distance from Fokotany"
+                  "valueString": "Distance Domicile – Hameau le plus éloigné (km)"
                 },
                 {
                   "url": "field",
-                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='fokontany').valueDecimal"
+                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='village').valueDecimal"
                 }
               ]
             },
@@ -525,7 +533,7 @@
               "extension": [
                 {
                   "url": "header",
-                  "valueString": "Distance from CSB"
+                  "valueString": "Distance lieu de travail – CSB (km)"
                 },
                 {
                   "url": "field",
@@ -538,11 +546,24 @@
               "extension": [
                 {
                   "url": "header",
-                  "valueString": "Distance from Community Site"
+                  "valueString": "Distance Domicile - lieu de travail (km)"
                 },
                 {
                   "url": "field",
-                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='commsite').valueDecimal"
+                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='workplace').valueDecimal"
+                }
+              ],
+              "url": "column"
+            },
+            {
+              "extension": [
+                {
+                  "url": "header",
+                  "valueString": "Distance CSB – AC le plus éloigné (km) - RC"
+                },
+                {
+                  "url": "field",
+                  "valueString": "extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-distance').extension.where(url='csbrc').valueDecimal"
                 }
               ],
               "url": "column"

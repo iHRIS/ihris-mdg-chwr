@@ -94,7 +94,7 @@ Usage:          #definition
 * item[0].item[0].type = #group
 
 * item[0].item[0].item[0].linkId = "Basic.extension[0].extension[0]"
-* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:supervised.value[x]"
+* item[0].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:supervised.value[x]:valueCoding"
 * item[0].item[0].item[0].text = "Supervised?"
 * item[0].item[0].item[0].type = #choice
 * item[0].item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -102,7 +102,7 @@ Usage:          #definition
 * item[0].item[0].item[0].repeats = false
 
 * item[0].item[0].item[1].linkId = "Basic.extension[0].extension[1]"
-* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:monthlyacg.value[x]"
+* item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:monthlyacg.value[x]:valueCoding"
 * item[0].item[0].item[1].text = "Monthly AC Grouping"
 * item[0].item[0].item[1].type = #choice
 * item[0].item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -110,7 +110,7 @@ Usage:          #definition
 * item[0].item[0].item[1].repeats = false
 
 * item[0].item[0].item[2].linkId = "Basic.extension[0].extension[2]"
-* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:performing.value[x]"
+* item[0].item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:performing.value[x]:valueCoding"
 * item[0].item[0].item[2].text = "Performing?"
 * item[0].item[0].item[2].type = #choice
 * item[0].item[0].item[2].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-yesno-valueset"
@@ -118,7 +118,7 @@ Usage:          #definition
 * item[0].item[0].item[2].repeats = false
 
 * item[0].item[0].item[3].linkId = "Basic.extension[0].extension[3]"
-* item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:date.value[x]"
+* item[0].item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-supervision#Basic.extension:supervision.extension:date.value[x]:valueDate"
 * item[0].item[0].item[3].text = "Date"
 * item[0].item[0].item[3].type = #date
 * item[0].item[0].item[3].required = false
@@ -149,7 +149,7 @@ Usage:          #example
 * extension[section][0].extension[description].valueString = "Supervision details"
 * extension[section][0].extension[name].valueString = "Basic"
 * extension[section][0].extension[field][0].valueString = "extension:practitioner"
-* extension[section][0].extension[field][1].valueString = "extension:supervision.extension:supervised.value[x]:valueCoding"
-* extension[section][0].extension[field][2].valueString = "extension:supervision.extension:monthlyacg.value[x]:valueCoding"
-* extension[section][0].extension[field][3].valueString = "extension:supervision.extension:performing.value[x]:valueCoding"
-* extension[section][0].extension[field][4].valueString = "extension:supervision.extension:date.value[x]:valueDate"
+* extension[section][0].extension[field][1].valueString = "extension:supervision.extension:supervised"
+* extension[section][0].extension[field][2].valueString = "extension:supervision.extension:monthlyacg"
+* extension[section][0].extension[field][3].valueString = "extension:supervision.extension:performing"
+* extension[section][0].extension[field][4].valueString = "extension:supervision.extension:date"

@@ -34,7 +34,7 @@
               "text": "First Names",
               "type": "string",
               "required": true,
-              "repeats": true
+              "repeats": false
             }
           ]
         },
@@ -65,15 +65,6 @@
           "repeats": false
         },
         {
-          "linkId": "Practitioner.extension[1]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:nationality.value[x]",
-          "text": "Nationality",
-          "type": "choice",
-          "answerValueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2",
-          "required": false,
-          "repeats": false
-        },
-        {
           "linkId": "Practitioner.active",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.active",
           "text": "Active",
@@ -83,43 +74,20 @@
       ]
     },
     {
+      "linkId": "__Practitioner:contact",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner",
+      "text": "Contact Details| phone numbers",
+      "type": "group",
       "item": [
         {
-          "extension": [
-            {
-              "extension": [
-                {
-                  "url": "key",
-                  "valueId": "ihris-phone-check"
-                },
-                {
-                  "url": "severity",
-                  "valueCode": "error"
-                },
-                {
-                  "url": "expression",
-                  "valueString": "matches('^$|^(([+][2][6][1][1-9][0-9]{8})|([0][1-9][0-9]{8}))')"
-                },
-                {
-                  "url": "human",
-                  "valueString": "Phone number must be in the format +261xxxxxxxxx or 0xxxxxxxxx"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint"
-            }
-          ],
           "linkId": "Practitioner.extension[2]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]:valueString",
           "text": "Mobile Phone",
           "type": "string",
           "required": true,
           "repeats": false
         }
-      ],
-      "linkId": "__Practitioner:contact",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner",
-      "text": "Contact Details| phone numbers",
-      "type": "group"
+      ]
     },
     {
       "extension": [
@@ -188,11 +156,11 @@
           "text": "Fokotany",
           "type": "reference",
           "required": true,
-          "repeats": true
+          "repeats": false
         },
         {
           "linkId": "PractitionerRole.extension[0]#preload",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:workPlace.value[x]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:workPlace.value[x]:valueCoding",
           "text": "Place of Work",
           "type": "choice",
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-workplace",
@@ -201,7 +169,7 @@
         },
         {
           "linkId": "PractitionerRole.extension[1]#preload",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:category.value[x]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:category.value[x]:valueCoding",
           "text": "Category",
           "type": "choice",
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-category-valueset",

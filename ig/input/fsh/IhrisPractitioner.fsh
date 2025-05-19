@@ -35,7 +35,7 @@ Description:    "iHRIS profile of Practitioner."
 * name.family ^constraint[0].severity = #error
 * name.family ^constraint[0].expression = "matches('^[A-Za-z ]*$')"
 * name.family ^constraint[0].human = "Name must be only text."
-* name.given 1..* MS
+* name.given 1..1 MS
 * name.given ^label = "First Name"
 * name.prefix 0..0
 * name.suffix 0..0
@@ -86,11 +86,8 @@ Description:    "iHRIS profile of Practitioner."
 * photo ^label = "Photo"
 * communication 0..0
 * extension contains
-    IhrisPractitionerNationality named nationality 0..1 and
     IhrisPractitionerMaritalStatus named maritalStatus 0..1 and
     IhrisPractitionerPhone named phone 0..1 MS
-* extension[nationality]  ^label = "Nationality"
-* extension[nationality].valueCoding MS
 * extension[maritalStatus]  ^label = "Marital Status"
 * extension[maritalStatus].valueCoding MS
 * extension[phone].valueString MS
@@ -107,10 +104,6 @@ Description:    "iHRIS extension for Phone."
 * value[x] only string
 * valueString ^label = "Phone Number"
 * valueString 0..1 MS
-* valueString ^constraint[0].key = "ihris-phone-check"
-* valueString ^constraint[0].severity = #error
-* valueString ^constraint[0].expression = "matches('^$|^(([+][2][6][1][1-9][0-9]{8})|([0][1-9][0-9]{8}))')"
-* valueString ^constraint[0].human = "Phone Number is not properly formatted."
 
 Extension:      IhrisPractitionerLanguageProficiency
 Id:             ihris-practitioner-language-proficiency
@@ -165,17 +158,6 @@ Description:    "iHRIS extension for Practitioner residence."
 // * extension[birthDate].value[x] only date
 // * extension[birthDate].valueDate 1..1 MS
 // * extension[birthDate].valueDate ^label = "Dependent's Date of Birth"
-
-Extension:      IhrisPractitionerNationality
-Id:             ihris-practitioner-nationality
-Title:          "iHRIS Practitioner Nationality"
-Description:    "iHRIS extension for Practitioner nationality."
-* ^context.type = #element
-* ^context.expression = "Practitioner"
-* value[x] only Coding
-* valueCoding 1..1 MS
-* valueCoding ^label = "Nationality"
-* valueCoding from http://hl7.org/fhir/ValueSet/iso3166-1-2 (required)
 
 Extension:      IhrisPractitionerMaritalStatus
 Id:             ihris-practitioner-marital-status

@@ -31,7 +31,7 @@ Description:    "iHRIS profile of Practitioner Role."
 * code.coding 1..1 MS
 * code.coding ^label = "Job"
 * specialty 0..0 MS
-* location 1..* MS 
+* location 1..1 MS 
 * location ^label = "Facility/Community Site"
 * location only Reference(IhrisFacility)
 * extension contains
@@ -198,12 +198,12 @@ Usage:          #example
 * extension[section][0].extension[name].valueString = "PractitionerRole"
 * extension[section][0].extension[field][0].valueString = "PractitionerRole.code"
 * extension[section][0].extension[field][1].valueString = "PractitionerRole.practitioner"
-* extension[section][0].extension[field][2].valueString = "PractitionerRole.location"
-* extension[section][0].extension[field][3].valueString = "PractitionerRole.period"
-* extension[section][0].extension[field][4].valueString = "PractitionerRole.active"
-* extension[section][0].extension[field][5].valueString = "PractitionerRole.extension:commune.value[x]:valueReference"
-* extension[section][0].extension[field][6].valueString = "PractitionerRole.extension:category.value[x]:valueCoding.display"
-* extension[section][0].extension[field][7].valueString = "PractitionerRole.extension:workPlace.value[x]:valueCoding.display"
+// * extension[section][0].extension[field][2].valueString = "PractitionerRole.location"
+* extension[section][0].extension[field][2].valueString = "PractitionerRole.period"
+* extension[section][0].extension[field][3].valueString = "PractitionerRole.active"
+* extension[section][0].extension[field][4].valueString = "PractitionerRole.extension:commune"
+* extension[section][0].extension[field][5].valueString = "PractitionerRole.extension:category"
+* extension[section][0].extension[field][6].valueString = "PractitionerRole.extension:workPlace"
 
 Instance:       ihris-page-job
 InstanceOf:     IhrisPage
