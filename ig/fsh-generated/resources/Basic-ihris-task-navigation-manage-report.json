@@ -1,0 +1,40 @@
+{
+  "resourceType": "Basic",
+  "id": "ihris-task-navigation-manage-report",
+  "meta": {
+    "profile": [
+      "http://ihris.org/fhir/StructureDefinition/ihris-task"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "task",
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+      "valueString": "See Manage Report Menu"
+    },
+    {
+      "extension": [
+        {
+          "url": "permission",
+          "valueCode": "special"
+        },
+        {
+          "url": "resource",
+          "valueCode": "navigation"
+        },
+        {
+          "url": "instance",
+          "valueId": "manage-report"
+        }
+      ],
+      "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+    }
+  ]
+}

@@ -637,7 +637,13 @@
       "Work Place": "",
       "Place Of Work": "",
       "Study Level": "",
-      "Initial Password": ""
+      "Initial Password": "",
+      "Staff of this account": "",
+      "End Current Appointment": "",
+      "Change Reasons Information": "",
+      "Reason for change": "",
+      "Departure Reason": "",
+      "Departure Date": ""
     },
     "hardcoded-texts": {
       "must be an integer": "",

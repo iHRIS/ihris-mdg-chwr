@@ -1,0 +1,153 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "facility",
+  "meta": {
+    "profile": [
+      "http://ihris.org/fhir/StructureDefinition/ihris-questionnaire"
+    ]
+  },
+  "url": "http://ihris.org/fhir/Questionnaire/facility",
+  "title": "iHRIS Jurisdiction Information Workflow",
+  "description": "iHRIS workflow to record a Jurisdiction Information",
+  "name": "facility",
+  "status": "active",
+  "date": "2020-09-02",
+  "purpose": "Facility information.",
+  "item": [
+    {
+      "linkId": "Location",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility",
+      "text": "Facility",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Location.name",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.name",
+          "text": "Name of CSB",
+          "type": "string",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "Location.type",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.type",
+          "text": "Health Facility Type",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-facility-type",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "Location.partOf",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.partOf",
+          "text": "Part Of(Country/Region/District/CSB/Fokotany)",
+          "type": "reference",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "Location.status",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.status",
+          "text": "Active?",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/location-status",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "Location.position",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.position",
+          "text": "GPS Co-ordinates",
+          "type": "group",
+          "item": [
+            {
+              "linkId": "Location.position.latitude",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.position.latitude",
+              "text": "Latitude",
+              "type": "decimal",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "Location.position.longitude",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.position.longitude",
+              "text": "Longitude",
+              "type": "decimal",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "linkId": "Location.extension[0]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.extension:ownership.value[x]:valueCoding",
+          "text": "Ownership",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-facility-ownership",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "Location.extension[1]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.extension:openingYear.value[x]:valueDate",
+          "text": "Opening Year",
+          "type": "date",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "Location.extension[2]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.extension:closureYear.value[x]:valueDate",
+          "text": "Closure Year",
+          "type": "date",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "Location.extension[3]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.extension:districtDistance.value[x]:valueDecimal",
+          "text": "Distance from District",
+          "type": "decimal",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "Location.identifier",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.identifier",
+          "text": "Identifier",
+          "type": "group",
+          "required": false,
+          "item": [
+            {
+              "linkId": "Location.identifier[0]",
+              "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.identifier",
+              "text": "Identifier",
+              "type": "group",
+              "repeats": true,
+              "required": false,
+              "item": [
+                {
+                  "linkId": "Location.identifier[0].type",
+                  "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.identifier.type",
+                  "text": "Type",
+                  "type": "choice",
+                  "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-facility-identifier-valueset",
+                  "repeats": false,
+                  "required": true
+                },
+                {
+                  "linkId": "Location.identifier[0].value",
+                  "definition": "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.identifier.value",
+                  "text": "Value",
+                  "type": "string",
+                  "repeats": false,
+                  "required": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

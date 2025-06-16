@@ -45,6 +45,7 @@ Usage:          #example
 * extension[reportdetails].extension[reportelement][4].extension[name].valueString = "birthDate"
 * extension[reportdetails].extension[reportelement][4].extension[fhirpath].valueString = "birthDate"
 * extension[reportdetails].extension[reportelement][4].extension[display].valueString = "BirthDate"
+* extension[reportdetails].extension[reportelement][4].extension[type].valueString = "date"
 * extension[reportdetails].extension[reportelement][4].extension[filter].valueBoolean = true
 * extension[reportdetails].extension[reportelement][4].extension[dropDownFilter].valueBoolean = false
 * extension[reportdetails].extension[reportelement][4].extension[order].valueInteger = 5
@@ -84,12 +85,14 @@ Usage:          #example
 * extension[reportlink][0].extension[reportelement][1].extension[name].valueString = "startDate"
 * extension[reportlink][0].extension[reportelement][1].extension[fhirpath].valueString = "period.start"
 * extension[reportlink][0].extension[reportelement][1].extension[display].valueString = "Start Date"
+* extension[reportlink][0].extension[reportelement][1].extension[type].valueString = "date"
 * extension[reportlink][0].extension[reportelement][1].extension[filter].valueBoolean = true
 * extension[reportlink][0].extension[reportelement][1].extension[dropDownFilter].valueBoolean = false
 
 * extension[reportlink][0].extension[reportelement][2].extension[name].valueString = "endDate"
 * extension[reportlink][0].extension[reportelement][2].extension[fhirpath].valueString = "period.end"
 * extension[reportlink][0].extension[reportelement][2].extension[display].valueString = "End Date"
+* extension[reportlink][0].extension[reportelement][2].extension[type].valueString = "date"
 * extension[reportlink][0].extension[reportelement][2].extension[filter].valueBoolean = true
 * extension[reportlink][0].extension[reportelement][2].extension[dropDownFilter].valueBoolean = false
 

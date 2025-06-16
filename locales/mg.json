@@ -637,7 +637,13 @@
       "Work Place": "Toerana miasa",
       "Place Of Work": "Toerana asa",
       "Study Level": "Ambaratonga fandalinana",
-      "Initial Password": "Tenimiafina voalohany"
+      "Initial Password": "Tenimiafina voalohany",
+      "Staff of this account": "",
+      "End Current Appointment": "",
+      "Change Reasons Information": "",
+      "Reason for change": "",
+      "Departure Reason": "",
+      "Departure Date": ""
     },
     "hardcoded-texts": {
       "must be an integer": "tsy maintsy integer",

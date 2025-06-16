@@ -1,0 +1,70 @@
+{
+  "resourceType": "Basic",
+  "id": "ihris-task-read-ihris-page-user",
+  "meta": {
+    "profile": [
+      "http://ihris.org/fhir/StructureDefinition/ihris-task"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "task",
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+      "valueString": "View User Page"
+    },
+    {
+      "extension": [
+        {
+          "url": "permission",
+          "valueCode": "read"
+        },
+        {
+          "url": "resource",
+          "valueCode": "Basic"
+        },
+        {
+          "url": "instance",
+          "valueId": "ihris-page-user"
+        }
+      ],
+      "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-write-person"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-write-basic"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-write-location"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-write-practitioner"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-write-organization"
+      }
+    }
+  ]
+}

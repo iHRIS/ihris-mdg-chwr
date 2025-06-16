@@ -86,6 +86,10 @@
               "valueString": "Training Date"
             },
             {
+              "url": "type",
+              "valueString": "date"
+            },
+            {
               "url": "filter",
               "valueBoolean": true
             },
@@ -261,6 +265,10 @@
             {
               "url": "display",
               "valueString": "BirthDate"
+            },
+            {
+              "url": "type",
+              "valueString": "date"
             },
             {
               "url": "filter",
@@ -450,6 +458,10 @@
               "valueString": "Start Date"
             },
             {
+              "url": "type",
+              "valueString": "date"
+            },
+            {
               "url": "filter",
               "valueBoolean": true
             },
@@ -475,6 +487,10 @@
               "valueString": "End Date"
             },
             {
+              "url": "type",
+              "valueString": "date"
+            },
+            {
               "url": "filter",
               "valueBoolean": true
             },
@@ -498,6 +514,10 @@
             {
               "url": "display",
               "valueString": "End Date"
+            },
+            {
+              "url": "type",
+              "valueString": "date"
             },
             {
               "url": "filter",

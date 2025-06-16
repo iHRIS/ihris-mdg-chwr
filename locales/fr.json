@@ -637,7 +637,13 @@
       "Work Place": "Lieu de travail",
       "Place Of Work": "Lieu de travail",
       "Study Level": "Niveau d'étude",
-      "Initial Password": "Mot de passe initial"
+      "Initial Password": "Mot de passe initial",
+      "Staff of this account": "",
+      "End Current Appointment": "",
+      "Change Reasons Information": "",
+      "Reason for change": "",
+      "Departure Reason": "",
+      "Departure Date": ""
     },
     "hardcoded-texts": {
       "must be an integer": "Doit être un entier",

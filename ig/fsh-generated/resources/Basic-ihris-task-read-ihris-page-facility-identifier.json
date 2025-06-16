@@ -1,0 +1,52 @@
+{
+  "resourceType": "Basic",
+  "id": "ihris-task-read-ihris-page-facility-identifier",
+  "meta": {
+    "profile": [
+      "http://ihris.org/fhir/StructureDefinition/ihris-task"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "task",
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+      "valueString": "View Facility Identifier Page"
+    },
+    {
+      "extension": [
+        {
+          "url": "permission",
+          "valueCode": "read"
+        },
+        {
+          "url": "resource",
+          "valueCode": "Basic"
+        },
+        {
+          "url": "instance",
+          "valueId": "ihris-page-facility-identifier"
+        }
+      ],
+      "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-write-codesystem"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-write-valueset"
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "resourceType": "Basic",
+  "id": "ihris-task-navigation-otherLists-incentive",
+  "meta": {
+    "profile": [
+      "http://ihris.org/fhir/StructureDefinition/ihris-task"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "task",
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+      "valueString": "See Activity Packs Menu"
+    },
+    {
+      "extension": [
+        {
+          "url": "permission",
+          "valueCode": "special"
+        },
+        {
+          "url": "resource",
+          "valueCode": "navigation"
+        },
+        {
+          "url": "instance",
+          "valueId": "database.otherLists.incentive"
+        }
+      ],
+      "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+    }
+  ]
+}

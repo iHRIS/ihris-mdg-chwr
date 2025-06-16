@@ -20,9 +20,10 @@ Usage:          #example
 * extension[display].extension[link][0].extension[button].valueBoolean = true
 * extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
 * extension[display].extension[link][0].extension[class].valueString = "secondary"
-* extension[display].extension[link][1].extension[url].valueUrl = "/custom/delete-practitioner?path=/mdgchwr/components&id=FIELD"
+* extension[display].extension[link][1].extension[url].valueUrl = "/custom/delete-practitioner?path=/mdgscar/components&id=FIELD"
 * extension[display].extension[link][1].extension[field].valueString = "Practitioner.id"
 * extension[display].extension[link][1].extension[text].valueString = "Delete"
+* extension[display].extension[link][1].extension[role].valueId = "ihris-role-admin"
 * extension[display].extension[link][1].extension[button].valueBoolean = true
 * extension[display].extension[link][1].extension[icon].valueString = "mdi-delete-circle-outline"
 * extension[display].extension[link][2].extension[class].valueString = "error"
@@ -89,7 +90,7 @@ Usage:          #example
 * extension[section][3].extension[resource].extension[action][1].extension[text].valueString = "Afficher"
 * extension[section][3].extension[resource].extension[action][1].extension[row].valueBoolean = true
 * extension[section][3].extension[resource].extension[action][1].extension[class].valueString = "primary"
-* extension[section][3].extension[resource].extension[action][2].extension[link].valueString = "/questionnaire/ihris-endrole/practitioner?practitionerrole=ITEMID"
+* extension[section][3].extension[resource].extension[action][2].extension[link].valueString = "/questionnaire/ihris-endrole/practitionerrole?practitionerrole=ITEMID"
 * extension[section][3].extension[resource].extension[action][2].extension[text].valueString = "Terminer"
 * extension[section][3].extension[resource].extension[action][2].extension[row].valueBoolean = true
 * extension[section][3].extension[resource].extension[action][2].extension[condition].valueString = "PractitionerRole.period.end.empty()"
@@ -142,6 +143,7 @@ Usage:          #example
 * extension[section][5].extension[resource].extension[action][0].extension[text].valueString = "Add Education Information"
 * extension[section][5].extension[resource].extension[action][0].extension[row].valueBoolean = false
 * extension[section][5].extension[resource].extension[action][0].extension[emptyDisplay].valueBoolean = true
+* extension[section][5].extension[resource].extension[action][0].extension[condition].valueString = "Basic.id.empty()"
 * extension[section][5].extension[resource].extension[action][0].extension[class].valueString = "primary"
 * extension[section][5].extension[resource].extension[action][1].extension[link].valueString = "/resource/view/basic-education-history/ITEMID"
 * extension[section][5].extension[resource].extension[action][1].extension[text].valueString = "Afficher"

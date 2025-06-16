@@ -1,3 +1,4 @@
+const moment = require('moment')
 const winston = require('winston')
 const ihrissmartrequire = require("ihrissmartrequire")
 const fhirQuestionnaire = ihrissmartrequire('modules/fhir/fhirQuestionnaire')
@@ -9,6 +10,13 @@ const workflowMdgTraining = {
         let practitioner = req.query.practitioner
         let trainingIndex = bundle.entry && bundle.entry.findIndex(entry => entry.resource.resourceType === 'Basic' && entry.resource.meta && entry.resource.meta.profile.includes('http://ihris.org/fhir/StructureDefinition/ihris-basic-training'))
         let training = bundle.entry[trainingIndex]
+        let trainingExtension = training.resource.extension.find(ext => ext.url === 'http://ihris.org/fhir/StructureDefinition/ihris-training')?.extension
+        let startDate = trainingExtension.find((ext) => {
+          return ext.url === 'date'
+        })?.valueDate
+        if (startDate && moment(startDate, "YYYY-MM-DD", true).isAfter(moment(), 'day')) {
+          return reject({ message: "La date de formation doit être antérieure à aujourd’hui." });
+        }
         training.resource.extension.push({
           url: 'http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference',
           valueReference: {

@@ -60,7 +60,24 @@
           "extension": [
             {
               "url": "url",
-              "valueUrl": "/resource/view/facility/FIELD?edit=true"
+              "valueUrl": "/questionnaire/facility/facility"
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-account-plus"
+            },
+            {
+              "url": "class",
+              "valueString": "accent"
+            }
+          ],
+          "url": "add"
+        },
+        {
+          "extension": [
+            {
+              "url": "url",
+              "valueUrl": "/questionnaire/facility/facility/FIELD"
             },
             {
               "url": "text",

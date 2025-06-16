@@ -1,0 +1,58 @@
+{
+  "resourceType": "Basic",
+  "id": "ihris-task-read-ihris-page-auditevent",
+  "meta": {
+    "profile": [
+      "http://ihris.org/fhir/StructureDefinition/ihris-task"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "task",
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-basic-name",
+      "valueString": "View Auditevent Page"
+    },
+    {
+      "extension": [
+        {
+          "url": "permission",
+          "valueCode": "read"
+        },
+        {
+          "url": "resource",
+          "valueCode": "Basic"
+        },
+        {
+          "url": "instance",
+          "valueId": "ihris-page-auditevent"
+        }
+      ],
+      "url": "http://ihris.org/fhir/StructureDefinition/task-attributes"
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-write-auditevent"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-write-practitionerrole"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/composite-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-write-location"
+      }
+    }
+  ]
+}

@@ -52,7 +52,24 @@
           "extension": [
             {
               "url": "url",
-              "valueUrl": "/resource/view/location/FIELD?edit=true"
+              "valueUrl": "/questionnaire/jurisdiction/location"
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-account-plus"
+            },
+            {
+              "url": "class",
+              "valueString": "accent"
+            }
+          ],
+          "url": "add"
+        },
+        {
+          "extension": [
+            {
+              "url": "url",
+              "valueUrl": "/questionnaire/jurisdiction/location/FIELD"
             },
             {
               "url": "text",

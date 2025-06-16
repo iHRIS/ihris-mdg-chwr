@@ -2,11 +2,12 @@ const winston = require('winston')
 const moment = require("moment")
 const ihrissmartrequire = require("ihrissmartrequire")
 const fhirQuestionnaire = ihrissmartrequire('modules/fhir/fhirQuestionnaire')
+const fhirAxios = ihrissmartrequire('modules/fhir/fhirAxios')
 
 const workflowMdgPractitioner = {
   process: ( req ) => {
     return new Promise( (resolve, reject) => {
-      fhirQuestionnaire.processQuestionnaire( req.body ).then( (bundle) => {
+      fhirQuestionnaire.processQuestionnaire( req.body ).then( async(bundle) => {
         let practitioner = bundle.entry.find((entry) => {
           return entry.resource.meta.profile.includes("http://ihris.org/fhir/StructureDefinition/ihris-practitioner")
         })
@@ -18,11 +19,21 @@ const workflowMdgPractitioner = {
             return cd.code === 'CIN'
           })
         })
+        practitioner.resource.name[0].family = practitioner.resource.name[0].family.toUpperCase()
         if(cin) {
-          let valid = validateCIN(cin.value)
-          if(!valid) {
+          let validation = await validateCIN(cin.value)
+          if(validation.duplicate) {
+            return reject({message: "Le CIN existe déjà pour un autre praticien"})
+          }
+          if(!validation.valid) {
             return reject({message: "Format de CIN incorrect : 12 chiffres requis, avec espace après chaque groupe de 3 chiffres.: XXX XXX XXX XXX"})
           }
+          let index = practitioner.resource.identifier.findIndex((id) => {
+            return id.type.coding.find((cd) => {
+              return cd.code === 'CIN'
+            })
+          })
+          practitioner.resource.identifier[index].value = validation.formatted
         }
         let phone = practitioner.resource.extension.find((ext) => {
           return ext.url === "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-phone"
@@ -53,16 +64,46 @@ const workflowMdgPractitioner = {
         if (ageAtEmployment < 16) {
           return reject({message: "Le personnel doit avoir au moins 18 ans lors de l'embauche"});
         }
-        function validateCIN(idNumber) {
-           if (typeof idNumber !== 'string') return false;
-  
-          const parts = idNumber.split(' ');
-          if (parts.length !== 4) return false;
-          
-          return parts.every(part => 
-            part.length === 3 && 
-            [...part].every(char => char >= '0' && char <= '9')
-          );
+        async function validateCIN(idNumber) {
+          let results = { valid: false, duplicate: false, formatted: null };
+          if (typeof idNumber !== 'string') return results;
+
+          // Remove spaces manually
+          let clean = '';
+          for (let i = 0; i < idNumber.length; i++) {
+            const char = idNumber[i];
+            if (char !== ' ') {
+              if (char < '0' || char > '9') return false; // invalid character
+              clean += char;
+            }
+          }
+
+          // Check length
+          if (clean.length !== 12) return results;
+
+          // Format: XXX XXX XXX XXX
+          const formatted =
+            clean.slice(0, 3) + ' ' +
+            clean.slice(3, 6) + ' ' +
+            clean.slice(6, 9) + ' ' +
+            clean.slice(9, 12);
+
+          await fhirAxios.search("Practitioner", {
+            identifier: formatted + "," + clean
+          }).then((response) => {
+            if (response.entry && response.entry.length) {
+              results.duplicate = true;
+            }
+          }).catch((error) => {
+            winston.error("Error searching Practitioner by CIN:", error);
+            results.duplicate = true; // Error in search, treat as valid
+          });
+          if (results.duplicate) {
+            return results;
+          }
+          results.valid = true;
+          results.formatted = formatted;
+          return results;
         }
         function validatePhone(phone) {
           let digits = '';

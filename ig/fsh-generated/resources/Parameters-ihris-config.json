@@ -20,7 +20,7 @@
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "r39L8amaTmqvF5idMJZvttYpGVNFCIaps0y0ZTD9EMHxCVpbSmsE6tzj0hlQXrocckB+vvyet+JRtvqo+LpRf9hpNEQMlk/3eL1p1+w5ZT06/SwGwY+jMbsGRAALCDCN1y8k0hgYLgKWYRlfdFkKjZoNN29z5397DXI5BXyU+9Y="
+        "data": "xJGNnUQnx9rPTq7MAaud0O6k9aVIFjRIrcO/ogE6VODCmb1/Wy2w1aauA4RHJ+LPiwl4TejqYcsnB2iAbzYrITzX4xnsShM78NIvpI+Xs9MdNc/169PgFBkuIxYqKxCIgD5hs1HSF1x6F+PtyGZCNjRdlEKAkiDSysn1febN+WA="
       }
     },
     {
@@ -157,34 +157,6 @@
         {
           "name": "site:nav:menu:person:menu:personAdd:url",
           "valueString": "/questionnaire/ihris-practitioner/practitioner"
-        },
-        {
-          "name": "site:nav:menu:position:text",
-          "valueString": "Positions"
-        },
-        {
-          "name": "site:nav:menu:position:order",
-          "valueString": "5"
-        },
-        {
-          "name": "site:nav:menu:position:icon",
-          "valueString": "mdi-account-multiple"
-        },
-        {
-          "name": "site:nav:menu:position:menu:positionSearch:text",
-          "valueString": "Search Positions"
-        },
-        {
-          "name": "site:nav:menu:position:menu:positionSearch:url",
-          "valueString": "/resource/search/practitionerrole"
-        },
-        {
-          "name": "site:nav:menu:position:menu:positionAdd:text",
-          "valueString": "Add Position"
-        },
-        {
-          "name": "site:nav:menu:position:menu:positionAdd:url",
-          "valueString": "/resource/add/practitionerrole"
         },
         {
           "name": "site:nav:menu:location:text",
@@ -960,18 +932,6 @@
         },
         {
           "name": "app:site:routes:adx:authenticate",
-          "valueString": "true"
-        },
-        {
-          "name": "app:site:routes:delete:mount",
-          "valueString": "/site/delete"
-        },
-        {
-          "name": "app:site:routes:delete:path",
-          "valueString": "mdgdelete.js"
-        },
-        {
-          "name": "app:site:routes:delete:authenticate",
           "valueString": "true"
         },
         {

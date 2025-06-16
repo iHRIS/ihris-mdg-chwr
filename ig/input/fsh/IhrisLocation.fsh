@@ -266,7 +266,10 @@ Usage:          #example
 * extension[display].extension[search][5].valueString = "Latitude|position.latitude"
 * extension[display].extension[filter][0].valueString = "Name|name:contains"
 * extension[display].extension[filter][1].valueString = "Type|type|http://ihris.org/fhir/ValueSet/ihris-facility-type"
-* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/facility/FIELD?edit=true"
+* extension[display].extension[add].extension[url].valueUrl = "/questionnaire/facility/facility"
+* extension[display].extension[add].extension[icon].valueString = "mdi-account-plus"
+* extension[display].extension[add].extension[class].valueString = "accent"
+* extension[display].extension[link][0].extension[url].valueUrl = "/questionnaire/facility/facility/FIELD"
 * extension[display].extension[link][0].extension[field].valueString = "Location.id"
 * extension[display].extension[link][0].extension[text].valueString = "Edit"
 * extension[display].extension[link][0].extension[button].valueBoolean = true
@@ -334,7 +337,10 @@ Usage:          #example
 * extension[display].extension[filter][0].valueString = "Name|name:contains"
 * extension[display].extension[filter][1].valueString = "Type|type|http://ihris.org/fhir/ValueSet/ihris-jurisdiction-type"
 * extension[display].extension[filter][2].valueString = "Jurisdiction|partOf"
-* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/location/FIELD?edit=true"
+* extension[display].extension[add].extension[url].valueUrl = "/questionnaire/jurisdiction/location"
+* extension[display].extension[add].extension[icon].valueString = "mdi-account-plus"
+* extension[display].extension[add].extension[class].valueString = "accent"
+* extension[display].extension[link][0].extension[url].valueUrl = "/questionnaire/jurisdiction/location/FIELD"
 * extension[display].extension[link][0].extension[field].valueString = "Location.id"
 * extension[display].extension[link][0].extension[text].valueString = "Edit"
 * extension[display].extension[link][0].extension[button].valueBoolean = true
@@ -418,3 +424,207 @@ Usage:          #example
 * extension[section][0].extension[field][0].valueString = "CodeSystem.display"
 * extension[section][0].extension[field][1].valueString = "CodeSystem.code"
 * extension[section][0].extension[field][2].valueString = "CodeSystem.definition"
+
+
+Instance:       Jurisdiction
+InstanceOf:     IhrisQuestionnaire
+Usage:          #definition
+* title = "iHRIS Jurisdiction Information Workflow"
+* description = "iHRIS workflow to record a Jurisdiction Information"
+* id = "jurisdiction"
+* url = "http://ihris.org/fhir/Questionnaire/jurisdiction"
+* name = "jurisdiction"
+* status = #active
+* date = 2020-09-02
+* purpose = "Jurisdiction information."
+
+* item[0].linkId = "Location"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+* item[0].text = "Jurisdiction"
+* item[0].type = #group
+
+* item[0].item[0].linkId = "Location.name"
+* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction#Location.name"
+* item[0].item[0].text = "Name"
+* item[0].item[0].type = #string
+* item[0].item[0].required = true
+* item[0].item[0].repeats = false
+
+* item[0].item[1].linkId = "Location.type"
+* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction#Location.type"
+* item[0].item[1].text = "Type"
+* item[0].item[1].type = #choice
+* item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-jurisdiction-type"
+* item[0].item[1].required = true
+* item[0].item[1].repeats = false
+
+* item[0].item[2].linkId = "Location.partOf"
+* item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction#Location.partOf"
+* item[0].item[2].text = "Part Of(Country/Region/District/Commune)"
+* item[0].item[2].type = #reference
+* item[0].item[2].required = false
+* item[0].item[2].repeats = false
+
+* item[0].item[3].linkId = "Location.status"
+* item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction#Location.status"
+* item[0].item[3].text = "Status"
+* item[0].item[3].type = #choice
+* item[0].item[3].answerValueSet = "http://ihris.org/fhir/ValueSet/location-status"
+* item[0].item[3].required = true
+* item[0].item[3].repeats = false
+
+* item[0].item[4].linkId = "Location.position"
+* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction#Location.position"
+* item[0].item[4].text = "GPS Co-ordinates"
+* item[0].item[4].type = #group
+
+* item[0].item[4].item[0].linkId = "Location.position.latitude"
+* item[0].item[4].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction#Location.position.latitude"
+* item[0].item[4].item[0].text = "Latitude"
+* item[0].item[4].item[0].type = #decimal
+* item[0].item[4].item[0].required = false
+* item[0].item[4].item[0].repeats = false
+
+* item[0].item[4].item[1].linkId = "Location.position.longitude"
+* item[0].item[4].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction#Location.position.longitude"
+* item[0].item[4].item[1].text = "Longitude"
+* item[0].item[4].item[1].type = #decimal
+* item[0].item[4].item[1].required = false
+* item[0].item[4].item[1].repeats = false
+
+* item[0].item[5].linkId = "Location.extension[0]"
+* item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction#Location.extension:boundary.value[x]:valueAttachment"
+* item[0].item[5].text = "Location Boundary (GeoJSON)"
+* item[0].item[5].type = #attachment
+* item[0].item[5].required = false
+* item[0].item[5].repeats = false
+
+* item[0].item[6].linkId = "Location.extension[1]"
+* item[0].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction#Location.extension:population.value[x]:valueInteger"
+* item[0].item[6].text = "Population"
+* item[0].item[6].type = #integer
+* item[0].item[6].required = false
+* item[0].item[6].repeats = false
+
+Instance:       Facility
+InstanceOf:     IhrisQuestionnaire
+Usage:          #definition
+* title = "iHRIS Jurisdiction Information Workflow"
+* description = "iHRIS workflow to record a Jurisdiction Information"
+* id = "facility"
+* url = "http://ihris.org/fhir/Questionnaire/facility"
+* name = "facility"
+* status = #active
+* date = 2020-09-02
+* purpose = "Facility information."
+
+* item[0].linkId = "Location"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+* item[0].text = "Facility"
+* item[0].type = #group
+
+* item[0].item[0].linkId = "Location.name"
+* item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.name"
+* item[0].item[0].text = "Name of CSB"
+* item[0].item[0].type = #string
+* item[0].item[0].required = true
+* item[0].item[0].repeats = false
+
+* item[0].item[1].linkId = "Location.type"
+* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.type"
+* item[0].item[1].text = "Health Facility Type"
+* item[0].item[1].type = #choice
+* item[0].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-facility-type"
+* item[0].item[1].required = true
+* item[0].item[1].repeats = false
+
+* item[0].item[2].linkId = "Location.partOf"
+* item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.partOf"
+* item[0].item[2].text = "Part Of(Country/Region/District/CSB/Fokotany)"
+* item[0].item[2].type = #reference
+* item[0].item[2].required = false
+* item[0].item[2].repeats = false
+
+* item[0].item[3].linkId = "Location.status"
+* item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.status"
+* item[0].item[3].text = "Active?"
+* item[0].item[3].type = #choice
+* item[0].item[3].answerValueSet = "http://ihris.org/fhir/ValueSet/location-status"
+* item[0].item[3].required = true
+* item[0].item[3].repeats = false
+
+* item[0].item[4].linkId = "Location.position"
+* item[0].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.position"
+* item[0].item[4].text = "GPS Co-ordinates"
+* item[0].item[4].type = #group
+
+* item[0].item[4].item[0].linkId = "Location.position.latitude"
+* item[0].item[4].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.position.latitude"
+* item[0].item[4].item[0].text = "Latitude"
+* item[0].item[4].item[0].type = #decimal
+* item[0].item[4].item[0].required = false
+* item[0].item[4].item[0].repeats = false
+
+* item[0].item[4].item[1].linkId = "Location.position.longitude"
+* item[0].item[4].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.position.longitude"
+* item[0].item[4].item[1].text = "Longitude"
+* item[0].item[4].item[1].type = #decimal
+* item[0].item[4].item[1].required = false
+* item[0].item[4].item[1].repeats = false
+
+* item[0].item[5].linkId = "Location.extension[0]"
+* item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.extension:ownership.value[x]:valueCoding"
+* item[0].item[5].text = "Ownership"
+* item[0].item[5].type = #choice
+* item[0].item[5].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-facility-ownership"
+* item[0].item[5].required = false
+* item[0].item[5].repeats = false
+
+* item[0].item[6].linkId = "Location.extension[1]"
+* item[0].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.extension:openingYear.value[x]:valueDate"
+* item[0].item[6].text = "Opening Year"
+* item[0].item[6].type = #date
+* item[0].item[6].required = false
+* item[0].item[6].repeats = false
+
+* item[0].item[7].linkId = "Location.extension[2]"
+* item[0].item[7].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.extension:closureYear.value[x]:valueDate"
+* item[0].item[7].text = "Closure Year"
+* item[0].item[7].type = #date
+* item[0].item[7].required = false
+* item[0].item[7].repeats = false
+
+* item[0].item[8].linkId = "Location.extension[3]"
+* item[0].item[8].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.extension:districtDistance.value[x]:valueDecimal"
+* item[0].item[8].text = "Distance from District"
+* item[0].item[8].type = #decimal
+* item[0].item[8].required = false
+* item[0].item[8].repeats = false
+
+* item[0].item[9].linkId = "Location.identifier"
+* item[0].item[9].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.identifier"
+* item[0].item[9].text = "Identifier"
+* item[0].item[9].type = #group
+* item[0].item[9].required = false
+
+* item[0].item[9].item[0].linkId = "Location.identifier[0]"
+* item[0].item[9].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.identifier"
+* item[0].item[9].item[0].text = "Identifier"
+* item[0].item[9].item[0].type = #group
+* item[0].item[9].item[0].repeats = true
+* item[0].item[9].item[0].required = false
+
+* item[0].item[9].item[0].item[0].linkId = "Location.identifier[0].type"
+* item[0].item[9].item[0].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.identifier.type"
+* item[0].item[9].item[0].item[0].text = "Type"
+* item[0].item[9].item[0].item[0].type = #choice
+* item[0].item[9].item[0].item[0].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-facility-identifier-valueset"
+* item[0].item[9].item[0].item[0].repeats = false
+* item[0].item[9].item[0].item[0].required = true
+
+* item[0].item[9].item[0].item[1].linkId = "Location.identifier[0].value"
+* item[0].item[9].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-facility#Location.identifier.value"
+* item[0].item[9].item[0].item[1].text = "Value"
+* item[0].item[9].item[0].item[1].type = #string
+* item[0].item[9].item[0].item[1].repeats = false
+* item[0].item[9].item[0].item[1].required = true

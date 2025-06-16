@@ -92,6 +92,12 @@
     {
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
       "valueReference": {
+        "reference": "Basic/ihris-task-write-practitioner-role-resource"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
         "reference": "Basic/ihris-task-write-questionnaire-response-resource"
       }
     },
@@ -122,7 +128,331 @@
     {
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
       "valueReference": {
+        "reference": "Basic/ihris-task-section-contact"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
         "reference": "Basic/ihris-task-write-document-reference"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-profile"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-dashboard"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-person"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-person-personSearch"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-person-personAdd"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-position"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-position-positionSearch"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-position-positionAdd"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-location"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-location-locationSearch"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-location-facilitySearch"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-database"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-database-facilityLists"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-facilityLists-type"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-facilityLists-juriType"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-facilityLists-ownership"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-facilityLists-identifier"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-facilityLists-workplace"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-database-jobLists"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-jobLists-job"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-jobLists-category"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-database-eduLists"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-eduLists-education-level"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-eduLists-training"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-database-otherLists"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-otherLists-identifier"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-otherLists-incentive"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-otherLists-maritalStatus"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-otherLists-relation"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-otherLists-motivationTypes"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-otherLists-equipmenttype"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-otherLists-gender"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-reports"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-reports-directorate"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-reports-staff"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-reports-training"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-reports-incentive"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-reports-distance"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-reports-equipment"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-reports-supervision"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-password"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-navigation-ihris-apps-list"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-section-distance"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-section-education-history"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-section-incentive"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-section-training"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-section-careports"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-section-equipment"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-section-supervision"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-section-emergency"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-section-practitioner"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-section-identifiers"
+      }
+    },
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-assign-task",
+      "valueReference": {
+        "reference": "Basic/ihris-task-section-position"
       }
     }
   ]

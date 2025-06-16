@@ -337,6 +337,10 @@
               "valueString": "BirthDate"
             },
             {
+              "url": "type",
+              "valueString": "date"
+            },
+            {
               "url": "filter",
               "valueBoolean": true
             },
@@ -524,6 +528,10 @@
               "valueString": "Start Date"
             },
             {
+              "url": "type",
+              "valueString": "date"
+            },
+            {
               "url": "filter",
               "valueBoolean": true
             },
@@ -549,6 +557,10 @@
               "valueString": "End Date"
             },
             {
+              "url": "type",
+              "valueString": "date"
+            },
+            {
               "url": "filter",
               "valueBoolean": true
             },
@@ -572,6 +584,10 @@
             {
               "url": "display",
               "valueString": "End Date"
+            },
+            {
+              "url": "type",
+              "valueString": "date"
             },
             {
               "url": "filter",
